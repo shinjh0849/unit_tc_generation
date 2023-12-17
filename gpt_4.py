@@ -16,7 +16,7 @@ def get_completion(prompt, engine='gpt-4-1106-preview'):
 
      
 
-def gen_comments(num):
+def gen_tcs(num):
     # max_token = 4000
     
     for prj in ['compress', 'gson', 'jacksonCore', 'jacksonDatabind', 'jsoup']:
@@ -64,4 +64,4 @@ def gen_comments(num):
 openai.organization = 'YOUR_ORG_KEY'
 openai.api_key = 'YOUR_API_KEY'
 # num = sys.argv[1]
-gen_comments(0)
+gen_tcs(0)

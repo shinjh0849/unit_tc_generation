@@ -65,3 +65,30 @@ Then you can copy the tests from combined folder to your java project and calcul
 
 The coverage of model generated tests can be found in ```*post_processing/model_gen_coverage*``` folder for each project.
 
+## GPT-4
+We also provide the scripts we used to prompt GPT-4.
+
+After swapping your organization and API key in the code, run the python file:
+```
+python gpt_4.py
+```
+
+## A3Test
+To run A3Test with our dataset, first clone their [replication package](https://github.com/awsm-research/a3test).
+
+Then follow the pre-installation guide in their README.
+
+We directly used their trained weights and bias in their hugging face [distribution](https://github.com/awsm-research/A3Test/tree/main).
+
+Import the model and follow their guide in testing A3Test model:
+```
+python testScript.py -i model.pth -t test.csv -a test.txt -q Defect4jTests.txt
+```
+
+Following is the parameter explanation from their package.
+```
+parser.add_argument("-i", "--modelInput", dest="modelInput", help="Saved Model file for the testing the script")
+parser.add_argument("-t", "--testInput", dest="testInput", help="Test Input file for the model accuracy")
+parser.add_argument("-a","--externalTestFile", dest="externalTestFile", help="External Test Files for generating the UTs")
+parser.add_argument("-q","--externalTestFileOutput", dest="externalTestFileOutput", help="External Test Files output for generating the UTs")
+```
