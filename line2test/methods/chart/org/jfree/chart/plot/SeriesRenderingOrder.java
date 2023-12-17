@@ -1,5 +1,0 @@
-private SeriesRenderingOrder(String name) { [EOL]     this.name = name; [EOL] } <line_num>: 78,80
-public String toString() { [EOL]     return this.name; [EOL] } <line_num>: 87,89
-public boolean equals(Object obj) { [EOL]     if (this == obj) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof SeriesRenderingOrder)) { [EOL]         return false; [EOL]     } [EOL]     SeriesRenderingOrder order = (SeriesRenderingOrder) obj; [EOL]     if (!this.name.equals(order.toString())) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 99,111
-public int hashCode() { [EOL]     return this.name.hashCode(); [EOL] } <line_num>: 118,120
-private Object readResolve() throws ObjectStreamException { [EOL]     if (this.equals(SeriesRenderingOrder.FORWARD)) { [EOL]         return SeriesRenderingOrder.FORWARD; [EOL]     } else if (this.equals(SeriesRenderingOrder.REVERSE)) { [EOL]         return SeriesRenderingOrder.REVERSE; [EOL]     } [EOL]     return null; [EOL] } <line_num>: 129,137

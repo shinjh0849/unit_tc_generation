@@ -1,6 +1,0 @@
-public KeyedObject(Comparable key, Object object) { [EOL]     this.key = key; [EOL]     this.object = object; [EOL] } <line_num>: 71,74
-public Comparable getKey() { [EOL]     return this.key; [EOL] } <line_num>: 81,83
-public Object getObject() { [EOL]     return this.object; [EOL] } <line_num>: 90,92
-public void setObject(Object object) { [EOL]     this.object = object; [EOL] } <line_num>: 99,101
-public Object clone() throws CloneNotSupportedException { [EOL]     KeyedObject clone = (KeyedObject) super.clone(); [EOL]     if (this.object instanceof PublicCloneable) { [EOL]         PublicCloneable pc = (PublicCloneable) this.object; [EOL]         clone.object = pc.clone(); [EOL]     } [EOL]     return clone; [EOL] } <line_num>: 113,120
-public boolean equals(Object obj) { [EOL]     if (obj == this) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof KeyedObject)) { [EOL]         return false; [EOL]     } [EOL]     KeyedObject that = (KeyedObject) obj; [EOL]     if (!ObjectUtilities.equal(this.key, that.key)) { [EOL]         return false; [EOL]     } [EOL]     if (!ObjectUtilities.equal(this.object, that.object)) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 129,148

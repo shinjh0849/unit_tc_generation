@@ -1,3 +1,0 @@
-public void testBase64() { [EOL]     for (int i = 0; i < 64; i++) { [EOL]         testValue(i); [EOL]     } [EOL] } <line_num>: 25,29
-public void testBase64EncodeInt() { [EOL]     assertEquals("AAAAAA", Base64.base64EncodeInt(0)); [EOL]     assertEquals("AAAAAQ", Base64.base64EncodeInt(1)); [EOL]     assertEquals("AAAAKg", Base64.base64EncodeInt(42)); [EOL]     assertEquals("////nA", Base64.base64EncodeInt(-100)); [EOL]     assertEquals("/////w", Base64.base64EncodeInt(0xffffffff)); [EOL] } <line_num>: 31,37
-private void testValue(int value) { [EOL]     assertEquals(value, Base64.fromBase64(Base64.toBase64(value))); [EOL] } <line_num>: 39,41

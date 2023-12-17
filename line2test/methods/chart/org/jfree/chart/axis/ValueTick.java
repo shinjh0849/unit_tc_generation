@@ -1,5 +1,0 @@
-public ValueTick(double value, String label, TextAnchor textAnchor, TextAnchor rotationAnchor, double angle) { [EOL]     this(TickType.MAJOR, value, label, textAnchor, rotationAnchor, angle); [EOL]     this.value = value; [EOL] } <line_num>: 73,80
-public ValueTick(TickType tickType, double value, String label, TextAnchor textAnchor, TextAnchor rotationAnchor, double angle) { [EOL]     super(label, textAnchor, rotationAnchor, angle); [EOL]     this.value = value; [EOL]     this.tickType = tickType; [EOL] } <line_num>: 95,102
-public double getValue() { [EOL]     return this.value; [EOL] } <line_num>: 109,111
-public TickType getTickType() { [EOL]     return this.tickType; [EOL] } <line_num>: 120,122
-public boolean equals(Object obj) { [EOL]     if (obj == this) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof ValueTick)) { [EOL]         return false; [EOL]     } [EOL]     ValueTick that = (ValueTick) obj; [EOL]     if (this.value != that.value) { [EOL]         return false; [EOL]     } [EOL]     if (!this.tickType.equals(that.tickType)) { [EOL]         return false; [EOL]     } [EOL]     return super.equals(obj); [EOL] } <line_num>: 131,146

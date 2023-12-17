@@ -1,7 +1,0 @@
-public OHLCItem(RegularTimePeriod period, double open, double high, double low, double close)
-public RegularTimePeriod getPeriod()
-public double getYValue()
-public double getOpenValue()
-public double getHighValue()
-public double getLowValue()
-public double getCloseValue()

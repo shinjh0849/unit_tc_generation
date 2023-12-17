@@ -1,5 +1,0 @@
-private VerticalAlignment(String name) { [EOL]     this.name = name; [EOL] } <line_num>: 76,78
-public String toString() { [EOL]     return this.name; [EOL] } <line_num>: 85,87
-public boolean equals(Object obj) { [EOL]     if (this == obj) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof VerticalAlignment)) { [EOL]         return false; [EOL]     } [EOL]     VerticalAlignment alignment = (VerticalAlignment) obj; [EOL]     if (!this.name.equals(alignment.name)) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 97,110
-public int hashCode() { [EOL]     return this.name.hashCode(); [EOL] } <line_num>: 117,119
-private Object readResolve() throws ObjectStreamException { [EOL]     if (this.equals(VerticalAlignment.TOP)) { [EOL]         return VerticalAlignment.TOP; [EOL]     } else if (this.equals(VerticalAlignment.BOTTOM)) { [EOL]         return VerticalAlignment.BOTTOM; [EOL]     } else if (this.equals(VerticalAlignment.CENTER)) { [EOL]         return VerticalAlignment.CENTER; [EOL]     } else { [EOL]         return null; [EOL]     } [EOL] } <line_num>: 128,141

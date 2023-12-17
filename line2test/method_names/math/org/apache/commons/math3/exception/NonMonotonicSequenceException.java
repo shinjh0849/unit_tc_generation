@@ -1,6 +1,0 @@
-public NonMonotonicSequenceException(Number wrong, Number previous, int index)
-public NonMonotonicSequenceException(Number wrong, Number previous, int index, MathArrays.OrderDirection direction, boolean strict)
-public MathArrays.OrderDirection getDirection()
-public boolean getStrict()
-public int getIndex()
-public Number getPrevious()

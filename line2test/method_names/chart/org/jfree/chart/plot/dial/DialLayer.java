@@ -1,6 +1,0 @@
-public boolean isVisible()
-public void addChangeListener(DialLayerChangeListener listener)
-public void removeChangeListener(DialLayerChangeListener listener)
-public boolean hasListener(EventListener listener)
-public boolean isClippedToWindow()
-public void draw(Graphics2D g2, DialPlot plot, Rectangle2D frame, Rectangle2D view)

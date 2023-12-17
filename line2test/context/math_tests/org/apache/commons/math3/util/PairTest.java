@@ -1,8 +1,0 @@
-public MyInteger(int i)
-public void testAccessor()
-public void testAccessor2()
-public void testEquals()
-public void testHashCode()
-public void set(int i)
-public boolean equals(Object o)
-public int hashCode()

@@ -1,5 +1,0 @@
-protected CompilerPass getProcessor(Compiler compiler)
-public void testFunctionDeclarations()
-public void testFunctionDeclarationsInModule()
-public void testFunctionsExpression()
-public void testNoMoveDeepFunctionDeclarations()

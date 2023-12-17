@@ -1,3 +1,0 @@
-@Override [EOL] public UnivariateStatistic getUnivariateStatistic() { [EOL]     return new Skewness(); [EOL] } <line_num>: 36,39
-@Override [EOL] public double expectedValue() { [EOL]     return this.skew; [EOL] } <line_num>: 44,47
-@Test [EOL] public void testNaN() { [EOL]     Skewness skew = new Skewness(); [EOL]     Assert.assertTrue(Double.isNaN(skew.getResult())); [EOL]     skew.increment(1d); [EOL]     Assert.assertTrue(Double.isNaN(skew.getResult())); [EOL]     skew.increment(1d); [EOL]     Assert.assertTrue(Double.isNaN(skew.getResult())); [EOL]     skew.increment(1d); [EOL]     Assert.assertFalse(Double.isNaN(skew.getResult())); [EOL] } <line_num>: 53,63

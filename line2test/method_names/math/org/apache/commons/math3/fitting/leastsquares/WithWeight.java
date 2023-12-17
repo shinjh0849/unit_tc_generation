@@ -1,1 +1,0 @@
- T withWeight(RealMatrix weight)

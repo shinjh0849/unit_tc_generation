@@ -1,3 +1,0 @@
-public int getOrder() { [EOL]     return BEAN_POINTER_FACTORY_ORDER; [EOL] } <line_num>: 37,39
-public NodePointer createNodePointer(QName name, Object bean, Locale locale) { [EOL]     JXPathBeanInfo bi = JXPathIntrospector.getBeanInfo(bean.getClass()); [EOL]     return new BeanPointer(name, bean, bi, locale); [EOL] } <line_num>: 41,48
-public NodePointer createNodePointer(NodePointer parent, QName name, Object bean) { [EOL]     if (bean == null) { [EOL]         return new NullPointer(parent, name); [EOL]     } [EOL]     JXPathBeanInfo bi = JXPathIntrospector.getBeanInfo(bean.getClass()); [EOL]     return new BeanPointer(parent, name, bean, bi); [EOL] } <line_num>: 50,61

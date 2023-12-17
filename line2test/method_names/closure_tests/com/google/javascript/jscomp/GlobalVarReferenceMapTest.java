@@ -1,6 +1,0 @@
-protected void setUp() throws Exception
-public void testUpdateGlobalVarReferences_ResetReferences()
-public void testUpdateGlobalVarReferences_UpdateScriptNoRef()
-public void testUpdateGlobalVarReferences_UpdateScriptNewRefs()
-public void testUpdateGlobalVarReferences_UpdateScriptNewVar()
-public void testUpdateReferencesWithGlobalScope()

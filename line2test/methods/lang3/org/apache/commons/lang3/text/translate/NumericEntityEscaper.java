@@ -1,7 +1,0 @@
-private NumericEntityEscaper(final int below, final int above, final boolean between) { [EOL]     this.below = below; [EOL]     this.above = above; [EOL]     this.between = between; [EOL] } <line_num>: 44,48
-public NumericEntityEscaper() { [EOL]     this(0, Integer.MAX_VALUE, true); [EOL] } <line_num>: 53,55
-public static NumericEntityEscaper below(final int codepoint) { [EOL]     return outsideOf(codepoint, Integer.MAX_VALUE); [EOL] } <line_num>: 63,65
-public static NumericEntityEscaper above(final int codepoint) { [EOL]     return outsideOf(0, codepoint); [EOL] } <line_num>: 73,75
-public static NumericEntityEscaper between(final int codepointLow, final int codepointHigh) { [EOL]     return new NumericEntityEscaper(codepointLow, codepointHigh, true); [EOL] } <line_num>: 84,86
-public static NumericEntityEscaper outsideOf(final int codepointLow, final int codepointHigh) { [EOL]     return new NumericEntityEscaper(codepointLow, codepointHigh, false); [EOL] } <line_num>: 95,97
-@Override [EOL] public boolean translate(final int codepoint, final Writer out) throws IOException { [EOL]     if (between) { [EOL]         if (codepoint < below || codepoint > above) { [EOL]             return false; [EOL]         } [EOL]     } else { [EOL]         if (codepoint >= below && codepoint <= above) { [EOL]             return false; [EOL]         } [EOL]     } [EOL]     out.write("&#"); [EOL]     out.write(Integer.toString(codepoint, 10)); [EOL]     out.write(';'); [EOL]     return true; [EOL] } <line_num>: 102,118

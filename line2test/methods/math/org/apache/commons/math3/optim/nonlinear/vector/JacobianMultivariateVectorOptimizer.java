@@ -1,4 +1,0 @@
-protected JacobianMultivariateVectorOptimizer(ConvergenceChecker<PointVectorValuePair> checker) { [EOL]     super(checker); [EOL] } <line_num>: 54,56
-protected double[][] computeJacobian(final double[] params) { [EOL]     return jacobian.value(params); [EOL] } <line_num>: 64,66
-@Override [EOL] public PointVectorValuePair optimize(OptimizationData... optData) throws TooManyEvaluationsException, DimensionMismatchException { [EOL]     return super.optimize(optData); [EOL] } <line_num>: 83,89
-@Override [EOL] protected void parseOptimizationData(OptimizationData... optData) { [EOL]     super.parseOptimizationData(optData); [EOL]     for (OptimizationData data : optData) { [EOL]         if (data instanceof ModelFunctionJacobian) { [EOL]             jacobian = ((ModelFunctionJacobian) data).getModelFunctionJacobian(); [EOL]             break; [EOL]         } [EOL]     } [EOL] } <line_num>: 101,116

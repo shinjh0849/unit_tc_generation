@@ -1,6 +1,0 @@
-public void setUp()
-public void testParseFile()
-public void testMultiplePerLine()
-public void testShortcutMode1()
-public void testShortcutMode2()
-public void testShortcutMode3()

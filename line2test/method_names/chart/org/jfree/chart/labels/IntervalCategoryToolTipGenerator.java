@@ -1,5 +1,0 @@
-public IntervalCategoryToolTipGenerator()
-public IntervalCategoryToolTipGenerator(String labelFormat, NumberFormat formatter)
-public IntervalCategoryToolTipGenerator(String labelFormat, DateFormat formatter)
-protected Object[] createItemArray(CategoryDataset dataset, int row, int column)
-public boolean equals(Object obj)

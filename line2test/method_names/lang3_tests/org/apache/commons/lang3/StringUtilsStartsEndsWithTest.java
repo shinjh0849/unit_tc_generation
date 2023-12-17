@@ -1,6 +1,0 @@
-public void testStartsWith()
-public void testStartsWithIgnoreCase()
-public void testStartsWithAny()
-public void testEndsWith()
-public void testEndsWithIgnoreCase()
-public void testEndsWithAny()

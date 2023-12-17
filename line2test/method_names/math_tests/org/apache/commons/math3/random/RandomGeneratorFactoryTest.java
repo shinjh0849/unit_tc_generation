@@ -1,1 +1,0 @@
-protected RandomGenerator makeGenerator()

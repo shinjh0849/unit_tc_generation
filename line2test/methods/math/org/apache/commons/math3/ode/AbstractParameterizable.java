@@ -1,5 +1,0 @@
-protected AbstractParameterizable(final String... names) { [EOL]     parametersNames = new ArrayList<String>(); [EOL]     for (final String name : names) { [EOL]         parametersNames.add(name); [EOL]     } [EOL] } <line_num>: 36,41
-protected AbstractParameterizable(final Collection<String> names) { [EOL]     parametersNames = new ArrayList<String>(); [EOL]     parametersNames.addAll(names); [EOL] } <line_num>: 46,49
-public Collection<String> getParametersNames() { [EOL]     return parametersNames; [EOL] } <line_num>: 52,54
-public boolean isSupported(final String name) { [EOL]     for (final String supportedName : parametersNames) { [EOL]         if (supportedName.equals(name)) { [EOL]             return true; [EOL]         } [EOL]     } [EOL]     return false; [EOL] } <line_num>: 57,64
-public void complainIfNotSupported(final String name) throws UnknownParameterException { [EOL]     if (!isSupported(name)) { [EOL]         throw new UnknownParameterException(name); [EOL]     } [EOL] } <line_num>: 71,76

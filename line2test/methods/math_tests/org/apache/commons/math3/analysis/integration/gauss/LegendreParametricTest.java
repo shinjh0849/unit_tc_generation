@@ -1,3 +1,0 @@
-public LegendreParametricTest(int numberOfPoints, int maxDegree, double eps, double numUlps) { [EOL]     super(factory.legendre(numberOfPoints), maxDegree, eps, numUlps); [EOL] } <line_num>: 53,59
-@SuppressWarnings("boxing") [EOL] @Parameters [EOL] public static Collection<Object[]> getParameters() { [EOL]     final ArrayList<Object[]> parameters = new ArrayList<Object[]>(); [EOL]     for (int k = 1; k <= MAX_NUM_POINTS; k++) { [EOL]         parameters.add(new Object[] { k, 2 * k - 1, Math.ulp(1d), 91d }); [EOL]     } [EOL]     return parameters; [EOL] } <line_num>: 69,77
-@Override [EOL] public double getExpectedValue(final int n) { [EOL]     if (n % 2 == 1) { [EOL]         return 0; [EOL]     } [EOL]     return 2d / (n + 1); [EOL] } <line_num>: 79,85

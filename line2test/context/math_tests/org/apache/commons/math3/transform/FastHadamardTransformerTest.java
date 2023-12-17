@@ -1,8 +1,0 @@
-public void test8Points()
-public void test4Points()
-public void testNoIntInverse()
-public void test3Points()
-private void checkAllTransforms(int[] x, int[] y)
-private void checkDoubleTransform(int[] x, int[] y)
-private void checkIntTransform(int[] x, int[] y)
-private void checkInverseDoubleTransform(int[] x, int[] y)

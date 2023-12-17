@@ -1,1 +1,0 @@
-@Test [EOL] public void testAccessors() { [EOL]     final NotPositiveException e = new NotPositiveException(-1); [EOL]     Assert.assertEquals(-1, e.getArgument()); [EOL]     Assert.assertEquals(0, e.getMin()); [EOL]     Assert.assertTrue(e.getBoundIsAllowed()); [EOL] } <line_num>: 28,34

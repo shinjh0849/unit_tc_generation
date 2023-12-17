@@ -1,3 +1,0 @@
-public ObjectiveFunction(MultivariateFunction f)
-public MultivariateFunction getObjectiveFunction()
-MultivariateFunction function

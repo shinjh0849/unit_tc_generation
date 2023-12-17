@@ -1,6 +1,0 @@
-public SkipUndoDateTimeField(Chronology chronology, DateTimeField field) { [EOL]     this(chronology, field, 0); [EOL] } <line_num>: 52,54
-public SkipUndoDateTimeField(Chronology chronology, DateTimeField field, int skip) { [EOL]     super(field); [EOL]     iChronology = chronology; [EOL]     int min = super.getMinimumValue(); [EOL]     if (min < skip) { [EOL]         iMinValue = min + 1; [EOL]     } else if (min == skip + 1) { [EOL]         iMinValue = skip; [EOL]     } else { [EOL]         iMinValue = min; [EOL]     } [EOL]     iSkip = skip; [EOL] } <line_num>: 63,75
-public int get(long millis) { [EOL]     int value = super.get(millis); [EOL]     if (value < iSkip) { [EOL]         value++; [EOL]     } [EOL]     return value; [EOL] } <line_num>: 78,84
-public long set(long millis, int value) { [EOL]     FieldUtils.verifyValueBounds(this, value, iMinValue, getMaximumValue()); [EOL]     if (value <= iSkip) { [EOL]         value--; [EOL]     } [EOL]     return super.set(millis, value); [EOL] } <line_num>: 86,92
-public int getMinimumValue() { [EOL]     return iMinValue; [EOL] } <line_num>: 94,96
-private Object readResolve() { [EOL]     return getType().getField(iChronology); [EOL] } <line_num>: 98,100

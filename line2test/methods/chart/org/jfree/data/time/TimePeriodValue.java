@@ -1,9 +1,0 @@
-public TimePeriodValue(TimePeriod period, Number value) { [EOL]     if (period == null) { [EOL]         throw new IllegalArgumentException("Null 'period' argument."); [EOL]     } [EOL]     this.period = period; [EOL]     this.value = value; [EOL] } <line_num>: 70,76
-public TimePeriodValue(TimePeriod period, double value) { [EOL]     this(period, new Double(value)); [EOL] } <line_num>: 87,89
-public TimePeriod getPeriod() { [EOL]     return this.period; [EOL] } <line_num>: 96,98
-public Number getValue() { [EOL]     return this.value; [EOL] } <line_num>: 107,109
-public void setValue(Number value) { [EOL]     this.value = value; [EOL] } <line_num>: 118,120
-public boolean equals(Object obj) { [EOL]     if (this == obj) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof TimePeriodValue)) { [EOL]         return false; [EOL]     } [EOL]     TimePeriodValue timePeriodValue = (TimePeriodValue) obj; [EOL]     if (this.period != null ? !this.period.equals(timePeriodValue.period) : timePeriodValue.period != null) { [EOL]         return false; [EOL]     } [EOL]     if (this.value != null ? !this.value.equals(timePeriodValue.value) : timePeriodValue.value != null) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 129,149
-public int hashCode() { [EOL]     int result; [EOL]     result = (this.period != null ? this.period.hashCode() : 0); [EOL]     result = 29 * result + (this.value != null ? this.value.hashCode() : 0); [EOL]     return result; [EOL] } <line_num>: 156,161
-public Object clone() { [EOL]     Object clone = null; [EOL]     try { [EOL]         clone = super.clone(); [EOL]     } catch (CloneNotSupportedException e) { [EOL]         e.printStackTrace(); [EOL]     } [EOL]     return clone; [EOL] } <line_num>: 171,180
-public String toString() { [EOL]     return "TimePeriodValue[" + getPeriod() + "," + getValue() + "]"; [EOL] } <line_num>: 188,190

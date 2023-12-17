@@ -1,7 +1,0 @@
-public void testMath303()
-public void testMath304()
-public double value(double x, double... parameters)
-public double[] gradient(double x, double... parameters)
-public void testMath372()
-public double value(double x, double... parameters)
-public double[] gradient(double x, double... doubles)

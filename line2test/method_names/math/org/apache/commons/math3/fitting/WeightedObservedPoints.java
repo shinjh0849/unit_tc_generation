@@ -1,5 +1,0 @@
-public void add(double x, double y)
-public void add(double weight, double x, double y)
-public void add(WeightedObservedPoint observed)
-public List<WeightedObservedPoint> toList()
-public void clear()

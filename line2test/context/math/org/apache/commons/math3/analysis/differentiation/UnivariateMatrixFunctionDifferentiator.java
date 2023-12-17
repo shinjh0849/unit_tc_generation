@@ -1,1 +1,0 @@
- UnivariateDifferentiableMatrixFunction differentiate(UnivariateMatrixFunction function)

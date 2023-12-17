@@ -1,5 +1,0 @@
-public boolean canSelectByPoint()
-public boolean canSelectByRegion()
-public void select(double x, double y, Rectangle2D dataArea, RenderingSource source)
-public void select(GeneralPath region, Rectangle2D dataArea, RenderingSource source)
-public void clearSelection()

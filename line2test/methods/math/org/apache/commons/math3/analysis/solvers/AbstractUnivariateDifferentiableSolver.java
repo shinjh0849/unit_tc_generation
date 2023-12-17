@@ -1,4 +1,0 @@
-protected AbstractUnivariateDifferentiableSolver(final double absoluteAccuracy) { [EOL]     super(absoluteAccuracy); [EOL] } <line_num>: 43,45
-protected AbstractUnivariateDifferentiableSolver(final double relativeAccuracy, final double absoluteAccuracy, final double functionValueAccuracy) { [EOL]     super(relativeAccuracy, absoluteAccuracy, functionValueAccuracy); [EOL] } <line_num>: 54,58
-protected DerivativeStructure computeObjectiveValueAndDerivative(double point) throws TooManyEvaluationsException { [EOL]     incrementEvaluationCount(); [EOL]     return function.value(new DerivativeStructure(1, 1, 0, point)); [EOL] } <line_num>: 68,72
-@Override [EOL] protected void setup(int maxEval, UnivariateDifferentiableFunction f, double min, double max, double startValue) { [EOL]     super.setup(maxEval, f, min, max, startValue); [EOL]     function = f; [EOL] } <line_num>: 77,82

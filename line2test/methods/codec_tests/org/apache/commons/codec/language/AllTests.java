@@ -1,1 +1,0 @@
-public static Test suite() { [EOL]     TestSuite suite = new TestSuite("Test for org.apache.commons.codec.language"); [EOL]     suite.addTest(MetaphoneTest.suite()); [EOL]     suite.addTest(SoundexTest.suite()); [EOL]     suite.addTest(RefinedSoundexTest.suite()); [EOL]     suite.addTest(DoubleMetaphoneTest.suite()); [EOL]     return suite; [EOL] } <line_num>: 31,40

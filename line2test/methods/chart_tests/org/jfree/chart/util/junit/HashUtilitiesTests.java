@@ -1,3 +1,0 @@
-public HashUtilitiesTests(String name) { [EOL]     super(name); [EOL] } <line_num>: 68,70
-public static Test suite() { [EOL]     return new TestSuite(HashUtilitiesTests.class); [EOL] } <line_num>: 59,61
-public void testHashCodeForDoubleArray() { [EOL]     double[] a1 = new double[] { 1.0 }; [EOL]     double[] a2 = new double[] { 1.0 }; [EOL]     int h1 = HashUtilities.hashCodeForDoubleArray(a1); [EOL]     int h2 = HashUtilities.hashCodeForDoubleArray(a2); [EOL]     assertTrue(h1 == h2); [EOL]     double[] a3 = new double[] { 0.5, 1.0 }; [EOL]     int h3 = HashUtilities.hashCodeForDoubleArray(a3); [EOL]     assertFalse(h1 == h3); [EOL] } <line_num>: 75,85

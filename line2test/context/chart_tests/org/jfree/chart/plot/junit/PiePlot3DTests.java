@@ -1,5 +1,0 @@
-public PiePlot3DTests(String name)
-public static Test suite()
-public void testEquals()
-public void testSerialization()
-public void testDrawWithNullDataset()

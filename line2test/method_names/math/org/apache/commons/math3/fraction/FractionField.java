@@ -1,6 +1,0 @@
-private FractionField()
-public static FractionField getInstance()
-public Fraction getOne()
-public Fraction getZero()
-public Class<? extends FieldElement<Fraction>> getRuntimeClass()
-private Object readResolve()

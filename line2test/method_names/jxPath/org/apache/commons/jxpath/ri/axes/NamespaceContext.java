@@ -1,5 +1,0 @@
-public NamespaceContext(EvalContext parentContext, NodeTest nodeTest)
-public NodePointer getCurrentNodePointer()
-public void reset()
-public boolean setPosition(int position)
-public boolean nextNode()

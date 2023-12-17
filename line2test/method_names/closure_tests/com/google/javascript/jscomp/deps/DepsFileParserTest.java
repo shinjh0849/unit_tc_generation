@@ -1,6 +1,0 @@
-public void setUp()
-public void testGoodParse()
-public void testTooFewArgs()
-public void testTooManyArgs()
-public void testShortcutMode()
-public void testNoShortcutMode()

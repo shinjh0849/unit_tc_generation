@@ -1,6 +1,0 @@
-private ArrayUtilities()
-public static float[][] clone(float[][] array)
-public static boolean equalReferencesInArrays(Object[] array1, Object[] array2)
-public static boolean equal(float[][] array1, float[][] array2)
-public static boolean hasDuplicateItems(Object[] array)
-public static int compareVersionArrays(Comparable[] a1, Comparable[] a2)

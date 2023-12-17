@@ -1,4 +1,0 @@
-public RombergIntegrator(final double relativeAccuracy, final double absoluteAccuracy, final int minimalIterationCount, final int maximalIterationCount) throws NotStrictlyPositiveException, NumberIsTooSmallException, NumberIsTooLargeException
-public RombergIntegrator(final int minimalIterationCount, final int maximalIterationCount) throws NotStrictlyPositiveException, NumberIsTooSmallException, NumberIsTooLargeException
-public RombergIntegrator()
-protected double doIntegrate() throws TooManyEvaluationsException, MaxCountExceededException

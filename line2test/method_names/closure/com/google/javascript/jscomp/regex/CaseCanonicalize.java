@@ -1,6 +1,0 @@
-private CaseCanonicalize()
- DeltaSet(int delta, CharRanges codeUnits)
-public static String caseCanonicalize(String s)
-public static char caseCanonicalize(char ch)
-public static CharRanges expandToAllMatched(CharRanges ranges)
-public static CharRanges reduceToMinimum(CharRanges ranges)

@@ -170,43 +170,7 @@ def make_d4j_repos(folder_name):
     for prj in ['Compress', 'Gson', 'JacksonCore', 'JacksonDatabind', 'Jsoup']:
         os.system(f'defects4j checkout -p {prj} -v 1f -w coverage/{folder_name}/{prj}/')
 
-def parse_coverage_report(dir):
-    for prj in ['compress', 'gson', 'jacksonCore', 'jacksonDatabind', 'jsoup']:
-        tree = ET.parse(f'coverage/lc_reports/{dir}/{prj}.xml')
-        root = tree.getroot()
-        
-        covered_lines = {}
-        for package in root.findall('./group/group/package'):
-            package_name = package.attrib['name']
-            if 'test' not in package_name:
-                for srcfile in package.findall('sourcefile'):
-                    file_name = srcfile.attrib['name']
-                    c_lines = []
-                    for line in srcfile.findall('line'):
-                        mi = line.attrib['mi']
-                        if mi != '0':
-                            c_lines.append(line.attrib['nr'])
-                    covered_lines[f'{package_name}/{file_name}'] = c_lines
-        return covered_lines
-                
-def get_unique_coverage():
-    total = 0
-    withDA = parse_coverage_report('codet5/withDA')
-    withoutDA = parse_coverage_report('codet5/withoutDA')
-    gpt4 = parse_coverage_report('gpt4')
-    a3test = parse_coverage_report('a3test')
-        
-    for file, cov_lines in withDA.items():
-        wo_da = withoutDA[file]
-        gpt = gpt4[file]
-        a3 = a3test[file]
-        
-        unique_lines = 0
-        for cov in cov_lines:
-            if cov not in a3test:
-                unique_lines +=1
-        total += unique_lines
-    print(total)
+
 
 # get_data_per_method()
 # cnt_input_toks()
@@ -214,4 +178,3 @@ def get_unique_coverage():
 # toks_stats()
 # split_gpt_tcs()
 # make_d4j_repos('a3test')
-get_unique_coverage()

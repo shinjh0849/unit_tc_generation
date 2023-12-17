@@ -1,1 +1,0 @@
-public TooManyEvaluationsException(Number max)

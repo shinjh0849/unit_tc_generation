@@ -1,6 +1,0 @@
-public SelfContext(EvalContext parentContext, NodeTest nodeTest) { [EOL]     super(parentContext); [EOL]     this.nodeTest = nodeTest; [EOL] } <line_num>: 36,39
-public Pointer getSingleNodePointer() { [EOL]     return parentContext.getSingleNodePointer(); [EOL] } <line_num>: 41,43
-public NodePointer getCurrentNodePointer() { [EOL]     if (position == 0) { [EOL]         if (!setPosition(1)) { [EOL]             return null; [EOL]         } [EOL]     } [EOL]     return nodePointer; [EOL] } <line_num>: 45,52
-public boolean nextNode() { [EOL]     return setPosition(getCurrentPosition() + 1); [EOL] } <line_num>: 54,56
-public void reset() { [EOL]     super.reset(); [EOL]     startedSet = false; [EOL] } <line_num>: 58,61
-public boolean setPosition(int position) { [EOL]     if (position != 1) { [EOL]         return false; [EOL]     } [EOL]     super.setPosition(position); [EOL]     if (!startedSet) { [EOL]         startedSet = true; [EOL]         nodePointer = (NodePointer) parentContext.getCurrentNodePointer(); [EOL]     } [EOL]     if (nodePointer == null) { [EOL]         return false; [EOL]     } [EOL]     return nodeTest == null || nodePointer.testNode(nodeTest); [EOL] } <line_num>: 63,78

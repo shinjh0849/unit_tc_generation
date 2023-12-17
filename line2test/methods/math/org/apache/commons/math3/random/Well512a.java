@@ -1,5 +1,0 @@
-public Well512a() { [EOL]     super(K, M1, M2, M3); [EOL] } <line_num>: 56,58
-public Well512a(int seed) { [EOL]     super(K, M1, M2, M3, seed); [EOL] } <line_num>: 63,65
-public Well512a(int[] seed) { [EOL]     super(K, M1, M2, M3, seed); [EOL] } <line_num>: 71,73
-public Well512a(long seed) { [EOL]     super(K, M1, M2, M3, seed); [EOL] } <line_num>: 78,80
-@Override [EOL] protected int next(final int bits) { [EOL]     final int indexRm1 = iRm1[index]; [EOL]     final int vi = v[index]; [EOL]     final int vi1 = v[i1[index]]; [EOL]     final int vi2 = v[i2[index]]; [EOL]     final int z0 = v[indexRm1]; [EOL]     final int z1 = (vi ^ (vi << 16)) ^ (vi1 ^ (vi1 << 15)); [EOL]     final int z2 = vi2 ^ (vi2 >>> 11); [EOL]     final int z3 = z1 ^ z2; [EOL]     final int z4 = (z0 ^ (z0 << 2)) ^ (z1 ^ (z1 << 18)) ^ (z2 << 28) ^ (z3 ^ ((z3 << 5) & 0xda442d24)); [EOL]     v[index] = z3; [EOL]     v[indexRm1] = z4; [EOL]     index = indexRm1; [EOL]     return z4 >>> (32 - bits); [EOL] } <line_num>: 83,105

@@ -1,8 +1,0 @@
-public FastScatterPlotTests(String name)
-public static Test suite()
-public void testEquals()
-public void testEquals2()
-public void testCloning()
-public void testSerialization()
-public void testDrawWithNullInfo()
-private float[][] createData()

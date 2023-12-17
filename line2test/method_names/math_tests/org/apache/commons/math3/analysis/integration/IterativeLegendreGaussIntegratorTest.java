@@ -1,7 +1,0 @@
-public void testSinFunction()
-public void testQuinticFunction()
-public void testExactIntegration()
-public void testNormalDistributionWithLargeSigma()
-public double value(double x)
-public void testIssue464()
-private double exactIntegration(PolynomialFunction p, double a, double b)

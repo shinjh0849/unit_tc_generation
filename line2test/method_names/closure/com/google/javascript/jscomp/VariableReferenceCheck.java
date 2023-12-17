@@ -1,5 +1,0 @@
-public VariableReferenceCheck(AbstractCompiler compiler, CheckLevel checkLevel)
-public void process(Node externs, Node root)
-public void hotSwapScript(Node scriptRoot, Node originalRoot)
-public void afterExitScope(NodeTraversal t, ReferenceMap referenceMap)
-private void checkVar(NodeTraversal t, Var v, List<Reference> references)

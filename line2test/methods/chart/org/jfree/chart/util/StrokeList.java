@@ -1,8 +1,0 @@
-public StrokeList() { [EOL]     super(); [EOL] } <line_num>: 57,59
-public Stroke getStroke(int index) { [EOL]     return (Stroke) get(index); [EOL] } <line_num>: 68,70
-public void setStroke(int index, Stroke stroke) { [EOL]     set(index, stroke); [EOL] } <line_num>: 79,81
-public Object clone() throws CloneNotSupportedException { [EOL]     return super.clone(); [EOL] } <line_num>: 90,92
-public boolean equals(Object obj) { [EOL]     if (obj == null) { [EOL]         return false; [EOL]     } [EOL]     if (obj == this) { [EOL]         return true; [EOL]     } [EOL]     if (obj instanceof StrokeList) { [EOL]         return super.equals(obj); [EOL]     } [EOL]     return false; [EOL] } <line_num>: 101,117
-public int hashCode() { [EOL]     return super.hashCode(); [EOL] } <line_num>: 124,126
-private void writeObject(ObjectOutputStream stream) throws IOException { [EOL]     stream.defaultWriteObject(); [EOL]     int count = size(); [EOL]     stream.writeInt(count); [EOL]     for (int i = 0; i < count; i++) { [EOL]         Stroke stroke = getStroke(i); [EOL]         if (stroke != null) { [EOL]             stream.writeInt(i); [EOL]             SerialUtilities.writeStroke(stroke, stream); [EOL]         } else { [EOL]             stream.writeInt(-1); [EOL]         } [EOL]     } [EOL] } <line_num>: 135,151
-private void readObject(ObjectInputStream stream) throws IOException, ClassNotFoundException { [EOL]     stream.defaultReadObject(); [EOL]     int count = stream.readInt(); [EOL]     for (int i = 0; i < count; i++) { [EOL]         int index = stream.readInt(); [EOL]         if (index != -1) { [EOL]             setStroke(index, SerialUtilities.readStroke(stream)); [EOL]         } [EOL]     } [EOL] } <line_num>: 161,173

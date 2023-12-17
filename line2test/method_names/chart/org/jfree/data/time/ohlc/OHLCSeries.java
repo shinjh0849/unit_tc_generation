@@ -1,5 +1,0 @@
-public OHLCSeries(Comparable key)
-public RegularTimePeriod getPeriod(int index)
-public ComparableObjectItem getDataItem(int index)
-public void add(RegularTimePeriod period, double open, double high, double low, double close)
-public ComparableObjectItem remove(int index)

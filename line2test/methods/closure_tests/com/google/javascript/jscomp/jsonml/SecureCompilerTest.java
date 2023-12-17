@@ -1,5 +1,0 @@
-private void testSuccess(JsonML source) throws Exception { [EOL]     SecureCompiler compiler = new SecureCompiler(); [EOL]     compiler.compile(source); [EOL]     Report report = compiler.getReport(); [EOL]     assertTrue(report.isSuccessful()); [EOL]     assertEquals(0, report.getErrors().length); [EOL]     assertEquals(0, report.getWarnings().length); [EOL] } <line_num>: 59,66
-private void testError(JsonML source) throws Exception { [EOL]     SecureCompiler compiler = new SecureCompiler(); [EOL]     compiler.compile(source); [EOL]     Report report = compiler.getReport(); [EOL]     assertFalse(report.isSuccessful()); [EOL] } <line_num>: 68,73
-private void testString(String jsonml) throws Exception { [EOL]     JsonML source = JsonMLUtil.parseString(jsonml); [EOL]     testSuccess(source); [EOL] } <line_num>: 75,78
-private void testInvalidString(String jsonml) throws Exception { [EOL]     JsonML source = JsonMLUtil.parseString(jsonml); [EOL]     testError(source); [EOL] } <line_num>: 80,83
-public void testCompilerInterface() throws Exception { [EOL]     testString(SIMPLE_SOURCE); [EOL]     testInvalidString(SYNTAX_ERROR); [EOL] } <line_num>: 85,88

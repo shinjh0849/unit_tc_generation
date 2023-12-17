@@ -1,8 +1,0 @@
-public LegendItemBlockContainer(Arrangement arrangement, Dataset dataset, Comparable seriesKey) { [EOL]     super(arrangement); [EOL]     this.dataset = dataset; [EOL]     this.seriesKey = seriesKey; [EOL] } <line_num>: 96,101
-public Dataset getDataset() { [EOL]     return this.dataset; [EOL] } <line_num>: 110,112
-public Comparable getSeriesKey() { [EOL]     return this.seriesKey; [EOL] } <line_num>: 121,123
-public String getToolTipText() { [EOL]     return this.toolTipText; [EOL] } <line_num>: 132,134
-public void setToolTipText(String text) { [EOL]     this.toolTipText = text; [EOL] } <line_num>: 143,145
-public String getURLText() { [EOL]     return this.urlText; [EOL] } <line_num>: 154,156
-public void setURLText(String text) { [EOL]     this.urlText = text; [EOL] } <line_num>: 165,167
-public Object draw(Graphics2D g2, Rectangle2D area, Object params) { [EOL]     super.draw(g2, area, null); [EOL]     EntityBlockParams ebp = null; [EOL]     BlockResult r = new BlockResult(); [EOL]     if (params instanceof EntityBlockParams) { [EOL]         ebp = (EntityBlockParams) params; [EOL]         if (ebp.getGenerateEntities()) { [EOL]             EntityCollection ec = new StandardEntityCollection(); [EOL]             LegendItemEntity entity = new LegendItemEntity((Shape) area.clone()); [EOL]             entity.setSeriesKey(this.seriesKey); [EOL]             entity.setDataset(this.dataset); [EOL]             entity.setToolTipText(getToolTipText()); [EOL]             entity.setURLText(getURLText()); [EOL]             ec.add(entity); [EOL]             r.setEntityCollection(ec); [EOL]         } [EOL]     } [EOL]     return r; [EOL] } <line_num>: 179,199

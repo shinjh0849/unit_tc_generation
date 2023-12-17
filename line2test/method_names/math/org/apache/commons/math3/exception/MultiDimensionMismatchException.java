@@ -1,6 +1,0 @@
-public MultiDimensionMismatchException(Integer[] wrong, Integer[] expected)
-public MultiDimensionMismatchException(Localizable specific, Integer[] wrong, Integer[] expected)
-public Integer[] getWrongDimensions()
-public Integer[] getExpectedDimensions()
-public int getWrongDimension(int index)
-public int getExpectedDimension(int index)

@@ -1,7 +1,0 @@
- CheckMissingGetCssName(AbstractCompiler compiler, CheckLevel level, String blacklistRegex)
-public void process(Node externs, Node root)
-public void visit(NodeTraversal t, Node n, Node parent)
-private boolean insideGetCssNameCall(Node n, Node parent)
-private boolean insideGetUniqueIdCall(Node n, Node parent)
-private boolean insideAssignmentToIdConstant(Node n, Node parent)
-private boolean isIdName(String name)

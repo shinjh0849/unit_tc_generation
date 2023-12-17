@@ -1,6 +1,0 @@
- abstract Collection<UndiGraphNode<N, E>> getUndirectedGraphNodes()
- abstract UndiGraphNode<N, E> createUndirectedGraphNode(N nodeValue)
-public abstract UndiGraphNode<N, E> getUndirectedGraphNode(N nodeValue)
- abstract List<UndiGraphEdge<N, E>> getUndirectedGraphEdges(N n1, N n2)
-public List<UndiGraphEdge<N, E>> getNeighborEdges()
-public Iterator<UndiGraphEdge<N, E>> getNeighborEdgesIterator()

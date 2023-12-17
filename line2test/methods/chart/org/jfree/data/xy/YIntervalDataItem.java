@@ -1,5 +1,0 @@
-public YIntervalDataItem(double x, double y, double yLow, double yHigh) { [EOL]     super(new Double(x), new YInterval(y, yLow, yHigh)); [EOL] } <line_num>: 60,62
-public Double getX() { [EOL]     return (Double) getComparable(); [EOL] } <line_num>: 69,71
-public double getYValue() { [EOL]     YInterval interval = (YInterval) getObject(); [EOL]     if (interval != null) { [EOL]         return interval.getY(); [EOL]     } else { [EOL]         return Double.NaN; [EOL]     } [EOL] } <line_num>: 78,86
-public double getYLowValue() { [EOL]     YInterval interval = (YInterval) getObject(); [EOL]     if (interval != null) { [EOL]         return interval.getYLow(); [EOL]     } else { [EOL]         return Double.NaN; [EOL]     } [EOL] } <line_num>: 93,101
-public double getYHighValue() { [EOL]     YInterval interval = (YInterval) getObject(); [EOL]     if (interval != null) { [EOL]         return interval.getYHigh(); [EOL]     } else { [EOL]         return Double.NaN; [EOL]     } [EOL] } <line_num>: 108,116

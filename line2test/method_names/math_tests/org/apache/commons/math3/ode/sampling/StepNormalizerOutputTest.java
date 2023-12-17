@@ -1,7 +1,0 @@
-protected double getStart()
-protected double getEnd()
-protected double[] getExpInc()
-protected double[] getExpIncRev()
-protected double[] getExpMul()
-protected double[] getExpMulRev()
-protected int[][] getO()

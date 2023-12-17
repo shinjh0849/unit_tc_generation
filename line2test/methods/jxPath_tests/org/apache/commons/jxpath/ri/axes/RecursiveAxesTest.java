@@ -1,4 +1,0 @@
-public RecursiveAxesTest(String name) { [EOL]     super(name); [EOL] } <line_num>: 31,33
-public static void main(String[] args) { [EOL]     junit.textui.TestRunner.run(RecursiveAxesTest.class); [EOL] } <line_num>: 35,37
-protected void setUp() throws Exception { [EOL]     bean = new RecursiveBean("zero"); [EOL]     RecursiveBean bean1 = new RecursiveBean("one"); [EOL]     RecursiveBean bean2 = new RecursiveBean("two"); [EOL]     RecursiveBean bean3 = new RecursiveBean("three"); [EOL]     bean.setFirst(bean1); [EOL]     bean1.setFirst(bean2); [EOL]     bean2.setFirst(bean1); [EOL]     bean2.setSecond(bean3); [EOL]     context = JXPathContext.newContext(null, bean); [EOL] } <line_num>: 42,53
-public void testInfiniteDescent() { [EOL]     assertXPathPointer(context, "//.[name = 'three']", "/first/first/second"); [EOL] } <line_num>: 55,61

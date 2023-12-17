@@ -1,4 +1,0 @@
-static boolean isForIn(Node n) { [EOL]     return n.getType() == Token.FOR && n.getChildCount() == 3; [EOL] } <line_num>: 33,36
-static boolean isStatement(Node n) { [EOL]     Node parent = n.getParent(); [EOL]     Preconditions.checkState(parent != null); [EOL]     switch(parent.getType()) { [EOL]         case Token.SCRIPT: [EOL]         case Token.BLOCK: [EOL]         case Token.LABEL: [EOL]             return true; [EOL]         default: [EOL]             return false; [EOL]     } [EOL] } <line_num>: 41,55
-static boolean isFunctionDeclaration(Node n) { [EOL]     return n.getType() == Token.FUNCTION && isStatement(n); [EOL] } <line_num>: 62,64
-static boolean isHoistedFunctionDeclaration(Node n) { [EOL]     return isFunctionDeclaration(n) && (n.getParent().getType() == Token.SCRIPT || n.getParent().getParent().getType() == Token.FUNCTION); [EOL] } <line_num>: 71,75

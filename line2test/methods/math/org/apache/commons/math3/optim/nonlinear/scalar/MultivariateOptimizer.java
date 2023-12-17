@@ -1,5 +1,0 @@
-protected MultivariateOptimizer(ConvergenceChecker<PointValuePair> checker) { [EOL]     super(checker); [EOL] } <line_num>: 42,44
-@Override [EOL] public PointValuePair optimize(OptimizationData... optData) throws TooManyEvaluationsException { [EOL]     return super.optimize(optData); [EOL] } <line_num>: 60,65
-@Override [EOL] protected void parseOptimizationData(OptimizationData... optData) { [EOL]     super.parseOptimizationData(optData); [EOL]     for (OptimizationData data : optData) { [EOL]         if (data instanceof GoalType) { [EOL]             goal = (GoalType) data; [EOL]             continue; [EOL]         } [EOL]         if (data instanceof ObjectiveFunction) { [EOL]             function = ((ObjectiveFunction) data).getObjectiveFunction(); [EOL]             continue; [EOL]         } [EOL]     } [EOL] } <line_num>: 78,95
-public GoalType getGoalType() { [EOL]     return goal; [EOL] } <line_num>: 100,102
-protected double computeObjectiveValue(double[] params) { [EOL]     super.incrementEvaluationCount(); [EOL]     return function.value(params); [EOL] } <line_num>: 114,117

@@ -1,8 +1,0 @@
- void report(CheckLevel level, JSError error)
- void generateReport()
- int getErrorCount()
- int getWarningCount()
- JSError[] getErrors()
- JSError[] getWarnings()
- void setTypedPercent(double typedPercent)
- double getTypedPercent()

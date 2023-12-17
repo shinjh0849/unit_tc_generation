@@ -1,2 +1,0 @@
-public JXPathContextFactoryReferenceImpl()
-public JXPathContext newContext(JXPathContext parentContext, Object contextBean) throws JXPathContextFactoryConfigurationError

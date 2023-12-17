@@ -1,7 +1,0 @@
-public void testSinZero()
-public void testQuinticZero()
-public void testRootEndpoints()
-public void testBadEndpoints()
-public void testInitialGuess()
-public double value(double x)
-public void testMath832()

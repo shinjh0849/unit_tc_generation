@@ -1,7 +1,0 @@
-public FormattableUtils()
-public static String toString(final Formattable formattable)
-public static Formatter append(final CharSequence seq, final Formatter formatter, final int flags, final int width, final int precision)
-public static Formatter append(final CharSequence seq, final Formatter formatter, final int flags, final int width, final int precision, final char padChar)
-public static Formatter append(final CharSequence seq, final Formatter formatter, final int flags, final int width, final int precision, final CharSequence ellipsis)
-public static Formatter append(final CharSequence seq, final Formatter formatter, final int flags, final int width, final int precision, final char padChar, final CharSequence ellipsis)
-String SIMPLEST_FORMAT=Optional["%s"]

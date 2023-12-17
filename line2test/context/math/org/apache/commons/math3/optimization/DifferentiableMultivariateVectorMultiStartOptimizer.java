@@ -1,1 +1,0 @@
-public DifferentiableMultivariateVectorMultiStartOptimizer(final DifferentiableMultivariateVectorOptimizer optimizer, final int starts, final RandomVectorGenerator generator)

@@ -1,8 +1,0 @@
- MockUnknownTimeZone()
-public String getID()
-public String getDisplayName(boolean daylight, int style, Locale locale)
-public int getOffset(int era, int year, int month, int day, int dayOfWeek, int milliseconds)
-public void setRawOffset(int offsetMillis)
-public int getRawOffset()
-public boolean useDaylightTime()
-public boolean inDaylightTime(Date date)

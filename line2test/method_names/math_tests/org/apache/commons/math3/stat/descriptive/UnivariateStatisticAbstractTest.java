@@ -1,8 +1,0 @@
-public abstract UnivariateStatistic getUnivariateStatistic()
-public abstract double expectedValue()
-public double getTolerance()
-public void testEvaluation()
-public void testEvaluateArraySegment()
-public void testEvaluateArraySegmentWeighted()
-public void testCopy()
-public void testWeightedConsistency()

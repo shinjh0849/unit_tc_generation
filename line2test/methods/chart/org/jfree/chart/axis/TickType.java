@@ -1,4 +1,0 @@
-private TickType(String name) { [EOL]     this.name = name; [EOL] } <line_num>: 67,69
-public String toString() { [EOL]     return this.name; [EOL] } <line_num>: 76,78
-public boolean equals(Object obj) { [EOL]     if (this == obj) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof TickType)) { [EOL]         return false; [EOL]     } [EOL]     TickType that = (TickType) obj; [EOL]     if (!this.name.equals(that.name)) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 88,101
-private Object readResolve() throws ObjectStreamException { [EOL]     Object result = null; [EOL]     if (this.equals(TickType.MAJOR)) { [EOL]         result = TickType.MAJOR; [EOL]     } else if (this.equals(TickType.MINOR)) { [EOL]         result = TickType.MINOR; [EOL]     } [EOL]     return result; [EOL] } <line_num>: 110,119

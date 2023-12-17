@@ -1,5 +1,0 @@
- CrossModuleMethodMotion(AbstractCompiler compiler, IdGenerator idGenerator, boolean canModifyExterns)
-public void process(Node externRoot, Node root)
-private void moveMethods(Collection<NameInfo> allNameInfo)
- boolean hasGeneratedAnyIds()
- int newId()

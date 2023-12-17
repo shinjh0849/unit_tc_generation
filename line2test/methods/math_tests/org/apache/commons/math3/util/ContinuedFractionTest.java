@@ -1,3 +1,0 @@
-@Override [EOL] public double getA(int n, double x) { [EOL]     return 1.0; [EOL] } <line_num>: 32,35
-@Override [EOL] public double getB(int n, double x) { [EOL]     return 1.0; [EOL] } <line_num>: 37,40
-@Test [EOL] public void testGoldenRatio() throws Exception { [EOL]     ContinuedFraction cf = new ContinuedFraction() { [EOL]  [EOL]         @Override [EOL]         public double getA(int n, double x) { [EOL]             return 1.0; [EOL]         } [EOL]  [EOL]         @Override [EOL]         public double getB(int n, double x) { [EOL]             return 1.0; [EOL]         } [EOL]     }; [EOL]     double gr = cf.evaluate(0.0, 10e-9); [EOL]     Assert.assertEquals(1.61803399, gr, 10e-9); [EOL] } <line_num>: 28,45

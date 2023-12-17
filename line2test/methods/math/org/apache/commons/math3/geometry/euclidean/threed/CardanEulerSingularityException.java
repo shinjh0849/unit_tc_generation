@@ -1,1 +1,0 @@
-public CardanEulerSingularityException(boolean isCardan) { [EOL]     super(isCardan ? LocalizedFormats.CARDAN_ANGLES_SINGULARITY : LocalizedFormats.EULER_ANGLES_SINGULARITY); [EOL] } <line_num>: 41,43

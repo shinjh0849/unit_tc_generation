@@ -1,4 +1,0 @@
-protected AbstractDifferentiableOptimizer(ConvergenceChecker<PointValuePair> checker) { [EOL]     super(checker); [EOL] } <line_num>: 50,52
-protected double[] computeObjectiveGradient(final double[] evaluationPoint) { [EOL]     return gradient.value(evaluationPoint); [EOL] } <line_num>: 60,62
-@Override [EOL] @Deprecated [EOL] protected PointValuePair optimizeInternal(final int maxEval, final MultivariateDifferentiableFunction f, final GoalType goalType, final double[] startPoint) { [EOL]     return optimizeInternal(maxEval, f, goalType, new InitialGuess(startPoint)); [EOL] } <line_num>: 71,77
-@Override [EOL] protected PointValuePair optimizeInternal(final int maxEval, final MultivariateDifferentiableFunction f, final GoalType goalType, final OptimizationData... optData) { [EOL]     gradient = new GradientFunction(f); [EOL]     return super.optimizeInternal(maxEval, f, goalType, optData); [EOL] } <line_num>: 80,90

@@ -1,2 +1,0 @@
-public G2TextMeasurer(Graphics2D g2) { [EOL]     this.g2 = g2; [EOL] } <line_num>: 61,63
-public float getStringWidth(String text, int start, int end) { [EOL]     FontMetrics fm = this.g2.getFontMetrics(); [EOL]     Rectangle2D bounds = TextUtilities.getTextBounds(text.substring(start, end), this.g2, fm); [EOL]     float result = (float) bounds.getWidth(); [EOL]     return result; [EOL] } <line_num>: 74,80

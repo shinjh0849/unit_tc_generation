@@ -1,5 +1,0 @@
-private HorizontalAlignment(String name) { [EOL]     this.name = name; [EOL] } <line_num>: 76,78
-public String toString() { [EOL]     return this.name; [EOL] } <line_num>: 85,87
-public boolean equals(Object obj) { [EOL]     if (this == obj) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof HorizontalAlignment)) { [EOL]         return false; [EOL]     } [EOL]     HorizontalAlignment that = (HorizontalAlignment) obj; [EOL]     if (!this.name.equals(that.name)) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 97,109
-public int hashCode() { [EOL]     return this.name.hashCode(); [EOL] } <line_num>: 116,118
-private Object readResolve() throws ObjectStreamException { [EOL]     HorizontalAlignment result = null; [EOL]     if (this.equals(HorizontalAlignment.LEFT)) { [EOL]         result = HorizontalAlignment.LEFT; [EOL]     } else if (this.equals(HorizontalAlignment.RIGHT)) { [EOL]         result = HorizontalAlignment.RIGHT; [EOL]     } else if (this.equals(HorizontalAlignment.CENTER)) { [EOL]         result = HorizontalAlignment.CENTER; [EOL]     } [EOL]     return result; [EOL] } <line_num>: 127,139

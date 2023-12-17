@@ -1,4 +1,0 @@
-public BufferedImageRenderingSource(BufferedImage image) { [EOL]     if (image == null) { [EOL]         throw new IllegalArgumentException("Null 'image' argument."); [EOL]     } [EOL]     this.image = image; [EOL] } <line_num>: 71,76
-public Graphics2D createGraphics2D() { [EOL]     return this.image.createGraphics(); [EOL] } <line_num>: 84,86
-public DatasetSelectionState getSelectionState(Dataset dataset) { [EOL]     Iterator iterator = this.selectionStates.iterator(); [EOL]     while (iterator.hasNext()) { [EOL]         DatasetAndSelection das = (DatasetAndSelection) iterator.next(); [EOL]         if (das.getDataset() == dataset) { [EOL]             return das.getSelection(); [EOL]         } [EOL]     } [EOL]     return null; [EOL] } <line_num>: 96,106
-public void putSelectionState(Dataset dataset, DatasetSelectionState state) { [EOL]     this.selectionStates.add(new DatasetAndSelection(dataset, state)); [EOL] } <line_num>: 117,120

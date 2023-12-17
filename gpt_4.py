@@ -19,9 +19,8 @@ def get_completion(prompt, engine='gpt-4-1106-preview'):
 def gen_comments(num):
     # max_token = 4000
     
-    for prj in ['chart', 'cli', 'closure', 'codec', 'compress', 'csv', 'gson',
-                'jacksonCore', 'jacksonDatabind', 'jsoup', 'jxPath', 'lang3', 'time']:
-        for split in ['0', '1', '2', '3', '4']:
+    for prj in ['compress', 'gson', 'jacksonCore', 'jacksonDatabind', 'jsoup']:
+        for split in ['0']:
             try:
                 with open(f'dataset/per_method/{prj}_test_{split}.tests') as f:
                     tests = [x.strip() for x in f.readlines()]

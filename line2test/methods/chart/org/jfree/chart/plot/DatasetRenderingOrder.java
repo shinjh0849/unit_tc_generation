@@ -1,5 +1,0 @@
-private DatasetRenderingOrder(String name) { [EOL]     this.name = name; [EOL] } <line_num>: 80,82
-public String toString() { [EOL]     return this.name; [EOL] } <line_num>: 89,91
-public boolean equals(Object obj) { [EOL]     if (this == obj) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof DatasetRenderingOrder)) { [EOL]         return false; [EOL]     } [EOL]     DatasetRenderingOrder order = (DatasetRenderingOrder) obj; [EOL]     if (!this.name.equals(order.toString())) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 101,113
-public int hashCode() { [EOL]     return this.name.hashCode(); [EOL] } <line_num>: 120,122
-private Object readResolve() throws ObjectStreamException { [EOL]     if (this.equals(DatasetRenderingOrder.FORWARD)) { [EOL]         return DatasetRenderingOrder.FORWARD; [EOL]     } else if (this.equals(DatasetRenderingOrder.REVERSE)) { [EOL]         return DatasetRenderingOrder.REVERSE; [EOL]     } [EOL]     return null; [EOL] } <line_num>: 131,139

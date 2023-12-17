@@ -1,6 +1,0 @@
-public static double[] getOLSRegression(double[][] data)
-public static double[] getOLSRegression(XYDataset data, int series)
-public static double[] getPowerRegression(double[][] data)
-public static double[] getPowerRegression(XYDataset data, int series)
-public static double[] getPolynomialRegression(XYDataset dataset, int series, int order)
-private static double[][] calculateSubMatrix(double[][] matrix)

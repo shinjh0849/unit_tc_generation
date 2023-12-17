@@ -1,6 +1,0 @@
-String PIEDATASET_TAG=Optional["PieDataset"]
-String CATEGORYDATASET_TAG=Optional["CategoryDataset"]
-String SERIES_TAG=Optional["Series"]
-String ITEM_TAG=Optional["Item"]
-String KEY_TAG=Optional["Key"]
-String VALUE_TAG=Optional["Value"]

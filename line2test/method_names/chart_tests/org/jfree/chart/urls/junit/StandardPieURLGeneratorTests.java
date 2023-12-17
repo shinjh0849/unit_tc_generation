@@ -1,6 +1,0 @@
-public StandardPieURLGeneratorTests(String name)
-public static Test suite()
-public void testEquals()
-public void testPublicCloneable()
-public void testSerialization()
-public void testURL()

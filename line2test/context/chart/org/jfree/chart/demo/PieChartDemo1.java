@@ -1,5 +1,0 @@
-public PieChartDemo1(String title)
-private static PieDataset createDataset()
-private static JFreeChart createChart(PieDataset dataset)
-public static JPanel createDemoPanel()
-public static void main(String[] args)

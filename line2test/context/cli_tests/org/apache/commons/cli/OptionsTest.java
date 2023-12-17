@@ -1,5 +1,0 @@
-public OptionsTest(String name)
-public static Test suite()
-public void setUp()
-public void tearDown()
-public void testHelpOptions()

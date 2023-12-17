@@ -1,4 +1,0 @@
-public CaverphoneTest(String name) { [EOL]     super(name); [EOL] } <line_num>: 36,38
-public static Test suite() { [EOL]     return new TestSuite(CaverphoneTest.class); [EOL] } <line_num>: 32,34
-protected StringEncoder makeEncoder() { [EOL]     return new Caverphone(); [EOL] } <line_num>: 40,42
-public void testSpecificationExamples() { [EOL]     Caverphone caverphone = new Caverphone(); [EOL]     String[][] data = { { "Stevenson", "STFNSN1111" }, { "Peter", "PTA1111111" }, { "ready", "RTA1111111" }, { "social", "SSA1111111" }, { "able", "APA1111111" }, { "Tedder", "TTA1111111" }, { "Karleen", "KLN1111111" }, { "Dyun", "TN11111111" } }; [EOL]     for (int i = 0; i < data.length; i++) { [EOL]         assertEquals(data[i][1], caverphone.caverphone(data[i][0])); [EOL]     } [EOL] } <line_num>: 44,60

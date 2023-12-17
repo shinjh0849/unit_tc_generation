@@ -1,7 +1,0 @@
-public XYIntervalDataItem(double x, double xLow, double xHigh, double y, double yLow, double yHigh) { [EOL]     super(new Double(x), new XYInterval(xLow, xHigh, y, yLow, yHigh)); [EOL] } <line_num>: 62,65
-public Double getX() { [EOL]     return (Double) getComparable(); [EOL] } <line_num>: 72,74
-public double getYValue() { [EOL]     XYInterval interval = (XYInterval) getObject(); [EOL]     if (interval != null) { [EOL]         return interval.getY(); [EOL]     } else { [EOL]         return Double.NaN; [EOL]     } [EOL] } <line_num>: 81,89
-public double getXLowValue() { [EOL]     XYInterval interval = (XYInterval) getObject(); [EOL]     if (interval != null) { [EOL]         return interval.getXLow(); [EOL]     } else { [EOL]         return Double.NaN; [EOL]     } [EOL] } <line_num>: 96,104
-public double getXHighValue() { [EOL]     XYInterval interval = (XYInterval) getObject(); [EOL]     if (interval != null) { [EOL]         return interval.getXHigh(); [EOL]     } else { [EOL]         return Double.NaN; [EOL]     } [EOL] } <line_num>: 111,119
-public double getYLowValue() { [EOL]     XYInterval interval = (XYInterval) getObject(); [EOL]     if (interval != null) { [EOL]         return interval.getYLow(); [EOL]     } else { [EOL]         return Double.NaN; [EOL]     } [EOL] } <line_num>: 126,134
-public double getYHighValue() { [EOL]     XYInterval interval = (XYInterval) getObject(); [EOL]     if (interval != null) { [EOL]         return interval.getYHigh(); [EOL]     } else { [EOL]         return Double.NaN; [EOL]     } [EOL] } <line_num>: 141,149

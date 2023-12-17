@@ -1,5 +1,0 @@
-private DomainOrder(String name) { [EOL]     this.name = name; [EOL] } <line_num>: 73,75
-public String toString() { [EOL]     return this.name; [EOL] } <line_num>: 82,84
-public boolean equals(Object obj) { [EOL]     if (this == obj) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof DomainOrder)) { [EOL]         return false; [EOL]     } [EOL]     DomainOrder that = (DomainOrder) obj; [EOL]     if (!this.name.equals(that.toString())) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 94,107
-public int hashCode() { [EOL]     return this.name.hashCode(); [EOL] } <line_num>: 114,116
-private Object readResolve() throws ObjectStreamException { [EOL]     if (this.equals(DomainOrder.ASCENDING)) { [EOL]         return DomainOrder.ASCENDING; [EOL]     } else if (this.equals(DomainOrder.DESCENDING)) { [EOL]         return DomainOrder.DESCENDING; [EOL]     } else if (this.equals(DomainOrder.NONE)) { [EOL]         return DomainOrder.NONE; [EOL]     } [EOL]     return null; [EOL] } <line_num>: 125,136

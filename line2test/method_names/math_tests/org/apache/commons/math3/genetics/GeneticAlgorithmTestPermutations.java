@@ -1,5 +1,0 @@
-public MinPermutations(List<Double> representation)
-public void test()
-private static ElitisticListPopulation randomPopulation()
-public double fitness()
-public AbstractListChromosome<Double> newFixedLengthChromosome(List<Double> chromosomeRepresentation)

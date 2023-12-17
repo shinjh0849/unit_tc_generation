@@ -1,1 +1,0 @@
- Dfp value(Dfp x)

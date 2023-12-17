@@ -1,8 +1,0 @@
-public double value(double x)
-public void testCubicMin()
-public double value(double x)
-public void testCubicMax()
-public double value(double x)
-public void testMinimumIsOnIntervalBoundary()
-public double value(double x)
-public void testIntervalBoundsOrdering()

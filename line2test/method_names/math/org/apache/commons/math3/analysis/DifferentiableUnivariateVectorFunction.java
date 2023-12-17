@@ -1,1 +1,0 @@
- UnivariateVectorFunction derivative()

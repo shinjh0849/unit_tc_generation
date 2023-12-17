@@ -1,5 +1,0 @@
-public RealVector create(final double[] data)
-public void testConstructors()
-public void testGetDataRef()
-public void testPredicates()
-public void testZeroVectors()

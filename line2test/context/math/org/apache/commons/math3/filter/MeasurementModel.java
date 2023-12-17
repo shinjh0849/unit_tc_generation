@@ -1,2 +1,0 @@
- RealMatrix getMeasurementMatrix()
- RealMatrix getMeasurementNoise()

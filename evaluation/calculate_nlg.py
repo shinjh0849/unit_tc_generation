@@ -112,14 +112,14 @@ def calc_meteor(preds, targets):
 
 def calc_metrics(baseline, prj):
     if baseline=='gpt4':
-        with open(f'../../dataset/{baseline}/{prj}_test_0.tests') as f:
+        with open(f'../dataset/{baseline}/{prj}_test_0.tests') as f:
             targets = [x.strip() for x in f.readlines()]
-        with open(f'../../dataset/{baseline}/{prj}_generated_0.tests') as f:
+        with open(f'../dataset/{baseline}/{prj}_generated_0.tests') as f:
             preds = [x.strip() for x in f.readlines()]
     else:
-        with open(f'../../dataset/for_baselines/{prj}_test_0.tests') as f:
+        with open(f'../dataset/defects4j/{prj}_test_0.tests') as f:
             targets = [x.strip() for x in f.readlines()]
-        with open(f'../../dataset/{baseline}/{prj}.tests') as f:
+        with open(f'../dataset/{baseline}/{prj}.tests') as f:
             preds = [x.strip() for x in f.readlines()]
     
     assert len(targets) == len(preds)

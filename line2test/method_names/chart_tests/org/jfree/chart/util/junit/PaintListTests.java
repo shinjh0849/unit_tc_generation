@@ -1,8 +1,0 @@
-public PaintListTests(String name)
-public static Test suite()
-public void testEquals()
-public void testEquals2()
-public void testEquals3()
-public void testCloning()
-public void testSerialization()
-public void testHashCode()

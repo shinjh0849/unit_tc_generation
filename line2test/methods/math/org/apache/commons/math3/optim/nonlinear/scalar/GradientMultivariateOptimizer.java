@@ -1,4 +1,0 @@
-protected GradientMultivariateOptimizer(ConvergenceChecker<PointValuePair> checker) { [EOL]     super(checker); [EOL] } <line_num>: 43,45
-protected double[] computeObjectiveGradient(final double[] params) { [EOL]     return gradient.value(params); [EOL] } <line_num>: 53,55
-@Override [EOL] public PointValuePair optimize(OptimizationData... optData) throws TooManyEvaluationsException { [EOL]     return super.optimize(optData); [EOL] } <line_num>: 70,75
-@Override [EOL] protected void parseOptimizationData(OptimizationData... optData) { [EOL]     super.parseOptimizationData(optData); [EOL]     for (OptimizationData data : optData) { [EOL]         if (data instanceof ObjectiveFunctionGradient) { [EOL]             gradient = ((ObjectiveFunctionGradient) data).getObjectiveFunctionGradient(); [EOL]             break; [EOL]         } [EOL]     } [EOL] } <line_num>: 87,102

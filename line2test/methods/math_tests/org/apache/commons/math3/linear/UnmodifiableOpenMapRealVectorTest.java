@@ -1,1 +1,0 @@
-@Override [EOL] public RealVector createVector() { [EOL]     OpenMapRealVector v = new OpenMapRealVector(DIM, EPS); [EOL]     for (int i = 0; i < DIM; i++) { [EOL]         if (RANDOM.nextDouble() > PROBABILITY_OF_ZERO) { [EOL]             v.setEntry(i, RANDOM.nextDouble()); [EOL]         } [EOL]     } [EOL]     return v; [EOL] } <line_num>: 36,45

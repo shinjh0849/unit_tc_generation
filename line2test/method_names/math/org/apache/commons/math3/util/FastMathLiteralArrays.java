@@ -1,6 +1,0 @@
-private FastMathLiteralArrays()
- static double[] loadExpIntA()
- static double[] loadExpIntB()
- static double[] loadExpFracA()
- static double[] loadExpFracB()
- static double[][] loadLnMant()

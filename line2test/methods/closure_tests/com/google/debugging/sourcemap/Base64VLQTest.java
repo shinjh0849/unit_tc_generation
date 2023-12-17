@@ -1,9 +1,0 @@
-public void testBase64VLQSelectedValues1() { [EOL]     for (int i = 0; i < 63; i++) { [EOL]         testValue(i); [EOL]     } [EOL] } <line_num>: 38,42
-public void testBase64VLQSelectedValues2() { [EOL]     int base = 1; [EOL]     for (int i = 0; i < 30; i++) { [EOL]         testValue(base - 1); [EOL]         testValue(base); [EOL]         base *= 2; [EOL]     } [EOL] } <line_num>: 44,51
-public void testBase64VLQSelectedSignedValues1() { [EOL]     for (int i = -(64 * 64 - 1); i < (64 * 64 - 1); i++) { [EOL]         testValue(i); [EOL]     } [EOL] } <line_num>: 53,57
-public void testBase64VLQSelectedSignedValues2() { [EOL]     int base = 1; [EOL]     for (int i = 0; i < 30; i++) { [EOL]         testValue(base - 1); [EOL]         testValue(base); [EOL]         base *= 2; [EOL]     } [EOL]     base = -1; [EOL]     for (int i = 0; i < 30; i++) { [EOL]         testValue(base - 1); [EOL]         testValue(base); [EOL]         base *= 2; [EOL]     } [EOL] } <line_num>: 59,72
-void set(CharSequence sb) { [EOL]     this.current = 0; [EOL]     this.length = sb.length(); [EOL]     this.cs = sb; [EOL] } <line_num>: 79,83
-@Override [EOL] public boolean hasNext() { [EOL]     return current < length; [EOL] } <line_num>: 85,88
-@Override [EOL] public char next() { [EOL]     return cs.charAt(current++); [EOL] } <line_num>: 90,93
-public void testSpeed() { [EOL] } <line_num>: 97,97
-private void testValue(int value) { [EOL]     try { [EOL]         StringBuilder sb = new StringBuilder(); [EOL]         Base64VLQ.encode(sb, value); [EOL]         CharIteratorImpl ci = new CharIteratorImpl(); [EOL]         ci.set(sb); [EOL]         int result = Base64VLQ.decode(ci); [EOL]         assertEquals(value, result); [EOL]     } catch (Exception e) { [EOL]         throw new RuntimeException("failed for value " + value, e); [EOL]     } [EOL] } <line_num>: 119,130

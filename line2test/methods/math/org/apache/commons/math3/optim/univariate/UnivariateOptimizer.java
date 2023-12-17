@@ -1,8 +1,0 @@
-protected UnivariateOptimizer(ConvergenceChecker<UnivariatePointValuePair> checker) { [EOL]     super(checker); [EOL] } <line_num>: 48,50
-@Override [EOL] public UnivariatePointValuePair optimize(OptimizationData... optData) throws TooManyEvaluationsException { [EOL]     return super.optimize(optData); [EOL] } <line_num>: 67,72
-public GoalType getGoalType() { [EOL]     return goal; [EOL] } <line_num>: 77,79
-@Override [EOL] protected void parseOptimizationData(OptimizationData... optData) { [EOL]     super.parseOptimizationData(optData); [EOL]     for (OptimizationData data : optData) { [EOL]         if (data instanceof SearchInterval) { [EOL]             final SearchInterval interval = (SearchInterval) data; [EOL]             min = interval.getMin(); [EOL]             max = interval.getMax(); [EOL]             start = interval.getStartValue(); [EOL]             continue; [EOL]         } [EOL]         if (data instanceof UnivariateObjectiveFunction) { [EOL]             function = ((UnivariateObjectiveFunction) data).getObjectiveFunction(); [EOL]             continue; [EOL]         } [EOL]         if (data instanceof GoalType) { [EOL]             goal = (GoalType) data; [EOL]             continue; [EOL]         } [EOL]     } [EOL] } <line_num>: 93,117
-public double getStartValue() { [EOL]     return start; [EOL] } <line_num>: 122,124
-public double getMin() { [EOL]     return min; [EOL] } <line_num>: 128,130
-public double getMax() { [EOL]     return max; [EOL] } <line_num>: 134,136
-protected double computeObjectiveValue(double x) { [EOL]     super.incrementEvaluationCount(); [EOL]     return function.value(x); [EOL] } <line_num>: 148,151

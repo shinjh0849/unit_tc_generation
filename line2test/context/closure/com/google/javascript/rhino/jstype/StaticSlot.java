@@ -1,5 +1,0 @@
- String getName()
- T getType()
- boolean isTypeInferred()
- StaticReference<T> getDeclaration()
- JSDocInfo getJSDocInfo()

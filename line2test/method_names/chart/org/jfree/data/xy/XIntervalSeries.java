@@ -1,8 +1,0 @@
-public XIntervalSeries(Comparable key)
-public XIntervalSeries(Comparable key, boolean autoSort, boolean allowDuplicateXValues)
-public void add(double x, double xLow, double xHigh, double y)
-public Number getX(int index)
-public double getXLowValue(int index)
-public double getXHighValue(int index)
-public double getYValue(int index)
-public ComparableObjectItem getDataItem(int index)

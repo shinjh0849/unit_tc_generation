@@ -1,5 +1,0 @@
-public void testConstructors()
-public void testGetSet()
-public void testEquals()
-public void testHashCode()
-public void testToString()

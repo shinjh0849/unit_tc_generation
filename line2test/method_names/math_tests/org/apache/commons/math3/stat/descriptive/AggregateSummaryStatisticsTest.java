@@ -1,8 +1,0 @@
-public void testAggregation()
-public void testAggregationConsistency()
-public void testAggregate()
-public void testAggregateDegenerate()
-public void testAggregateSpecialValues()
-protected static void assertEquals(StatisticalSummary expected, StatisticalSummary observed, double delta)
-private double[] generateSample()
-private double[][] generatePartition(double[] sample)

@@ -1,5 +1,0 @@
- double[] estimateRegressionParameters()
- double[][] estimateRegressionParametersVariance()
- double[] estimateResiduals()
- double estimateRegressandVariance()
- double[] estimateRegressionParametersStandardErrors()

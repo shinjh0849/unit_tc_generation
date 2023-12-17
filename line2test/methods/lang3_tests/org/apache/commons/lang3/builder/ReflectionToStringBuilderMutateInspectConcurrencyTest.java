@@ -1,8 +1,0 @@
-public TestFixture() { [EOL]     synchronized (this) { [EOL]         for (int i = 0; i < N; i++) { [EOL]             listField.add(Integer.valueOf(i)); [EOL]         } [EOL]     } [EOL] } <line_num>: 45,51
-public MutatingClient(final TestFixture testFixture) { [EOL]     this.testFixture = testFixture; [EOL] } <line_num>: 66,68
-public InspectingClient(final TestFixture testFixture) { [EOL]     this.testFixture = testFixture; [EOL] } <line_num>: 83,85
-public synchronized void add() { [EOL]     listField.add(Integer.valueOf(random.nextInt(N))); [EOL] } <line_num>: 53,55
-public synchronized void delete() { [EOL]     listField.remove(Integer.valueOf(random.nextInt(N))); [EOL] } <line_num>: 57,59
-@Override [EOL] public void run() { [EOL]     if (random.nextBoolean()) { [EOL]         testFixture.add(); [EOL]     } else { [EOL]         testFixture.delete(); [EOL]     } [EOL] } <line_num>: 70,77
-@Override [EOL] public void run() { [EOL]     ReflectionToStringBuilder.toString(testFixture); [EOL] } <line_num>: 87,90
-@Test [EOL] @Ignore [EOL] public void testConcurrency() throws Exception { [EOL]     final TestFixture testFixture = new TestFixture(); [EOL]     final int numMutators = 10; [EOL]     final int numIterations = 10; [EOL]     for (int i = 0; i < numIterations; i++) { [EOL]         for (int j = 0; j < numMutators; j++) { [EOL]             final Thread t = new Thread(new MutatingClient(testFixture)); [EOL]             t.start(); [EOL]             final Thread s = new Thread(new InspectingClient(testFixture)); [EOL]             s.start(); [EOL]         } [EOL]     } [EOL] } <line_num>: 93,107

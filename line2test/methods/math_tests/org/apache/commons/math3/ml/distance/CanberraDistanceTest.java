@@ -1,3 +1,0 @@
-@Test [EOL] public void testZero() { [EOL]     final double[] a = { 0, 1, -2, 3.4, 5, -6.7, 89 }; [EOL]     Assert.assertEquals(0, distance.compute(a, a), 0d); [EOL] } <line_num>: 28,32
-@Test [EOL] public void testZero2() { [EOL]     final double[] a = { 0, 0 }; [EOL]     Assert.assertEquals(0, distance.compute(a, a), 0d); [EOL] } <line_num>: 34,38
-@Test [EOL] public void test() { [EOL]     final double[] a = { 1, 2, 3, 4, 9 }; [EOL]     final double[] b = { -5, -6, 7, 4, 3 }; [EOL]     final double expected = 2.9; [EOL]     Assert.assertEquals(expected, distance.compute(a, b), 0d); [EOL]     Assert.assertEquals(expected, distance.compute(b, a), 0d); [EOL] } <line_num>: 40,47

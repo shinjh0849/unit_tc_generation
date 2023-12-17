@@ -1,1 +1,0 @@
-public MultivariateDifferentiableMultiStartOptimizer(final MultivariateDifferentiableOptimizer optimizer, final int starts, final RandomVectorGenerator generator) { [EOL]     super(optimizer, starts, generator); [EOL] } <line_num>: 48,52

@@ -1,7 +1,0 @@
-public SimpleHistogramBinTests(String name)
-public static Test suite()
-public void testAccepts()
-public void testOverlapsWidth()
-public void testEquals()
-public void testCloning()
-public void testSerialization()

@@ -1,1 +1,0 @@
-DefinitionSite(Node node, Definition definition, JSModule module, boolean inGlobalScope, boolean inExterns) { [EOL]     this.node = node; [EOL]     this.definition = definition; [EOL]     this.module = module; [EOL]     this.inGlobalScope = inGlobalScope; [EOL]     this.inExterns = inExterns; [EOL] } <line_num>: 36,46

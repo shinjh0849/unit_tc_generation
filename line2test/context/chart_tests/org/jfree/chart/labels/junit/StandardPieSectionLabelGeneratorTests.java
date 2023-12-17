@@ -1,8 +1,0 @@
-public StandardPieSectionLabelGeneratorTests(String name)
-public static Test suite()
-public void testEquals()
-public void testHashCode()
-public void testCloning()
-public void testPublicCloneable()
-public void testSerialization()
-public static void main(String[] args)

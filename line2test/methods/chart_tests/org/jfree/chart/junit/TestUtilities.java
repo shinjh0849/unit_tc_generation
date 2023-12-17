@@ -1,1 +1,0 @@
-public static boolean containsInstanceOf(Collection collection, Class c) { [EOL]     Iterator iterator = collection.iterator(); [EOL]     while (iterator.hasNext()) { [EOL]         Object obj = iterator.next(); [EOL]         if (obj != null && obj.getClass().equals(c)) { [EOL]             return true; [EOL]         } [EOL]     } [EOL]     return false; [EOL] } <line_num>: 60,69

@@ -1,8 +1,0 @@
-protected MultivariateVectorOptimizer(ConvergenceChecker<PointVectorValuePair> checker) { [EOL]     super(checker); [EOL] } <line_num>: 47,49
-protected double[] computeObjectiveValue(double[] params) { [EOL]     super.incrementEvaluationCount(); [EOL]     return model.value(params); [EOL] } <line_num>: 61,64
-@Override [EOL] public PointVectorValuePair optimize(OptimizationData... optData) throws TooManyEvaluationsException, DimensionMismatchException { [EOL]     return super.optimize(optData); [EOL] } <line_num>: 83,89
-public RealMatrix getWeight() { [EOL]     return weightMatrix.copy(); [EOL] } <line_num>: 96,98
-public double[] getTarget() { [EOL]     return target.clone(); [EOL] } <line_num>: 105,107
-public int getTargetSize() { [EOL]     return target.length; [EOL] } <line_num>: 114,116
-@Override [EOL] protected void parseOptimizationData(OptimizationData... optData) { [EOL]     super.parseOptimizationData(optData); [EOL]     for (OptimizationData data : optData) { [EOL]         if (data instanceof ModelFunction) { [EOL]             model = ((ModelFunction) data).getModelFunction(); [EOL]             continue; [EOL]         } [EOL]         if (data instanceof Target) { [EOL]             target = ((Target) data).getTarget(); [EOL]             continue; [EOL]         } [EOL]         if (data instanceof Weight) { [EOL]             weightMatrix = ((Weight) data).getWeight(); [EOL]             continue; [EOL]         } [EOL]     } [EOL]     checkParameters(); [EOL] } <line_num>: 129,153
-private void checkParameters() { [EOL]     if (target.length != weightMatrix.getColumnDimension()) { [EOL]         throw new DimensionMismatchException(target.length, weightMatrix.getColumnDimension()); [EOL]     } [EOL] } <line_num>: 161,166

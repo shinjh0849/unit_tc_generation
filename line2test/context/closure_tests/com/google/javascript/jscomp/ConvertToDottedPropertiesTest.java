@@ -1,5 +1,0 @@
-public CompilerPass getProcessor(Compiler compiler)
-public void testConvert()
-public void testDoNotConvert()
-public void testQuotedProps()
-public void test5746867()

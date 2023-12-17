@@ -1,5 +1,0 @@
-public YIntervalDataItem(double x, double y, double yLow, double yHigh)
-public Double getX()
-public double getYValue()
-public double getYLowValue()
-public double getYHighValue()

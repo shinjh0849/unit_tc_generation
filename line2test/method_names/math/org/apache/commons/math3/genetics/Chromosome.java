@@ -1,5 +1,0 @@
-public double getFitness()
-public int compareTo(final Chromosome another)
-protected boolean isSame(final Chromosome another)
-protected Chromosome findSameChromosome(final Population population)
-public void searchForFitnessUpdate(final Population population)

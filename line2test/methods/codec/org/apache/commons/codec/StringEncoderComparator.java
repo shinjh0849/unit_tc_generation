@@ -1,3 +1,0 @@
-public StringEncoderComparator() { [EOL]     stringEncoder = null; [EOL] } <line_num>: 46,48
-public StringEncoderComparator(StringEncoder stringEncoder) { [EOL]     this.stringEncoder = stringEncoder; [EOL] } <line_num>: 54,56
-public int compare(Object o1, Object o2) { [EOL]     int compareCode = 0; [EOL]     try { [EOL]         Comparable s1 = (Comparable) this.stringEncoder.encode(o1); [EOL]         Comparable s2 = (Comparable) this.stringEncoder.encode(o2); [EOL]         compareCode = s1.compareTo(s2); [EOL]     } catch (EncoderException ee) { [EOL]         compareCode = 0; [EOL]     } [EOL]     return compareCode; [EOL] } <line_num>: 71,84

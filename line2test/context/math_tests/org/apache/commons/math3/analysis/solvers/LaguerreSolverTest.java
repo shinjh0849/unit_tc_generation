@@ -1,5 +1,0 @@
-public void testLinearFunction()
-public void testQuadraticFunction()
-public void testQuinticFunction()
-public void testQuinticFunction2()
-public void testParameters()

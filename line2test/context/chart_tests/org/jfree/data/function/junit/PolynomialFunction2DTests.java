@@ -1,8 +1,0 @@
-public PolynomialFunction2DTests(String name)
-public static Test suite()
-public void testConstructor()
-public void testGetCoefficients()
-public void testGetOrder()
-public void testEquals()
-public void testSerialization()
-public void testHashCode()

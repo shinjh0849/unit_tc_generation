@@ -1,1 +1,0 @@
- double value(double x)

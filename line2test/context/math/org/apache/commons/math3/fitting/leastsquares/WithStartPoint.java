@@ -1,1 +1,0 @@
- T withStartPoint(double[] start)

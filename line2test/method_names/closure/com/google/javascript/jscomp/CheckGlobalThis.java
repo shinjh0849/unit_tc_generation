@@ -1,5 +1,0 @@
- CheckGlobalThis(AbstractCompiler compiler)
-public boolean shouldTraverse(NodeTraversal t, Node n, Node parent)
-public void visit(NodeTraversal t, Node n, Node parent)
-private boolean shouldReportThis(Node n, Node parent)
-private JSDocInfo getFunctionJsDocInfo(Node n)

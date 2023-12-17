@@ -1,8 +1,0 @@
-public HarmonicFitter(final MultivariateVectorOptimizer optimizer)
-public ParameterGuesser(WeightedObservedPoint[] observations)
-public double[] fit(double[] initialGuess)
-public double[] fit()
-public double[] guess()
-private WeightedObservedPoint[] sortObservations(WeightedObservedPoint[] unsorted)
-private double[] guessAOmega(WeightedObservedPoint[] observations)
-private double guessPhi(WeightedObservedPoint[] observations)

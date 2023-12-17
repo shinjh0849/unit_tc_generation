@@ -1,5 +1,0 @@
- boolean isAtomic()
- boolean isDynamic()
- PropertyDescriptor[] getPropertyDescriptors()
- PropertyDescriptor getPropertyDescriptor(String propertyName)
- Class getDynamicPropertyHandlerClass()

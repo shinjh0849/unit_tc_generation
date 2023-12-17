@@ -1,2 +1,0 @@
-@Override [EOL] public void visit(NodeTraversal t, Node n, Node parent) { [EOL]     if (!n.isCall()) { [EOL]         return; [EOL]     } [EOL]     Node function = n.getFirstChild(); [EOL]     if (!function.isGetProp()) { [EOL]         return; [EOL]     } [EOL]     Node nameNode = function.getFirstChild().getNext(); [EOL]     if (!nameNode.isString()) { [EOL]         return; [EOL]     } [EOL]     visit(t, n, parent, nameNode.getString()); [EOL] } <line_num>: 38,58
-abstract void visit(NodeTraversal t, Node callNode, Node parent, String callName); <line_num>: 67,68

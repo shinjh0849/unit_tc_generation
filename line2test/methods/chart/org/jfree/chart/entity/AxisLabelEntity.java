@@ -1,3 +1,0 @@
-public AxisLabelEntity(Axis axis, Shape hotspot, String toolTipText, String url) { [EOL]     super(hotspot, toolTipText, url); [EOL]     if (axis == null) { [EOL]         throw new IllegalArgumentException("Null 'axis' argument."); [EOL]     } [EOL]     this.axis = axis; [EOL] } <line_num>: 66,73
-public Axis getAxis() { [EOL]     return this.axis; [EOL] } <line_num>: 80,82
-public String toString() { [EOL]     StringBuffer buf = new StringBuffer("AxisLabelEntity: "); [EOL]     buf.append("label = "); [EOL]     buf.append(this.axis.getLabel()); [EOL]     return buf.toString(); [EOL] } <line_num>: 90,95

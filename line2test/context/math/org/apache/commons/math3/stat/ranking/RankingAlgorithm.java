@@ -1,1 +1,0 @@
- double[] rank(double[] data)

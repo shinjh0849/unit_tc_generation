@@ -1,1 +1,0 @@
- long getDurationMillis(Object object)

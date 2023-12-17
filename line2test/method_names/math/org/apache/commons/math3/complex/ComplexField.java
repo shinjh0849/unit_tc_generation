@@ -1,6 +1,0 @@
-private ComplexField()
-public static ComplexField getInstance()
-public Complex getOne()
-public Complex getZero()
-public Class<? extends FieldElement<Complex>> getRuntimeClass()
-private Object readResolve()

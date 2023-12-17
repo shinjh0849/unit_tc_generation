@@ -1,5 +1,0 @@
-LineNumberCheck(AbstractCompiler compiler) { [EOL]     this.compiler = compiler; [EOL] } <line_num>: 40,42
-public void setCheckSubTree(Node root) { [EOL]     requiresLineNumbers = true; [EOL]     NodeTraversal.traverse(compiler, root, this); [EOL] } <line_num>: 44,48
-@Override [EOL] public void process(Node externs, Node root) { [EOL]     requiresLineNumbers = false; [EOL]     NodeTraversal.traverse(compiler, root, this); [EOL] } <line_num>: 50,55
-@Override [EOL] public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) { [EOL]     if (n.isScript()) { [EOL]         requiresLineNumbers = true; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 57,65
-@Override [EOL] public void visit(NodeTraversal t, Node n, Node parent) { [EOL]     if (n.isScript()) { [EOL]         requiresLineNumbers = false; [EOL]     } else if (requiresLineNumbers) { [EOL]         if (n.getLineno() == -1) { [EOL]             compiler.report(t.makeError(n, MISSING_LINE_INFO, n.toStringTree())); [EOL]         } [EOL]     } [EOL] } <line_num>: 67,80

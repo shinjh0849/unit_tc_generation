@@ -1,8 +1,0 @@
-public void testInsert()
-public void testDelete1()
-public void testNavigation()
-public void testSearch()
-public void testRepetition()
-private AVLTree<Integer> buildTree(int[] array)
-private int value(AVLTree<Integer>.Node node)
-private void checkOrder(AVLTree<Integer> tree)

@@ -1,8 +1,0 @@
-public ExportTestFunctionsTest()
-public void setUp()
-protected CompilerPass getProcessor(Compiler compiler)
-protected int getNumRepetitions()
-public void testFunctionsAreExported()
-public void testBasicTestFunctionsAreExported()
-public void testFunctionExpressionsAreExported()
-public void testFunctionAssignmentsAreExported()

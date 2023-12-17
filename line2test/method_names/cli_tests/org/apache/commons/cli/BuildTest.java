@@ -1,8 +1,0 @@
-public BuildTest(String name)
-public static Test suite()
-public void setUp()
-public void tearDown()
-public void testSimple()
-public void testDuplicateSimple()
-public void testLong()
-public void testDuplicateLong()

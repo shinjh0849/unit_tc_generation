@@ -1,5 +1,0 @@
-public PaintSample(Paint paint) { [EOL]     this.paint = paint; [EOL]     this.preferredSize = new Dimension(80, 12); [EOL] } <line_num>: 71,74
-public Paint getPaint() { [EOL]     return this.paint; [EOL] } <line_num>: 81,83
-public void setPaint(Paint paint) { [EOL]     this.paint = paint; [EOL]     repaint(); [EOL] } <line_num>: 90,93
-public Dimension getPreferredSize() { [EOL]     return this.preferredSize; [EOL] } <line_num>: 100,102
-public void paintComponent(Graphics g) { [EOL]     Graphics2D g2 = (Graphics2D) g; [EOL]     Dimension size = getSize(); [EOL]     Insets insets = getInsets(); [EOL]     double xx = insets.left; [EOL]     double yy = insets.top; [EOL]     double ww = size.getWidth() - insets.left - insets.right - 1; [EOL]     double hh = size.getHeight() - insets.top - insets.bottom - 1; [EOL]     Rectangle2D area = new Rectangle2D.Double(xx, yy, ww, hh); [EOL]     g2.setPaint(this.paint); [EOL]     g2.fill(area); [EOL]     g2.setPaint(Color.black); [EOL]     g2.draw(area); [EOL] } <line_num>: 109,124

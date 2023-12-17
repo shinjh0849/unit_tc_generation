@@ -1,1 +1,0 @@
-@Test [EOL] public void testAccessors() { [EOL]     final OutOfRangeException e = new OutOfRangeException(-1, 0, 2); [EOL]     Assert.assertEquals(-1, e.getArgument()); [EOL]     Assert.assertEquals(0, e.getLo()); [EOL]     Assert.assertEquals(2, e.getHi()); [EOL] } <line_num>: 28,34

@@ -1,1 +1,0 @@
-public static Test suite()

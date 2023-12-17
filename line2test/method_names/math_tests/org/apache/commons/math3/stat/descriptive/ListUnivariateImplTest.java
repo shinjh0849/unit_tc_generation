@@ -1,5 +1,0 @@
-public void testStats()
-public void testN0andN1Conditions()
-public void testSkewAndKurtosis()
-public void testProductAndGeometricMean()
-public void testSerialization()

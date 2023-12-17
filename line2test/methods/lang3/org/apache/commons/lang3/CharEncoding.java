@@ -1,1 +1,0 @@
-public static boolean isSupported(final String name) { [EOL]     if (name == null) { [EOL]         return false; [EOL]     } [EOL]     try { [EOL]         return Charset.isSupported(name); [EOL]     } catch (final IllegalCharsetNameException ex) { [EOL]         return false; [EOL]     } [EOL] } <line_num>: 94,103

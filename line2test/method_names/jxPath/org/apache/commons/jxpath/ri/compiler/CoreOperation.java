@@ -1,8 +1,0 @@
-public CoreOperation(Expression[] args)
-public Object compute(EvalContext context)
-public abstract Object computeValue(EvalContext context)
-public abstract String getSymbol()
-protected abstract boolean isSymmetric()
-protected abstract int getPrecedence()
-public String toString()
-private String parenthesize(Expression expression, boolean left)

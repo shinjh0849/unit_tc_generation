@@ -1,5 +1,0 @@
-public void testSolveDimensionErrors()
-public void testLeastSquareSolve()
-public void testSolve()
-public void testConditionNumber()
-public void testMath320B()

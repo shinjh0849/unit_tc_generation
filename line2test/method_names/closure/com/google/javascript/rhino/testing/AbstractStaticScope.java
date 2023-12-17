@@ -1,5 +1,0 @@
-public Node getRootNode()
-public StaticScope<T> getParentScope()
-public abstract StaticSlot<T> getSlot(String name)
-public StaticSlot<T> getOwnSlot(String name)
-public T getTypeOfThis()

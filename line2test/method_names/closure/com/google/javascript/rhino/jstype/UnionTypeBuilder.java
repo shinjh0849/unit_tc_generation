@@ -1,7 +1,0 @@
- UnionTypeBuilder(JSTypeRegistry registry)
- UnionTypeBuilder(JSTypeRegistry registry, int maxUnionSize)
- Iterable<JSType> getAlternates()
- UnionTypeBuilder addAlternate(JSType alternate)
-private JSType reduceAlternatesWithoutUnion()
- JSType build()
-private Collection<JSType> getAlternateListCopy()

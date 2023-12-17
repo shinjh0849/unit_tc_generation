@@ -1,8 +1,0 @@
-public TokenMgrError()
-public TokenMgrError(String message, int reason)
-public TokenMgrError(boolean EOFSeen, int lexState, int errorLine, int errorColumn, String errorAfter, char curChar, int reason)
-public static final String addEscapes(String str)
-protected static String LexicalError(boolean EOFSeen, int lexState, int errorLine, int errorColumn, String errorAfter, char curChar)
-public String getMessage()
-public int getPosition()
-public char getCharacter()

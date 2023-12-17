@@ -1,5 +1,0 @@
-public DateTick(Date date, String label, TextAnchor textAnchor, TextAnchor rotationAnchor, double angle) { [EOL]     this(TickType.MAJOR, date, label, textAnchor, rotationAnchor, angle); [EOL] } <line_num>: 70,76
-public DateTick(TickType tickType, Date date, String label, TextAnchor textAnchor, TextAnchor rotationAnchor, double angle) { [EOL]     super(tickType, date.getTime(), label, textAnchor, rotationAnchor, angle); [EOL]     this.date = date; [EOL] } <line_num>: 91,98
-public Date getDate() { [EOL]     return this.date; [EOL] } <line_num>: 105,107
-public boolean equals(Object obj) { [EOL]     if (obj == this) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof DateTick)) { [EOL]         return false; [EOL]     } [EOL]     DateTick that = (DateTick) obj; [EOL]     if (!ObjectUtilities.equal(this.date, that.date)) { [EOL]         return false; [EOL]     } [EOL]     return super.equals(obj); [EOL] } <line_num>: 116,128
-public int hashCode() { [EOL]     return this.date.hashCode(); [EOL] } <line_num>: 135,137

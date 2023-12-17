@@ -1,3 +1,0 @@
-public ObjectiveFunctionGradient(MultivariateVectorFunction g)
-public MultivariateVectorFunction getObjectiveFunctionGradient()
-MultivariateVectorFunction gradient

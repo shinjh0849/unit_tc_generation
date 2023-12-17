@@ -1,6 +1,0 @@
-protected double transformed(final double g)
-protected double transformed(final double g)
-protected double transformed(final double g)
-protected double transformed(final double g)
-protected double transformed(final double g)
-protected abstract double transformed(double g)

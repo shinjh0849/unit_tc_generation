@@ -1,5 +1,0 @@
-protected AbstractSeriesDataset()
-public abstract int getSeriesCount()
-public abstract Comparable getSeriesKey(int series)
-public int indexOf(Comparable seriesKey)
-public void seriesChanged(SeriesChangeEvent event)

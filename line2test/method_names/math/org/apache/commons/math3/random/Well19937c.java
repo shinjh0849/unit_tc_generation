@@ -1,5 +1,0 @@
-public Well19937c()
-public Well19937c(int seed)
-public Well19937c(int[] seed)
-public Well19937c(long seed)
-protected int next(final int bits)

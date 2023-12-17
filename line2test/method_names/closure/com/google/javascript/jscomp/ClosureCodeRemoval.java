@@ -1,7 +1,0 @@
-public RemovableAssignment(Node nameNode, Node assignNode, NodeTraversal traversal)
- FindAssertionCalls()
- ClosureCodeRemoval(AbstractCompiler compiler, boolean removeAbstractMethods, boolean removeAssertionCalls)
-public void remove()
-public void visit(NodeTraversal t, Node n, Node parent)
-public void visit(NodeTraversal t, Node n, Node parent)
-public void process(Node externs, Node root)

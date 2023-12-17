@@ -1,1 +1,0 @@
- UnivariateDifferentiableFunction differentiate(UnivariateFunction function)

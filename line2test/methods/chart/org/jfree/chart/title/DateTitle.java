@@ -1,5 +1,0 @@
-public DateTitle() { [EOL]     this(DateFormat.LONG); [EOL] } <line_num>: 89,91
-public DateTitle(int style) { [EOL]     this(style, Locale.getDefault(), new Font("Tahoma", Font.PLAIN, 12), Color.black); [EOL] } <line_num>: 103,106
-public DateTitle(int style, Locale locale, Font font, Paint paint) { [EOL]     this(style, locale, font, paint, RectangleEdge.BOTTOM, HorizontalAlignment.RIGHT, VerticalAlignment.CENTER, Title.DEFAULT_PADDING); [EOL] } <line_num>: 123,127
-public DateTitle(int style, Locale locale, Font font, Paint paint, RectangleEdge position, HorizontalAlignment horizontalAlignment, VerticalAlignment verticalAlignment, RectangleInsets padding) { [EOL]     super(DateFormat.getDateInstance(style, locale).format(new Date()), font, paint, position, horizontalAlignment, verticalAlignment, padding); [EOL] } <line_num>: 152,160
-public void setDateFormat(int style, Locale locale) { [EOL]     setText(DateFormat.getDateInstance(style, locale).format(new Date())); [EOL] } <line_num>: 175,177

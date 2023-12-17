@@ -1,1 +1,0 @@
-@Test [EOL] public void testAccessors() { [EOL]     final NumberIsTooLargeException e = new NumberIsTooLargeException(1, 0, true); [EOL]     Assert.assertEquals(1, e.getArgument()); [EOL]     Assert.assertEquals(0, e.getMax()); [EOL]     Assert.assertTrue(e.getBoundIsAllowed()); [EOL] } <line_num>: 28,34

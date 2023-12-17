@@ -1,5 +1,0 @@
-public CustomXYItemLabelGeneratorTests(String name)
-public static Test suite()
-public void testCloning()
-public void testPublicCloneable()
-public void testSerialization()

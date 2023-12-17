@@ -1,1 +1,0 @@
-public TooManyIterationsException(Number max)

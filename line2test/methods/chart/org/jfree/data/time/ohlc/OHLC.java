@@ -1,7 +1,0 @@
-public OHLC(double open, double high, double low, double close) { [EOL]     this.open = open; [EOL]     this.close = close; [EOL]     this.high = high; [EOL]     this.low = low; [EOL] } <line_num>: 75,80
-public double getOpen() { [EOL]     return this.open; [EOL] } <line_num>: 87,89
-public double getClose() { [EOL]     return this.close; [EOL] } <line_num>: 96,98
-public double getHigh() { [EOL]     return this.high; [EOL] } <line_num>: 105,107
-public double getLow() { [EOL]     return this.low; [EOL] } <line_num>: 114,116
-public boolean equals(Object obj) { [EOL]     if (obj == this) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof OHLC)) { [EOL]         return false; [EOL]     } [EOL]     OHLC that = (OHLC) obj; [EOL]     if (this.open != that.open) { [EOL]         return false; [EOL]     } [EOL]     if (this.close != that.close) { [EOL]         return false; [EOL]     } [EOL]     if (this.high != that.high) { [EOL]         return false; [EOL]     } [EOL]     if (this.low != that.low) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 125,146
-public int hashCode() { [EOL]     int result = 193; [EOL]     result = HashUtilities.hashCode(result, this.open); [EOL]     result = HashUtilities.hashCode(result, this.high); [EOL]     result = HashUtilities.hashCode(result, this.low); [EOL]     result = HashUtilities.hashCode(result, this.close); [EOL]     return result; [EOL] } <line_num>: 153,160

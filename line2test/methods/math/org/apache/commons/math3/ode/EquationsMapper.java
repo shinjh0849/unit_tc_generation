@@ -1,5 +1,0 @@
-public EquationsMapper(final int firstIndex, final int dimension) { [EOL]     this.firstIndex = firstIndex; [EOL]     this.dimension = dimension; [EOL] } <line_num>: 49,52
-public int getFirstIndex() { [EOL]     return firstIndex; [EOL] } <line_num>: 57,59
-public int getDimension() { [EOL]     return dimension; [EOL] } <line_num>: 64,66
-public void extractEquationData(double[] complete, double[] equationData) throws DimensionMismatchException { [EOL]     if (equationData.length != dimension) { [EOL]         throw new DimensionMismatchException(equationData.length, dimension); [EOL]     } [EOL]     System.arraycopy(complete, firstIndex, equationData, 0, dimension); [EOL] } <line_num>: 75,81
-public void insertEquationData(double[] equationData, double[] complete) throws DimensionMismatchException { [EOL]     if (equationData.length != dimension) { [EOL]         throw new DimensionMismatchException(equationData.length, dimension); [EOL]     } [EOL]     System.arraycopy(equationData, 0, complete, firstIndex, dimension); [EOL] } <line_num>: 90,96

@@ -1,5 +1,0 @@
-ControlStructureCheck(AbstractCompiler compiler) { [EOL]     this.compiler = compiler; [EOL] } <line_num>: 35,37
-@Override [EOL] public void process(Node externs, Node root) { [EOL]     check(root); [EOL] } <line_num>: 39,42
-@Override [EOL] public void hotSwapScript(Node scriptRoot, Node originalRoot) { [EOL]     check(scriptRoot); [EOL] } <line_num>: 44,47
-private void check(Node node) { [EOL]     switch(node.getType()) { [EOL]         case Token.WITH: [EOL]             JSDocInfo info = node.getJSDocInfo(); [EOL]             boolean allowWith = info != null && info.getSuppressions().contains("with"); [EOL]             if (!allowWith) { [EOL]                 report(node, USE_OF_WITH); [EOL]             } [EOL]             break; [EOL]     } [EOL]     for (Node bChild = node.getFirstChild(); bChild != null; ) { [EOL]         Node next = bChild.getNext(); [EOL]         check(bChild); [EOL]         bChild = next; [EOL]     } [EOL] } <line_num>: 54,71
-private void report(Node n, DiagnosticType error) { [EOL]     compiler.report(JSError.make(n.getSourceFileName(), n, error)); [EOL] } <line_num>: 73,75

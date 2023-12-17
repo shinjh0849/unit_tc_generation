@@ -1,5 +1,0 @@
- String getName()
- boolean isExtern()
- int getLineOffset(int lineNumber)
- int getLineOfOffset(int offset)
- int getColumnOfOffset(int offset)

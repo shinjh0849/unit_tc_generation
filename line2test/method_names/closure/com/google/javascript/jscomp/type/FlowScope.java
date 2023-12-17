@@ -1,6 +1,0 @@
- FlowScope createChildFlowScope()
- void inferSlotType(String symbol, JSType type)
- void inferQualifiedSlot(Node node, String symbol, JSType bottomType, JSType inferredType)
- FlowScope optimize()
- StaticSlot<JSType> findUniqueRefinedSlot(FlowScope blindScope)
- void completeScope(StaticScope<JSType> scope)

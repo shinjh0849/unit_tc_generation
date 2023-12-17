@@ -1,7 +1,0 @@
- NameAnonymousFunctionsMapped(AbstractCompiler compiler, VariableMap previousMap)
-public void process(Node externs, Node root)
-public final String getName(Node node)
-public final void setFunctionName(String name, Node fnNode)
- String getAlternateName(String name)
-public final String getCombinedName(String lhs, String rhs)
- VariableMap getFunctionMap()

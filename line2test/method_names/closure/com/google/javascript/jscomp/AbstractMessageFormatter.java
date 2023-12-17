@@ -1,8 +1,0 @@
-public AbstractMessageFormatter(SourceExcerptProvider source)
- Color(String controlCharacter)
-public void setColorize(boolean colorize)
-protected final SourceExcerptProvider getSource()
- static boolean termSupportsColor(String term)
-public String getControlCharacter()
- String getLevelName(CheckLevel level)
-private String maybeColorize(String text, Color color)

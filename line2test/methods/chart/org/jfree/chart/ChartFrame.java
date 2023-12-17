@@ -1,3 +1,0 @@
-public ChartFrame(String title, JFreeChart chart) { [EOL]     this(title, chart, false); [EOL] } <line_num>: 63,65
-public ChartFrame(String title, JFreeChart chart, boolean scrollPane) { [EOL]     super(title); [EOL]     setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE); [EOL]     this.chartPanel = new ChartPanel(chart); [EOL]     if (scrollPane) { [EOL]         setContentPane(new JScrollPane(this.chartPanel)); [EOL]     } else { [EOL]         setContentPane(this.chartPanel); [EOL]     } [EOL] } <line_num>: 75,85
-public ChartPanel getChartPanel() { [EOL]     return this.chartPanel; [EOL] } <line_num>: 92,94

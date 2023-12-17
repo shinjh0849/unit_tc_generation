@@ -1,4 +1,0 @@
-protected StrictDateTimeField(DateTimeField field) { [EOL]     super(field); [EOL] } <line_num>: 53,55
-public static DateTimeField getInstance(DateTimeField field) { [EOL]     if (field == null) { [EOL]         return null; [EOL]     } [EOL]     if (field instanceof LenientDateTimeField) { [EOL]         field = ((LenientDateTimeField) field).getWrappedField(); [EOL]     } [EOL]     if (!field.isLenient()) { [EOL]         return field; [EOL]     } [EOL]     return new StrictDateTimeField(field); [EOL] } <line_num>: 40,51
-public final boolean isLenient() { [EOL]     return false; [EOL] } <line_num>: 57,59
-public long set(long instant, int value) { [EOL]     FieldUtils.verifyValueBounds(this, value, getMinimumValue(instant), getMaximumValue(instant)); [EOL]     return super.set(instant, value); [EOL] } <line_num>: 66,70

@@ -1,2 +1,0 @@
-public void addChangeListener(AnnotationChangeListener listener)
-public void removeChangeListener(AnnotationChangeListener listener)

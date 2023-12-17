@@ -1,8 +1,0 @@
-public DefaultKeyedValue(Comparable key, Number value) { [EOL]     if (key == null) { [EOL]         throw new IllegalArgumentException("Null 'key' argument."); [EOL]     } [EOL]     this.key = key; [EOL]     this.value = value; [EOL] } <line_num>: 79,85
-public Comparable getKey() { [EOL]     return this.key; [EOL] } <line_num>: 92,94
-public Number getValue() { [EOL]     return this.value; [EOL] } <line_num>: 101,103
-public synchronized void setValue(Number value) { [EOL]     this.value = value; [EOL] } <line_num>: 110,112
-public boolean equals(Object obj) { [EOL]     if (obj == this) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof DefaultKeyedValue)) { [EOL]         return false; [EOL]     } [EOL]     DefaultKeyedValue that = (DefaultKeyedValue) obj; [EOL]     if (!this.key.equals(that.key)) { [EOL]         return false; [EOL]     } [EOL]     if (this.value != null ? !this.value.equals(that.value) : that.value != null) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 121,138
-public int hashCode() { [EOL]     int result; [EOL]     result = (this.key != null ? this.key.hashCode() : 0); [EOL]     result = 29 * result + (this.value != null ? this.value.hashCode() : 0); [EOL]     return result; [EOL] } <line_num>: 145,150
-public Object clone() throws CloneNotSupportedException { [EOL]     DefaultKeyedValue clone = (DefaultKeyedValue) super.clone(); [EOL]     return clone; [EOL] } <line_num>: 162,165
-public String toString() { [EOL]     return "(" + this.key.toString() + ", " + this.value.toString() + ")"; [EOL] } <line_num>: 173,175

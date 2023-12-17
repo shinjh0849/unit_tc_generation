@@ -1,8 +1,0 @@
-public IntervalCategoryToolTipGeneratorTests(String name)
-public static Test suite()
-public void testEquals()
-public void testEquals2()
-public void testHashCode()
-public void testCloning()
-public void testPublicCloneable()
-public void testSerialization()

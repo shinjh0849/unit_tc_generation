@@ -1,8 +1,0 @@
-public DiagnosticGroups()
- static DiagnosticGroup registerDeprecatedGroup(String name)
- static DiagnosticGroup registerGroup(String name, DiagnosticGroup group)
- static DiagnosticGroup registerGroup(String name, DiagnosticType... types)
- static DiagnosticGroup registerGroup(String name, DiagnosticGroup... groups)
-protected Map<String, DiagnosticGroup> getRegisteredGroups()
-public DiagnosticGroup forName(String name)
- void setWarningLevel(CompilerOptions options, String name, CheckLevel level)

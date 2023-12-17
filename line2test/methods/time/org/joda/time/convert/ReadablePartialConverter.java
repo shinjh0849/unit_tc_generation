@@ -1,5 +1,0 @@
-protected ReadablePartialConverter() { [EOL]     super(); [EOL] } <line_num>: 40,42
-public Chronology getChronology(Object object, DateTimeZone zone) { [EOL]     return getChronology(object, (Chronology) null).withZone(zone); [EOL] } <line_num>: 52,54
-public Chronology getChronology(Object object, Chronology chrono) { [EOL]     if (chrono == null) { [EOL]         chrono = ((ReadablePartial) object).getChronology(); [EOL]         chrono = DateTimeUtils.getChronology(chrono); [EOL]     } [EOL]     return chrono; [EOL] } <line_num>: 66,72
-public int[] getPartialValues(ReadablePartial fieldSource, Object object, Chronology chrono) { [EOL]     ReadablePartial input = (ReadablePartial) object; [EOL]     int size = fieldSource.size(); [EOL]     int[] values = new int[size]; [EOL]     for (int i = 0; i < size; i++) { [EOL]         values[i] = input.get(fieldSource.getFieldType(i)); [EOL]     } [EOL]     chrono.validate(fieldSource, values); [EOL]     return values; [EOL] } <line_num>: 86,95
-public Class<?> getSupportedType() { [EOL]     return ReadablePartial.class; [EOL] } <line_num>: 103,105

@@ -1,6 +1,0 @@
-public void testMessageNumber()
-public void testAllKeysPresentInPropertiesFiles()
-public void testAllPropertiesCorrespondToKeys()
-public void testNoMissingFrenchTranslation()
-public void testNoOpEnglishTranslation()
-public void testVariablePartsConsistency()

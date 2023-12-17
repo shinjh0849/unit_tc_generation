@@ -1,1 +1,0 @@
-public double getZValue(int series, int item) { [EOL]     double result = Double.NaN; [EOL]     Number z = getZ(series, item); [EOL]     if (z != null) { [EOL]         result = z.doubleValue(); [EOL]     } [EOL]     return result; [EOL] } <line_num>: 59,66

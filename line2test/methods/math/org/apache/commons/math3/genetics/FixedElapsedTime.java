@@ -1,3 +1,0 @@
-public FixedElapsedTime(final long maxTime) throws NumberIsTooSmallException { [EOL]     this(maxTime, TimeUnit.SECONDS); [EOL] } <line_num>: 46,48
-public FixedElapsedTime(final long maxTime, final TimeUnit unit) throws NumberIsTooSmallException { [EOL]     if (maxTime < 0) { [EOL]         throw new NumberIsTooSmallException(maxTime, 0, true); [EOL]     } [EOL]     maxTimePeriod = unit.toNanos(maxTime); [EOL] } <line_num>: 57,62
-public boolean isSatisfied(final Population population) { [EOL]     if (endTime < 0) { [EOL]         endTime = System.nanoTime() + maxTimePeriod; [EOL]     } [EOL]     return System.nanoTime() >= endTime; [EOL] } <line_num>: 71,77
