@@ -1,0 +1,4 @@
+public static JXPathContext getPageContext(PageContext pageContext)
+public static JXPathContext getRequestContext(ServletRequest request, ServletContext servletContext)
+public static JXPathContext getSessionContext(HttpSession session, ServletContext servletContext)
+public static JXPathContext getApplicationContext(ServletContext servletContext)

@@ -1,0 +1,7 @@
+ CRC()
+ void initialiseCRC()
+ int getFinalCRC()
+ int getGlobalCRC()
+ void setGlobalCRC(int newCrc)
+ void updateCRC(int inCh)
+ void updateCRC(int inCh, int repeat)

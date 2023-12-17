@@ -1,0 +1,2 @@
+@Override [EOL] public final int translate(final CharSequence input, final int index, final Writer out) throws IOException { [EOL]     final int codepoint = Character.codePointAt(input, index); [EOL]     final boolean consumed = translate(codepoint, out); [EOL]     if (consumed) { [EOL]         return 1; [EOL]     } else { [EOL]         return 0; [EOL]     } [EOL] } <line_num>: 35,44
+public abstract boolean translate(int codepoint, Writer out) throws IOException; <line_num>: 54,54

@@ -1,0 +1,6 @@
+public TimeSeriesDataItemTests(String name)
+public static Test suite()
+protected void setUp()
+public void testEqualsSelf()
+public void testEquals()
+public void testSerialization()

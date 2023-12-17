@@ -1,0 +1,13 @@
+public void testSimpleBoolean() throws Exception
+public void testSimpleInt() throws Exception
+public void testIntRange() throws Exception
+public void testSimpleLong() throws Exception
+public void testLongRange() throws Exception
+public void testBigDecimalRange() throws Exception
+public void testBigNumbers() throws Exception
+public void testSimpleDouble() throws Exception
+public void testNumbers() throws Exception
+public void testLongOverflow() throws Exception
+public void testParsingOfLongerSequences() throws Exception
+public void testInvalidBooleanAccess() throws Exception
+public void testInvalidIntAccess() throws Exception

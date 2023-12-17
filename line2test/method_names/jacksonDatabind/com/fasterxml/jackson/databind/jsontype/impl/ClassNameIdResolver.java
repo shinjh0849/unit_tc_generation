@@ -1,0 +1,7 @@
+public ClassNameIdResolver(JavaType baseType, TypeFactory typeFactory)
+public JsonTypeInfo.Id getMechanism()
+public void registerSubtype(Class<?> type, String name)
+public String idFromValue(Object value)
+public String idFromValueAndType(Object value, Class<?> type)
+public JavaType typeFromId(String id)
+protected final String _idFrom(Object value, Class<?> cls)

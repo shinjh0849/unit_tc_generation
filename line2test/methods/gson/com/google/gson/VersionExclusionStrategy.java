@@ -1,0 +1,6 @@
+public VersionExclusionStrategy(double version) { [EOL]     Preconditions.checkArgument(version >= 0.0D); [EOL]     this.version = version; [EOL] } <line_num>: 31,34
+public boolean shouldSkipField(FieldAttributes f) { [EOL]     return !isValidVersion(f.getAnnotation(Since.class), f.getAnnotation(Until.class)); [EOL] } <line_num>: 36,38
+public boolean shouldSkipClass(Class<?> clazz) { [EOL]     return !isValidVersion(clazz.getAnnotation(Since.class), clazz.getAnnotation(Until.class)); [EOL] } <line_num>: 40,42
+private boolean isValidVersion(Since since, Until until) { [EOL]     return (isValidSince(since) && isValidUntil(until)); [EOL] } <line_num>: 44,46
+private boolean isValidSince(Since annotation) { [EOL]     if (annotation != null) { [EOL]         double annotationVersion = annotation.value(); [EOL]         if (annotationVersion > version) { [EOL]             return false; [EOL]         } [EOL]     } [EOL]     return true; [EOL] } <line_num>: 48,56
+private boolean isValidUntil(Until annotation) { [EOL]     if (annotation != null) { [EOL]         double annotationVersion = annotation.value(); [EOL]         if (annotationVersion <= version) { [EOL]             return false; [EOL]         } [EOL]     } [EOL]     return true; [EOL] } <line_num>: 58,66

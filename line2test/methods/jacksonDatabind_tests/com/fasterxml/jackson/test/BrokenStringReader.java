@@ -1,0 +1,2 @@
+public BrokenStringReader(String content, String msg) { [EOL]     super(new StringReader(content)); [EOL]     _message = msg; [EOL] } <line_num>: 10,14
+@Override [EOL] public int read(char[] cbuf, int off, int len) throws IOException { [EOL]     int i = super.read(cbuf, off, len); [EOL]     if (i < 0) { [EOL]         throw new IOException(_message); [EOL]     } [EOL]     return i; [EOL] } <line_num>: 16,25

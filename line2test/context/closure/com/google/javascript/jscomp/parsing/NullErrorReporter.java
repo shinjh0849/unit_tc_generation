@@ -1,0 +1,8 @@
+private NullErrorReporter()
+public void error(String message, String sourceName, int line, int lineOffset)
+public void warning(String message, String sourceName, int line, int lineOffset)
+public static ErrorReporter forOldRhino()
+public static com.google.javascript.rhino.head.ErrorReporter forNewRhino()
+public com.google.javascript.rhino.head.EvaluatorException runtimeError(String message, String sourceName, int line, String lineSource, int lineOffset)
+public void error(String message, String sourceName, int line, String sourceLine, int lineOffset)
+public void warning(String message, String sourceName, int line, String sourceLine, int lineOffset)

@@ -1,0 +1,15 @@
+public void testDeleteDir() throws Exception
+public void testDeleteFile() throws Exception
+public void testDeletePlusAdd() throws Exception
+public void testDeleteFromAndAddToZip() throws Exception
+public void testAddDeleteAdd() throws Exception
+public void testDeleteAddDelete() throws Exception
+public void testDeleteFromZip() throws Exception
+public void testDeleteFromTar() throws Exception
+public void testDeleteFromJar() throws Exception
+public void testDeleteFromAndAddToTar() throws Exception
+public void testDeleteFromAndAddToJar() throws Exception
+public void XtestDeleteFromAr() throws Exception
+public void XtestDeleteFromAndAddToAr() throws Exception
+public void testRenameAndDelete() throws Exception
+public void testAddMoveDelete() throws Exception

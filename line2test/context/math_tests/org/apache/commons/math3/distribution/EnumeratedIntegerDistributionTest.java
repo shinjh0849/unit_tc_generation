@@ -1,0 +1,11 @@
+public EnumeratedIntegerDistributionTest()
+public void testExceptions()
+public void testProbability()
+public void testCumulativeProbability()
+public void testGetNumericalMean()
+public void testGetNumericalVariance()
+public void testGetSupportLowerBound()
+public void testGetSupportUpperBound()
+public void testIsSupportConnected()
+public void testSample()
+EnumeratedIntegerDistribution testDistribution

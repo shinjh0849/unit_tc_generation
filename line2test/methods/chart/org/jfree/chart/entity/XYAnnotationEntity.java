@@ -1,0 +1,4 @@
+public XYAnnotationEntity(Shape hotspot, int rendererIndex, String toolTipText, String urlText) { [EOL]     super(hotspot, toolTipText, urlText); [EOL]     this.rendererIndex = rendererIndex; [EOL] } <line_num>: 67,71
+public int getRendererIndex() { [EOL]     return this.rendererIndex; [EOL] } <line_num>: 78,80
+public void setRendererIndex(int index) { [EOL]     this.rendererIndex = index; [EOL] } <line_num>: 87,89
+public boolean equals(Object obj) { [EOL]     if (obj == this) { [EOL]         return true; [EOL]     } [EOL]     if (!super.equals(obj)) { [EOL]         return false; [EOL]     } [EOL]     if (!(obj instanceof XYAnnotationEntity)) { [EOL]         return false; [EOL]     } [EOL]     XYAnnotationEntity that = (XYAnnotationEntity) obj; [EOL]     if (this.rendererIndex != that.rendererIndex) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 98,113

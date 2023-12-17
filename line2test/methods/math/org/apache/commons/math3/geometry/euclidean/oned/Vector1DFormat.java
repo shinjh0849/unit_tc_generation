@@ -1,0 +1,9 @@
+public Vector1DFormat() { [EOL]     super(DEFAULT_PREFIX, DEFAULT_SUFFIX, DEFAULT_SEPARATOR, CompositeFormat.getDefaultNumberFormat()); [EOL] } <line_num>: 54,57
+public Vector1DFormat(final NumberFormat format) { [EOL]     super(DEFAULT_PREFIX, DEFAULT_SUFFIX, DEFAULT_SEPARATOR, format); [EOL] } <line_num>: 63,65
+public Vector1DFormat(final String prefix, final String suffix) { [EOL]     super(prefix, suffix, DEFAULT_SEPARATOR, CompositeFormat.getDefaultNumberFormat()); [EOL] } <line_num>: 72,74
+public Vector1DFormat(final String prefix, final String suffix, final NumberFormat format) { [EOL]     super(prefix, suffix, DEFAULT_SEPARATOR, format); [EOL] } <line_num>: 83,86
+public static Vector1DFormat getInstance() { [EOL]     return getInstance(Locale.getDefault()); [EOL] } <line_num>: 92,94
+public static Vector1DFormat getInstance(final Locale locale) { [EOL]     return new Vector1DFormat(CompositeFormat.getDefaultNumberFormat(locale)); [EOL] } <line_num>: 101,103
+@Override [EOL] public StringBuffer format(final Vector<Euclidean1D> vector, final StringBuffer toAppendTo, final FieldPosition pos) { [EOL]     final Vector1D p1 = (Vector1D) vector; [EOL]     return format(toAppendTo, pos, p1.getX()); [EOL] } <line_num>: 106,111
+@Override [EOL] public Vector1D parse(final String source) throws MathParseException { [EOL]     ParsePosition parsePosition = new ParsePosition(0); [EOL]     Vector1D result = parse(source, parsePosition); [EOL]     if (parsePosition.getIndex() == 0) { [EOL]         throw new MathParseException(source, parsePosition.getErrorIndex(), Vector1D.class); [EOL]     } [EOL]     return result; [EOL] } <line_num>: 114,124
+@Override [EOL] public Vector1D parse(final String source, final ParsePosition pos) { [EOL]     final double[] coordinates = parseCoordinates(1, source, pos); [EOL]     if (coordinates == null) { [EOL]         return null; [EOL]     } [EOL]     return new Vector1D(coordinates[0]); [EOL] } <line_num>: 127,134

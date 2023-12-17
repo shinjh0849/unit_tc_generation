@@ -1,0 +1,5 @@
+public RawSerializer(Class<?> cls) { [EOL]     super(cls, false); [EOL] } <line_num>: 26,28
+@Override [EOL] public void serialize(T value, JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonGenerationException { [EOL]     jgen.writeRawValue(value.toString()); [EOL] } <line_num>: 30,35
+@Override [EOL] public void serializeWithType(T value, JsonGenerator jgen, SerializerProvider provider, TypeSerializer typeSer) throws IOException, JsonProcessingException { [EOL]     typeSer.writeTypePrefixForScalar(value, jgen); [EOL]     serialize(value, jgen, provider); [EOL]     typeSer.writeTypeSuffixForScalar(value, jgen); [EOL] } <line_num>: 37,45
+@Override [EOL] public JsonNode getSchema(SerializerProvider provider, Type typeHint) { [EOL]     return createSchemaNode("string", true); [EOL] } <line_num>: 47,52
+@Override [EOL] public void acceptJsonFormatVisitor(JsonFormatVisitorWrapper visitor, JavaType typeHint) throws JsonMappingException { [EOL]     visitor.expectStringFormat(typeHint); [EOL] } <line_num>: 54,59

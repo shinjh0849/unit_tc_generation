@@ -1,0 +1,1 @@
+ UnivariateMatrixFunction derivative()

@@ -1,0 +1,8 @@
+public JSONWrappedObject(String prefix, String suffix, Object value) { [EOL]     this(prefix, suffix, value, (JavaType) null); [EOL] } <line_num>: 48,50
+public JSONWrappedObject(String prefix, String suffix, Object value, JavaType asType) { [EOL]     _prefix = prefix; [EOL]     _suffix = suffix; [EOL]     _value = value; [EOL]     _serializationType = asType; [EOL] } <line_num>: 57,63
+@Override [EOL] public void serializeWithType(JsonGenerator jgen, SerializerProvider provider, TypeSerializer typeSer) throws IOException, JsonProcessingException { [EOL]     serialize(jgen, provider); [EOL] } <line_num>: 71,77
+@Override [EOL] public void serialize(JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonProcessingException { [EOL]     if (_prefix != null) [EOL]         jgen.writeRaw(_prefix); [EOL]     if (_value == null) { [EOL]         provider.defaultSerializeNull(jgen); [EOL]     } else if (_serializationType != null) { [EOL]         provider.findTypedValueSerializer(_serializationType, true, null).serialize(_value, jgen, provider); [EOL]     } else { [EOL]         Class<?> cls = _value.getClass(); [EOL]         provider.findTypedValueSerializer(cls, true, null).serialize(_value, jgen, provider); [EOL]     } [EOL]     if (_suffix != null) [EOL]         jgen.writeRaw(_suffix); [EOL] } <line_num>: 79,94
+public String getPrefix() { [EOL]     return _prefix; [EOL] } <line_num>: 102,102
+public String getSuffix() { [EOL]     return _suffix; [EOL] } <line_num>: 103,103
+public Object getValue() { [EOL]     return _value; [EOL] } <line_num>: 104,104
+public JavaType getSerializationType() { [EOL]     return _serializationType; [EOL] } <line_num>: 105,105

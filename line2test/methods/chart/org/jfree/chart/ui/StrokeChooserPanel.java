@@ -1,0 +1,4 @@
+public StrokeChooserPanel(StrokeSample current, StrokeSample[] available) { [EOL]     setLayout(new BorderLayout()); [EOL]     this.selector = new JComboBox(available); [EOL]     this.selector.setSelectedItem(current); [EOL]     this.selector.setRenderer(new StrokeSample(new BasicStroke(1))); [EOL]     add(this.selector); [EOL]     this.selector.addActionListener(new ActionListener() { [EOL]  [EOL]         public void actionPerformed(final ActionEvent evt) { [EOL]             getSelector().transferFocus(); [EOL]         } [EOL]     }); [EOL] } <line_num>: 71,83
+public void actionPerformed(final ActionEvent evt) { [EOL]     getSelector().transferFocus(); [EOL] } <line_num>: 79,81
+protected final JComboBox getSelector() { [EOL]     return this.selector; [EOL] } <line_num>: 91,94
+public Stroke getSelectedStroke() { [EOL]     StrokeSample sample = (StrokeSample) this.selector.getSelectedItem(); [EOL]     return sample.getStroke(); [EOL] } <line_num>: 101,104

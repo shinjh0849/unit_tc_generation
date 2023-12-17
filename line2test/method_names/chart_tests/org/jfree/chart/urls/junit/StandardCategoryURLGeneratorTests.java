@@ -1,0 +1,6 @@
+public StandardCategoryURLGeneratorTests(String name)
+public static Test suite()
+public void testGenerateURL()
+public void testPublicCloneable()
+public void testEquals()
+public void testSerialization()

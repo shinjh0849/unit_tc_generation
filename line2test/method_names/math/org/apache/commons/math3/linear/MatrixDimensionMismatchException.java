@@ -1,0 +1,5 @@
+public MatrixDimensionMismatchException(int wrongRowDim, int wrongColDim, int expectedRowDim, int expectedColDim)
+public int getWrongRowDimension()
+public int getExpectedRowDimension()
+public int getWrongColumnDimension()
+public int getExpectedColumnDimension()

@@ -1,0 +1,3 @@
+public ValueInjector(String propertyName, JavaType type, Annotations contextAnnotations, AnnotatedMember mutator, Object valueId) { [EOL]     super(propertyName, type, null, contextAnnotations, mutator, false); [EOL]     _valueId = valueId; [EOL] } <line_num>: 26,32
+public Object findValue(DeserializationContext context, Object beanInstance) { [EOL]     return context.findInjectableValue(_valueId, this, beanInstance); [EOL] } <line_num>: 34,37
+public void inject(DeserializationContext context, Object beanInstance) throws IOException { [EOL]     _member.setValue(beanInstance, findValue(context, beanInstance)); [EOL] } <line_num>: 39,43

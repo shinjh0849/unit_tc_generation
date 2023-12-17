@@ -1,0 +1,6 @@
+ Priority(int value)
+public int getValue()
+public abstract CheckLevel level(JSError error)
+protected int getPriority()
+protected boolean disables(DiagnosticGroup group)
+protected boolean enables(DiagnosticGroup group)

@@ -1,0 +1,8 @@
+protected StdContainerSerializers()
+public static ContainerSerializer<?> indexedListSerializer(JavaType elemType, boolean staticTyping, TypeSerializer vts, JsonSerializer<Object> valueSerializer)
+public static ContainerSerializer<?> collectionSerializer(JavaType elemType, boolean staticTyping, TypeSerializer vts, JsonSerializer<Object> valueSerializer)
+public static ContainerSerializer<?> iteratorSerializer(JavaType elemType, boolean staticTyping, TypeSerializer vts)
+public static ContainerSerializer<?> iterableSerializer(JavaType elemType, boolean staticTyping, TypeSerializer vts)
+public static JsonSerializer<?> enumSetSerializer(JavaType enumType)
+public static ContainerSerializer<?> indexedListSerializer(JavaType elemType, boolean staticTyping, TypeSerializer vts, BeanProperty property, JsonSerializer<Object> valueSerializer)
+public static ContainerSerializer<?> collectionSerializer(JavaType elemType, boolean staticTyping, TypeSerializer vts, BeanProperty property, JsonSerializer<Object> valueSerializer)

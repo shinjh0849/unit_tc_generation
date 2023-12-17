@@ -1,0 +1,5 @@
+public FindOnes(List<Integer> representation)
+public void test()
+private static ElitisticListPopulation randomPopulation()
+public double fitness()
+public AbstractListChromosome<Integer> newFixedLengthChromosome(List<Integer> chromosomeRepresentation)

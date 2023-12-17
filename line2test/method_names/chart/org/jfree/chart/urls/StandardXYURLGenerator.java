@@ -1,0 +1,5 @@
+public StandardXYURLGenerator()
+public StandardXYURLGenerator(String prefix)
+public StandardXYURLGenerator(String prefix, String seriesParameterName, String itemParameterName)
+public String generateURL(XYDataset dataset, int series, int item)
+public boolean equals(Object obj)

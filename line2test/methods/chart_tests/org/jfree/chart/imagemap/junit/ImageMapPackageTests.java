@@ -1,0 +1,3 @@
+public ImageMapPackageTests(String name) { [EOL]     super(name); [EOL] } <line_num>: 77,79
+public static Test suite() { [EOL]     TestSuite suite = new TestSuite("org.jfree.chart.imagemap"); [EOL]     suite.addTestSuite(DynamicDriveToolTipTagFragmentGeneratorTests.class); [EOL]     suite.addTestSuite(ImageMapUtilitiesTests.class); [EOL]     suite.addTestSuite(OverLIBToolTipTagFragmentGeneratorTests.class); [EOL]     suite.addTestSuite(StandardToolTipTagFragmentGeneratorTests.class); [EOL]     suite.addTestSuite(StandardURLTagFragmentGeneratorTests.class); [EOL]     return suite; [EOL] } <line_num>: 62,70
+public static void main(String[] args) { [EOL]     junit.textui.TestRunner.run(suite()); [EOL] } <line_num>: 86,88

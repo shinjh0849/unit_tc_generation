@@ -1,0 +1,12 @@
+public void setUp()
+public IntegerDistribution makeDistribution()
+public int[] makeDensityTestPoints()
+public double[] makeDensityTestValues()
+public int[] makeCumulativeTestPoints()
+public double[] makeCumulativeTestValues()
+public double[] makeInverseCumulativeTestPoints()
+public int[] makeInverseCumulativeTestValues()
+public void testDegenerate0()
+public void testDegenerate1()
+public void testMoments()
+double defaultTolerance=Optional[NormalDistribution.DEFAULT_INVERSE_ABSOLUTE_ACCURACY]

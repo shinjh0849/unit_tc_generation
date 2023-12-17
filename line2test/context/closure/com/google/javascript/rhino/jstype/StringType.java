@@ -1,0 +1,12 @@
+ StringType(JSTypeRegistry registry)
+public TernaryValue testForEquality(JSType that)
+public boolean isStringValueType()
+public boolean matchesNumberContext()
+public boolean matchesStringContext()
+public boolean matchesObjectContext()
+ String toStringHelper(boolean forAnnotations)
+public String getDisplayName()
+public JSType autoboxesTo()
+public BooleanLiteralSet getPossibleToBooleanOutcomes()
+public T visit(Visitor<T> visitor)
+long serialVersionUID=Optional[1L]

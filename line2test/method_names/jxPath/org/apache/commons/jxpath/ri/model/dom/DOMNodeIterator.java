@@ -1,0 +1,7 @@
+public DOMNodeIterator(NodePointer parent, NodeTest nodeTest, boolean reverse, NodePointer startWith)
+public NodePointer getNodePointer()
+public int getPosition()
+public boolean setPosition(int position)
+private boolean previous()
+private boolean next()
+private boolean testChild()

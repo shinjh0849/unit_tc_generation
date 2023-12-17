@@ -1,0 +1,5 @@
+private DialShape(String name) { [EOL]     this.name = name; [EOL] } <line_num>: 73,75
+public String toString() { [EOL]     return this.name; [EOL] } <line_num>: 82,84
+public boolean equals(Object obj) { [EOL]     if (this == obj) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof DialShape)) { [EOL]         return false; [EOL]     } [EOL]     DialShape shape = (DialShape) obj; [EOL]     if (!this.name.equals(shape.toString())) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 94,106
+public int hashCode() { [EOL]     return this.name.hashCode(); [EOL] } <line_num>: 113,115
+private Object readResolve() throws ObjectStreamException { [EOL]     if (this.equals(DialShape.CIRCLE)) { [EOL]         return DialShape.CIRCLE; [EOL]     } else if (this.equals(DialShape.CHORD)) { [EOL]         return DialShape.CHORD; [EOL]     } else if (this.equals(DialShape.PIE)) { [EOL]         return DialShape.PIE; [EOL]     } [EOL]     return null; [EOL] } <line_num>: 124,135

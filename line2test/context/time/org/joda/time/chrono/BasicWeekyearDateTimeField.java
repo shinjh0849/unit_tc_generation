@@ -1,0 +1,20 @@
+ BasicWeekyearDateTimeField(BasicChronology chronology)
+public boolean isLenient()
+public int get(long instant)
+public long add(long instant, int years)
+public long add(long instant, long value)
+public long addWrapField(long instant, int years)
+public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant)
+public long set(long instant, int year)
+public DurationField getRangeDurationField()
+public boolean isLeap(long instant)
+public int getLeapAmount(long instant)
+public DurationField getLeapDurationField()
+public int getMinimumValue()
+public int getMaximumValue()
+public long roundFloor(long instant)
+public long remainder(long instant)
+private Object readResolve()
+long serialVersionUID=Optional[6215066916806820644L]
+long WEEK_53=Optional[(53L - 1) * DateTimeConstants.MILLIS_PER_WEEK]
+BasicChronology iChronology

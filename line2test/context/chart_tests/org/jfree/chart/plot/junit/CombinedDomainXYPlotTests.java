@@ -1,0 +1,13 @@
+public CombinedDomainXYPlotTests(String name)
+public void chartChanged(ChartChangeEvent event)
+public static Test suite()
+public void testConstructor1()
+public void testRemoveSubplot()
+public void testEquals()
+public void testCloning()
+public void testSerialization()
+public void testNotification()
+private XYDataset createDataset1()
+private XYDataset createDataset2()
+private CombinedDomainXYPlot createPlot()
+List events=Optional[new java.util.ArrayList()]

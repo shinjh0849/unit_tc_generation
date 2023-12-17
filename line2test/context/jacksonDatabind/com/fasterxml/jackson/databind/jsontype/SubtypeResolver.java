@@ -1,0 +1,5 @@
+public abstract void registerSubtypes(NamedType... types)
+public abstract void registerSubtypes(Class<?>... classes)
+public abstract Collection<NamedType> collectAndResolveSubtypes(AnnotatedMember property, MapperConfig<?> config, AnnotationIntrospector ai)
+public abstract Collection<NamedType> collectAndResolveSubtypes(AnnotatedMember property, MapperConfig<?> config, AnnotationIntrospector ai, JavaType baseType)
+public abstract Collection<NamedType> collectAndResolveSubtypes(AnnotatedClass basetype, MapperConfig<?> config, AnnotationIntrospector ai)

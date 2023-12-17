@@ -1,0 +1,2209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1675927281574" clover="4.4.1">
+   <project timestamp="1675927279889">
+      <metrics coveredelements="1826" complexity="645" loc="4492" methods="374" classes="43" statements="1389" packages="6" coveredconditionals="352" coveredmethods="303" elements="2217" ncloc="2540" files="21" conditionals="454" coveredstatements="1171"/>
+      <package name="org.jsoup.nodes">
+         <metrics coveredelements="663" complexity="274" loc="1984" methods="185" classes="25" statements="501" coveredconditionals="104" coveredmethods="151" elements="840" ncloc="1025" files="10" conditionals="154" coveredstatements="408"/>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/nodes/Node.java" name="Node.java">
+            <metrics coveredelements="121" coveredconditionals="20" complexity="46" loc="348" coveredmethods="24" methods="30" elements="157" classes="1" ncloc="187" statements="99" conditionals="28" coveredstatements="77"/>
+            <class name="Node">
+               <metrics coveredelements="121" coveredconditionals="20" complexity="46" coveredmethods="24" methods="30" elements="157" statements="99" conditionals="28" coveredstatements="77"/>
+            </class>
+            <line complexity="1" visibility="protected" signature="Node(String,Attributes)" num="28" count="18898" type="method"/>
+            <line num="29" count="18898" type="stmt"/>
+            <line num="30" count="18898" type="stmt"/>
+            <line num="32" count="18898" type="stmt"/>
+            <line num="33" count="18898" type="stmt"/>
+            <line num="34" count="18898" type="stmt"/>
+            <line complexity="1" visibility="protected" signature="Node(String)" num="37" count="11406" type="method"/>
+            <line num="38" count="11406" type="stmt"/>
+            <line complexity="3" visibility="public" signature="attr(String) : String" num="59" count="9001" type="method"/>
+            <line num="60" count="9001" type="stmt"/>
+            <line num="62" count="9001" type="stmt"/>
+            <line falsecount="6369" truecount="2632" num="62" type="cond"/>
+            <line num="63" count="2632" type="stmt"/>
+            <line num="64" count="6369" type="stmt"/>
+            <line falsecount="6362" truecount="7" num="64" type="cond"/>
+            <line num="65" count="7" type="stmt"/>
+            <line num="66" count="6362" type="stmt"/>
+            <line complexity="1" visibility="public" signature="attributes() : Attributes" num="73" count="15" type="method"/>
+            <line num="74" count="15" type="stmt"/>
+            <line complexity="1" visibility="public" signature="attr(String,String) : Node" num="83" count="1" type="method"/>
+            <line num="84" count="1" type="stmt"/>
+            <line num="85" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="hasAttr(String) : boolean" num="93" count="9056" type="method"/>
+            <line num="94" count="9056" type="stmt"/>
+            <line num="95" count="9056" type="stmt"/>
+            <line complexity="1" visibility="public" signature="removeAttr(String) : Node" num="103" count="0" type="method"/>
+            <line num="104" count="0" type="stmt"/>
+            <line num="105" count="0" type="stmt"/>
+            <line num="106" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="baseUri() : String" num="113" count="150" type="method"/>
+            <line num="114" count="150" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setBaseUri(String) : void" num="121" count="3" type="method"/>
+            <line num="122" count="3" type="stmt"/>
+            <line num="123" count="3" type="stmt"/>
+            <line complexity="4" visibility="public" signature="absUrl(String) : String" num="143" count="26" type="method"/>
+            <line num="144" count="26" type="stmt"/>
+            <line num="146" count="26" type="stmt"/>
+            <line num="147" count="26" type="stmt"/>
+            <line falsecount="24" truecount="2" num="147" type="cond"/>
+            <line num="148" count="2" type="stmt"/>
+            <line num="150" count="24" type="stmt"/>
+            <line num="151" count="24" type="stmt"/>
+            <line num="152" count="24" type="stmt"/>
+            <line num="153" count="24" type="stmt"/>
+            <line num="156" count="9" type="stmt"/>
+            <line num="157" count="5" type="stmt"/>
+            <line num="159" count="15" type="stmt"/>
+            <line num="160" count="15" type="stmt"/>
+            <line num="162" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="childNode(int) : Node" num="172" count="6" type="method"/>
+            <line num="173" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="childNodes() : List&lt;Node&gt;" num="181" count="35" type="method"/>
+            <line num="182" count="35" type="stmt"/>
+            <line complexity="1" visibility="public" signature="parent() : Node" num="189" count="1513" type="method"/>
+            <line num="190" count="1513" type="stmt"/>
+            <line complexity="1" visibility="public" signature="remove() : void" num="196" count="0" type="method"/>
+            <line num="197" count="0" type="stmt"/>
+            <line num="198" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="replaceWith(Node) : void" num="205" count="1" type="method"/>
+            <line num="206" count="1" type="stmt"/>
+            <line num="207" count="1" type="stmt"/>
+            <line num="208" count="1" type="stmt"/>
+            <line complexity="2" visibility="protected" signature="setParentNode(Node) : void" num="211" count="18816" type="method"/>
+            <line num="212" count="18816" type="stmt"/>
+            <line falsecount="18816" truecount="0" num="212" type="cond"/>
+            <line num="213" count="0" type="stmt"/>
+            <line num="214" count="18816" type="stmt"/>
+            <line complexity="2" visibility="protected" signature="replaceChild(Node,Node) : void" num="217" count="6" type="method"/>
+            <line num="218" count="6" type="stmt"/>
+            <line num="219" count="6" type="stmt"/>
+            <line num="220" count="6" type="stmt"/>
+            <line falsecount="1" truecount="5" num="220" type="cond"/>
+            <line num="221" count="5" type="stmt"/>
+            <line num="223" count="6" type="stmt"/>
+            <line num="224" count="6" type="stmt"/>
+            <line num="225" count="6" type="stmt"/>
+            <line num="226" count="6" type="stmt"/>
+            <line complexity="1" visibility="protected" signature="removeChild(Node) : void" num="229" count="8" type="method"/>
+            <line num="230" count="8" type="stmt"/>
+            <line num="231" count="8" type="stmt"/>
+            <line num="232" count="8" type="stmt"/>
+            <line num="233" count="8" type="stmt"/>
+            <line complexity="2" visibility="protected" signature="addChild(Node) : void" num="236" count="5" type="method"/>
+            <line num="237" count="5" type="stmt"/>
+            <line num="238" count="5" type="stmt"/>
+            <line falsecount="5" truecount="0" num="238" type="cond"/>
+            <line num="239" count="0" type="stmt"/>
+            <line num="241" count="5" type="stmt"/>
+            <line num="242" count="5" type="stmt"/>
+            <line complexity="2" visibility="protected" signature="nodeDepth() : int" num="245" count="326" type="method"/>
+            <line num="246" count="326" type="stmt"/>
+            <line falsecount="253" truecount="73" num="246" type="cond"/>
+            <line num="247" count="73" type="stmt"/>
+            <line num="249" count="253" type="stmt"/>
+            <line complexity="1" visibility="public" signature="siblingNodes() : List&lt;Node&gt;" num="256" count="0" type="method"/>
+            <line num="257" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="nextSibling() : Node" num="264" count="0" type="method"/>
+            <line num="265" count="0" type="stmt"/>
+            <line num="266" count="0" type="stmt"/>
+            <line num="267" count="0" type="stmt"/>
+            <line num="268" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="268" type="cond"/>
+            <line num="269" count="0" type="stmt"/>
+            <line num="271" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="previousSibling() : Node" num="278" count="0" type="method"/>
+            <line num="279" count="0" type="stmt"/>
+            <line num="280" count="0" type="stmt"/>
+            <line num="281" count="0" type="stmt"/>
+            <line num="282" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="282" type="cond"/>
+            <line num="283" count="0" type="stmt"/>
+            <line num="285" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="siblingIndex() : Integer" num="294" count="11" type="method"/>
+            <line num="295" count="11" type="stmt"/>
+            <line complexity="3" visibility="protected" signature="indexInList(N,List&lt;N&gt;) : Integer" num="298" count="79" type="method"/>
+            <line num="299" count="79" type="stmt"/>
+            <line num="300" count="79" type="stmt"/>
+            <line num="302" count="79" type="stmt"/>
+            <line falsecount="0" truecount="125" num="302" type="cond"/>
+            <line num="303" count="125" type="stmt"/>
+            <line num="304" count="125" type="stmt"/>
+            <line falsecount="46" truecount="79" num="304" type="cond"/>
+            <line num="305" count="79" type="stmt"/>
+            <line num="307" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="outerHtml() : String" num="314" count="6" type="method"/>
+            <line num="315" count="6" type="stmt"/>
+            <line num="316" count="6" type="stmt"/>
+            <line num="317" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="326" count="0" type="method"/>
+            <line num="327" count="0" type="stmt"/>
+            <line complexity="1" visibility="protected" signature="indent(StringBuilder) : void" num="330" count="73" type="method"/>
+            <line num="331" count="73" type="stmt"/>
+            <line complexity="2" visibility="public" signature="equals(Object) : boolean" num="334" count="12361" type="method"/>
+            <line num="336" count="12361" type="stmt"/>
+            <line num="336" count="8" type="stmt"/>
+            <line falsecount="12353" truecount="8" num="336" type="cond"/>
+            <line num="338" count="12353" type="stmt"/>
+            <line complexity="3" visibility="public" signature="hashCode() : int" num="341" count="61876" type="method"/>
+            <line num="343" count="61876" type="stmt"/>
+            <line falsecount="4865" truecount="57011" num="343" type="cond"/>
+            <line num="345" count="61876" type="stmt"/>
+            <line falsecount="0" truecount="61876" num="345" type="cond"/>
+            <line num="346" count="61876" type="stmt"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/nodes/TextNode.java" name="TextNode.java">
+            <metrics coveredelements="39" coveredconditionals="6" complexity="19" loc="106" coveredmethods="10" methods="12" elements="43" classes="1" ncloc="57" statements="25" conditionals="6" coveredstatements="23"/>
+            <class name="TextNode">
+               <metrics coveredelements="39" coveredconditionals="6" complexity="19" coveredmethods="10" methods="12" elements="43" statements="25" conditionals="6" coveredstatements="23"/>
+            </class>
+            <line complexity="1" visibility="public" signature="TextNode(String,String)" num="21" count="9760" type="method"/>
+            <line num="22" count="9760" type="stmt"/>
+            <line num="23" count="9760" type="stmt"/>
+            <line complexity="1" visibility="public" signature="nodeName() : String" num="26" count="0" type="method"/>
+            <line num="27" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="text() : String" num="35" count="1" type="method"/>
+            <line num="36" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="text(String) : TextNode" num="44" count="1" type="method"/>
+            <line num="45" count="1" type="stmt"/>
+            <line num="46" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getWholeText() : String" num="53" count="238" type="method"/>
+            <line num="54" count="238" type="stmt"/>
+            <line complexity="1" visibility="public" signature="isBlank() : boolean" num="61" count="119" type="method"/>
+            <line num="62" count="119" type="stmt"/>
+            <line complexity="7" visibility="package" signature="outerHtml(StringBuilder) : void" num="65" count="40" type="method"/>
+            <line num="66" count="40" type="stmt"/>
+            <line num="67" count="40" type="stmt"/>
+            <line falsecount="1" truecount="39" num="67" type="cond"/>
+            <line num="68" count="39" type="stmt"/>
+            <line num="71" count="40" type="stmt"/>
+            <line falsecount="36" truecount="4" num="71" type="cond"/>
+            <line num="72" count="4" type="stmt"/>
+            <line num="73" count="40" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="76" count="0" type="method"/>
+            <line num="77" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="createFromEncoded(String,String) : TextNode" num="85" count="9739" type="method"/>
+            <line num="86" count="9739" type="stmt"/>
+            <line num="87" count="9739" type="stmt"/>
+            <line complexity="1" visibility="package" signature="normaliseWhitespace(String) : String" num="90" count="204" type="method"/>
+            <line num="91" count="204" type="stmt"/>
+            <line num="92" count="204" type="stmt"/>
+            <line complexity="1" visibility="package" signature="stripLeadingWhitespace(String) : String" num="95" count="13" type="method"/>
+            <line num="96" count="13" type="stmt"/>
+            <line complexity="2" visibility="package" signature="lastCharIsWhitespace(StringBuilder) : boolean" num="99" count="51" type="method"/>
+            <line num="100" count="51" type="stmt"/>
+            <line falsecount="18" truecount="33" num="100" type="cond"/>
+            <line num="101" count="33" type="stmt"/>
+            <line num="102" count="18" type="stmt"/>
+            <line num="103" count="18" type="stmt"/>
+            <line num="104" count="18" type="stmt"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/nodes/Evaluator.java" name="Evaluator.java">
+            <metrics coveredelements="58" coveredconditionals="0" complexity="28" loc="172" coveredmethods="28" methods="28" elements="58" classes="16" ncloc="127" statements="30" conditionals="0" coveredstatements="30"/>
+            <class name="Evaluator">
+               <metrics coveredelements="1" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="1" statements="0" conditionals="0" coveredstatements="0"/>
+            </class>
+            <class name="Evaluator.Tag">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Evaluator.Id">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Evaluator.Class">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Evaluator.Attribute">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Evaluator.AttributeWithValue">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Evaluator.AttributeWithValueNot">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Evaluator.AttributeWithValueStarting">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Evaluator.AttributeWithValueEnding">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Evaluator.AttributeWithValueContaining">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Evaluator.AttributeKeyPair">
+               <metrics coveredelements="5" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="5" statements="4" conditionals="0" coveredstatements="4"/>
+            </class>
+            <class name="Evaluator.AllElements">
+               <metrics coveredelements="2" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="2" statements="1" conditionals="0" coveredstatements="1"/>
+            </class>
+            <class name="Evaluator.IndexLessThan">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Evaluator.IndexGreaterThan">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Evaluator.IndexEquals">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Evaluator.IndexEvaluator">
+               <metrics coveredelements="2" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="2" statements="1" conditionals="0" coveredstatements="1"/>
+            </class>
+            <line complexity="1" visibility="private" signature="Evaluator()" num="12" count="667" type="method"/>
+            <line complexity="1" visibility="package" signature="Tag(String)" num="21" count="610" type="method"/>
+            <line num="22" count="610" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matches(Element) : boolean" num="25" count="55948" type="method"/>
+            <line num="26" count="55948" type="stmt"/>
+            <line complexity="1" visibility="package" signature="Id(String)" num="32" count="10" type="method"/>
+            <line num="33" count="10" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matches(Element) : boolean" num="36" count="69" type="method"/>
+            <line num="37" count="69" type="stmt"/>
+            <line complexity="1" visibility="package" signature="Class(String)" num="43" count="13" type="method"/>
+            <line num="44" count="13" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matches(Element) : boolean" num="47" count="6158" type="method"/>
+            <line num="48" count="6158" type="stmt"/>
+            <line complexity="1" visibility="package" signature="Attribute(String)" num="55" count="2" type="method"/>
+            <line num="56" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matches(Element) : boolean" num="59" count="17" type="method"/>
+            <line num="60" count="17" type="stmt"/>
+            <line complexity="1" visibility="package" signature="AttributeWithValue(String,String)" num="65" count="12" type="method"/>
+            <line num="66" count="12" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matches(Element) : boolean" num="69" count="4833" type="method"/>
+            <line num="70" count="4833" type="stmt"/>
+            <line complexity="1" visibility="package" signature="AttributeWithValueNot(String,String)" num="75" count="1" type="method"/>
+            <line num="76" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matches(Element) : boolean" num="79" count="10" type="method"/>
+            <line num="80" count="10" type="stmt"/>
+            <line complexity="1" visibility="package" signature="AttributeWithValueStarting(String,String)" num="85" count="1" type="method"/>
+            <line num="86" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matches(Element) : boolean" num="89" count="10" type="method"/>
+            <line num="90" count="10" type="stmt"/>
+            <line complexity="1" visibility="package" signature="AttributeWithValueEnding(String,String)" num="95" count="1" type="method"/>
+            <line num="96" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matches(Element) : boolean" num="99" count="10" type="method"/>
+            <line num="100" count="10" type="stmt"/>
+            <line complexity="1" visibility="package" signature="AttributeWithValueContaining(String,String)" num="105" count="3" type="method"/>
+            <line num="106" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matches(Element) : boolean" num="109" count="4008" type="method"/>
+            <line num="110" count="4008" type="stmt"/>
+            <line complexity="1" visibility="package" signature="AttributeKeyPair(String,String)" num="118" count="18" type="method"/>
+            <line num="119" count="18" type="stmt"/>
+            <line num="120" count="18" type="stmt"/>
+            <line num="122" count="18" type="stmt"/>
+            <line num="123" count="18" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matches(Element) : boolean" num="128" count="30" type="method"/>
+            <line num="129" count="30" type="stmt"/>
+            <line complexity="1" visibility="package" signature="IndexLessThan(int)" num="134" count="2" type="method"/>
+            <line num="135" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matches(Element) : boolean" num="138" count="6" type="method"/>
+            <line num="139" count="6" type="stmt"/>
+            <line complexity="1" visibility="package" signature="IndexGreaterThan(int)" num="144" count="3" type="method"/>
+            <line num="145" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matches(Element) : boolean" num="148" count="9" type="method"/>
+            <line num="149" count="9" type="stmt"/>
+            <line complexity="1" visibility="package" signature="IndexEquals(int)" num="154" count="4" type="method"/>
+            <line num="155" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matches(Element) : boolean" num="158" count="20" type="method"/>
+            <line num="159" count="20" type="stmt"/>
+            <line complexity="1" visibility="package" signature="IndexEvaluator(int)" num="166" count="9" type="method"/>
+            <line num="167" count="9" type="stmt"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/nodes/XmlDeclaration.java" name="XmlDeclaration.java">
+            <metrics coveredelements="4" coveredconditionals="0" complexity="6" loc="42" coveredmethods="1" methods="5" elements="14" classes="1" ncloc="22" statements="7" conditionals="2" coveredstatements="3"/>
+            <class name="XmlDeclaration">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="6" coveredmethods="1" methods="5" elements="14" statements="7" conditionals="2" coveredstatements="3"/>
+            </class>
+            <line complexity="1" visibility="public" signature="XmlDeclaration(String,String,boolean)" num="17" count="8" type="method"/>
+            <line num="18" count="8" type="stmt"/>
+            <line num="19" count="8" type="stmt"/>
+            <line num="20" count="8" type="stmt"/>
+            <line complexity="1" visibility="public" signature="nodeName() : String" num="23" count="0" type="method"/>
+            <line num="24" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getWholeDeclaration() : String" num="31" count="0" type="method"/>
+            <line num="32" count="0" type="stmt"/>
+            <line complexity="2" visibility="package" signature="outerHtml(StringBuilder) : void" num="35" count="0" type="method"/>
+            <line num="36" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="36" type="cond"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="39" count="0" type="method"/>
+            <line num="40" count="0" type="stmt"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/nodes/Comment.java" name="Comment.java">
+            <metrics coveredelements="5" coveredconditionals="0" complexity="5" loc="40" coveredmethods="2" methods="5" elements="12" classes="1" ncloc="21" statements="7" conditionals="0" coveredstatements="3"/>
+            <class name="Comment">
+               <metrics coveredelements="5" coveredconditionals="0" complexity="5" coveredmethods="2" methods="5" elements="12" statements="7" conditionals="0" coveredstatements="3"/>
+            </class>
+            <line complexity="1" visibility="public" signature="Comment(String,String)" num="15" count="1482" type="method"/>
+            <line num="16" count="1482" type="stmt"/>
+            <line num="17" count="1482" type="stmt"/>
+            <line complexity="1" visibility="public" signature="nodeName() : String" num="20" count="0" type="method"/>
+            <line num="21" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getData() : String" num="28" count="1" type="method"/>
+            <line num="29" count="1" type="stmt"/>
+            <line complexity="1" visibility="package" signature="outerHtml(StringBuilder) : void" num="32" count="0" type="method"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="37" count="0" type="method"/>
+            <line num="38" count="0" type="stmt"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/nodes/Attributes.java" name="Attributes.java">
+            <metrics coveredelements="31" coveredconditionals="2" complexity="19" loc="138" coveredmethods="9" methods="13" elements="57" classes="1" ncloc="65" statements="32" conditionals="12" coveredstatements="20"/>
+            <class name="Attributes">
+               <metrics coveredelements="31" coveredconditionals="2" complexity="19" coveredmethods="9" methods="13" elements="57" statements="32" conditionals="12" coveredstatements="20"/>
+            </class>
+            <line complexity="2" visibility="public" signature="get(String) : String" num="27" count="5845" type="method"/>
+            <line num="28" count="5845" type="stmt"/>
+            <line num="30" count="5845" type="stmt"/>
+            <line num="31" count="5845" type="stmt"/>
+            <line falsecount="0" truecount="5845" num="31" type="cond"/>
+            <line complexity="1" visibility="public" signature="put(String,String) : void" num="39" count="11411" type="method"/>
+            <line num="40" count="11411" type="stmt"/>
+            <line num="41" count="11411" type="stmt"/>
+            <line complexity="1" visibility="public" signature="put(Attribute) : void" num="48" count="19119" type="method"/>
+            <line num="49" count="19119" type="stmt"/>
+            <line num="50" count="19119" type="stmt"/>
+            <line complexity="1" visibility="public" signature="remove(String) : void" num="57" count="0" type="method"/>
+            <line num="58" count="0" type="stmt"/>
+            <line num="59" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="hasKey(String) : boolean" num="67" count="15202" type="method"/>
+            <line num="68" count="15202" type="stmt"/>
+            <line complexity="1" visibility="public" signature="size() : int" num="75" count="0" type="method"/>
+            <line num="76" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="addAll(Attributes) : void" num="83" count="15" type="method"/>
+            <line num="84" count="15" type="stmt"/>
+            <line complexity="1" visibility="public" signature="iterator() : Iterator&lt;Attribute&gt;" num="87" count="78" type="method"/>
+            <line num="88" count="78" type="stmt"/>
+            <line complexity="1" visibility="public" signature="asList() : List&lt;Attribute&gt;" num="96" count="78" type="method"/>
+            <line num="97" count="78" type="stmt"/>
+            <line num="98" count="78" type="stmt"/>
+            <line num="99" count="17" type="stmt"/>
+            <line num="101" count="78" type="stmt"/>
+            <line complexity="1" visibility="public" signature="html() : String" num="108" count="63" type="method"/>
+            <line num="109" count="63" type="stmt"/>
+            <line num="110" count="63" type="stmt"/>
+            <line num="111" count="9" type="stmt"/>
+            <line num="112" count="9" type="stmt"/>
+            <line num="114" count="63" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="117" count="0" type="method"/>
+            <line num="118" count="0" type="stmt"/>
+            <line complexity="5" visibility="public" signature="equals(Object) : boolean" num="121" count="0" type="method"/>
+            <line num="123" count="0" type="stmt"/>
+            <line num="123" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="123" type="cond"/>
+            <line num="124" count="0" type="stmt"/>
+            <line num="124" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="124" type="cond"/>
+            <line num="126" count="0" type="stmt"/>
+            <line num="128" count="0" type="stmt"/>
+            <line num="128" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="128" type="cond"/>
+            <line falsecount="0" truecount="0" num="128" type="cond"/>
+            <line num="130" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="hashCode() : int" num="133" count="61876" type="method"/>
+            <line num="135" count="61876" type="stmt"/>
+            <line falsecount="0" truecount="61876" num="135" type="cond"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/nodes/Document.java" name="Document.java">
+            <metrics coveredelements="63" coveredconditionals="14" complexity="19" loc="151" coveredmethods="10" methods="12" elements="67" classes="1" ncloc="80" statements="41" conditionals="14" coveredstatements="39"/>
+            <class name="Document">
+               <metrics coveredelements="63" coveredconditionals="14" complexity="19" coveredmethods="10" methods="12" elements="67" statements="41" conditionals="14" coveredstatements="39"/>
+            </class>
+            <line complexity="1" visibility="public" signature="Document(String)" num="21" count="92" type="method"/>
+            <line num="22" count="92" type="stmt"/>
+            <line complexity="1" visibility="public" signature="createShell(String) : Document" num="30" count="32" type="method"/>
+            <line num="31" count="32" type="stmt"/>
+            <line num="33" count="32" type="stmt"/>
+            <line num="34" count="32" type="stmt"/>
+            <line num="35" count="32" type="stmt"/>
+            <line num="36" count="32" type="stmt"/>
+            <line num="38" count="32" type="stmt"/>
+            <line complexity="1" visibility="public" signature="head() : Element" num="45" count="169" type="method"/>
+            <line num="46" count="169" type="stmt"/>
+            <line complexity="1" visibility="public" signature="body() : Element" num="53" count="159" type="method"/>
+            <line num="54" count="159" type="stmt"/>
+            <line complexity="2" visibility="public" signature="title() : String" num="61" count="10" type="method"/>
+            <line num="62" count="10" type="stmt"/>
+            <line num="63" count="10" type="stmt"/>
+            <line falsecount="1" truecount="9" num="63" type="cond"/>
+            <line complexity="2" visibility="public" signature="title(String) : void" num="71" count="2" type="method"/>
+            <line num="72" count="2" type="stmt"/>
+            <line num="73" count="2" type="stmt"/>
+            <line num="74" count="2" type="stmt"/>
+            <line falsecount="1" truecount="1" num="74" type="cond"/>
+            <line num="75" count="1" type="stmt"/>
+            <line num="77" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="createElement(String) : Element" num="86" count="1" type="method"/>
+            <line num="87" count="1" type="stmt"/>
+            <line complexity="4" visibility="public" signature="normalise() : Document" num="95" count="84" type="method"/>
+            <line num="96" count="84" type="stmt"/>
+            <line falsecount="81" truecount="3" num="96" type="cond"/>
+            <line num="97" count="3" type="stmt"/>
+            <line num="98" count="84" type="stmt"/>
+            <line falsecount="81" truecount="3" num="98" type="cond"/>
+            <line num="99" count="3" type="stmt"/>
+            <line num="100" count="84" type="stmt"/>
+            <line falsecount="79" truecount="5" num="100" type="cond"/>
+            <line num="101" count="5" type="stmt"/>
+            <line num="105" count="84" type="stmt"/>
+            <line num="106" count="84" type="stmt"/>
+            <line num="107" count="84" type="stmt"/>
+            <line num="109" count="84" type="stmt"/>
+            <line complexity="3" visibility="private" signature="normalise(Element) : void" num="113" count="252" type="method"/>
+            <line num="114" count="252" type="stmt"/>
+            <line num="115" count="252" type="stmt"/>
+            <line num="116" count="441" type="stmt"/>
+            <line falsecount="365" truecount="76" num="116" type="cond"/>
+            <line num="117" count="76" type="stmt"/>
+            <line num="118" count="76" type="stmt"/>
+            <line falsecount="74" truecount="2" num="118" type="cond"/>
+            <line num="119" count="2" type="stmt"/>
+            <line num="123" count="252" type="stmt"/>
+            <line num="124" count="2" type="stmt"/>
+            <line num="125" count="2" type="stmt"/>
+            <line num="126" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="outerHtml() : String" num="130" count="0" type="method"/>
+            <line num="132" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="text(String) : Element" num="140" count="1" type="method"/>
+            <line num="142" count="1" type="stmt"/>
+            <line num="143" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="nodeName() : String" num="146" count="0" type="method"/>
+            <line num="148" count="0" type="stmt"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/nodes/Attribute.java" name="Attribute.java">
+            <metrics coveredelements="23" coveredconditionals="2" complexity="18" loc="107" coveredmethods="7" methods="10" elements="53" classes="1" ncloc="52" statements="27" conditionals="16" coveredstatements="14"/>
+            <class name="Attribute">
+               <metrics coveredelements="23" coveredconditionals="2" complexity="18" coveredmethods="7" methods="10" elements="53" statements="27" conditionals="16" coveredstatements="14"/>
+            </class>
+            <line complexity="1" visibility="public" signature="Attribute(String,String)" num="20" count="19115" type="method"/>
+            <line num="21" count="19115" type="stmt"/>
+            <line num="22" count="19115" type="stmt"/>
+            <line num="23" count="19115" type="stmt"/>
+            <line num="24" count="19115" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getKey() : String" num="31" count="19133" type="method"/>
+            <line num="32" count="19133" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setKey(String) : void" num="39" count="0" type="method"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getValue() : String" num="48" count="5845" type="method"/>
+            <line num="49" count="5845" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setValue(String) : void" num="56" count="5" type="method"/>
+            <line num="57" count="5" type="stmt"/>
+            <line num="58" count="5" type="stmt"/>
+            <line complexity="1" visibility="public" signature="html() : String" num="65" count="9" type="method"/>
+            <line num="66" count="9" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="73" count="0" type="method"/>
+            <line num="74" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="createFromEncoded(String,String) : Attribute" num="83" count="7704" type="method"/>
+            <line num="84" count="7704" type="stmt"/>
+            <line num="85" count="7704" type="stmt"/>
+            <line complexity="7" visibility="public" signature="equals(Object) : boolean" num="88" count="0" type="method"/>
+            <line num="90" count="0" type="stmt"/>
+            <line num="90" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="90" type="cond"/>
+            <line num="91" count="0" type="stmt"/>
+            <line num="91" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="91" type="cond"/>
+            <line num="93" count="0" type="stmt"/>
+            <line num="95" count="0" type="stmt"/>
+            <line num="95" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="95" type="cond"/>
+            <line falsecount="0" truecount="0" num="95" type="cond"/>
+            <line num="96" count="0" type="stmt"/>
+            <line num="96" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="96" type="cond"/>
+            <line falsecount="0" truecount="0" num="96" type="cond"/>
+            <line num="98" count="0" type="stmt"/>
+            <line complexity="3" visibility="public" signature="hashCode() : int" num="101" count="65016" type="method"/>
+            <line num="103" count="65016" type="stmt"/>
+            <line falsecount="0" truecount="65016" num="103" type="cond"/>
+            <line num="104" count="65016" type="stmt"/>
+            <line falsecount="0" truecount="65016" num="104" type="cond"/>
+            <line num="105" count="65016" type="stmt"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/nodes/Element.java" name="Element.java">
+            <metrics coveredelements="312" coveredconditionals="60" complexity="108" loc="828" coveredmethods="57" methods="64" elements="365" classes="1" ncloc="389" statements="225" conditionals="76" coveredstatements="195"/>
+            <class name="Element">
+               <metrics coveredelements="312" coveredconditionals="60" complexity="108" coveredmethods="57" methods="64" elements="365" statements="225" conditionals="76" coveredstatements="195"/>
+            </class>
+            <line complexity="1" visibility="public" signature="Element(Tag,String,Attributes)" num="34" count="7492" type="method"/>
+            <line num="35" count="7492" type="stmt"/>
+            <line num="37" count="7492" type="stmt"/>
+            <line num="38" count="7492" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Element(Tag,String)" num="49" count="347" type="method"/>
+            <line num="50" count="347" type="stmt"/>
+            <line complexity="1" visibility="public" signature="nodeName() : String" num="53" count="0" type="method"/>
+            <line num="55" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="tagName() : String" num="63" count="63248" type="method"/>
+            <line num="64" count="63248" type="stmt"/>
+            <line complexity="1" visibility="public" signature="tag() : Tag" num="72" count="78856" type="method"/>
+            <line num="73" count="78856" type="stmt"/>
+            <line complexity="1" visibility="public" signature="isBlock() : boolean" num="82" count="73" type="method"/>
+            <line num="83" count="73" type="stmt"/>
+            <line complexity="2" visibility="public" signature="id() : String" num="91" count="71" type="method"/>
+            <line num="92" count="71" type="stmt"/>
+            <line num="93" count="71" type="stmt"/>
+            <line falsecount="71" truecount="0" num="93" type="cond"/>
+            <line complexity="1" visibility="public" signature="attr(String,String) : Element" num="102" count="1" type="method"/>
+            <line num="103" count="1" type="stmt"/>
+            <line num="104" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="parent() : Element" num="107" count="1427" type="method"/>
+            <line num="109" count="1427" type="stmt"/>
+            <line complexity="1" visibility="public" signature="child(int) : Element" num="122" count="6" type="method"/>
+            <line num="123" count="6" type="stmt"/>
+            <line complexity="2" visibility="public" signature="children() : Elements" num="134" count="71203" type="method"/>
+            <line num="136" count="71203" type="stmt"/>
+            <line num="137" count="71203" type="stmt"/>
+            <line num="138" count="186224" type="stmt"/>
+            <line falsecount="115588" truecount="70636" num="138" type="cond"/>
+            <line num="139" count="70636" type="stmt"/>
+            <line num="141" count="71203" type="stmt"/>
+            <line complexity="1" visibility="public" signature="select(String) : Elements" num="161" count="231" type="method"/>
+            <line num="162" count="231" type="stmt"/>
+            <line complexity="1" visibility="public" signature="appendChild(Node) : Element" num="171" count="18804" type="method"/>
+            <line num="172" count="18804" type="stmt"/>
+            <line num="174" count="18804" type="stmt"/>
+            <line num="175" count="18804" type="stmt"/>
+            <line num="176" count="18804" type="stmt"/>
+            <line complexity="1" visibility="public" signature="prependChild(Node) : Element" num="185" count="12" type="method"/>
+            <line num="186" count="12" type="stmt"/>
+            <line num="188" count="12" type="stmt"/>
+            <line num="189" count="12" type="stmt"/>
+            <line num="190" count="12" type="stmt"/>
+            <line complexity="1" visibility="public" signature="appendElement(String) : Element" num="200" count="105" type="method"/>
+            <line num="201" count="105" type="stmt"/>
+            <line num="202" count="105" type="stmt"/>
+            <line num="203" count="105" type="stmt"/>
+            <line complexity="1" visibility="public" signature="prependElement(String) : Element" num="213" count="4" type="method"/>
+            <line num="214" count="4" type="stmt"/>
+            <line num="215" count="4" type="stmt"/>
+            <line num="216" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="appendText(String) : Element" num="225" count="1" type="method"/>
+            <line num="226" count="1" type="stmt"/>
+            <line num="227" count="1" type="stmt"/>
+            <line num="228" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="prependText(String) : Element" num="237" count="1" type="method"/>
+            <line num="238" count="1" type="stmt"/>
+            <line num="239" count="1" type="stmt"/>
+            <line num="240" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="append(String) : Element" num="249" count="7" type="method"/>
+            <line num="250" count="7" type="stmt"/>
+            <line num="252" count="7" type="stmt"/>
+            <line num="254" count="7" type="stmt"/>
+            <line num="255" count="8" type="stmt"/>
+            <line num="256" count="8" type="stmt"/>
+            <line num="258" count="7" type="stmt"/>
+            <line complexity="2" visibility="public" signature="prepend(String) : Element" num="267" count="3" type="method"/>
+            <line num="268" count="3" type="stmt"/>
+            <line num="270" count="3" type="stmt"/>
+            <line num="272" count="3" type="stmt"/>
+            <line num="273" count="3" type="stmt"/>
+            <line falsecount="3" truecount="3" num="273" type="cond"/>
+            <line num="274" count="3" type="stmt"/>
+            <line num="275" count="3" type="stmt"/>
+            <line num="276" count="3" type="stmt"/>
+            <line num="278" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="empty() : Element" num="285" count="10" type="method"/>
+            <line num="286" count="10" type="stmt"/>
+            <line num="287" count="10" type="stmt"/>
+            <line complexity="4" visibility="public" signature="wrap(String) : Element" num="295" count="5" type="method"/>
+            <line num="296" count="5" type="stmt"/>
+            <line num="298" count="5" type="stmt"/>
+            <line num="299" count="5" type="stmt"/>
+            <line num="300" count="5" type="stmt"/>
+            <line num="301" count="5" type="stmt"/>
+            <line falsecount="5" truecount="0" num="301" type="cond"/>
+            <line num="302" count="0" type="stmt"/>
+            <line num="304" count="5" type="stmt"/>
+            <line num="305" count="5" type="stmt"/>
+            <line num="306" count="5" type="stmt"/>
+            <line num="309" count="5" type="stmt"/>
+            <line falsecount="4" truecount="1" num="309" type="cond"/>
+            <line num="310" count="1" type="stmt"/>
+            <line falsecount="1" truecount="1" num="310" type="cond"/>
+            <line num="311" count="1" type="stmt"/>
+            <line num="312" count="1" type="stmt"/>
+            <line num="313" count="1" type="stmt"/>
+            <line num="316" count="5" type="stmt"/>
+            <line complexity="2" visibility="private" signature="getDeepChild(Element) : Element" num="319" count="6" type="method"/>
+            <line num="320" count="6" type="stmt"/>
+            <line num="321" count="6" type="stmt"/>
+            <line falsecount="5" truecount="1" num="321" type="cond"/>
+            <line num="322" count="1" type="stmt"/>
+            <line num="324" count="5" type="stmt"/>
+            <line complexity="1" visibility="public" signature="siblingElements() : Elements" num="331" count="0" type="method"/>
+            <line num="332" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="nextElementSibling() : Element" num="343" count="2" type="method"/>
+            <line num="344" count="2" type="stmt"/>
+            <line num="345" count="2" type="stmt"/>
+            <line num="346" count="2" type="stmt"/>
+            <line num="347" count="2" type="stmt"/>
+            <line falsecount="0" truecount="2" num="347" type="cond"/>
+            <line num="348" count="2" type="stmt"/>
+            <line num="350" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="previousElementSibling() : Element" num="358" count="16" type="method"/>
+            <line num="359" count="16" type="stmt"/>
+            <line num="360" count="16" type="stmt"/>
+            <line num="361" count="16" type="stmt"/>
+            <line num="362" count="16" type="stmt"/>
+            <line falsecount="8" truecount="8" num="362" type="cond"/>
+            <line num="363" count="8" type="stmt"/>
+            <line num="365" count="8" type="stmt"/>
+            <line complexity="2" visibility="public" signature="firstElementSibling() : Element" num="372" count="1" type="method"/>
+            <line num="374" count="1" type="stmt"/>
+            <line num="375" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="375" type="cond"/>
+            <line complexity="2" visibility="public" signature="elementSiblingIndex() : Integer" num="383" count="37" type="method"/>
+            <line num="384" count="37" type="stmt"/>
+            <line num="384" count="1" type="stmt"/>
+            <line falsecount="36" truecount="1" num="384" type="cond"/>
+            <line num="385" count="36" type="stmt"/>
+            <line complexity="2" visibility="public" signature="lastElementSibling() : Element" num="392" count="1" type="method"/>
+            <line num="393" count="1" type="stmt"/>
+            <line num="394" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="394" type="cond"/>
+            <line complexity="1" visibility="public" signature="getElementsByTag(String) : Elements" num="404" count="610" type="method"/>
+            <line num="405" count="610" type="stmt"/>
+            <line num="406" count="610" type="stmt"/>
+            <line num="408" count="610" type="stmt"/>
+            <line complexity="2" visibility="public" signature="getElementById(String) : Element" num="420" count="10" type="method"/>
+            <line num="421" count="10" type="stmt"/>
+            <line num="423" count="10" type="stmt"/>
+            <line num="424" count="10" type="stmt"/>
+            <line falsecount="0" truecount="10" num="424" type="cond"/>
+            <line num="425" count="10" type="stmt"/>
+            <line num="427" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getElementsByClass(String) : Elements" num="441" count="13" type="method"/>
+            <line num="442" count="13" type="stmt"/>
+            <line num="444" count="13" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getElementsByAttribute(String) : Elements" num="453" count="2" type="method"/>
+            <line num="454" count="2" type="stmt"/>
+            <line num="455" count="2" type="stmt"/>
+            <line num="457" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getElementsByAttributeValue(String,String) : Elements" num="467" count="12" type="method"/>
+            <line num="468" count="12" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getElementsByAttributeValueNot(String,String) : Elements" num="478" count="1" type="method"/>
+            <line num="479" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getElementsByAttributeValueStarting(String,String) : Elements" num="489" count="1" type="method"/>
+            <line num="490" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getElementsByAttributeValueEnding(String,String) : Elements" num="500" count="1" type="method"/>
+            <line num="501" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getElementsByAttributeValueContaining(String,String) : Elements" num="511" count="3" type="method"/>
+            <line num="512" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getElementsByIndexLessThan(int) : Elements" num="520" count="2" type="method"/>
+            <line num="521" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getElementsByIndexGreaterThan(int) : Elements" num="529" count="3" type="method"/>
+            <line num="530" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getElementsByIndexEquals(int) : Elements" num="538" count="4" type="method"/>
+            <line num="539" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getAllElements() : Elements" num="547" count="5" type="method"/>
+            <line num="548" count="5" type="stmt"/>
+            <line complexity="1" visibility="public" signature="text() : String" num="556" count="49" type="method"/>
+            <line num="557" count="49" type="stmt"/>
+            <line num="558" count="49" type="stmt"/>
+            <line num="559" count="49" type="stmt"/>
+            <line complexity="8" visibility="private" signature="text(StringBuilder) : void" num="562" count="77" type="method"/>
+            <line num="563" count="77" type="stmt"/>
+            <line num="564" count="95" type="stmt"/>
+            <line falsecount="30" truecount="65" num="564" type="cond"/>
+            <line num="565" count="65" type="stmt"/>
+            <line num="566" count="65" type="stmt"/>
+            <line num="568" count="65" type="stmt"/>
+            <line falsecount="19" truecount="46" num="568" type="cond"/>
+            <line num="569" count="46" type="stmt"/>
+            <line num="570" count="46" type="stmt"/>
+            <line falsecount="33" truecount="13" num="570" type="cond"/>
+            <line num="571" count="13" type="stmt"/>
+            <line num="573" count="65" type="stmt"/>
+            <line num="575" count="30" type="stmt"/>
+            <line falsecount="2" truecount="28" num="575" type="cond"/>
+            <line num="576" count="28" type="stmt"/>
+            <line num="577" count="28" type="stmt"/>
+            <line falsecount="25" truecount="3" num="577" type="cond"/>
+            <line num="578" count="3" type="stmt"/>
+            <line num="579" count="28" type="stmt"/>
+            <line complexity="1" visibility="package" signature="preserveWhitespace() : boolean" num="584" count="501" type="method"/>
+            <line num="585" count="501" type="stmt"/>
+            <line complexity="1" visibility="public" signature="text(String) : Element" num="593" count="6" type="method"/>
+            <line num="594" count="6" type="stmt"/>
+            <line num="596" count="6" type="stmt"/>
+            <line num="597" count="6" type="stmt"/>
+            <line num="598" count="6" type="stmt"/>
+            <line num="600" count="6" type="stmt"/>
+            <line complexity="5" visibility="public" signature="hasText() : boolean" num="607" count="8" type="method"/>
+            <line num="608" count="8" type="stmt"/>
+            <line num="609" count="6" type="stmt"/>
+            <line falsecount="3" truecount="3" num="609" type="cond"/>
+            <line num="610" count="3" type="stmt"/>
+            <line num="611" count="3" type="stmt"/>
+            <line falsecount="0" truecount="3" num="611" type="cond"/>
+            <line num="612" count="3" type="stmt"/>
+            <line num="613" count="3" type="stmt"/>
+            <line falsecount="0" truecount="3" num="613" type="cond"/>
+            <line num="614" count="3" type="stmt"/>
+            <line num="615" count="3" type="stmt"/>
+            <line falsecount="1" truecount="2" num="615" type="cond"/>
+            <line num="616" count="2" type="stmt"/>
+            <line num="619" count="3" type="stmt"/>
+            <line complexity="3" visibility="public" signature="data() : String" num="626" count="8" type="method"/>
+            <line num="627" count="8" type="stmt"/>
+            <line num="629" count="8" type="stmt"/>
+            <line num="630" count="10" type="stmt"/>
+            <line falsecount="8" truecount="2" num="630" type="cond"/>
+            <line num="631" count="2" type="stmt"/>
+            <line num="632" count="2" type="stmt"/>
+            <line num="633" count="8" type="stmt"/>
+            <line falsecount="2" truecount="6" num="633" type="cond"/>
+            <line num="634" count="6" type="stmt"/>
+            <line num="635" count="6" type="stmt"/>
+            <line num="636" count="6" type="stmt"/>
+            <line num="639" count="8" type="stmt"/>
+            <line complexity="2" visibility="public" signature="className() : String" num="647" count="6146" type="method"/>
+            <line num="648" count="6146" type="stmt"/>
+            <line falsecount="3175" truecount="2971" num="648" type="cond"/>
+            <line complexity="2" visibility="public" signature="classNames() : Set&lt;String&gt;" num="657" count="6162" type="method"/>
+            <line num="658" count="6162" type="stmt"/>
+            <line falsecount="18" truecount="6144" num="658" type="cond"/>
+            <line num="659" count="6144" type="stmt"/>
+            <line num="660" count="6144" type="stmt"/>
+            <line num="662" count="6162" type="stmt"/>
+            <line complexity="1" visibility="public" signature="classNames(Set&lt;String&gt;) : Element" num="670" count="0" type="method"/>
+            <line num="671" count="0" type="stmt"/>
+            <line num="672" count="0" type="stmt"/>
+            <line num="673" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="hasClass(String) : boolean" num="681" count="6161" type="method"/>
+            <line num="682" count="6161" type="stmt"/>
+            <line complexity="1" visibility="public" signature="addClass(String) : Element" num="690" count="0" type="method"/>
+            <line num="691" count="0" type="stmt"/>
+            <line num="693" count="0" type="stmt"/>
+            <line num="694" count="0" type="stmt"/>
+            <line num="695" count="0" type="stmt"/>
+            <line num="697" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="removeClass(String) : Element" num="705" count="0" type="method"/>
+            <line num="706" count="0" type="stmt"/>
+            <line num="708" count="0" type="stmt"/>
+            <line num="709" count="0" type="stmt"/>
+            <line num="710" count="0" type="stmt"/>
+            <line num="712" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="toggleClass(String) : Element" num="720" count="0" type="method"/>
+            <line num="721" count="0" type="stmt"/>
+            <line num="723" count="0" type="stmt"/>
+            <line num="724" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="724" type="cond"/>
+            <line num="725" count="0" type="stmt"/>
+            <line num="727" count="0" type="stmt"/>
+            <line num="728" count="0" type="stmt"/>
+            <line num="730" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="val() : String" num="737" count="5" type="method"/>
+            <line num="738" count="5" type="stmt"/>
+            <line falsecount="2" truecount="3" num="738" type="cond"/>
+            <line num="739" count="3" type="stmt"/>
+            <line num="741" count="2" type="stmt"/>
+            <line complexity="2" visibility="public" signature="val(String) : Element" num="749" count="2" type="method"/>
+            <line num="750" count="2" type="stmt"/>
+            <line falsecount="1" truecount="1" num="750" type="cond"/>
+            <line num="751" count="1" type="stmt"/>
+            <line num="753" count="1" type="stmt"/>
+            <line num="754" count="2" type="stmt"/>
+            <line complexity="8" visibility="package" signature="outerHtml(StringBuilder) : void" num="757" count="63" type="method"/>
+            <line num="758" count="63" type="stmt"/>
+            <line falsecount="15" truecount="48" num="758" type="cond"/>
+            <line num="759" count="48" type="stmt"/>
+            <line num="760" count="63" type="stmt"/>
+            <line num="765" count="63" type="stmt"/>
+            <line falsecount="58" truecount="5" num="765" type="cond"/>
+            <line num="766" count="5" type="stmt"/>
+            <line num="768" count="58" type="stmt"/>
+            <line num="769" count="58" type="stmt"/>
+            <line num="770" count="58" type="stmt"/>
+            <line num="770" count="21" type="stmt"/>
+            <line falsecount="37" truecount="21" num="770" type="cond"/>
+            <line num="771" count="58" type="stmt"/>
+            <line complexity="1" visibility="public" signature="html() : String" num="782" count="20" type="method"/>
+            <line num="783" count="20" type="stmt"/>
+            <line num="784" count="20" type="stmt"/>
+            <line num="785" count="20" type="stmt"/>
+            <line complexity="1" visibility="private" signature="html(StringBuilder) : void" num="788" count="78" type="method"/>
+            <line num="789" count="78" type="stmt"/>
+            <line num="790" count="98" type="stmt"/>
+            <line complexity="1" visibility="public" signature="html(String) : Element" num="799" count="4" type="method"/>
+            <line num="800" count="4" type="stmt"/>
+            <line num="801" count="4" type="stmt"/>
+            <line num="802" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="805" count="0" type="method"/>
+            <line num="806" count="0" type="stmt"/>
+            <line complexity="6" visibility="public" signature="equals(Object) : boolean" num="809" count="12620" type="method"/>
+            <line num="811" count="12620" type="stmt"/>
+            <line num="811" count="269" type="stmt"/>
+            <line falsecount="12351" truecount="269" num="811" type="cond"/>
+            <line num="812" count="12351" type="stmt"/>
+            <line num="812" count="2" type="stmt"/>
+            <line falsecount="12349" truecount="2" num="812" type="cond"/>
+            <line num="813" count="12349" type="stmt"/>
+            <line num="813" count="12349" type="stmt"/>
+            <line falsecount="0" truecount="12349" num="813" type="cond"/>
+            <line num="815" count="0" type="stmt"/>
+            <line num="817" count="0" type="stmt"/>
+            <line num="817" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="817" type="cond"/>
+            <line falsecount="0" truecount="0" num="817" type="cond"/>
+            <line num="819" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="hashCode() : int" num="822" count="61876" type="method"/>
+            <line num="824" count="61876" type="stmt"/>
+            <line num="825" count="61876" type="stmt"/>
+            <line falsecount="0" truecount="61876" num="825" type="cond"/>
+            <line num="826" count="61876" type="stmt"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/nodes/DataNode.java" name="DataNode.java">
+            <metrics coveredelements="7" coveredconditionals="0" complexity="6" loc="52" coveredmethods="3" methods="6" elements="14" classes="1" ncloc="25" statements="8" conditionals="0" coveredstatements="4"/>
+            <class name="DataNode">
+               <metrics coveredelements="7" coveredconditionals="0" complexity="6" coveredmethods="3" methods="6" elements="14" statements="8" conditionals="0" coveredstatements="4"/>
+            </class>
+            <line complexity="1" visibility="public" signature="DataNode(String,String)" num="17" count="156" type="method"/>
+            <line num="18" count="156" type="stmt"/>
+            <line num="19" count="156" type="stmt"/>
+            <line complexity="1" visibility="public" signature="nodeName() : String" num="22" count="0" type="method"/>
+            <line num="23" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getWholeData() : String" num="30" count="3" type="method"/>
+            <line num="31" count="3" type="stmt"/>
+            <line complexity="1" visibility="package" signature="outerHtml(StringBuilder) : void" num="34" count="1" type="method"/>
+            <line num="35" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="38" count="0" type="method"/>
+            <line num="39" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="createFromEncoded(String,String) : DataNode" num="48" count="0" type="method"/>
+            <line num="49" count="0" type="stmt"/>
+            <line num="50" count="0" type="stmt"/>
+         </file>
+      </package>
+      <package name="org.jsoup.safety">
+         <metrics coveredelements="196" complexity="52" loc="549" methods="32" classes="8" statements="153" coveredconditionals="26" coveredmethods="31" elements="225" ncloc="321" files="2" conditionals="40" coveredstatements="139"/>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/safety/Whitelist.java" name="Whitelist.java">
+            <metrics coveredelements="140" coveredconditionals="18" complexity="42" loc="420" coveredmethods="25" methods="26" elements="169" classes="6" ncloc="249" statements="111" conditionals="32" coveredstatements="97"/>
+            <class name="Whitelist">
+               <metrics coveredelements="100" coveredconditionals="12" complexity="23" coveredmethods="13" methods="14" elements="115" statements="83" conditionals="18" coveredstatements="75"/>
+            </class>
+            <class name="Whitelist.TagName">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Whitelist.AttributeKey">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Whitelist.AttributeValue">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Whitelist.Protocol">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <class name="Whitelist.TypedValue">
+               <metrics coveredelements="24" coveredconditionals="6" complexity="11" coveredmethods="4" methods="4" elements="38" statements="20" conditionals="14" coveredstatements="14"/>
+            </class>
+            <line complexity="1" visibility="public" signature="none() : Whitelist" num="61" count="0" type="method"/>
+            <line num="62" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="simpleText() : Whitelist" num="71" count="1" type="method"/>
+            <line num="72" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="basic() : Whitelist" num="88" count="5" type="method"/>
+            <line num="89" count="5" type="stmt"/>
+            <line complexity="1" visibility="public" signature="basicWithImages() : Whitelist" num="114" count="2" type="method"/>
+            <line num="115" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="relaxed() : Whitelist" num="131" count="2" type="method"/>
+            <line num="132" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Whitelist()" num="169" count="8" type="method"/>
+            <line num="170" count="8" type="stmt"/>
+            <line num="171" count="8" type="stmt"/>
+            <line num="172" count="8" type="stmt"/>
+            <line num="173" count="8" type="stmt"/>
+            <line complexity="1" visibility="public" signature="addTags(String) : Whitelist" num="182" count="10" type="method"/>
+            <line num="183" count="10" type="stmt"/>
+            <line num="185" count="10" type="stmt"/>
+            <line num="186" count="204" type="stmt"/>
+            <line num="187" count="204" type="stmt"/>
+            <line num="189" count="10" type="stmt"/>
+            <line complexity="2" visibility="public" signature="addAttributes(String,String) : Whitelist" num="202" count="39" type="method"/>
+            <line num="203" count="39" type="stmt"/>
+            <line num="204" count="39" type="stmt"/>
+            <line num="206" count="39" type="stmt"/>
+            <line num="207" count="39" type="stmt"/>
+            <line num="208" count="39" type="stmt"/>
+            <line num="209" count="87" type="stmt"/>
+            <line num="210" count="87" type="stmt"/>
+            <line num="212" count="39" type="stmt"/>
+            <line falsecount="39" truecount="0" num="212" type="cond"/>
+            <line num="213" count="0" type="stmt"/>
+            <line num="214" count="0" type="stmt"/>
+            <line num="216" count="39" type="stmt"/>
+            <line num="218" count="39" type="stmt"/>
+            <line complexity="2" visibility="public" signature="addEnforcedAttribute(String,String,String) : Whitelist" num="233" count="5" type="method"/>
+            <line num="234" count="5" type="stmt"/>
+            <line num="235" count="5" type="stmt"/>
+            <line num="236" count="5" type="stmt"/>
+            <line num="238" count="5" type="stmt"/>
+            <line num="239" count="5" type="stmt"/>
+            <line num="240" count="5" type="stmt"/>
+            <line num="242" count="5" type="stmt"/>
+            <line falsecount="5" truecount="0" num="242" type="cond"/>
+            <line num="243" count="0" type="stmt"/>
+            <line num="245" count="5" type="stmt"/>
+            <line num="246" count="5" type="stmt"/>
+            <line num="247" count="5" type="stmt"/>
+            <line num="249" count="5" type="stmt"/>
+            <line complexity="3" visibility="public" signature="addProtocols(String,String,String) : Whitelist" num="263" count="25" type="method"/>
+            <line num="264" count="25" type="stmt"/>
+            <line num="265" count="25" type="stmt"/>
+            <line num="266" count="25" type="stmt"/>
+            <line num="268" count="25" type="stmt"/>
+            <line num="269" count="25" type="stmt"/>
+            <line num="270" count="25" type="stmt"/>
+            <line num="271" count="25" type="stmt"/>
+            <line num="273" count="25" type="stmt"/>
+            <line falsecount="25" truecount="0" num="273" type="cond"/>
+            <line num="274" count="0" type="stmt"/>
+            <line num="276" count="25" type="stmt"/>
+            <line num="277" count="25" type="stmt"/>
+            <line num="279" count="25" type="stmt"/>
+            <line falsecount="25" truecount="0" num="279" type="cond"/>
+            <line num="280" count="0" type="stmt"/>
+            <line num="282" count="25" type="stmt"/>
+            <line num="283" count="25" type="stmt"/>
+            <line num="285" count="25" type="stmt"/>
+            <line num="286" count="64" type="stmt"/>
+            <line num="287" count="64" type="stmt"/>
+            <line num="288" count="64" type="stmt"/>
+            <line num="290" count="25" type="stmt"/>
+            <line complexity="1" visibility="package" signature="isSafeTag(String) : boolean" num="293" count="17" type="method"/>
+            <line num="294" count="17" type="stmt"/>
+            <line complexity="4" visibility="package" signature="isSafeAttribute(String,Element,Attribute) : boolean" num="297" count="9" type="method"/>
+            <line num="298" count="9" type="stmt"/>
+            <line num="299" count="9" type="stmt"/>
+            <line num="301" count="9" type="stmt"/>
+            <line falsecount="2" truecount="7" num="301" type="cond"/>
+            <line num="302" count="7" type="stmt"/>
+            <line falsecount="0" truecount="7" num="302" type="cond"/>
+            <line num="303" count="7" type="stmt"/>
+            <line falsecount="0" truecount="7" num="303" type="cond"/>
+            <line num="304" count="7" type="stmt"/>
+            <line num="306" count="7" type="stmt"/>
+            <line num="308" count="0" type="stmt"/>
+            <line num="312" count="2" type="stmt"/>
+            <line num="314" count="0" type="stmt"/>
+            <line complexity="2" visibility="private" signature="testValidProtocol(Element,Attribute,Set&lt;Protocol&gt;) : boolean" num="317" count="5" type="method"/>
+            <line num="320" count="5" type="stmt"/>
+            <line num="321" count="5" type="stmt"/>
+            <line num="323" count="5" type="stmt"/>
+            <line num="324" count="11" type="stmt"/>
+            <line num="325" count="11" type="stmt"/>
+            <line falsecount="9" truecount="2" num="325" type="cond"/>
+            <line num="326" count="2" type="stmt"/>
+            <line num="329" count="3" type="stmt"/>
+            <line complexity="2" visibility="package" signature="getEnforcedAttributes(String) : Attributes" num="332" count="15" type="method"/>
+            <line num="333" count="15" type="stmt"/>
+            <line num="334" count="15" type="stmt"/>
+            <line num="335" count="15" type="stmt"/>
+            <line falsecount="14" truecount="1" num="335" type="cond"/>
+            <line num="336" count="1" type="stmt"/>
+            <line num="337" count="1" type="stmt"/>
+            <line num="338" count="1" type="stmt"/>
+            <line num="341" count="15" type="stmt"/>
+            <line complexity="1" visibility="package" signature="TagName(String)" num="347" count="314" type="method"/>
+            <line num="348" count="314" type="stmt"/>
+            <line complexity="1" visibility="package" signature="valueOf(String) : TagName" num="351" count="314" type="method"/>
+            <line num="352" count="314" type="stmt"/>
+            <line complexity="1" visibility="package" signature="AttributeKey(String)" num="357" count="126" type="method"/>
+            <line num="358" count="126" type="stmt"/>
+            <line complexity="1" visibility="package" signature="valueOf(String) : AttributeKey" num="361" count="126" type="method"/>
+            <line num="362" count="126" type="stmt"/>
+            <line complexity="1" visibility="package" signature="AttributeValue(String)" num="367" count="5" type="method"/>
+            <line num="368" count="5" type="stmt"/>
+            <line complexity="1" visibility="package" signature="valueOf(String) : AttributeValue" num="371" count="5" type="method"/>
+            <line num="372" count="5" type="stmt"/>
+            <line complexity="1" visibility="package" signature="Protocol(String)" num="377" count="64" type="method"/>
+            <line num="378" count="64" type="stmt"/>
+            <line complexity="1" visibility="package" signature="valueOf(String) : Protocol" num="381" count="64" type="method"/>
+            <line num="382" count="64" type="stmt"/>
+            <line complexity="1" visibility="package" signature="TypedValue(String)" num="389" count="509" type="method"/>
+            <line num="390" count="509" type="stmt"/>
+            <line num="391" count="509" type="stmt"/>
+            <line complexity="2" visibility="public" signature="hashCode() : int" num="394" count="630" type="method"/>
+            <line num="396" count="630" type="stmt"/>
+            <line num="397" count="630" type="stmt"/>
+            <line num="398" count="630" type="stmt"/>
+            <line falsecount="630" truecount="0" num="398" type="cond"/>
+            <line num="399" count="630" type="stmt"/>
+            <line complexity="7" visibility="public" signature="equals(Object) : boolean" num="402" count="62" type="method"/>
+            <line num="404" count="62" type="stmt"/>
+            <line num="404" count="0" type="stmt"/>
+            <line falsecount="62" truecount="0" num="404" type="cond"/>
+            <line num="405" count="62" type="stmt"/>
+            <line num="405" count="0" type="stmt"/>
+            <line falsecount="62" truecount="0" num="405" type="cond"/>
+            <line num="406" count="62" type="stmt"/>
+            <line num="406" count="0" type="stmt"/>
+            <line falsecount="62" truecount="0" num="406" type="cond"/>
+            <line num="407" count="62" type="stmt"/>
+            <line num="408" count="62" type="stmt"/>
+            <line falsecount="62" truecount="0" num="408" type="cond"/>
+            <line num="409" count="0" type="stmt"/>
+            <line num="409" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="409" type="cond"/>
+            <line num="410" count="62" type="stmt"/>
+            <line num="410" count="0" type="stmt"/>
+            <line falsecount="62" truecount="0" num="410" type="cond"/>
+            <line num="411" count="62" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="414" count="13" type="method"/>
+            <line num="416" count="13" type="stmt"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/safety/Cleaner.java" name="Cleaner.java">
+            <metrics coveredelements="56" coveredconditionals="8" complexity="10" loc="129" coveredmethods="6" methods="6" elements="56" classes="2" ncloc="72" statements="42" conditionals="8" coveredstatements="42"/>
+            <class name="Cleaner">
+               <metrics coveredelements="53" coveredconditionals="8" complexity="9" coveredmethods="5" methods="5" elements="53" statements="40" conditionals="8" coveredstatements="40"/>
+            </class>
+            <class name="Cleaner.ElementMeta">
+               <metrics coveredelements="3" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="3" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <line complexity="1" visibility="public" signature="Cleaner(Whitelist)" num="28" count="8" type="method"/>
+            <line num="29" count="8" type="stmt"/>
+            <line num="30" count="8" type="stmt"/>
+            <line complexity="1" visibility="public" signature="clean(Document) : Document" num="39" count="5" type="method"/>
+            <line num="40" count="5" type="stmt"/>
+            <line num="42" count="5" type="stmt"/>
+            <line num="43" count="5" type="stmt"/>
+            <line num="45" count="5" type="stmt"/>
+            <line complexity="1" visibility="public" signature="isValid(Document) : boolean" num="58" count="3" type="method"/>
+            <line num="59" count="3" type="stmt"/>
+            <line num="61" count="3" type="stmt"/>
+            <line num="62" count="3" type="stmt"/>
+            <line num="63" count="3" type="stmt"/>
+            <line complexity="4" visibility="private" signature="copySafeNodes(Element,Element) : int" num="72" count="25" type="method"/>
+            <line num="73" count="25" type="stmt"/>
+            <line num="74" count="25" type="stmt"/>
+            <line num="76" count="25" type="stmt"/>
+            <line num="77" count="30" type="stmt"/>
+            <line falsecount="13" truecount="17" num="77" type="cond"/>
+            <line num="78" count="17" type="stmt"/>
+            <line num="80" count="17" type="stmt"/>
+            <line falsecount="2" truecount="15" num="80" type="cond"/>
+            <line num="81" count="15" type="stmt"/>
+            <line num="82" count="15" type="stmt"/>
+            <line num="83" count="15" type="stmt"/>
+            <line num="85" count="15" type="stmt"/>
+            <line num="86" count="15" type="stmt"/>
+            <line num="88" count="2" type="stmt"/>
+            <line num="89" count="2" type="stmt"/>
+            <line num="91" count="13" type="stmt"/>
+            <line falsecount="2" truecount="11" num="91" type="cond"/>
+            <line num="92" count="11" type="stmt"/>
+            <line num="93" count="11" type="stmt"/>
+            <line num="94" count="11" type="stmt"/>
+            <line num="97" count="25" type="stmt"/>
+            <line complexity="2" visibility="private" signature="createSafeElement(Element) : ElementMeta" num="100" count="15" type="method"/>
+            <line num="101" count="15" type="stmt"/>
+            <line num="102" count="15" type="stmt"/>
+            <line num="103" count="15" type="stmt"/>
+            <line num="104" count="15" type="stmt"/>
+            <line num="106" count="15" type="stmt"/>
+            <line num="107" count="15" type="stmt"/>
+            <line num="108" count="8" type="stmt"/>
+            <line falsecount="4" truecount="4" num="108" type="cond"/>
+            <line num="109" count="4" type="stmt"/>
+            <line num="111" count="4" type="stmt"/>
+            <line num="113" count="15" type="stmt"/>
+            <line num="114" count="15" type="stmt"/>
+            <line num="116" count="15" type="stmt"/>
+            <line complexity="1" visibility="package" signature="ElementMeta(Element,int)" num="123" count="15" type="method"/>
+            <line num="124" count="15" type="stmt"/>
+            <line num="125" count="15" type="stmt"/>
+         </file>
+      </package>
+      <package name="org.jsoup.parser">
+         <metrics coveredelements="583" complexity="171" loc="922" methods="63" classes="3" statements="404" coveredconditionals="143" coveredmethods="57" elements="625" ncloc="615" files="3" conditionals="158" coveredstatements="383"/>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/parser/Parser.java" name="Parser.java">
+            <metrics coveredelements="227" coveredconditionals="69" complexity="59" loc="291" coveredmethods="15" methods="16" elements="237" classes="1" ncloc="228" statements="149" conditionals="72" coveredstatements="143"/>
+            <class name="Parser">
+               <metrics coveredelements="227" coveredconditionals="69" complexity="59" coveredmethods="15" methods="16" elements="237" statements="149" conditionals="72" coveredstatements="143"/>
+            </class>
+            <line complexity="2" visibility="private" signature="Parser(String,String,boolean)" num="27" count="84" type="method"/>
+            <line num="28" count="84" type="stmt"/>
+            <line num="29" count="84" type="stmt"/>
+            <line num="31" count="84" type="stmt"/>
+            <line num="32" count="84" type="stmt"/>
+            <line num="33" count="84" type="stmt"/>
+            <line num="35" count="84" type="stmt"/>
+            <line falsecount="60" truecount="24" num="35" type="cond"/>
+            <line num="36" count="24" type="stmt"/>
+            <line num="37" count="24" type="stmt"/>
+            <line num="39" count="60" type="stmt"/>
+            <line num="40" count="60" type="stmt"/>
+            <line complexity="1" visibility="public" signature="parse(String,String) : Document" num="50" count="60" type="method"/>
+            <line num="51" count="60" type="stmt"/>
+            <line num="52" count="60" type="stmt"/>
+            <line complexity="1" visibility="public" signature="parseBodyFragment(String,String) : Document" num="61" count="24" type="method"/>
+            <line num="62" count="24" type="stmt"/>
+            <line num="63" count="24" type="stmt"/>
+            <line complexity="8" visibility="private" signature="parse() : Document" num="66" count="84" type="method"/>
+            <line num="67" count="84" type="stmt"/>
+            <line falsecount="84" truecount="24821" num="67" type="cond"/>
+            <line num="68" count="24821" type="stmt"/>
+            <line falsecount="23339" truecount="1482" num="68" type="cond"/>
+            <line num="69" count="1482" type="stmt"/>
+            <line num="70" count="23339" type="stmt"/>
+            <line falsecount="23339" truecount="0" num="70" type="cond"/>
+            <line num="71" count="0" type="stmt"/>
+            <line num="72" count="23339" type="stmt"/>
+            <line falsecount="23331" truecount="8" num="72" type="cond"/>
+            <line num="73" count="8" type="stmt"/>
+            <line num="74" count="23331" type="stmt"/>
+            <line falsecount="16850" truecount="6481" num="74" type="cond"/>
+            <line num="75" count="6481" type="stmt"/>
+            <line num="76" count="16850" type="stmt"/>
+            <line falsecount="9721" truecount="7129" num="76" type="cond"/>
+            <line num="77" count="7129" type="stmt"/>
+            <line num="79" count="9721" type="stmt"/>
+            <line num="82" count="84" type="stmt"/>
+            <line complexity="2" visibility="private" signature="parseComment() : void" num="85" count="1482" type="method"/>
+            <line num="86" count="1482" type="stmt"/>
+            <line num="87" count="1482" type="stmt"/>
+            <line num="89" count="1482" type="stmt"/>
+            <line falsecount="0" truecount="1482" num="89" type="cond"/>
+            <line num="90" count="1482" type="stmt"/>
+            <line num="91" count="1482" type="stmt"/>
+            <line num="92" count="1482" type="stmt"/>
+            <line complexity="1" visibility="private" signature="parseXmlDecl() : void" num="95" count="8" type="method"/>
+            <line num="96" count="8" type="stmt"/>
+            <line num="97" count="8" type="stmt"/>
+            <line num="98" count="8" type="stmt"/>
+            <line num="99" count="8" type="stmt"/>
+            <line num="101" count="8" type="stmt"/>
+            <line num="102" count="8" type="stmt"/>
+            <line complexity="2" visibility="private" signature="parseEndTag() : void" num="105" count="6481" type="method"/>
+            <line num="106" count="6481" type="stmt"/>
+            <line num="107" count="6481" type="stmt"/>
+            <line num="108" count="6481" type="stmt"/>
+            <line num="110" count="6481" type="stmt"/>
+            <line falsecount="2" truecount="6479" num="110" type="cond"/>
+            <line num="111" count="6479" type="stmt"/>
+            <line num="112" count="6479" type="stmt"/>
+            <line complexity="11" visibility="private" signature="parseStartTag() : void" num="116" count="7129" type="method"/>
+            <line num="117" count="7129" type="stmt"/>
+            <line num="118" count="7129" type="stmt"/>
+            <line num="120" count="7129" type="stmt"/>
+            <line falsecount="7127" truecount="2" num="120" type="cond"/>
+            <line num="121" count="2" type="stmt"/>
+            <line num="122" count="2" type="stmt"/>
+            <line num="123" count="2" type="stmt"/>
+            <line num="126" count="7127" type="stmt"/>
+            <line num="127" count="7127" type="stmt"/>
+            <line falsecount="7127" truecount="8099" num="127" type="cond"/>
+            <line num="128" count="8099" type="stmt"/>
+            <line num="129" count="8099" type="stmt"/>
+            <line falsecount="395" truecount="7704" num="129" type="cond"/>
+            <line num="130" count="7704" type="stmt"/>
+            <line num="133" count="7127" type="stmt"/>
+            <line num="134" count="7127" type="stmt"/>
+            <line num="136" count="7127" type="stmt"/>
+            <line num="137" count="7127" type="stmt"/>
+            <line falsecount="6902" truecount="225" num="137" type="cond"/>
+            <line num="138" count="225" type="stmt"/>
+            <line num="140" count="6902" type="stmt"/>
+            <line num="144" count="7127" type="stmt"/>
+            <line falsecount="6955" truecount="172" num="144" type="cond"/>
+            <line num="145" count="172" type="stmt"/>
+            <line num="146" count="172" type="stmt"/>
+            <line num="148" count="172" type="stmt"/>
+            <line num="149" count="172" type="stmt"/>
+            <line falsecount="156" truecount="16" num="149" type="cond"/>
+            <line num="150" count="16" type="stmt"/>
+            <line num="152" count="156" type="stmt"/>
+            <line num="153" count="172" type="stmt"/>
+            <line num="157" count="7127" type="stmt"/>
+            <line falsecount="7123" truecount="4" num="157" type="cond"/>
+            <line num="158" count="4" type="stmt"/>
+            <line num="159" count="4" type="stmt"/>
+            <line falsecount="1" truecount="3" num="159" type="cond"/>
+            <line num="160" count="3" type="stmt"/>
+            <line num="161" count="3" type="stmt"/>
+            <line num="165" count="7127" type="stmt"/>
+            <line complexity="8" visibility="private" signature="parseAttribute() : Attribute" num="168" count="8099" type="method"/>
+            <line num="169" count="8099" type="stmt"/>
+            <line num="170" count="8099" type="stmt"/>
+            <line num="171" count="8099" type="stmt"/>
+            <line num="172" count="8099" type="stmt"/>
+            <line num="173" count="8099" type="stmt"/>
+            <line falsecount="561" truecount="7538" num="173" type="cond"/>
+            <line num="174" count="7538" type="stmt"/>
+            <line num="176" count="7538" type="stmt"/>
+            <line falsecount="7524" truecount="14" num="176" type="cond"/>
+            <line num="177" count="14" type="stmt"/>
+            <line num="178" count="7524" type="stmt"/>
+            <line falsecount="549" truecount="6975" num="178" type="cond"/>
+            <line num="179" count="6975" type="stmt"/>
+            <line num="181" count="549" type="stmt"/>
+            <line num="183" count="549" type="stmt"/>
+            <line falsecount="549" truecount="1979" num="183" type="cond"/>
+            <line num="184" count="1979" type="stmt"/>
+            <line num="186" count="549" type="stmt"/>
+            <line num="188" count="7538" type="stmt"/>
+            <line num="190" count="8099" type="stmt"/>
+            <line falsecount="395" truecount="7704" num="190" type="cond"/>
+            <line num="191" count="7704" type="stmt"/>
+            <line num="193" count="395" type="stmt"/>
+            <line num="194" count="395" type="stmt"/>
+            <line complexity="1" visibility="private" signature="parseTextNode() : void" num="198" count="9723" type="method"/>
+            <line num="199" count="9723" type="stmt"/>
+            <line num="200" count="9723" type="stmt"/>
+            <line num="201" count="9723" type="stmt"/>
+            <line complexity="1" visibility="private" signature="parseCdata() : void" num="204" count="0" type="method"/>
+            <line num="205" count="0" type="stmt"/>
+            <line num="206" count="0" type="stmt"/>
+            <line num="207" count="0" type="stmt"/>
+            <line num="208" count="0" type="stmt"/>
+            <line complexity="5" visibility="private" signature="addChildToParent(Element,boolean) : Element" num="211" count="7228" type="method"/>
+            <line num="212" count="7228" type="stmt"/>
+            <line num="213" count="7228" type="stmt"/>
+            <line num="214" count="7228" type="stmt"/>
+            <line num="216" count="7228" type="stmt"/>
+            <line falsecount="7127" truecount="101" num="216" type="cond"/>
+            <line num="218" count="101" type="stmt"/>
+            <line num="219" count="101" type="stmt"/>
+            <line num="221" count="101" type="stmt"/>
+            <line falsecount="57" truecount="44" num="221" type="cond"/>
+            <line num="222" count="44" type="stmt"/>
+            <line num="223" count="44" type="stmt"/>
+            <line num="225" count="101" type="stmt"/>
+            <line num="228" count="101" type="stmt"/>
+            <line num="229" count="101" type="stmt"/>
+            <line falsecount="3" truecount="98" num="229" type="cond"/>
+            <line num="230" count="98" type="stmt"/>
+            <line num="231" count="101" type="stmt"/>
+            <line num="234" count="7127" type="stmt"/>
+            <line num="236" count="7127" type="stmt"/>
+            <line falsecount="398" truecount="6729" num="236" type="cond"/>
+            <line num="237" count="6729" type="stmt"/>
+            <line num="238" count="7127" type="stmt"/>
+            <line complexity="5" visibility="private" signature="stackHasValidParent(Tag) : boolean" num="241" count="7228" type="method"/>
+            <line num="242" count="7228" type="stmt"/>
+            <line falsecount="7171" truecount="57" num="242" type="cond"/>
+            <line num="243" count="57" type="stmt"/>
+            <line num="245" count="7171" type="stmt"/>
+            <line falsecount="101" truecount="48650" num="245" type="cond"/>
+            <line num="246" count="48650" type="stmt"/>
+            <line num="247" count="48650" type="stmt"/>
+            <line num="248" count="48650" type="stmt"/>
+            <line falsecount="41580" truecount="7070" num="248" type="cond"/>
+            <line num="249" count="7070" type="stmt"/>
+            <line num="252" count="101" type="stmt"/>
+            <line complexity="3" visibility="private" signature="popStackToSuitableContainer(Tag) : Element" num="255" count="7228" type="method"/>
+            <line num="256" count="7228" type="stmt"/>
+            <line falsecount="0" truecount="7487" num="256" type="cond"/>
+            <line num="257" count="7487" type="stmt"/>
+            <line falsecount="259" truecount="7228" num="257" type="cond"/>
+            <line num="258" count="7228" type="stmt"/>
+            <line num="260" count="259" type="stmt"/>
+            <line num="262" count="0" type="stmt"/>
+            <line complexity="7" visibility="private" signature="popStackToClose(Tag) : Element" num="265" count="6479" type="method"/>
+            <line num="267" count="6479" type="stmt"/>
+            <line num="268" count="6479" type="stmt"/>
+            <line num="269" count="6479" type="stmt"/>
+            <line falsecount="1" truecount="8104" num="269" type="cond"/>
+            <line num="270" count="8104" type="stmt"/>
+            <line num="271" count="8104" type="stmt"/>
+            <line num="272" count="8104" type="stmt"/>
+            <line num="273" count="8104" type="stmt"/>
+            <line falsecount="7920" truecount="184" num="273" type="cond"/>
+            <line num="274" count="184" type="stmt"/>
+            <line num="275" count="7920" type="stmt"/>
+            <line falsecount="1626" truecount="6294" num="275" type="cond"/>
+            <line num="276" count="6294" type="stmt"/>
+            <line num="277" count="6294" type="stmt"/>
+            <line num="280" count="6479" type="stmt"/>
+            <line falsecount="185" truecount="6294" num="280" type="cond"/>
+            <line num="281" count="6294" type="stmt"/>
+            <line falsecount="6294" truecount="6438" num="281" type="cond"/>
+            <line num="282" count="6438" type="stmt"/>
+            <line num="285" count="6479" type="stmt"/>
+            <line complexity="1" visibility="private" signature="last() : Element" num="288" count="25928" type="method"/>
+            <line num="289" count="25928" type="stmt"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/parser/TokenQueue.java" name="TokenQueue.java">
+            <metrics coveredelements="108" coveredconditionals="26" complexity="44" loc="257" coveredmethods="18" methods="21" elements="123" classes="1" ncloc="133" statements="72" conditionals="30" coveredstatements="64"/>
+            <class name="TokenQueue">
+               <metrics coveredelements="108" coveredconditionals="26" complexity="44" coveredmethods="18" methods="21" elements="123" statements="72" conditionals="30" coveredstatements="64"/>
+            </class>
+            <line complexity="1" visibility="public" signature="TokenQueue(String)" num="20" count="368" type="method"/>
+            <line num="21" count="368" type="stmt"/>
+            <line num="23" count="368" type="stmt"/>
+            <line num="24" count="368" type="stmt"/>
+            <line num="25" count="368" type="stmt"/>
+            <line num="26" count="601920" type="stmt"/>
+            <line complexity="1" visibility="public" signature="isEmpty() : boolean" num="34" count="35315" type="method"/>
+            <line num="35" count="35315" type="stmt"/>
+            <line complexity="1" visibility="public" signature="peek() : Character" num="42" count="0" type="method"/>
+            <line num="43" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="addFirst(Character) : void" num="50" count="8" type="method"/>
+            <line num="51" count="8" type="stmt"/>
+            <line complexity="2" visibility="public" signature="addFirst(String) : void" num="58" count="2" type="method"/>
+            <line num="59" count="2" type="stmt"/>
+            <line num="60" count="2" type="stmt"/>
+            <line falsecount="2" truecount="8" num="60" type="cond"/>
+            <line num="61" count="8" type="stmt"/>
+            <line complexity="4" visibility="public" signature="matches(String) : boolean" num="70" count="803968" type="method"/>
+            <line num="71" count="803968" type="stmt"/>
+            <line num="72" count="803968" type="stmt"/>
+            <line falsecount="803834" truecount="134" num="72" type="cond"/>
+            <line num="73" count="134" type="stmt"/>
+            <line num="74" count="803834" type="stmt"/>
+            <line num="75" count="803834" type="stmt"/>
+            <line num="76" count="803834" type="stmt"/>
+            <line falsecount="136708" truecount="899442" num="76" type="cond"/>
+            <line num="77" count="899442" type="stmt"/>
+            <line num="78" count="899442" type="stmt"/>
+            <line num="79" count="899442" type="stmt"/>
+            <line falsecount="232316" truecount="667126" num="79" type="cond"/>
+            <line num="80" count="667126" type="stmt"/>
+            <line num="82" count="136708" type="stmt"/>
+            <line complexity="2" visibility="public" signature="matchesAny(String) : boolean" num="90" count="510188" type="method"/>
+            <line num="91" count="510188" type="stmt"/>
+            <line num="92" count="563562" type="stmt"/>
+            <line falsecount="531024" truecount="32538" num="92" type="cond"/>
+            <line num="93" count="32538" type="stmt"/>
+            <line num="95" count="477650" type="stmt"/>
+            <line complexity="2" visibility="public" signature="matchChomp(String) : boolean" num="104" count="53304" type="method"/>
+            <line num="105" count="53304" type="stmt"/>
+            <line falsecount="16319" truecount="36985" num="105" type="cond"/>
+            <line num="106" count="36985" type="stmt"/>
+            <line num="107" count="36985" type="stmt"/>
+            <line num="109" count="16319" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matchesWhitespace() : boolean" num="117" count="2209" type="method"/>
+            <line num="118" count="2209" type="stmt"/>
+            <line complexity="1" visibility="public" signature="matchesWord() : boolean" num="125" count="293" type="method"/>
+            <line num="126" count="293" type="stmt"/>
+            <line complexity="1" visibility="public" signature="consume() : Character" num="133" count="536856" type="method"/>
+            <line num="134" count="536856" type="stmt"/>
+            <line complexity="4" visibility="public" signature="consume(String) : void" num="144" count="52085" type="method"/>
+            <line num="145" count="52085" type="stmt"/>
+            <line falsecount="52085" truecount="0" num="145" type="cond"/>
+            <line num="146" count="0" type="stmt"/>
+            <line num="147" count="52085" type="stmt"/>
+            <line num="148" count="52085" type="stmt"/>
+            <line falsecount="52085" truecount="0" num="148" type="cond"/>
+            <line num="149" count="0" type="stmt"/>
+            <line num="150" count="52085" type="stmt"/>
+            <line falsecount="52085" truecount="65949" num="150" type="cond"/>
+            <line num="151" count="65949" type="stmt"/>
+            <line complexity="1" visibility="public" signature="consumeTo(String) : String" num="160" count="25055" type="method"/>
+            <line num="161" count="25055" type="stmt"/>
+            <line complexity="3" visibility="public" signature="consumeToAny(String) : String" num="169" count="25093" type="method"/>
+            <line num="170" count="25093" type="stmt"/>
+            <line num="171" count="25093" type="stmt"/>
+            <line falsecount="25093" truecount="458925" num="171" type="cond"/>
+            <line num="172" count="458925" type="stmt"/>
+            <line num="174" count="25093" type="stmt"/>
+            <line complexity="1" visibility="public" signature="chompTo(String) : String" num="185" count="15332" type="method"/>
+            <line num="186" count="15332" type="stmt"/>
+            <line num="187" count="15332" type="stmt"/>
+            <line num="188" count="15332" type="stmt"/>
+            <line complexity="3" visibility="public" signature="consumeWhitespace() : boolean" num="194" count="31622" type="method"/>
+            <line num="195" count="31622" type="stmt"/>
+            <line num="196" count="31622" type="stmt"/>
+            <line falsecount="31622" truecount="9589" num="196" type="cond"/>
+            <line num="197" count="9589" type="stmt"/>
+            <line num="198" count="9589" type="stmt"/>
+            <line num="200" count="31622" type="stmt"/>
+            <line complexity="3" visibility="public" signature="consumeWord() : String" num="207" count="13870" type="method"/>
+            <line num="208" count="13870" type="stmt"/>
+            <line num="209" count="13870" type="stmt"/>
+            <line falsecount="13870" truecount="30542" num="209" type="cond"/>
+            <line num="210" count="30542" type="stmt"/>
+            <line num="212" count="13870" type="stmt"/>
+            <line complexity="5" visibility="public" signature="consumeCssIdentifier() : String" num="220" count="16" type="method"/>
+            <line num="221" count="16" type="stmt"/>
+            <line num="222" count="16" type="stmt"/>
+            <line num="223" count="16" type="stmt"/>
+            <line falsecount="16" truecount="75" num="223" type="cond"/>
+            <line num="224" count="75" type="stmt"/>
+            <line num="225" count="75" type="stmt"/>
+            <line num="227" count="16" type="stmt"/>
+            <line complexity="4" visibility="public" signature="consumeAttributeKey() : String" num="234" count="8099" type="method"/>
+            <line num="235" count="8099" type="stmt"/>
+            <line num="236" count="8099" type="stmt"/>
+            <line falsecount="8099" truecount="34455" num="236" type="cond"/>
+            <line num="237" count="34455" type="stmt"/>
+            <line num="239" count="8099" type="stmt"/>
+            <line complexity="2" visibility="public" signature="remainder() : String" num="246" count="0" type="method"/>
+            <line num="247" count="0" type="stmt"/>
+            <line num="248" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="248" type="cond"/>
+            <line num="249" count="0" type="stmt"/>
+            <line num="251" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="254" count="0" type="method"/>
+            <line num="255" count="0" type="stmt"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/parser/Tag.java" name="Tag.java">
+            <metrics coveredelements="248" coveredconditionals="48" complexity="68" loc="374" coveredmethods="24" methods="26" elements="265" classes="1" ncloc="254" statements="183" conditionals="56" coveredstatements="176"/>
+            <class name="Tag">
+               <metrics coveredelements="248" coveredconditionals="48" complexity="68" coveredmethods="24" methods="26" elements="265" statements="183" conditionals="56" coveredstatements="176"/>
+            </class>
+            <line complexity="1" visibility="package" signature="&lt;clinit&gt;, line 15()" num="15" count="10" type="method"/>
+            <line num="16" count="10" type="stmt"/>
+            <line num="17" count="10" type="stmt"/>
+            <line complexity="1" visibility="private" signature="Tag(String)" num="29" count="944" type="method"/>
+            <line num="30" count="944" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getName() : String" num="33" count="63248" type="method"/>
+            <line num="34" count="63248" type="stmt"/>
+            <line complexity="2" visibility="public" signature="valueOf(String) : Tag" num="44" count="15248" type="method"/>
+            <line num="45" count="15248" type="stmt"/>
+            <line num="46" count="15248" type="stmt"/>
+            <line num="47" count="15248" type="stmt"/>
+            <line num="49" count="15248" type="stmt"/>
+            <line num="50" count="15248" type="stmt"/>
+            <line num="51" count="15248" type="stmt"/>
+            <line falsecount="15124" truecount="124" num="51" type="cond"/>
+            <line num="53" count="124" type="stmt"/>
+            <line num="54" count="124" type="stmt"/>
+            <line num="55" count="124" type="stmt"/>
+            <line num="56" count="124" type="stmt"/>
+            <line num="58" count="15248" type="stmt"/>
+            <line complexity="22" visibility="package" signature="canContain(Tag) : boolean" num="67" count="7492" type="method"/>
+            <line num="68" count="7492" type="stmt"/>
+            <line num="70" count="7492" type="stmt"/>
+            <line falsecount="7342" truecount="150" num="70" type="cond"/>
+            <line num="71" count="150" type="stmt"/>
+            <line num="73" count="7342" type="stmt"/>
+            <line falsecount="7337" truecount="5" num="73" type="cond"/>
+            <line num="74" count="5" type="stmt"/>
+            <line num="76" count="7337" type="stmt"/>
+            <line falsecount="7233" truecount="104" num="76" type="cond"/>
+            <line num="77" count="104" type="stmt"/>
+            <line num="79" count="7233" type="stmt"/>
+            <line falsecount="7233" truecount="0" num="79" type="cond"/>
+            <line num="80" count="0" type="stmt"/>
+            <line num="84" count="7233" type="stmt"/>
+            <line falsecount="7138" truecount="95" num="84" type="cond"/>
+            <line num="85" count="95" type="stmt"/>
+            <line falsecount="1" truecount="94" num="85" type="cond"/>
+            <line num="87" count="94" type="stmt"/>
+            <line num="89" count="1" type="stmt"/>
+            <line num="93" count="7138" type="stmt"/>
+            <line falsecount="7136" truecount="2" num="93" type="cond"/>
+            <line num="94" count="2" type="stmt"/>
+            <line num="95" count="7136" type="stmt"/>
+            <line falsecount="7135" truecount="1" num="95" type="cond"/>
+            <line num="96" count="1" type="stmt"/>
+            <line num="98" count="7135" type="stmt"/>
+            <line complexity="1" visibility="public" signature="isBlock() : boolean" num="105" count="73" type="method"/>
+            <line num="106" count="73" type="stmt"/>
+            <line complexity="1" visibility="public" signature="canContainBlock() : boolean" num="113" count="116" type="method"/>
+            <line num="114" count="116" type="stmt"/>
+            <line complexity="1" visibility="public" signature="isInline() : boolean" num="121" count="0" type="method"/>
+            <line num="122" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="isData() : boolean" num="129" count="14360" type="method"/>
+            <line num="130" count="14360" type="stmt"/>
+            <line complexity="1" visibility="public" signature="isEmpty() : boolean" num="137" count="7687" type="method"/>
+            <line num="138" count="7687" type="stmt"/>
+            <line complexity="1" visibility="public" signature="preserveWhitespace() : boolean" num="145" count="501" type="method"/>
+            <line num="146" count="501" type="stmt"/>
+            <line complexity="2" visibility="package" signature="getImplicitParent() : Tag" num="149" count="101" type="method"/>
+            <line num="150" count="101" type="stmt"/>
+            <line falsecount="0" truecount="101" num="150" type="cond"/>
+            <line complexity="3" visibility="package" signature="isValidParent(Tag) : boolean" num="153" count="48650" type="method"/>
+            <line num="154" count="48650" type="stmt"/>
+            <line falsecount="48650" truecount="0" num="154" type="cond"/>
+            <line num="155" count="0" type="stmt"/>
+            <line num="157" count="48650" type="stmt"/>
+            <line num="158" count="49640" type="stmt"/>
+            <line falsecount="42570" truecount="7070" num="158" type="cond"/>
+            <line num="159" count="7070" type="stmt"/>
+            <line num="161" count="41580" type="stmt"/>
+            <line complexity="11" visibility="public" signature="equals(Object) : boolean" num="164" count="76260" type="method"/>
+            <line num="166" count="76260" type="stmt"/>
+            <line num="166" count="13753" type="stmt"/>
+            <line falsecount="62507" truecount="13753" num="166" type="cond"/>
+            <line num="167" count="62507" type="stmt"/>
+            <line num="167" count="0" type="stmt"/>
+            <line falsecount="62507" truecount="0" num="167" type="cond"/>
+            <line num="169" count="62507" type="stmt"/>
+            <line num="171" count="62507" type="stmt"/>
+            <line num="171" count="10833" type="stmt"/>
+            <line falsecount="51674" truecount="10833" num="171" type="cond"/>
+            <line num="172" count="51674" type="stmt"/>
+            <line num="172" count="129" type="stmt"/>
+            <line falsecount="51545" truecount="129" num="172" type="cond"/>
+            <line num="173" count="51545" type="stmt"/>
+            <line num="173" count="0" type="stmt"/>
+            <line falsecount="51545" truecount="0" num="173" type="cond"/>
+            <line num="174" count="51545" type="stmt"/>
+            <line num="174" count="383" type="stmt"/>
+            <line falsecount="51162" truecount="383" num="174" type="cond"/>
+            <line num="175" count="51162" type="stmt"/>
+            <line num="175" count="7502" type="stmt"/>
+            <line falsecount="43660" truecount="7502" num="175" type="cond"/>
+            <line num="176" count="43660" type="stmt"/>
+            <line num="176" count="43644" type="stmt"/>
+            <line falsecount="0" truecount="43660" num="176" type="cond"/>
+            <line falsecount="16" truecount="43644" num="176" type="cond"/>
+            <line num="178" count="16" type="stmt"/>
+            <line complexity="7" visibility="public" signature="hashCode() : int" num="181" count="61876" type="method"/>
+            <line num="183" count="61876" type="stmt"/>
+            <line falsecount="0" truecount="61876" num="183" type="cond"/>
+            <line num="184" count="61876" type="stmt"/>
+            <line falsecount="9738" truecount="52138" num="184" type="cond"/>
+            <line num="185" count="61876" type="stmt"/>
+            <line falsecount="6230" truecount="55646" num="185" type="cond"/>
+            <line num="186" count="61876" type="stmt"/>
+            <line falsecount="10" truecount="61866" num="186" type="cond"/>
+            <line num="187" count="61876" type="stmt"/>
+            <line falsecount="53927" truecount="7949" num="187" type="cond"/>
+            <line num="188" count="61876" type="stmt"/>
+            <line falsecount="61873" truecount="3" num="188" type="cond"/>
+            <line num="189" count="61876" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="192" count="0" type="method"/>
+            <line num="193" count="0" type="stmt"/>
+            <line complexity="1" visibility="package" signature="&lt;clinit&gt;, line 198()" num="198" count="10" type="method"/>
+            <line num="204" count="10" type="stmt"/>
+            <line num="205" count="10" type="stmt"/>
+            <line num="206" count="10" type="stmt"/>
+            <line num="207" count="10" type="stmt"/>
+            <line num="211" count="10" type="stmt"/>
+            <line num="212" count="10" type="stmt"/>
+            <line num="213" count="10" type="stmt"/>
+            <line num="214" count="10" type="stmt"/>
+            <line num="215" count="10" type="stmt"/>
+            <line num="216" count="10" type="stmt"/>
+            <line num="217" count="10" type="stmt"/>
+            <line num="218" count="10" type="stmt"/>
+            <line num="220" count="10" type="stmt"/>
+            <line num="221" count="10" type="stmt"/>
+            <line num="226" count="10" type="stmt"/>
+            <line num="227" count="10" type="stmt"/>
+            <line num="228" count="10" type="stmt"/>
+            <line num="229" count="10" type="stmt"/>
+            <line num="230" count="10" type="stmt"/>
+            <line num="231" count="10" type="stmt"/>
+            <line num="234" count="10" type="stmt"/>
+            <line num="235" count="10" type="stmt"/>
+            <line num="236" count="10" type="stmt"/>
+            <line num="237" count="10" type="stmt"/>
+            <line num="238" count="10" type="stmt"/>
+            <line num="239" count="10" type="stmt"/>
+            <line num="240" count="10" type="stmt"/>
+            <line num="241" count="10" type="stmt"/>
+            <line num="242" count="10" type="stmt"/>
+            <line num="243" count="10" type="stmt"/>
+            <line num="246" count="10" type="stmt"/>
+            <line num="247" count="10" type="stmt"/>
+            <line num="248" count="10" type="stmt"/>
+            <line num="249" count="10" type="stmt"/>
+            <line num="250" count="10" type="stmt"/>
+            <line num="251" count="10" type="stmt"/>
+            <line num="252" count="10" type="stmt"/>
+            <line num="253" count="10" type="stmt"/>
+            <line num="254" count="10" type="stmt"/>
+            <line num="261" count="10" type="stmt"/>
+            <line num="262" count="10" type="stmt"/>
+            <line num="263" count="10" type="stmt"/>
+            <line num="264" count="10" type="stmt"/>
+            <line num="265" count="10" type="stmt"/>
+            <line num="266" count="10" type="stmt"/>
+            <line num="267" count="10" type="stmt"/>
+            <line num="268" count="10" type="stmt"/>
+            <line num="269" count="10" type="stmt"/>
+            <line num="270" count="10" type="stmt"/>
+            <line num="271" count="10" type="stmt"/>
+            <line num="272" count="10" type="stmt"/>
+            <line num="273" count="10" type="stmt"/>
+            <line num="274" count="10" type="stmt"/>
+            <line num="278" count="10" type="stmt"/>
+            <line num="279" count="10" type="stmt"/>
+            <line num="280" count="10" type="stmt"/>
+            <line num="281" count="10" type="stmt"/>
+            <line num="282" count="10" type="stmt"/>
+            <line num="283" count="10" type="stmt"/>
+            <line num="284" count="10" type="stmt"/>
+            <line num="285" count="10" type="stmt"/>
+            <line num="286" count="10" type="stmt"/>
+            <line num="287" count="10" type="stmt"/>
+            <line num="290" count="10" type="stmt"/>
+            <line num="291" count="10" type="stmt"/>
+            <line num="292" count="10" type="stmt"/>
+            <line num="293" count="10" type="stmt"/>
+            <line num="295" count="10" type="stmt"/>
+            <line num="296" count="10" type="stmt"/>
+            <line num="297" count="10" type="stmt"/>
+            <line num="299" count="10" type="stmt"/>
+            <line num="302" count="10" type="stmt"/>
+            <line num="303" count="10" type="stmt"/>
+            <line num="304" count="10" type="stmt"/>
+            <line num="305" count="10" type="stmt"/>
+            <line num="306" count="10" type="stmt"/>
+            <line num="307" count="10" type="stmt"/>
+            <line num="308" count="10" type="stmt"/>
+            <line num="309" count="10" type="stmt"/>
+            <line num="310" count="10" type="stmt"/>
+            <line num="311" count="10" type="stmt"/>
+            <line complexity="1" visibility="private" signature="createBlock(String) : Tag" num="314" count="420" type="method"/>
+            <line num="315" count="420" type="stmt"/>
+            <line complexity="1" visibility="private" signature="createInline(String) : Tag" num="318" count="390" type="method"/>
+            <line num="319" count="390" type="stmt"/>
+            <line num="320" count="390" type="stmt"/>
+            <line num="321" count="390" type="stmt"/>
+            <line num="322" count="390" type="stmt"/>
+            <line complexity="1" visibility="private" signature="register(Tag) : Tag" num="325" count="810" type="method"/>
+            <line num="326" count="810" type="stmt"/>
+            <line num="327" count="810" type="stmt"/>
+            <line num="328" count="810" type="stmt"/>
+            <line num="330" count="810" type="stmt"/>
+            <line complexity="1" visibility="private" signature="setContainInlineOnly() : Tag" num="333" count="90" type="method"/>
+            <line num="334" count="90" type="stmt"/>
+            <line num="335" count="90" type="stmt"/>
+            <line num="336" count="90" type="stmt"/>
+            <line complexity="1" visibility="private" signature="setContainDataOnly() : Tag" num="339" count="60" type="method"/>
+            <line num="340" count="60" type="stmt"/>
+            <line num="341" count="60" type="stmt"/>
+            <line num="342" count="60" type="stmt"/>
+            <line num="343" count="60" type="stmt"/>
+            <line complexity="1" visibility="private" signature="setEmpty() : Tag" num="346" count="110" type="method"/>
+            <line num="347" count="110" type="stmt"/>
+            <line num="348" count="110" type="stmt"/>
+            <line num="349" count="110" type="stmt"/>
+            <line num="350" count="110" type="stmt"/>
+            <line complexity="1" visibility="private" signature="setOptionalClosing() : Tag" num="353" count="130" type="method"/>
+            <line num="354" count="130" type="stmt"/>
+            <line num="355" count="130" type="stmt"/>
+            <line complexity="1" visibility="private" signature="setPreserveWhitespace() : Tag" num="358" count="10" type="method"/>
+            <line num="359" count="10" type="stmt"/>
+            <line num="360" count="10" type="stmt"/>
+            <line complexity="2" visibility="private" signature="setAncestor(String) : Tag" num="363" count="1294" type="method"/>
+            <line num="364" count="1294" type="stmt"/>
+            <line falsecount="1294" truecount="0" num="364" type="cond"/>
+            <line num="365" count="0" type="stmt"/>
+            <line num="367" count="1294" type="stmt"/>
+            <line num="368" count="1294" type="stmt"/>
+            <line num="369" count="1374" type="stmt"/>
+            <line num="372" count="1294" type="stmt"/>
+         </file>
+      </package>
+      <package name="org.jsoup.select">
+         <metrics coveredelements="340" complexity="124" loc="740" methods="77" classes="4" statements="260" coveredconditionals="75" coveredmethods="53" elements="427" ncloc="438" files="3" conditionals="90" coveredstatements="212"/>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/select/Selector.java" name="Selector.java">
+            <metrics coveredelements="219" coveredconditionals="57" complexity="58" loc="336" coveredmethods="22" methods="23" elements="237" classes="2" ncloc="237" statements="148" conditionals="66" coveredstatements="140"/>
+            <class name="Selector">
+               <metrics coveredelements="219" coveredconditionals="57" complexity="57" coveredmethods="22" methods="22" elements="235" statements="147" conditionals="66" coveredstatements="140"/>
+            </class>
+            <class name="Selector.SelectorParseException">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="2" statements="1" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="private" signature="Selector(String,Element)" num="54" count="284" type="method"/>
+            <line num="55" count="284" type="stmt"/>
+            <line num="56" count="284" type="stmt"/>
+            <line num="57" count="284" type="stmt"/>
+            <line num="58" count="284" type="stmt"/>
+            <line num="60" count="284" type="stmt"/>
+            <line num="61" count="284" type="stmt"/>
+            <line num="62" count="284" type="stmt"/>
+            <line num="63" count="284" type="stmt"/>
+            <line complexity="1" visibility="public" signature="select(String,Element) : Elements" num="72" count="284" type="method"/>
+            <line num="73" count="284" type="stmt"/>
+            <line complexity="1" visibility="public" signature="select(String,Iterable&lt;Element&gt;) : Elements" num="82" count="18" type="method"/>
+            <line num="83" count="18" type="stmt"/>
+            <line num="84" count="18" type="stmt"/>
+            <line num="85" count="18" type="stmt"/>
+            <line num="87" count="18" type="stmt"/>
+            <line num="88" count="48" type="stmt"/>
+            <line num="90" count="18" type="stmt"/>
+            <line complexity="7" visibility="private" signature="select() : Elements" num="93" count="284" type="method"/>
+            <line num="94" count="284" type="stmt"/>
+            <line num="96" count="284" type="stmt"/>
+            <line falsecount="284" truecount="0" num="96" type="cond"/>
+            <line num="97" count="0" type="stmt"/>
+            <line num="98" count="0" type="stmt"/>
+            <line num="100" count="284" type="stmt"/>
+            <line num="103" count="284" type="stmt"/>
+            <line falsecount="284" truecount="45" num="103" type="cond"/>
+            <line num="105" count="45" type="stmt"/>
+            <line num="107" count="45" type="stmt"/>
+            <line falsecount="44" truecount="1" num="107" type="cond"/>
+            <line num="108" count="1" type="stmt"/>
+            <line falsecount="1" truecount="1" num="108" type="cond"/>
+            <line num="109" count="1" type="stmt"/>
+            <line num="110" count="1" type="stmt"/>
+            <line num="112" count="44" type="stmt"/>
+            <line falsecount="33" truecount="11" num="112" type="cond"/>
+            <line num="113" count="11" type="stmt"/>
+            <line num="114" count="33" type="stmt"/>
+            <line falsecount="25" truecount="8" num="114" type="cond"/>
+            <line num="115" count="8" type="stmt"/>
+            <line num="117" count="25" type="stmt"/>
+            <line num="118" count="25" type="stmt"/>
+            <line num="121" count="284" type="stmt"/>
+            <line complexity="5" visibility="private" signature="combinator(String) : void" num="124" count="19" type="method"/>
+            <line num="125" count="19" type="stmt"/>
+            <line num="126" count="19" type="stmt"/>
+            <line num="128" count="19" type="stmt"/>
+            <line num="129" count="19" type="stmt"/>
+            <line falsecount="12" truecount="7" num="129" type="cond"/>
+            <line num="130" count="7" type="stmt"/>
+            <line num="131" count="12" type="stmt"/>
+            <line falsecount="4" truecount="8" num="131" type="cond"/>
+            <line num="132" count="8" type="stmt"/>
+            <line num="133" count="4" type="stmt"/>
+            <line falsecount="1" truecount="3" num="133" type="cond"/>
+            <line num="134" count="3" type="stmt"/>
+            <line num="135" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="135" type="cond"/>
+            <line num="136" count="1" type="stmt"/>
+            <line num="138" count="0" type="stmt"/>
+            <line num="140" count="19" type="stmt"/>
+            <line num="140" count="19" type="stmt"/>
+            <line complexity="9" visibility="private" signature="findElements() : Elements" num="143" count="309" type="method"/>
+            <line num="144" count="309" type="stmt"/>
+            <line falsecount="306" truecount="3" num="144" type="cond"/>
+            <line num="145" count="3" type="stmt"/>
+            <line num="146" count="306" type="stmt"/>
+            <line falsecount="293" truecount="13" num="146" type="cond"/>
+            <line num="147" count="13" type="stmt"/>
+            <line num="148" count="293" type="stmt"/>
+            <line falsecount="33" truecount="260" num="148" type="cond"/>
+            <line num="149" count="260" type="stmt"/>
+            <line num="150" count="33" type="stmt"/>
+            <line falsecount="14" truecount="19" num="150" type="cond"/>
+            <line num="151" count="19" type="stmt"/>
+            <line num="152" count="14" type="stmt"/>
+            <line falsecount="9" truecount="5" num="152" type="cond"/>
+            <line num="153" count="5" type="stmt"/>
+            <line num="154" count="9" type="stmt"/>
+            <line falsecount="7" truecount="2" num="154" type="cond"/>
+            <line num="155" count="2" type="stmt"/>
+            <line num="156" count="7" type="stmt"/>
+            <line falsecount="4" truecount="3" num="156" type="cond"/>
+            <line num="157" count="3" type="stmt"/>
+            <line num="158" count="4" type="stmt"/>
+            <line falsecount="0" truecount="4" num="158" type="cond"/>
+            <line num="159" count="4" type="stmt"/>
+            <line num="161" count="0" type="stmt"/>
+            <line complexity="1" visibility="private" signature="addElements(Collection&lt;Element&gt;) : void" num="165" count="284" type="method"/>
+            <line num="166" count="284" type="stmt"/>
+            <line complexity="1" visibility="private" signature="intersectElements(Collection&lt;Element&gt;) : void" num="169" count="25" type="method"/>
+            <line num="170" count="25" type="stmt"/>
+            <line complexity="2" visibility="private" signature="byId() : Elements" num="173" count="3" type="method"/>
+            <line num="174" count="3" type="stmt"/>
+            <line num="175" count="3" type="stmt"/>
+            <line num="177" count="3" type="stmt"/>
+            <line num="178" count="3" type="stmt"/>
+            <line num="179" count="3" type="stmt"/>
+            <line falsecount="0" truecount="3" num="179" type="cond"/>
+            <line num="180" count="3" type="stmt"/>
+            <line num="181" count="3" type="stmt"/>
+            <line complexity="1" visibility="private" signature="byClass() : Elements" num="184" count="13" type="method"/>
+            <line num="185" count="13" type="stmt"/>
+            <line num="186" count="13" type="stmt"/>
+            <line num="188" count="13" type="stmt"/>
+            <line complexity="1" visibility="private" signature="byTag() : Elements" num="191" count="260" type="method"/>
+            <line num="192" count="260" type="stmt"/>
+            <line num="193" count="260" type="stmt"/>
+            <line num="195" count="260" type="stmt"/>
+            <line complexity="7" visibility="private" signature="byAttribute() : Elements" num="198" count="19" type="method"/>
+            <line num="199" count="19" type="stmt"/>
+            <line num="200" count="19" type="stmt"/>
+            <line num="202" count="19" type="stmt"/>
+            <line falsecount="18" truecount="1" num="202" type="cond"/>
+            <line num="203" count="1" type="stmt"/>
+            <line num="205" count="18" type="stmt"/>
+            <line falsecount="6" truecount="12" num="205" type="cond"/>
+            <line num="206" count="12" type="stmt"/>
+            <line num="208" count="6" type="stmt"/>
+            <line falsecount="5" truecount="1" num="208" type="cond"/>
+            <line num="209" count="1" type="stmt"/>
+            <line num="211" count="5" type="stmt"/>
+            <line falsecount="4" truecount="1" num="211" type="cond"/>
+            <line num="212" count="1" type="stmt"/>
+            <line num="214" count="4" type="stmt"/>
+            <line falsecount="3" truecount="1" num="214" type="cond"/>
+            <line num="215" count="1" type="stmt"/>
+            <line num="217" count="3" type="stmt"/>
+            <line falsecount="0" truecount="3" num="217" type="cond"/>
+            <line num="218" count="3" type="stmt"/>
+            <line num="221" count="0" type="stmt"/>
+            <line complexity="1" visibility="private" signature="allElements() : Elements" num="225" count="5" type="method"/>
+            <line num="226" count="5" type="stmt"/>
+            <line complexity="1" visibility="private" signature="indexLessThan() : Elements" num="230" count="2" type="method"/>
+            <line num="231" count="2" type="stmt"/>
+            <line complexity="1" visibility="private" signature="indexGreaterThan() : Elements" num="234" count="3" type="method"/>
+            <line num="235" count="3" type="stmt"/>
+            <line complexity="1" visibility="private" signature="indexEquals() : Elements" num="238" count="4" type="method"/>
+            <line num="239" count="4" type="stmt"/>
+            <line complexity="1" visibility="private" signature="consumeIndex() : int" num="242" count="9" type="method"/>
+            <line num="243" count="9" type="stmt"/>
+            <line num="244" count="9" type="stmt"/>
+            <line num="245" count="9" type="stmt"/>
+            <line num="247" count="9" type="stmt"/>
+            <line complexity="3" visibility="private" signature="filterForChildren(Collection&lt;Element&gt;,Collection&lt;Element&gt;) : Elements" num="251" count="7" type="method"/>
+            <line num="252" count="7" type="stmt"/>
+            <line num="253" count="7" type="stmt"/>
+            <line num="254" count="56" type="stmt"/>
+            <line num="255" count="192" type="stmt"/>
+            <line falsecount="142" truecount="50" num="255" type="cond"/>
+            <line num="256" count="50" type="stmt"/>
+            <line num="257" count="50" type="stmt"/>
+            <line num="261" count="7" type="stmt"/>
+            <line complexity="3" visibility="private" signature="filterForDescendants(Collection&lt;Element&gt;,Collection&lt;Element&gt;) : Elements" num="266" count="8" type="method"/>
+            <line num="267" count="8" type="stmt"/>
+            <line num="268" count="8" type="stmt"/>
+            <line num="269" count="11" type="stmt"/>
+            <line num="270" count="11" type="stmt"/>
+            <line num="271" count="14" type="stmt"/>
+            <line falsecount="12" truecount="2" num="271" type="cond"/>
+            <line num="272" count="2" type="stmt"/>
+            <line num="273" count="2" type="stmt"/>
+            <line num="276" count="9" type="stmt"/>
+            <line falsecount="0" truecount="9" num="276" type="cond"/>
+            <line num="277" count="9" type="stmt"/>
+            <line num="279" count="8" type="stmt"/>
+            <line complexity="4" visibility="private" signature="filterForAdjacentSiblings(Collection&lt;Element&gt;,Collection&lt;Element&gt;) : Elements" num="283" count="3" type="method"/>
+            <line num="284" count="3" type="stmt"/>
+            <line num="285" count="3" type="stmt"/>
+            <line num="286" count="8" type="stmt"/>
+            <line num="287" count="15" type="stmt"/>
+            <line falsecount="15" truecount="0" num="287" type="cond"/>
+            <line num="288" count="0" type="stmt"/>
+            <line num="289" count="15" type="stmt"/>
+            <line num="290" count="15" type="stmt"/>
+            <line falsecount="10" truecount="5" num="290" type="cond"/>
+            <line num="291" count="5" type="stmt"/>
+            <line num="292" count="5" type="stmt"/>
+            <line num="296" count="3" type="stmt"/>
+            <line complexity="3" visibility="private" signature="filterForGeneralSiblings(Collection&lt;Element&gt;,Collection&lt;Element&gt;) : Elements" num="300" count="1" type="method"/>
+            <line num="301" count="1" type="stmt"/>
+            <line num="302" count="1" type="stmt"/>
+            <line num="303" count="1" type="stmt"/>
+            <line num="304" count="1" type="stmt"/>
+            <line falsecount="1" truecount="0" num="304" type="cond"/>
+            <line num="305" count="0" type="stmt"/>
+            <line num="306" count="1" type="stmt"/>
+            <line num="307" count="1" type="stmt"/>
+            <line num="308" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="308" type="cond"/>
+            <line num="309" count="1" type="stmt"/>
+            <line num="310" count="1" type="stmt"/>
+            <line num="314" count="1" type="stmt"/>
+            <line complexity="2" visibility="private" signature="filterForSelf(Collection&lt;Element&gt;,Collection&lt;Element&gt;) : Elements" num="318" count="25" type="method"/>
+            <line num="319" count="25" type="stmt"/>
+            <line num="320" count="25" type="stmt"/>
+            <line num="321" count="82" type="stmt"/>
+            <line num="322" count="4213" type="stmt"/>
+            <line falsecount="4152" truecount="61" num="322" type="cond"/>
+            <line num="323" count="61" type="stmt"/>
+            <line num="324" count="61" type="stmt"/>
+            <line num="328" count="25" type="stmt"/>
+            <line complexity="1" visibility="public" signature="SelectorParseException(String)" num="332" count="0" type="method"/>
+            <line num="333" count="0" type="stmt"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/select/Collector.java" name="Collector.java">
+            <metrics coveredelements="11" coveredconditionals="2" complexity="3" loc="33" coveredmethods="2" methods="2" elements="11" classes="1" ncloc="17" statements="7" conditionals="2" coveredstatements="7"/>
+            <class name="Collector">
+               <metrics coveredelements="11" coveredconditionals="2" complexity="3" coveredmethods="2" methods="2" elements="11" statements="7" conditionals="2" coveredstatements="7"/>
+            </class>
+            <line complexity="1" visibility="public" signature="collect(Evaluator,Element) : Elements" num="21" count="667" type="method"/>
+            <line num="22" count="667" type="stmt"/>
+            <line num="23" count="667" type="stmt"/>
+            <line num="24" count="667" type="stmt"/>
+            <line complexity="2" visibility="private" signature="accumulateMatches(Evaluator,List&lt;Element&gt;,Element) : void" num="27" count="71128" type="method"/>
+            <line num="28" count="71128" type="stmt"/>
+            <line falsecount="68137" truecount="2991" num="28" type="cond"/>
+            <line num="29" count="2991" type="stmt"/>
+            <line num="30" count="71128" type="stmt"/>
+            <line num="31" count="70461" type="stmt"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/select/Elements.java" name="Elements.java">
+            <metrics coveredelements="110" coveredconditionals="16" complexity="63" loc="371" coveredmethods="29" methods="52" elements="179" classes="1" ncloc="184" statements="105" conditionals="22" coveredstatements="65"/>
+            <class name="Elements">
+               <metrics coveredelements="110" coveredconditionals="16" complexity="63" coveredmethods="29" methods="52" elements="179" statements="105" conditionals="22" coveredstatements="65"/>
+            </class>
+            <line complexity="1" visibility="public" signature="Elements()" num="15" count="714" type="method"/>
+            <line num="16" count="714" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Elements(Collection&lt;Element&gt;)" num="19" count="302" type="method"/>
+            <line num="20" count="302" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Elements(List&lt;Element&gt;)" num="23" count="71204" type="method"/>
+            <line num="24" count="71204" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Elements(Element)" num="27" count="1" type="method"/>
+            <line num="28" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="attr(String) : String" num="39" count="2" type="method"/>
+            <line num="40" count="2" type="stmt"/>
+            <line num="41" count="4" type="stmt"/>
+            <line falsecount="2" truecount="2" num="41" type="cond"/>
+            <line num="42" count="2" type="stmt"/>
+            <line num="44" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="hasAttr(String) : boolean" num="52" count="2" type="method"/>
+            <line num="53" count="2" type="stmt"/>
+            <line num="54" count="7" type="stmt"/>
+            <line falsecount="6" truecount="1" num="54" type="cond"/>
+            <line num="55" count="1" type="stmt"/>
+            <line num="57" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="attr(String,String) : Elements" num="66" count="0" type="method"/>
+            <line num="67" count="0" type="stmt"/>
+            <line num="68" count="0" type="stmt"/>
+            <line num="70" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="removeAttr(String) : Elements" num="78" count="0" type="method"/>
+            <line num="79" count="0" type="stmt"/>
+            <line num="80" count="0" type="stmt"/>
+            <line num="82" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="addClass(String) : Elements" num="90" count="0" type="method"/>
+            <line num="91" count="0" type="stmt"/>
+            <line num="92" count="0" type="stmt"/>
+            <line num="94" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="removeClass(String) : Elements" num="102" count="0" type="method"/>
+            <line num="103" count="0" type="stmt"/>
+            <line num="104" count="0" type="stmt"/>
+            <line num="106" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toggleClass(String) : Elements" num="114" count="0" type="method"/>
+            <line num="115" count="0" type="stmt"/>
+            <line num="116" count="0" type="stmt"/>
+            <line num="118" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="hasClass(String) : boolean" num="126" count="0" type="method"/>
+            <line num="127" count="0" type="stmt"/>
+            <line num="128" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="128" type="cond"/>
+            <line num="129" count="0" type="stmt"/>
+            <line num="131" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="val() : String" num="139" count="2" type="method"/>
+            <line num="140" count="2" type="stmt"/>
+            <line falsecount="0" truecount="2" num="140" type="cond"/>
+            <line num="141" count="2" type="stmt"/>
+            <line num="143" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="val(String) : Elements" num="151" count="1" type="method"/>
+            <line num="152" count="1" type="stmt"/>
+            <line num="153" count="2" type="stmt"/>
+            <line num="154" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="text() : String" num="165" count="4" type="method"/>
+            <line num="166" count="4" type="stmt"/>
+            <line num="167" count="4" type="stmt"/>
+            <line num="168" count="4" type="stmt"/>
+            <line falsecount="4" truecount="0" num="168" type="cond"/>
+            <line num="169" count="0" type="stmt"/>
+            <line num="170" count="4" type="stmt"/>
+            <line num="172" count="4" type="stmt"/>
+            <line complexity="2" visibility="public" signature="hasText() : boolean" num="175" count="2" type="method"/>
+            <line num="176" count="2" type="stmt"/>
+            <line num="177" count="2" type="stmt"/>
+            <line falsecount="1" truecount="1" num="177" type="cond"/>
+            <line num="178" count="1" type="stmt"/>
+            <line num="180" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="html() : String" num="189" count="1" type="method"/>
+            <line num="190" count="1" type="stmt"/>
+            <line num="191" count="1" type="stmt"/>
+            <line num="192" count="2" type="stmt"/>
+            <line falsecount="1" truecount="1" num="192" type="cond"/>
+            <line num="193" count="1" type="stmt"/>
+            <line num="194" count="2" type="stmt"/>
+            <line num="196" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="outerHtml() : String" num="205" count="1" type="method"/>
+            <line num="206" count="1" type="stmt"/>
+            <line num="207" count="1" type="stmt"/>
+            <line num="208" count="2" type="stmt"/>
+            <line falsecount="1" truecount="1" num="208" type="cond"/>
+            <line num="209" count="1" type="stmt"/>
+            <line num="210" count="2" type="stmt"/>
+            <line num="212" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="html(String) : Elements" num="221" count="1" type="method"/>
+            <line num="222" count="1" type="stmt"/>
+            <line num="223" count="3" type="stmt"/>
+            <line num="225" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="prepend(String) : Elements" num="234" count="1" type="method"/>
+            <line num="235" count="1" type="stmt"/>
+            <line num="236" count="3" type="stmt"/>
+            <line num="238" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="append(String) : Elements" num="247" count="1" type="method"/>
+            <line num="248" count="1" type="stmt"/>
+            <line num="249" count="3" type="stmt"/>
+            <line num="251" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="wrap(String) : Elements" num="263" count="1" type="method"/>
+            <line num="264" count="1" type="stmt"/>
+            <line num="265" count="1" type="stmt"/>
+            <line num="266" count="2" type="stmt"/>
+            <line num="268" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="select(String) : Elements" num="278" count="3" type="method"/>
+            <line num="279" count="3" type="stmt"/>
+            <line complexity="2" visibility="public" signature="eq(int) : Elements" num="287" count="1" type="method"/>
+            <line num="288" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="288" type="cond"/>
+            <line num="289" count="1" type="stmt"/>
+            <line num="291" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="is(String) : boolean" num="299" count="2" type="method"/>
+            <line num="300" count="2" type="stmt"/>
+            <line num="301" count="2" type="stmt"/>
+            <line complexity="2" visibility="public" signature="first() : Element" num="309" count="466" type="method"/>
+            <line num="310" count="466" type="stmt"/>
+            <line falsecount="10" truecount="456" num="310" type="cond"/>
+            <line complexity="2" visibility="public" signature="last() : Element" num="317" count="7" type="method"/>
+            <line num="318" count="7" type="stmt"/>
+            <line falsecount="0" truecount="7" num="318" type="cond"/>
+            <line complexity="1" visibility="public" signature="size() : int" num="322" count="152" type="method"/>
+            <line num="322" count="152" type="stmt"/>
+            <line complexity="1" visibility="public" signature="isEmpty() : boolean" num="324" count="87" type="method"/>
+            <line num="324" count="87" type="stmt"/>
+            <line complexity="1" visibility="public" signature="contains(Object) : boolean" num="326" count="2236" type="method"/>
+            <line num="326" count="2236" type="stmt"/>
+            <line complexity="1" visibility="public" signature="iterator() : Iterator&lt;Element&gt;" num="328" count="71527" type="method"/>
+            <line num="328" count="71527" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toArray() : Object[]" num="330" count="0" type="method"/>
+            <line num="330" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toArray(T[]) : T[]" num="332" count="0" type="method"/>
+            <line num="332" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="add(Element) : boolean" num="334" count="3120" type="method"/>
+            <line num="334" count="3120" type="stmt"/>
+            <line complexity="1" visibility="public" signature="remove(Object) : boolean" num="336" count="0" type="method"/>
+            <line num="336" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="containsAll(Collection&lt;?&gt;) : boolean" num="338" count="0" type="method"/>
+            <line num="338" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="addAll(Collection&lt;? extends Element&gt;) : boolean" num="340" count="0" type="method"/>
+            <line num="340" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="addAll(int,Collection&lt;? extends Element&gt;) : boolean" num="342" count="0" type="method"/>
+            <line num="342" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="removeAll(Collection&lt;?&gt;) : boolean" num="344" count="0" type="method"/>
+            <line num="344" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="retainAll(Collection&lt;?&gt;) : boolean" num="346" count="0" type="method"/>
+            <line num="346" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="clear() : void" num="348" count="0" type="method"/>
+            <line num="348" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="equals(Object) : boolean" num="350" count="1" type="method"/>
+            <line num="350" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="hashCode() : int" num="352" count="0" type="method"/>
+            <line num="352" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="get(int) : Element" num="354" count="162" type="method"/>
+            <line num="354" count="162" type="stmt"/>
+            <line complexity="1" visibility="public" signature="set(int,Element) : Element" num="356" count="0" type="method"/>
+            <line num="356" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="add(int,Element) : void" num="358" count="0" type="method"/>
+            <line num="358" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="remove(int) : Element" num="360" count="0" type="method"/>
+            <line num="360" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="indexOf(Object) : int" num="362" count="0" type="method"/>
+            <line num="362" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="lastIndexOf(Object) : int" num="364" count="0" type="method"/>
+            <line num="364" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="listIterator() : ListIterator&lt;Element&gt;" num="366" count="1" type="method"/>
+            <line num="366" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="listIterator(int) : ListIterator&lt;Element&gt;" num="368" count="0" type="method"/>
+            <line num="368" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="subList(int,int) : List&lt;Element&gt;" num="370" count="0" type="method"/>
+            <line num="370" count="0" type="stmt"/>
+         </file>
+      </package>
+      <package name="org.jsoup">
+         <metrics coveredelements="44" complexity="19" loc="240" methods="14" classes="2" statements="49" coveredconditionals="4" coveredmethods="11" elements="71" ncloc="96" files="2" conditionals="8" coveredstatements="29"/>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/DataUtil.java" name="DataUtil.java">
+            <metrics coveredelements="19" coveredconditionals="4" complexity="8" loc="80" coveredmethods="2" methods="3" elements="42" classes="1" ncloc="47" statements="31" conditionals="8" coveredstatements="13"/>
+            <class name="DataUtil">
+               <metrics coveredelements="19" coveredconditionals="4" complexity="8" coveredmethods="2" methods="3" elements="42" statements="31" conditionals="8" coveredstatements="13"/>
+            </class>
+            <line complexity="1" visibility="package" signature="load(File,String) : String" num="22" count="8" type="method"/>
+            <line num="23" count="8" type="stmt"/>
+            <line num="24" count="8" type="stmt"/>
+            <line num="25" count="8" type="stmt"/>
+            <line num="26" count="8" type="stmt"/>
+            <line complexity="4" visibility="package" signature="load(URL,int) : String" num="36" count="0" type="method"/>
+            <line num="37" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="42" count="0" type="stmt"/>
+            <line num="43" count="0" type="stmt"/>
+            <line num="44" count="0" type="stmt"/>
+            <line num="46" count="0" type="stmt"/>
+            <line num="47" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="47" type="cond"/>
+            <line num="48" count="0" type="stmt"/>
+            <line num="50" count="0" type="stmt"/>
+            <line num="51" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="51" type="cond"/>
+            <line num="52" count="0" type="stmt"/>
+            <line num="55" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+            <line num="58" count="0" type="stmt"/>
+            <line num="59" count="0" type="stmt"/>
+            <line num="60" count="0" type="stmt"/>
+            <line complexity="3" visibility="private" signature="readInputStream(InputStream,String) : String" num="63" count="8" type="method"/>
+            <line num="64" count="8" type="stmt"/>
+            <line num="65" count="8" type="stmt"/>
+            <line num="66" count="8" type="stmt"/>
+            <line num="67" count="8" type="stmt"/>
+            <line num="68" count="8" type="stmt"/>
+            <line num="69" count="20" type="stmt"/>
+            <line num="70" count="20" type="stmt"/>
+            <line falsecount="8" truecount="12" num="70" type="cond"/>
+            <line num="71" count="12" type="stmt"/>
+            <line falsecount="8" truecount="12" num="74" type="cond"/>
+            <line num="76" count="8" type="stmt"/>
+         </file>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/Jsoup.java" name="Jsoup.java">
+            <metrics coveredelements="25" coveredconditionals="0" complexity="11" loc="160" coveredmethods="9" methods="11" elements="29" classes="1" ncloc="49" statements="18" conditionals="0" coveredstatements="16"/>
+            <class name="Jsoup">
+               <metrics coveredelements="25" coveredconditionals="0" complexity="11" coveredmethods="9" methods="11" elements="29" statements="18" conditionals="0" coveredstatements="16"/>
+            </class>
+            <line complexity="1" visibility="private" signature="Jsoup()" num="17" count="0" type="method"/>
+            <line complexity="1" visibility="public" signature="parse(String,String) : Document" num="27" count="11" type="method"/>
+            <line num="28" count="11" type="stmt"/>
+            <line complexity="1" visibility="public" signature="parse(String) : Document" num="40" count="49" type="method"/>
+            <line num="41" count="49" type="stmt"/>
+            <line complexity="1" visibility="public" signature="parse(URL,int) : Document" num="54" count="0" type="method"/>
+            <line num="55" count="0" type="stmt"/>
+            <line num="56" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="parse(File,String,String) : Document" num="69" count="6" type="method"/>
+            <line num="70" count="6" type="stmt"/>
+            <line num="71" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="parse(File,String) : Document" num="84" count="2" type="method"/>
+            <line num="85" count="2" type="stmt"/>
+            <line num="86" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="parseBodyFragment(String,String) : Document" num="98" count="8" type="method"/>
+            <line num="99" count="8" type="stmt"/>
+            <line complexity="1" visibility="public" signature="parseBodyFragment(String) : Document" num="110" count="1" type="method"/>
+            <line num="111" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="clean(String,String,Whitelist) : String" num="125" count="5" type="method"/>
+            <line num="126" count="5" type="stmt"/>
+            <line num="127" count="5" type="stmt"/>
+            <line num="128" count="5" type="stmt"/>
+            <line num="129" count="5" type="stmt"/>
+            <line complexity="1" visibility="public" signature="clean(String,Whitelist) : String" num="142" count="5" type="method"/>
+            <line num="143" count="5" type="stmt"/>
+            <line complexity="1" visibility="public" signature="isValid(String,Whitelist) : boolean" num="154" count="3" type="method"/>
+            <line num="155" count="3" type="stmt"/>
+            <line num="156" count="3" type="stmt"/>
+            <line num="157" count="3" type="stmt"/>
+         </file>
+      </package>
+      <package name="org.jsoup.examples">
+         <metrics coveredelements="0" complexity="5" loc="57" methods="3" classes="1" statements="22" coveredconditionals="0" coveredmethods="0" elements="29" ncloc="45" files="1" conditionals="4" coveredstatements="0"/>
+         <file path="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_train_1/src/main/java/org/jsoup/examples/ListLinks.java" name="ListLinks.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="5" loc="57" coveredmethods="0" methods="3" elements="29" classes="1" ncloc="45" statements="22" conditionals="4" coveredstatements="0"/>
+            <class name="ListLinks">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="5" coveredmethods="0" methods="3" elements="29" statements="22" conditionals="4" coveredstatements="0"/>
+            </class>
+            <line complexity="2" visibility="public" signature="main(String[]) : void" num="16" count="0" type="method"/>
+            <line num="17" count="0" type="stmt"/>
+            <line num="18" count="0" type="stmt"/>
+            <line num="19" count="0" type="stmt"/>
+            <line num="21" count="0" type="stmt"/>
+            <line num="22" count="0" type="stmt"/>
+            <line num="23" count="0" type="stmt"/>
+            <line num="24" count="0" type="stmt"/>
+            <line num="26" count="0" type="stmt"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="28" type="cond"/>
+            <line num="29" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="36" count="0" type="stmt"/>
+            <line num="37" count="0" type="stmt"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="41" count="0" type="stmt"/>
+            <line num="42" count="0" type="stmt"/>
+            <line num="43" count="0" type="stmt"/>
+            <line complexity="1" visibility="private" signature="print(String,Object) : void" num="47" count="0" type="method"/>
+            <line num="48" count="0" type="stmt"/>
+            <line complexity="2" visibility="private" signature="trim(String,int) : String" num="51" count="0" type="method"/>
+            <line num="52" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="52" type="cond"/>
+            <line num="53" count="0" type="stmt"/>
+            <line num="55" count="0" type="stmt"/>
+         </file>
+      </package>
+   </project>
+   <testproject timestamp="1675927279889">
+      <metrics coveredelements="0" complexity="0" loc="0" methods="0" classes="0" statements="0" packages="0" coveredconditionals="0" coveredmethods="0" elements="0" ncloc="0" files="0" conditionals="0" coveredstatements="0"/>
+   </testproject>
+</coverage>

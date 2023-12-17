@@ -1,0 +1,1 @@
+public TooManyIterationsException(Number max)

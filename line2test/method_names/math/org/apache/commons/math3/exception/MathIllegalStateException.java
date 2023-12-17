@@ -1,0 +1,6 @@
+public MathIllegalStateException(Localizable pattern, Object... args)
+public MathIllegalStateException(Throwable cause, Localizable pattern, Object... args)
+public MathIllegalStateException()
+public ExceptionContext getContext()
+public String getMessage()
+public String getLocalizedMessage()

@@ -1,0 +1,5 @@
+@Override [EOL] protected void setUp() throws Exception { [EOL]     super.setUp(); [EOL]     innerClass = new InnerClass(); [EOL]     staticNestedClass = new StaticNestedClass(); [EOL]     strategy = new InnerClassExclusionStrategy(); [EOL] } <line_num>: 34,40
+public void testExcludeInnerClassObject() throws Exception { [EOL]     Class<?> clazz = innerClass.getClass(); [EOL]     assertTrue(strategy.shouldSkipClass(clazz)); [EOL] } <line_num>: 42,45
+public void testExcludeInnerClassField() throws Exception { [EOL]     Field f = getClass().getField("innerClass"); [EOL]     assertTrue(strategy.shouldSkipField(new FieldAttributes(getClass(), f))); [EOL] } <line_num>: 47,50
+public void testIncludeStaticNestedClassObject() throws Exception { [EOL]     Class<?> clazz = staticNestedClass.getClass(); [EOL]     assertFalse(strategy.shouldSkipClass(clazz)); [EOL] } <line_num>: 52,55
+public void testIncludeStaticNestedClassField() throws Exception { [EOL]     Field f = getClass().getField("staticNestedClass"); [EOL]     assertFalse(strategy.shouldSkipField(new FieldAttributes(getClass(), f))); [EOL] } <line_num>: 57,60

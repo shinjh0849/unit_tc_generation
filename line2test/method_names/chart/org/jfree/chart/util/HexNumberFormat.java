@@ -1,0 +1,7 @@
+public HexNumberFormat()
+public HexNumberFormat(int digits)
+public final int getNumberOfDigits()
+public void setNumberOfDigits(int digits)
+public StringBuffer format(double number, StringBuffer toAppendTo, FieldPosition pos)
+public StringBuffer format(long number, StringBuffer toAppendTo, FieldPosition pos)
+public Number parse(String source, ParsePosition parsePosition)

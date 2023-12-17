@@ -1,0 +1,11 @@
+public DefaultXYDatasetTests(String name)
+public static Test suite()
+public void testEquals()
+public void testCloning()
+public void testPublicCloneable()
+public void testSerialization()
+public void testGetSeriesKey()
+public void testIndexOf()
+public void testAddSeries()
+public DefaultXYDataset createSampleDataset1()
+double EPSILON=Optional[0.0000000001]

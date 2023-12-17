@@ -1,0 +1,6 @@
+public NormalizedMatrixSeries(String name, int rows, int columns)
+public Number getItem(int itemIndex)
+public void setScaleFactor(double factor)
+public double getScaleFactor()
+public void update(int i, int j, double mij)
+public void zeroAll()

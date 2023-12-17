@@ -1,0 +1,1 @@
+public Collection<T> provide()

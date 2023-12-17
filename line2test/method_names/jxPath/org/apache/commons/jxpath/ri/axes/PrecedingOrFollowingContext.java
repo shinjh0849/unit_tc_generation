@@ -1,0 +1,6 @@
+public PrecedingOrFollowingContext(EvalContext parentContext, NodeTest nodeTest, boolean reverse)
+public NodePointer getCurrentNodePointer()
+public int getDocumentOrder()
+public void reset()
+public boolean setPosition(int position)
+public boolean nextNode()

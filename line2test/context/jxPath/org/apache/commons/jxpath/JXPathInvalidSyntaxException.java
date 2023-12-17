@@ -1,0 +1,2 @@
+public JXPathInvalidSyntaxException(String message)
+long serialVersionUID=Optional[504555366032561816L]

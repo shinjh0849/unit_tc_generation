@@ -1,0 +1,3 @@
+public FixedGenerationCount(final int maxGenerations) throws NumberIsTooSmallException { [EOL]     if (maxGenerations <= 0) { [EOL]         throw new NumberIsTooSmallException(maxGenerations, 1, true); [EOL]     } [EOL]     this.maxGenerations = maxGenerations; [EOL] } <line_num>: 42,47
+public boolean isSatisfied(final Population population) { [EOL]     if (this.numGenerations < this.maxGenerations) { [EOL]         numGenerations++; [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 56,62
+public int getNumGenerations() { [EOL]     return numGenerations; [EOL] } <line_num>: 68,70

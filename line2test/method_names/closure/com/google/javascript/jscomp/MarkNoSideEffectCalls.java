@@ -1,0 +1,8 @@
+ MarkNoSideEffectCalls(AbstractCompiler compiler)
+ GatherNoSideEffectFunctions(boolean inExterns)
+ SetNoSideEffectCallProperty(SimpleDefinitionFinder defFinder)
+public void process(Node externs, Node root)
+private static boolean definitionTypeContainsFunctionType(Definition def)
+private static boolean hasNoSideEffectsAnnotation(Node node)
+public void visit(NodeTraversal traversal, Node node, Node parent)
+public void visit(NodeTraversal traversal, Node node, Node parent)

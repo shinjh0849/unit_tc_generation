@@ -1,0 +1,2 @@
+private ArgUtils() { [EOL] } <line_num>: 32,32
+public static Object[] flatten(Object[] array) { [EOL]     final List<Object> list = new ArrayList<Object>(); [EOL]     if (array != null) { [EOL]         for (Object o : array) { [EOL]             if (o instanceof Object[]) { [EOL]                 for (Object oR : flatten((Object[]) o)) { [EOL]                     list.add(oR); [EOL]                 } [EOL]             } else { [EOL]                 list.add(o); [EOL]             } [EOL]         } [EOL]     } [EOL]     return list.toArray(); [EOL] } <line_num>: 41,55

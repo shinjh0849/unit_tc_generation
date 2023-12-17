@@ -1,0 +1,8 @@
+ BasicGJChronology(Chronology base, Object param, int minDaysInFirstWeek)
+ int getMonthOfYear(long millis, int year)
+ int getDaysInYearMonth(int year, int month)
+ int getDaysInMonthMax(int month)
+ int getDaysInMonthMaxForSet(long instant, int value)
+ long getTotalMillisByYearMonth(int year, int month)
+ long getYearDifference(long minuendInstant, long subtrahendInstant)
+ long setYear(long instant, int year)

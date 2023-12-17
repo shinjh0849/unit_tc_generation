@@ -1,0 +1,2 @@
+public SerializedNameAnnotationInterceptingNamingPolicy(FieldNamingStrategy2 delegate)
+public String translateName(FieldAttributes f)

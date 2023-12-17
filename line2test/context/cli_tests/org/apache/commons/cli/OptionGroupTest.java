@@ -1,0 +1,16 @@
+public OptionGroupTest(String name)
+public static Test suite()
+public void setUp()
+public void tearDown()
+public void testSingleOptionFromGroup()
+public void testSingleOption()
+public void testTwoValidOptions()
+public void testSingleLongOption()
+public void testTwoValidLongOptions()
+public void testNoOptionsExtraArgs()
+public void testTwoOptionsFromGroup()
+public void testTwoLongOptionsFromGroup()
+public void testTwoOptionsFromDifferentGroup()
+public void testValidLongOnlyOptions()
+Options _options=Optional[null]
+CommandLineParser parser=Optional[new PosixParser()]

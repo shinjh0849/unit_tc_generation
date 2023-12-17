@@ -1,0 +1,9 @@
+public JsonObjectFormatVisitor expectObjectFormat(JavaType type) throws JsonMappingException
+public JsonArrayFormatVisitor expectArrayFormat(JavaType type) throws JsonMappingException
+public JsonStringFormatVisitor expectStringFormat(JavaType type) throws JsonMappingException
+public JsonNumberFormatVisitor expectNumberFormat(JavaType type) throws JsonMappingException
+public JsonIntegerFormatVisitor expectIntegerFormat(JavaType type) throws JsonMappingException
+public JsonBooleanFormatVisitor expectBooleanFormat(JavaType type) throws JsonMappingException
+public JsonNullFormatVisitor expectNullFormat(JavaType type) throws JsonMappingException
+public JsonAnyFormatVisitor expectAnyFormat(JavaType type) throws JsonMappingException
+public JsonMapFormatVisitor expectMapFormat(JavaType type) throws JsonMappingException

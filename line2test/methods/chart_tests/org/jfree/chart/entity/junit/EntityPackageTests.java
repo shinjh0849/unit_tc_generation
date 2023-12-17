@@ -1,0 +1,3 @@
+public EntityPackageTests(String name) { [EOL]     super(name); [EOL] } <line_num>: 78,80
+public static Test suite() { [EOL]     TestSuite suite = new TestSuite("org.jfree.chart.entity"); [EOL]     suite.addTestSuite(CategoryItemEntityTests.class); [EOL]     suite.addTestSuite(CategoryLabelEntityTests.class); [EOL]     suite.addTestSuite(LegendItemEntityTests.class); [EOL]     suite.addTestSuite(PieSectionEntityTests.class); [EOL]     suite.addTestSuite(StandardEntityCollectionTests.class); [EOL]     suite.addTestSuite(TickLabelEntityTests.class); [EOL]     suite.addTestSuite(XYItemEntityTests.class); [EOL]     return suite; [EOL] } <line_num>: 61,71
+public static void main(String[] args) { [EOL]     junit.textui.TestRunner.run(suite()); [EOL] } <line_num>: 87,89

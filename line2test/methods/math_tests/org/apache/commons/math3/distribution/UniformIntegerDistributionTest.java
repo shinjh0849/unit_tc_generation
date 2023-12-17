@@ -1,0 +1,9 @@
+@Override [EOL] public void setUp() { [EOL]     super.setUp(); [EOL]     setTolerance(1e-9); [EOL] } <line_num>: 31,35
+@Override [EOL] public IntegerDistribution makeDistribution() { [EOL]     return new UniformIntegerDistribution(-3, 5); [EOL] } <line_num>: 40,43
+@Override [EOL] public int[] makeDensityTestPoints() { [EOL]     return new int[] { -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 }; [EOL] } <line_num>: 46,49
+@Override [EOL] public double[] makeDensityTestValues() { [EOL]     double d = 1.0 / (5 - -3 + 1); [EOL]     return new double[] { 0, d, d, d, d, d, d, d, d, d, 0 }; [EOL] } <line_num>: 52,56
+@Override [EOL] public int[] makeCumulativeTestPoints() { [EOL]     return makeDensityTestPoints(); [EOL] } <line_num>: 59,62
+@Override [EOL] public double[] makeCumulativeTestValues() { [EOL]     return new double[] { 0, 1 / 9.0, 2 / 9.0, 3 / 9.0, 4 / 9.0, 5 / 9.0, 6 / 9.0, 7 / 9.0, 8 / 9.0, 1, 1 }; [EOL] } <line_num>: 65,69
+@Override [EOL] public double[] makeInverseCumulativeTestPoints() { [EOL]     return new double[] { 0, 0.001, 0.010, 0.025, 0.050, 0.100, 0.200, 0.5, 0.999, 0.990, 0.975, 0.950, 0.900, 1 }; [EOL] } <line_num>: 72,76
+@Override [EOL] public int[] makeInverseCumulativeTestValues() { [EOL]     return new int[] { -3, -3, -3, -3, -3, -3, -2, 1, 5, 5, 5, 5, 5, 5 }; [EOL] } <line_num>: 79,82
+@Test [EOL] public void testMoments() { [EOL]     UniformIntegerDistribution dist; [EOL]     dist = new UniformIntegerDistribution(0, 5); [EOL]     Assert.assertEquals(dist.getNumericalMean(), 2.5, 0); [EOL]     Assert.assertEquals(dist.getNumericalVariance(), 35 / 12.0, 0); [EOL]     dist = new UniformIntegerDistribution(0, 1); [EOL]     Assert.assertEquals(dist.getNumericalMean(), 0.5, 0); [EOL]     Assert.assertEquals(dist.getNumericalVariance(), 3 / 12.0, 0); [EOL] } <line_num>: 87,98

@@ -1,0 +1,10 @@
+public PreciseDurationDateTimeField(DateTimeFieldType type, DurationField unit) { [EOL]     super(type); [EOL]     if (!unit.isPrecise()) { [EOL]         throw new IllegalArgumentException("Unit duration field must be precise"); [EOL]     } [EOL]     iUnitMillis = unit.getUnitMillis(); [EOL]     if (iUnitMillis < 1) { [EOL]         throw new IllegalArgumentException("The unit milliseconds must be at least 1"); [EOL]     } [EOL]     iUnitField = unit; [EOL] } <line_num>: 48,61
+public boolean isLenient() { [EOL]     return false; [EOL] } <line_num>: 66,68
+public long set(long instant, int value) { [EOL]     FieldUtils.verifyValueBounds(this, value, getMinimumValue(), getMaximumValueForSet(instant, value)); [EOL]     return instant + (value - get(instant)) * iUnitMillis; [EOL] } <line_num>: 78,82
+public long roundFloor(long instant) { [EOL]     if (instant >= 0) { [EOL]         return instant - instant % iUnitMillis; [EOL]     } else { [EOL]         instant += 1; [EOL]         return instant - instant % iUnitMillis - iUnitMillis; [EOL]     } [EOL] } <line_num>: 92,99
+public long roundCeiling(long instant) { [EOL]     if (instant > 0) { [EOL]         instant -= 1; [EOL]         return instant - instant % iUnitMillis + iUnitMillis; [EOL]     } else { [EOL]         return instant - instant % iUnitMillis; [EOL]     } [EOL] } <line_num>: 109,116
+public long remainder(long instant) { [EOL]     if (instant >= 0) { [EOL]         return instant % iUnitMillis; [EOL]     } else { [EOL]         return (instant + 1) % iUnitMillis + iUnitMillis - 1; [EOL]     } [EOL] } <line_num>: 126,132
+public DurationField getDurationField() { [EOL]     return iUnitField; [EOL] } <line_num>: 141,143
+public int getMinimumValue() { [EOL]     return 0; [EOL] } <line_num>: 150,152
+public final long getUnitMillis() { [EOL]     return iUnitMillis; [EOL] } <line_num>: 154,156
+protected int getMaximumValueForSet(long instant, int value) { [EOL]     return getMaximumValue(instant); [EOL] } <line_num>: 163,165

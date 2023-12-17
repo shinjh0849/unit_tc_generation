@@ -1,0 +1,21 @@
+public void tearDown() throws Exception
+public void setUp() throws Exception
+public void testConstructors()
+public void testSetElementArbitraryExpansion1()
+public void testSetElementArbitraryExpansion2()
+public void testAdd1000()
+public void testAddElements()
+public void testAddElementRolling()
+public void testSetNumberOfElements()
+public void testWithInitialCapacity()
+public void testWithInitialCapacityAndExpansionFactor()
+public void testDiscard()
+public void testSubstitute()
+public void testMutators()
+public void testEqualsAndHashCode() throws Exception
+public void testGetArrayRef()
+public double evaluate(double[] a, int index, int num)
+public double evaluate(double[] a)
+public void testCompute()
+private void verifyEquality(ResizableDoubleArray a, ResizableDoubleArray b)
+private void verifyInequality(ResizableDoubleArray a, ResizableDoubleArray b)

@@ -1,0 +1,7 @@
+public void testThreshold()
+public void testSingular()
+public void testSolveDimensionErrors()
+public void testSolveSingularityErrors()
+public void testSolve()
+public void testDeterminant()
+private double getDeterminant(RealMatrix m)

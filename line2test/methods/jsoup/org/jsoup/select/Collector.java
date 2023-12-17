@@ -1,0 +1,2 @@
+public static Elements collect(Evaluator eval, Element root) { [EOL]     Elements elements = new Elements(); [EOL]     accumulateMatches(eval, elements, root); [EOL]     return elements; [EOL] } <line_num>: 21,25
+private static void accumulateMatches(Evaluator eval, List<Element> elements, Element element) { [EOL]     if (eval.matches(element)) [EOL]         elements.add(element); [EOL]     for (Element child : element.children()) accumulateMatches(eval, elements, child); [EOL] } <line_num>: 27,32

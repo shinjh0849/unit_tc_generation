@@ -1,0 +1,7 @@
+protected DataFormatMatcher(InputStream in, byte[] buffered, int bufferedStart, int bufferedLength, JsonFactory match, MatchStrength strength) { [EOL]     _originalStream = in; [EOL]     _bufferedData = buffered; [EOL]     _bufferedStart = bufferedStart; [EOL]     _bufferedLength = bufferedLength; [EOL]     _match = match; [EOL]     _matchStrength = strength; [EOL] } <line_num>: 42,52
+public boolean hasMatch() { [EOL]     return _match != null; [EOL] } <line_num>: 64,64
+public MatchStrength getMatchStrength() { [EOL]     return (_matchStrength == null) ? MatchStrength.INCONCLUSIVE : _matchStrength; [EOL] } <line_num>: 70,72
+public JsonFactory getMatch() { [EOL]     return _match; [EOL] } <line_num>: 77,77
+public String getMatchedFormatName() { [EOL]     return _match.getFormatName(); [EOL] } <line_num>: 86,88
+public JsonParser createParserWithMatch() throws IOException { [EOL]     if (_match == null) { [EOL]         return null; [EOL]     } [EOL]     if (_originalStream == null) { [EOL]         return _match.createParser(_bufferedData, _bufferedStart, _bufferedLength); [EOL]     } [EOL]     return _match.createParser(getDataStream()); [EOL] } <line_num>: 101,109
+public InputStream getDataStream() { [EOL]     if (_originalStream == null) { [EOL]         return new ByteArrayInputStream(_bufferedData, _bufferedStart, _bufferedLength); [EOL]     } [EOL]     return new MergedStream(null, _originalStream, _bufferedData, _bufferedStart, _bufferedLength); [EOL] } <line_num>: 118,123

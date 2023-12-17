@@ -1,0 +1,6 @@
+public ToStringSerializer() { [EOL]     super(Object.class); [EOL] } <line_num>: 38,38
+@Override [EOL] public boolean isEmpty(Object value) { [EOL]     if (value == null) { [EOL]         return true; [EOL]     } [EOL]     String str = value.toString(); [EOL]     return (str == null) || (str.length() == 0); [EOL] } <line_num>: 40,48
+@Override [EOL] public void serialize(Object value, JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonGenerationException { [EOL]     jgen.writeString(value.toString()); [EOL] } <line_num>: 50,55
+@Override [EOL] public void serializeWithType(Object value, JsonGenerator jgen, SerializerProvider provider, TypeSerializer typeSer) throws IOException, JsonGenerationException { [EOL]     typeSer.writeTypePrefixForScalar(value, jgen); [EOL]     serialize(value, jgen, provider); [EOL]     typeSer.writeTypeSuffixForScalar(value, jgen); [EOL] } <line_num>: 68,76
+@Override [EOL] public JsonNode getSchema(SerializerProvider provider, Type typeHint) throws JsonMappingException { [EOL]     return createSchemaNode("string", true); [EOL] } <line_num>: 78,83
+@Override [EOL] public void acceptJsonFormatVisitor(JsonFormatVisitorWrapper visitor, JavaType typeHint) throws JsonMappingException { [EOL]     if (visitor != null) { [EOL]         visitor.expectStringFormat(typeHint); [EOL]     } [EOL] } <line_num>: 85,92

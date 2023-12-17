@@ -1,0 +1,10 @@
+public AnnotationMap()
+private AnnotationMap(HashMap<Class<? extends Annotation>, Annotation> a)
+public A get(Class<A> cls)
+public static AnnotationMap merge(AnnotationMap primary, AnnotationMap secondary)
+public int size()
+public void addIfNotPresent(Annotation ann)
+public void add(Annotation ann)
+public String toString()
+protected final void _add(Annotation ann)
+HashMap<Class<? extends Annotation>, Annotation> _annotations

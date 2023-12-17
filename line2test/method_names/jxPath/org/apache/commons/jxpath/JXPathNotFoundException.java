@@ -1,0 +1,1 @@
+public JXPathNotFoundException(String message)

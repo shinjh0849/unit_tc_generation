@@ -1,0 +1,5 @@
+public void testCumulative()
+private void checkCumulative(double alpha, double beta, double[] x, double[] cumes)
+public void testDensity()
+private void checkDensity(double alpha, double beta, double[] x, double[] expected)
+public void testMoments()

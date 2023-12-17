@@ -1,0 +1,5 @@
+ void addElement(K key, V value)
+ V getElement(K key)
+ V removeElement(K key)
+ void clear()
+ int size()

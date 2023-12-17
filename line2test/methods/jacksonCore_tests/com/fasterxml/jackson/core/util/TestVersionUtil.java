@@ -1,0 +1,4 @@
+public void testVersionPartParsing() { [EOL]     assertEquals(13, VersionUtil.parseVersionPart("13")); [EOL]     assertEquals(27, VersionUtil.parseVersionPart("27.8")); [EOL]     assertEquals(0, VersionUtil.parseVersionPart("-3")); [EOL] } <line_num>: 9,14
+public void testVersionParsing() { [EOL]     assertEquals(new Version(1, 2, 15, "foo", "group", "artifact"), VersionUtil.parseVersion("1.2.15-foo", "group", "artifact")); [EOL] } <line_num>: 16,20
+public void testMavenVersionParsing() { [EOL]     assertEquals(new Version(1, 2, 3, "SNAPSHOT", "foo.bar", "foo-bar"), VersionUtil.mavenVersionFor(TestVersionUtil.class.getClassLoader(), "foo.bar", "foo-bar")); [EOL] } <line_num>: 22,25
+public void testPackageVersionMatches() { [EOL]     assertEquals(PackageVersion.VERSION, VersionUtil.versionFor(UTF8JsonGenerator.class)); [EOL] } <line_num>: 27,29

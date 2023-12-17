@@ -1,0 +1,5 @@
+public ConstCheck(AbstractCompiler compiler)
+public void process(Node externs, Node root)
+public void visit(NodeTraversal t, Node n, Node parent)
+private boolean isConstant(Scope.Var var)
+ void reportError(NodeTraversal t, Node n, String name)

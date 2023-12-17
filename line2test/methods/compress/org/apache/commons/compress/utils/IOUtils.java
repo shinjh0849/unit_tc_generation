@@ -1,0 +1,2 @@
+public static void copy(final InputStream input, final OutputStream output) throws IOException { [EOL]     copy(input, output, 8024); [EOL] } <line_num>: 38,40
+public static void copy(final InputStream input, final OutputStream output, int buffersize) throws IOException { [EOL]     final byte[] buffer = new byte[buffersize]; [EOL]     int n = 0; [EOL]     while (-1 != (n = input.read(buffer))) { [EOL]         output.write(buffer, 0, n); [EOL]     } [EOL] } <line_num>: 54,60

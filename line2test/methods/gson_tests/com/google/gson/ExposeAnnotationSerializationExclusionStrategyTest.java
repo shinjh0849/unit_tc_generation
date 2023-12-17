@@ -1,0 +1,6 @@
+@Override [EOL] protected void setUp() throws Exception { [EOL]     super.setUp(); [EOL]     strategy = new ExposeAnnotationSerializationExclusionStrategy(); [EOL] } <line_num>: 33,37
+public void testNeverSkipClasses() throws Exception { [EOL]     assertFalse(strategy.shouldSkipClass(MockObject.class)); [EOL] } <line_num>: 39,41
+public void testSkipNonAnnotatedFields() throws Exception { [EOL]     Field f = MockObject.class.getField("hiddenField"); [EOL]     assertTrue(strategy.shouldSkipField(new FieldAttributes(MockObject.class, f))); [EOL] } <line_num>: 43,46
+public void testSkipExplicitlySkippedFields() throws Exception { [EOL]     Field f = MockObject.class.getField("explicitlyHiddenField"); [EOL]     assertTrue(strategy.shouldSkipField(new FieldAttributes(MockObject.class, f))); [EOL] } <line_num>: 48,51
+public void testNeverSkipExposedAnnotatedFields() throws Exception { [EOL]     Field f = MockObject.class.getField("exposedField"); [EOL]     assertFalse(strategy.shouldSkipField(new FieldAttributes(MockObject.class, f))); [EOL] } <line_num>: 53,56
+public void testNeverSkipExplicitlyExposedAnnotatedFields() throws Exception { [EOL]     Field f = MockObject.class.getField("explicitlyExposedField"); [EOL]     assertFalse(strategy.shouldSkipField(new FieldAttributes(MockObject.class, f))); [EOL] } <line_num>: 58,61

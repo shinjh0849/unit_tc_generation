@@ -1,0 +1,5 @@
+public Foo(S sValue, T tValue) { [EOL]     this.someSField = sValue; [EOL]     this.someTField = tValue; [EOL] } <line_num>: 53,56
+public Bar() { [EOL]     this("", 0); [EOL] } <line_num>: 72,74
+public Bar(String s, Integer i) { [EOL]     super(s, i); [EOL] } <line_num>: 76,78
+public void testSingle() throws Exception { [EOL]     Gson gson = new Gson(); [EOL]     Bar bar1 = new Bar("someString", 1); [EOL]     ArrayList<Integer> arrayList = new ArrayList<Integer>(); [EOL]     arrayList.add(1); [EOL]     arrayList.add(2); [EOL]     bar1.map.put("key1", arrayList); [EOL]     bar1.map.put("key2", new ArrayList<Integer>()); [EOL]     String json = gson.toJson(bar1); [EOL]     System.out.println(json); [EOL]     Bar bar2 = gson.fromJson(json, Bar.class); [EOL]     assertEquals(bar1, bar2); [EOL] } <line_num>: 33,46
+@Override [EOL] public boolean equals(Object o) { [EOL]     if (!(o instanceof Foo)) { [EOL]         return false; [EOL]     } else { [EOL]         Foo<S, T> realFoo = (Foo<S, T>) o; [EOL]         return someTField.equals(realFoo.someTField) && someSField.equals(realFoo.someSField) && map.equals(realFoo.map); [EOL]     } [EOL] } <line_num>: 58,68

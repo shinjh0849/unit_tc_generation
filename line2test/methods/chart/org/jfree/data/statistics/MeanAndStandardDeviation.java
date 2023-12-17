@@ -1,0 +1,8 @@
+public MeanAndStandardDeviation(double mean, double standardDeviation) { [EOL]     this(new Double(mean), new Double(standardDeviation)); [EOL] } <line_num>: 73,75
+public MeanAndStandardDeviation(Number mean, Number standardDeviation) { [EOL]     this.mean = mean; [EOL]     this.standardDeviation = standardDeviation; [EOL] } <line_num>: 84,87
+public Number getMean() { [EOL]     return this.mean; [EOL] } <line_num>: 94,96
+public double getMeanValue() { [EOL]     double result = Double.NaN; [EOL]     if (this.mean != null) { [EOL]         result = this.mean.doubleValue(); [EOL]     } [EOL]     return result; [EOL] } <line_num>: 108,114
+public Number getStandardDeviation() { [EOL]     return this.standardDeviation; [EOL] } <line_num>: 121,123
+public double getStandardDeviationValue() { [EOL]     double result = Double.NaN; [EOL]     if (this.standardDeviation != null) { [EOL]         result = this.standardDeviation.doubleValue(); [EOL]     } [EOL]     return result; [EOL] } <line_num>: 134,140
+public boolean equals(Object obj) { [EOL]     if (obj == this) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof MeanAndStandardDeviation)) { [EOL]         return false; [EOL]     } [EOL]     MeanAndStandardDeviation that = (MeanAndStandardDeviation) obj; [EOL]     if (!ObjectUtilities.equal(this.mean, that.mean)) { [EOL]         return false; [EOL]     } [EOL]     if (!ObjectUtilities.equal(this.standardDeviation, that.standardDeviation)) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 149,166
+public String toString() { [EOL]     return "[" + this.mean + ", " + this.standardDeviation + "]"; [EOL] } <line_num>: 175,177

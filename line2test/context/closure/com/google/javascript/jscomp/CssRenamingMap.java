@@ -1,0 +1,6 @@
+ String get(String value)
+ Style getStyle()
+public abstract String get(String value)
+public Style getStyle()
+public abstract String get(String value)
+public Style getStyle()

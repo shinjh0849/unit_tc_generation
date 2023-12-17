@@ -1,0 +1,1 @@
+public SeriesException(String message)

@@ -1,0 +1,7 @@
+public XYIntervalDataItem(double x, double xLow, double xHigh, double y, double yLow, double yHigh)
+public Double getX()
+public double getYValue()
+public double getXLowValue()
+public double getXHighValue()
+public double getYLowValue()
+public double getYHighValue()

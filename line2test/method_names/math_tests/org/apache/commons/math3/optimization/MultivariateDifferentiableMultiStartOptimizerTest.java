@@ -1,0 +1,5 @@
+public PointValuePair optimize(int maxEval, MultivariateDifferentiableFunction f, GoalType goalType, double[] startPoint)
+public int getMaxEvaluations()
+public int getEvaluations()
+public ConvergenceChecker<PointValuePair> getConvergenceChecker()
+public void testCircleFitting()

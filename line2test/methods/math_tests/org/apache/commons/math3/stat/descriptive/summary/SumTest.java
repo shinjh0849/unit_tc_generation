@@ -1,0 +1,7 @@
+@Override [EOL] public UnivariateStatistic getUnivariateStatistic() { [EOL]     return new Sum(); [EOL] } <line_num>: 36,39
+@Override [EOL] public double expectedValue() { [EOL]     return this.sum; [EOL] } <line_num>: 44,47
+public double expectedWeightedValue() { [EOL]     return this.weightedSum; [EOL] } <line_num>: 50,52
+@Test [EOL] public void testSpecialValues() { [EOL]     Sum sum = new Sum(); [EOL]     Assert.assertEquals(0, sum.getResult(), 0); [EOL]     sum.increment(1); [EOL]     Assert.assertEquals(1, sum.getResult(), 0); [EOL]     sum.increment(Double.POSITIVE_INFINITY); [EOL]     Assert.assertEquals(Double.POSITIVE_INFINITY, sum.getResult(), 0); [EOL]     sum.increment(Double.NEGATIVE_INFINITY); [EOL]     Assert.assertTrue(Double.isNaN(sum.getResult())); [EOL]     sum.increment(1); [EOL]     Assert.assertTrue(Double.isNaN(sum.getResult())); [EOL] } <line_num>: 54,66
+@Test [EOL] public void testWeightedSum() { [EOL]     Sum sum = new Sum(); [EOL]     Assert.assertEquals(expectedWeightedValue(), sum.evaluate(testArray, testWeightsArray, 0, testArray.length), getTolerance()); [EOL]     Assert.assertEquals(expectedValue(), sum.evaluate(testArray, unitWeightsArray, 0, testArray.length), getTolerance()); [EOL] } <line_num>: 68,73
+@Override [EOL] protected void checkClearValue(StorelessUnivariateStatistic statistic) { [EOL]     Assert.assertEquals(0, statistic.getResult(), 0); [EOL] } <line_num>: 75,78
+@Test [EOL] public void testWeightedConsistency() { [EOL] } <line_num>: 82,83

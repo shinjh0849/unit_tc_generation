@@ -1,0 +1,2 @@
+public FieldNamingStrategy2Adapter(FieldNamingStrategy adaptee)
+public String translateName(FieldAttributes f)

@@ -1,0 +1,4 @@
+private LegendRenderingOrder(String name) { [EOL]     this.name = name; [EOL] } <line_num>: 70,72
+public String toString() { [EOL]     return this.name; [EOL] } <line_num>: 79,81
+public boolean equals(Object obj) { [EOL]     if (this == obj) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof LegendRenderingOrder)) { [EOL]         return false; [EOL]     } [EOL]     LegendRenderingOrder order = (LegendRenderingOrder) obj; [EOL]     if (!this.name.equals(order.toString())) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 91,103
+private Object readResolve() throws ObjectStreamException { [EOL]     if (this.equals(LegendRenderingOrder.STANDARD)) { [EOL]         return LegendRenderingOrder.STANDARD; [EOL]     } else if (this.equals(LegendRenderingOrder.REVERSE)) { [EOL]         return LegendRenderingOrder.REVERSE; [EOL]     } [EOL]     return null; [EOL] } <line_num>: 112,120

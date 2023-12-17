@@ -1,0 +1,8 @@
+public CategoryToPieDatasetTests(String name)
+public static Test suite()
+public void testConstructor()
+public void testGetValue()
+public void testGetKey()
+public void testGetIndex()
+public void testEquals()
+public void testSerialization()

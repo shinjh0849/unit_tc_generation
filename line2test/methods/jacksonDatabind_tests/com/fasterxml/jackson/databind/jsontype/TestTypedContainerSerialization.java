@@ -1,0 +1,14 @@
+protected Animal(String n) { [EOL]     name = n; [EOL] } <line_num>: 34,36
+public Dog() { [EOL]     super(null); [EOL] } <line_num>: 43,45
+@JsonCreator [EOL] public Dog(@JsonProperty("name") String name) { [EOL]     super(name); [EOL] } <line_num>: 47,50
+public Cat() { [EOL]     super(null); [EOL] } <line_num>: 61,63
+@JsonCreator [EOL] public Cat(@JsonProperty("furColor") String c) { [EOL]     super(null); [EOL]     furColor = c; [EOL] } <line_num>: 65,69
+public void setBoneCount(int i) { [EOL]     boneCount = i; [EOL] } <line_num>: 52,54
+public void setName(String n) { [EOL]     name = n; [EOL] } <line_num>: 71,73
+public Animal getAnimal() { [EOL]     return animal; [EOL] } <line_num>: 79,81
+public void setAnimal(Animal animal) { [EOL]     this.animal = animal; [EOL] } <line_num>: 83,85
+public T getAnimal() { [EOL]     return animal; [EOL] } <line_num>: 92,94
+public void setAnimal(T animal) { [EOL]     this.animal = animal; [EOL] } <line_num>: 96,98
+public void testIssue265() throws Exception { [EOL]     Dog dog = new Dog("medor"); [EOL]     dog.setBoneCount(3); [EOL]     Container1 c1 = new Container1(); [EOL]     c1.setAnimal(dog); [EOL]     String s1 = mapper.writeValueAsString(c1); [EOL]     Assert.assertTrue("polymorphic type info is kept (1)", s1.indexOf("\"object-type\":\"doggy\"") >= 0); [EOL]     Container2<Animal> c2 = new Container2<Animal>(); [EOL]     c2.setAnimal(dog); [EOL]     String s2 = mapper.writeValueAsString(c2); [EOL]     Assert.assertTrue("polymorphic type info is kept (2)", s2.indexOf("\"object-type\":\"doggy\"") >= 0); [EOL] } <line_num>: 114,128
+public void testIssue329() throws Exception { [EOL]     ArrayList<Animal> animals = new ArrayList<Animal>(); [EOL]     animals.add(new Dog("Spot")); [EOL]     JavaType rootType = TypeFactory.defaultInstance().constructParametricType(Iterator.class, Animal.class); [EOL]     String json = mapper.writerWithType(rootType).writeValueAsString(animals.iterator()); [EOL]     if (json.indexOf("\"object-type\":\"doggy\"") < 0) { [EOL]         fail("No polymorphic type retained, should be; JSON = '" + json + "'"); [EOL]     } [EOL] } <line_num>: 130,139
+public void testIssue508() throws Exception { [EOL]     List<List<Issue508A>> l = new ArrayList<List<Issue508A>>(); [EOL]     List<Issue508A> l2 = new ArrayList<Issue508A>(); [EOL]     l2.add(new Issue508A()); [EOL]     l.add(l2); [EOL]     TypeReference<?> typeRef = new TypeReference<List<List<Issue508A>>>() { [EOL]     }; [EOL]     String json = mapper.writerWithType(typeRef).writeValueAsString(l); [EOL]     List<?> output = mapper.readValue(json, typeRef); [EOL]     assertEquals(1, output.size()); [EOL]     Object ob = output.get(0); [EOL]     assertTrue(ob instanceof List<?>); [EOL]     List<?> list2 = (List<?>) ob; [EOL]     assertEquals(1, list2.size()); [EOL]     ob = list2.get(0); [EOL]     assertSame(Issue508A.class, ob.getClass()); [EOL] } <line_num>: 141,158

@@ -1,0 +1,6 @@
+public VectorDataItem(double x, double y, double deltaX, double deltaY)
+public double getXValue()
+public double getYValue()
+public Vector getVector()
+public double getVectorX()
+public double getVectorY()

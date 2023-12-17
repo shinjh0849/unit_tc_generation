@@ -1,0 +1,7 @@
+private CompilationLevel()
+public void setOptionsForCompilationLevel(CompilerOptions options)
+public void setDebugOptionsForCompilationLevel(CompilerOptions options)
+private static void applyBasicCompilationOptions(CompilerOptions options)
+private static void applySafeCompilationOptions(CompilerOptions options)
+private static void applyFullCompilationOptions(CompilerOptions options)
+public void setTypeBasedOptimizationOptions(CompilerOptions options)

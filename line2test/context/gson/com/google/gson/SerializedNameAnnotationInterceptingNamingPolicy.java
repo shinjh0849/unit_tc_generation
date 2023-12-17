@@ -1,0 +1,4 @@
+public SerializedNameAnnotationInterceptingNamingPolicy(FieldNamingStrategy2 delegate)
+public String translateName(FieldAttributes f)
+JsonFieldNameValidator fieldNameValidator=Optional[new JsonFieldNameValidator()]
+FieldNamingStrategy2 delegate

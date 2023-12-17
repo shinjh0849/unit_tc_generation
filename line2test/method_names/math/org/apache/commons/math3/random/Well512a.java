@@ -1,0 +1,5 @@
+public Well512a()
+public Well512a(int seed)
+public Well512a(int[] seed)
+public Well512a(long seed)
+protected int next(final int bits)

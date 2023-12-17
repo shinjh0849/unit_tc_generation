@@ -1,0 +1,11 @@
+public BeanSerializer(JavaType type, BeanSerializerBuilder builder, BeanPropertyWriter[] properties, BeanPropertyWriter[] filteredProperties) { [EOL]     super(type, builder, properties, filteredProperties); [EOL] } <line_num>: 41,45
+protected BeanSerializer(BeanSerializerBase src) { [EOL]     super(src); [EOL] } <line_num>: 52,54
+protected BeanSerializer(BeanSerializerBase src, ObjectIdWriter objectIdWriter) { [EOL]     super(src, objectIdWriter); [EOL] } <line_num>: 56,58
+protected BeanSerializer(BeanSerializerBase src, String[] toIgnore) { [EOL]     super(src, toIgnore); [EOL] } <line_num>: 60,62
+public static BeanSerializer createDummy(JavaType forType) { [EOL]     return new BeanSerializer(forType, null, NO_PROPS, null); [EOL] } <line_num>: 74,77
+@Override [EOL] public JsonSerializer<Object> unwrappingSerializer(NameTransformer unwrapper) { [EOL]     return new UnwrappingBeanSerializer(this, unwrapper); [EOL] } <line_num>: 79,82
+@Override [EOL] public BeanSerializer withObjectIdWriter(ObjectIdWriter objectIdWriter) { [EOL]     return new BeanSerializer(this, objectIdWriter); [EOL] } <line_num>: 84,87
+@Override [EOL] protected BeanSerializer withIgnorals(String[] toIgnore) { [EOL]     return new BeanSerializer(this, toIgnore); [EOL] } <line_num>: 89,92
+@Override [EOL] protected BeanSerializerBase asArraySerializer() { [EOL]     if ((_objectIdWriter == null) && (_anyGetterWriter == null) && (_propertyFilterId == null)) { [EOL]         return new BeanAsArraySerializer(this); [EOL]     } [EOL]     return this; [EOL] } <line_num>: 100,117
+@Override [EOL] public final void serialize(Object bean, JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonGenerationException { [EOL]     if (_objectIdWriter != null) { [EOL]         _serializeWithObjectId(bean, jgen, provider, true); [EOL]         return; [EOL]     } [EOL]     jgen.writeStartObject(); [EOL]     if (_propertyFilterId != null) { [EOL]         serializeFieldsFiltered(bean, jgen, provider); [EOL]     } else { [EOL]         serializeFields(bean, jgen, provider); [EOL]     } [EOL]     jgen.writeEndObject(); [EOL] } <line_num>: 130,145
+@Override [EOL] public String toString() { [EOL]     return "BeanSerializer for " + handledType().getName(); [EOL] } <line_num>: 153,155

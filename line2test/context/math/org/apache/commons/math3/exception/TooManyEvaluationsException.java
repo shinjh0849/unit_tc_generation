@@ -1,0 +1,2 @@
+public TooManyEvaluationsException(Number max)
+long serialVersionUID=Optional[4330003017885151975L]

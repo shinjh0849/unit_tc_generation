@@ -1,0 +1,6 @@
+protected boolean getTriggeredIncreasing()
+protected Transformer selectTransformer(final Transformer previous, final double g, final boolean forward)
+protected boolean getTriggeredIncreasing()
+protected Transformer selectTransformer(final Transformer previous, final double g, final boolean forward)
+protected abstract boolean getTriggeredIncreasing()
+protected abstract Transformer selectTransformer(Transformer previous, double g, boolean forward)

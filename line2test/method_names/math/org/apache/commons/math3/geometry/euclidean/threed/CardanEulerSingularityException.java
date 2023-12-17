@@ -1,0 +1,1 @@
+public CardanEulerSingularityException(boolean isCardan)

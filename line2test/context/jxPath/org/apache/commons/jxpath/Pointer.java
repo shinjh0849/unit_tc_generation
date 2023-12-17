@@ -1,0 +1,6 @@
+ Object getValue()
+ Object getNode()
+ void setValue(Object value)
+ Object getRootNode()
+ String asPath()
+ Object clone()

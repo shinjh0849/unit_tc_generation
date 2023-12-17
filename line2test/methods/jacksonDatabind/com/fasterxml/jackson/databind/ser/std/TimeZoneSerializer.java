@@ -1,0 +1,3 @@
+public TimeZoneSerializer() { [EOL]     super(TimeZone.class); [EOL] } <line_num>: 16,16
+@Override [EOL] public void serialize(TimeZone value, JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonGenerationException { [EOL]     jgen.writeString(value.getID()); [EOL] } <line_num>: 18,23
+@Override [EOL] public void serializeWithType(TimeZone value, JsonGenerator jgen, SerializerProvider provider, TypeSerializer typeSer) throws IOException, JsonGenerationException { [EOL]     typeSer.writeTypePrefixForScalar(value, jgen, TimeZone.class); [EOL]     serialize(value, jgen, provider); [EOL]     typeSer.writeTypeSuffixForScalar(value, jgen); [EOL] } <line_num>: 25,34

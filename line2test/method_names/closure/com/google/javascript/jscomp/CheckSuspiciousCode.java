@@ -1,0 +1,6 @@
+ CheckSuspiciousCode()
+public void visit(NodeTraversal t, Node n, Node parent)
+private void checkMissingSemicolon(NodeTraversal t, Node n)
+private void reportIfWasEmpty(NodeTraversal t, Node block)
+private void checkNaN(NodeTraversal t, Node n)
+private void reportIfNaN(NodeTraversal t, Node n)

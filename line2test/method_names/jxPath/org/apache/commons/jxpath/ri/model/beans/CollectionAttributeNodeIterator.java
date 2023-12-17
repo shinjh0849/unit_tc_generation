@@ -1,0 +1,2 @@
+public CollectionAttributeNodeIterator(CollectionPointer pointer, QName name)
+protected NodeIterator getElementNodeIterator(NodePointer elementPointer)

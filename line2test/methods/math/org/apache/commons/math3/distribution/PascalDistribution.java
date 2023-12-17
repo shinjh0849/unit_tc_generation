@@ -1,0 +1,11 @@
+public PascalDistribution(int r, double p) throws NotStrictlyPositiveException, OutOfRangeException { [EOL]     this(new Well19937c(), r, p); [EOL] } <line_num>: 82,85
+public PascalDistribution(RandomGenerator rng, int r, double p) throws NotStrictlyPositiveException, OutOfRangeException { [EOL]     super(rng); [EOL]     if (r <= 0) { [EOL]         throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SUCCESSES, r); [EOL]     } [EOL]     if (p < 0 || p > 1) { [EOL]         throw new OutOfRangeException(p, 0, 1); [EOL]     } [EOL]     numberOfSuccesses = r; [EOL]     probabilityOfSuccess = p; [EOL] } <line_num>: 99,115
+public int getNumberOfSuccesses() { [EOL]     return numberOfSuccesses; [EOL] } <line_num>: 122,124
+public double getProbabilityOfSuccess() { [EOL]     return probabilityOfSuccess; [EOL] } <line_num>: 131,133
+public double probability(int x) { [EOL]     double ret; [EOL]     if (x < 0) { [EOL]         ret = 0.0; [EOL]     } else { [EOL]         ret = CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) * FastMath.pow(probabilityOfSuccess, numberOfSuccesses) * FastMath.pow(1.0 - probabilityOfSuccess, x); [EOL]     } [EOL]     return ret; [EOL] } <line_num>: 136,147
+public double cumulativeProbability(int x) { [EOL]     double ret; [EOL]     if (x < 0) { [EOL]         ret = 0.0; [EOL]     } else { [EOL]         ret = Beta.regularizedBeta(probabilityOfSuccess, numberOfSuccesses, x + 1.0); [EOL]     } [EOL]     return ret; [EOL] } <line_num>: 150,159
+public double getNumericalMean() { [EOL]     final double p = getProbabilityOfSuccess(); [EOL]     final double r = getNumberOfSuccesses(); [EOL]     return (r * (1 - p)) / p; [EOL] } <line_num>: 167,171
+public double getNumericalVariance() { [EOL]     final double p = getProbabilityOfSuccess(); [EOL]     final double r = getNumberOfSuccesses(); [EOL]     return r * (1 - p) / (p * p); [EOL] } <line_num>: 179,183
+public int getSupportLowerBound() { [EOL]     return 0; [EOL] } <line_num>: 192,194
+public int getSupportUpperBound() { [EOL]     return Integer.MAX_VALUE; [EOL] } <line_num>: 205,207
+public boolean isSupportConnected() { [EOL]     return true; [EOL] } <line_num>: 216,218

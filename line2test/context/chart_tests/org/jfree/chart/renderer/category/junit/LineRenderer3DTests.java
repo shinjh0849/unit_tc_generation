@@ -1,0 +1,8 @@
+public LineRenderer3DTests(String name)
+public static Test suite()
+public void testEquals()
+public void testHashcode()
+public void testCloning()
+public void testPublicCloneable()
+private boolean checkIndependence(LineRenderer3D r1, LineRenderer3D r2)
+public void testSerialization()

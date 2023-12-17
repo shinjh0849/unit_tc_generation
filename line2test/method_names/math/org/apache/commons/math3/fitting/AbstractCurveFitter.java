@@ -1,0 +1,7 @@
+public TheoreticalValuesFunction(final ParametricUnivariateFunction f, final Collection<WeightedObservedPoint> observations)
+public double[] fit(Collection<WeightedObservedPoint> points)
+protected abstract OPTIM getOptimizer(Collection<WeightedObservedPoint> points)
+public double[] value(double[] p)
+public MultivariateVectorFunction getModelFunction()
+public double[][] value(double[] p)
+public MultivariateMatrixFunction getModelFunctionJacobian()

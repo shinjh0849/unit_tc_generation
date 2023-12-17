@@ -1,0 +1,8 @@
+private MyEnum2(int value)
+public void testSimpleClass()
+public void testMapType()
+public void testArrayType()
+public void testCollectionType()
+public void testEnumType()
+public void testClassKey()
+public void testJavaTypeAsJLRType()

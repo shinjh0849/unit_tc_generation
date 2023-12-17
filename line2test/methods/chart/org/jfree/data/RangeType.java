@@ -1,0 +1,5 @@
+private RangeType(String name) { [EOL]     this.name = name; [EOL] } <line_num>: 74,76
+public String toString() { [EOL]     return this.name; [EOL] } <line_num>: 83,85
+public boolean equals(Object obj) { [EOL]     if (this == obj) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof RangeType)) { [EOL]         return false; [EOL]     } [EOL]     RangeType that = (RangeType) obj; [EOL]     if (!this.name.equals(that.toString())) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 95,108
+public int hashCode() { [EOL]     return this.name.hashCode(); [EOL] } <line_num>: 115,117
+private Object readResolve() throws ObjectStreamException { [EOL]     if (this.equals(RangeType.FULL)) { [EOL]         return RangeType.FULL; [EOL]     } else if (this.equals(RangeType.POSITIVE)) { [EOL]         return RangeType.POSITIVE; [EOL]     } else if (this.equals(RangeType.NEGATIVE)) { [EOL]         return RangeType.NEGATIVE; [EOL]     } [EOL]     return null; [EOL] } <line_num>: 126,137

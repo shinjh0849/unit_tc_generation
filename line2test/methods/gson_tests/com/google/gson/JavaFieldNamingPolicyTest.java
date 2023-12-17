@@ -1,0 +1,3 @@
+@Override [EOL] protected void setUp() throws Exception { [EOL]     super.setUp(); [EOL]     namingPolicy = new JavaFieldNamingPolicy(); [EOL] } <line_num>: 30,34
+public void testFieldNamingPolicy() throws Exception { [EOL]     FieldAttributes f = new FieldAttributes(String.class, String.class.getFields()[0]); [EOL]     assertEquals(f.getName(), namingPolicy.translateName(f)); [EOL] } <line_num>: 36,39
+public void testNullField() throws Exception { [EOL]     try { [EOL]         namingPolicy.translateName((FieldAttributes) null); [EOL]         fail("Should have thrown an exception"); [EOL]     } catch (IllegalArgumentException expected) { [EOL]     } [EOL] } <line_num>: 41,46

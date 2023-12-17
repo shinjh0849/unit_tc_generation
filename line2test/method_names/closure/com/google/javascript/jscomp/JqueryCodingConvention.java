@@ -1,0 +1,5 @@
+public JqueryCodingConvention()
+public JqueryCodingConvention(CodingConvention wrapped)
+public String getGlobalObject()
+public boolean isPropertyTestFunction(Node call)
+public boolean isPrototypeAlias(Node getProp)

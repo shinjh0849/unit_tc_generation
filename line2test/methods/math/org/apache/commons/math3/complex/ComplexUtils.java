@@ -1,0 +1,3 @@
+private ComplexUtils() { [EOL] } <line_num>: 35,35
+public static Complex polar2Complex(double r, double theta) throws MathIllegalArgumentException { [EOL]     if (r < 0) { [EOL]         throw new MathIllegalArgumentException(LocalizedFormats.NEGATIVE_COMPLEX_MODULE, r); [EOL]     } [EOL]     return new Complex(r * FastMath.cos(theta), r * FastMath.sin(theta)); [EOL] } <line_num>: 62,68
+public static Complex[] convertToComplex(double[] real) { [EOL]     final Complex[] c = new Complex[real.length]; [EOL]     for (int i = 0; i < real.length; i++) { [EOL]         c[i] = new Complex(real[i], 0); [EOL]     } [EOL]     return c; [EOL] } <line_num>: 79,86

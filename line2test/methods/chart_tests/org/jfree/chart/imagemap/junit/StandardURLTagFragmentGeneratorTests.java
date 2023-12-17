@@ -1,0 +1,3 @@
+public StandardURLTagFragmentGeneratorTests(String name) { [EOL]     super(name); [EOL] } <line_num>: 68,70
+public static Test suite() { [EOL]     return new TestSuite(StandardURLTagFragmentGeneratorTests.class); [EOL] } <line_num>: 59,61
+public void testGenerateURLFragment() { [EOL]     StandardURLTagFragmentGenerator g = new StandardURLTagFragmentGenerator(); [EOL]     assertEquals(" href=\"abc\"", g.generateURLFragment("abc")); [EOL]     assertEquals(" href=\"images/abc.png\"", g.generateURLFragment("images/abc.png")); [EOL]     assertEquals(" href=\"http://www.jfree.org/images/abc.png\"", g.generateURLFragment("http://www.jfree.org/images/abc.png")); [EOL] } <line_num>: 75,83

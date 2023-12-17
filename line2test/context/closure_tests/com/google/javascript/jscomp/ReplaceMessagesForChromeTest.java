@@ -1,0 +1,10 @@
+protected CompilerPass getProcessor(Compiler compiler)
+protected int getNumRepetitions()
+protected void setUp()
+public void testReplaceSimpleMessage()
+public void testReplaceSinglePlaceholder()
+public void testReplaceTwoPlaceholders()
+public void testReplacePlaceholderMissingValue()
+public void testReplaceTwoPlaceholdersNonAlphaOrder()
+public void testReplaceExternalMessage()
+Style style=Optional[RELAX]

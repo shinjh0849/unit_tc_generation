@@ -1,0 +1,21 @@
+public Account(String name, Long id)
+public Key(T id)
+public Person1(String name)
+public Person2(String name)
+public GenericBogusWrapper(T v)
+public Element(T v)
+public String getName()
+public Long getId()
+public T getId()
+public Key<V> getParent()
+public String getName()
+public Key<Account> getAccount()
+public Long getId()
+public void setAccount(Key<Account> account)
+public String getName()
+public List<Key<Account>> getAccounts()
+public Long getId()
+public void setAccounts(List<Key<Account>> accounts)
+public void testIssue468a() throws Exception
+public void testIssue468b() throws Exception
+public void testUnboundIssue572() throws Exception

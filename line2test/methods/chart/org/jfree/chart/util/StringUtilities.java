@@ -1,0 +1,4 @@
+private StringUtilities() { [EOL] } <line_num>: 52,53
+public static boolean startsWithIgnoreCase(String base, String start) { [EOL]     if (base.length() < start.length()) { [EOL]         return false; [EOL]     } [EOL]     return base.regionMatches(true, 0, start, 0, start.length()); [EOL] } <line_num>: 64,69
+public static boolean endsWithIgnoreCase(String base, String end) { [EOL]     if (base.length() < end.length()) { [EOL]         return false; [EOL]     } [EOL]     return base.regionMatches(true, base.length() - end.length(), end, 0, end.length()); [EOL] } <line_num>: 80,86
+public static String getLineSeparator() { [EOL]     try { [EOL]         return System.getProperty("line.separator", "\n"); [EOL]     } catch (Exception e) { [EOL]         return "\n"; [EOL]     } [EOL] } <line_num>: 94,101

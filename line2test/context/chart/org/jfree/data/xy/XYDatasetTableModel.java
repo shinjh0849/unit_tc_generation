@@ -1,0 +1,11 @@
+public XYDatasetTableModel()
+public XYDatasetTableModel(TableXYDataset dataset)
+public void setModel(TableXYDataset dataset)
+public int getRowCount()
+public int getColumnCount()
+public String getColumnName(int column)
+public Object getValueAt(int row, int column)
+public void datasetChanged(DatasetChangeEvent event)
+public boolean isCellEditable(int row, int column)
+public void setValueAt(Object value, int row, int column)
+TableXYDataset model=Optional[null]

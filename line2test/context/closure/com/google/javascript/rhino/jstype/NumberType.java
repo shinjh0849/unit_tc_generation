@@ -1,0 +1,13 @@
+ NumberType(JSTypeRegistry registry)
+public boolean isNullable()
+public TernaryValue testForEquality(JSType that)
+public boolean isNumberValueType()
+public boolean matchesNumberContext()
+public boolean matchesStringContext()
+public boolean matchesObjectContext()
+ String toStringHelper(boolean forAnnotations)
+public String getDisplayName()
+public BooleanLiteralSet getPossibleToBooleanOutcomes()
+public T visit(Visitor<T> visitor)
+public JSType autoboxesTo()
+long serialVersionUID=Optional[1L]

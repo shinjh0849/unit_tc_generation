@@ -1,0 +1,22 @@
+public OptionalLibraryHolder(String libraryClass)
+public OptionalLibraryHolder(Library library)
+public BasicProjectInfo()
+public BasicProjectInfo(String name, String version, String licence, String info)
+public BasicProjectInfo(String name, String version, String info, String copyright, String licenceName)
+public String getLibraryClass()
+public Library getLibrary()
+protected Library loadLibrary(String classname)
+public String getCopyright()
+public void setCopyright(String copyright)
+public void setInfo(String info)
+public void setLicenceName(String licence)
+public void setName(String name)
+public void setVersion(String version)
+public Library[] getLibraries()
+public void addLibrary(Library library)
+public Library[] getOptionalLibraries()
+public void addOptionalLibrary(String libraryClass)
+public void addOptionalLibrary(Library library)
+String copyright
+List libraries
+List optionalLibraries

@@ -1,0 +1,10 @@
+public UnwrappingBeanSerializer(BeanSerializerBase src, NameTransformer transformer) { [EOL]     super(src, transformer); [EOL]     _nameTransformer = transformer; [EOL] } <line_num>: 30,33
+public UnwrappingBeanSerializer(UnwrappingBeanSerializer src, ObjectIdWriter objectIdWriter) { [EOL]     super(src, objectIdWriter); [EOL]     _nameTransformer = src._nameTransformer; [EOL] } <line_num>: 35,38
+protected UnwrappingBeanSerializer(UnwrappingBeanSerializer src, String[] toIgnore) { [EOL]     super(src, toIgnore); [EOL]     _nameTransformer = src._nameTransformer; [EOL] } <line_num>: 40,43
+@Override [EOL] public JsonSerializer<Object> unwrappingSerializer(NameTransformer transformer) { [EOL]     return new UnwrappingBeanSerializer(this, transformer); [EOL] } <line_num>: 51,55
+@Override [EOL] public boolean isUnwrappingSerializer() { [EOL]     return true; [EOL] } <line_num>: 57,60
+@Override [EOL] public UnwrappingBeanSerializer withObjectIdWriter(ObjectIdWriter objectIdWriter) { [EOL]     return new UnwrappingBeanSerializer(this, objectIdWriter); [EOL] } <line_num>: 62,65
+@Override [EOL] protected UnwrappingBeanSerializer withIgnorals(String[] toIgnore) { [EOL]     return new UnwrappingBeanSerializer(this, toIgnore); [EOL] } <line_num>: 67,70
+@Override [EOL] protected BeanSerializerBase asArraySerializer() { [EOL]     return this; [EOL] } <line_num>: 76,79
+@Override [EOL] public final void serialize(Object bean, JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonGenerationException { [EOL]     if (_objectIdWriter != null) { [EOL]         _serializeWithObjectId(bean, jgen, provider, false); [EOL]         return; [EOL]     } [EOL]     if (_propertyFilterId != null) { [EOL]         serializeFieldsFiltered(bean, jgen, provider); [EOL]     } else { [EOL]         serializeFields(bean, jgen, provider); [EOL]     } [EOL] } <line_num>: 92,105
+@Override [EOL] public String toString() { [EOL]     return "UnwrappingBeanSerializer for " + handledType().getName(); [EOL] } <line_num>: 113,115

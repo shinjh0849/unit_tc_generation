@@ -1,0 +1,8 @@
+public BaseClass(int x, int y)
+public SubClass()
+public SubClass(int x)
+public int x()
+public int y()
+public abstract void setX(T value)
+public void setX(Integer value)
+public void testFieldIntrospection()

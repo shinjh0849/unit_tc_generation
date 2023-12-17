@@ -1,0 +1,3 @@
+public String[] getPropertyNames(Object pageScope) { [EOL]     Enumeration e = ((PageScopeContext) pageScope).getAttributeNames(); [EOL]     ArrayList list = new ArrayList(16); [EOL]     while (e.hasMoreElements()) { [EOL]         list.add(e.nextElement()); [EOL]     } [EOL]     return (String[]) list.toArray(STRING_ARRAY); [EOL] } <line_num>: 35,42
+public Object getProperty(Object pageScope, String property) { [EOL]     return ((PageScopeContext) pageScope).getAttribute(property); [EOL] } <line_num>: 44,46
+public void setProperty(Object pageScope, String property, Object value) { [EOL]     ((PageScopeContext) pageScope).setAttribute(property, value); [EOL] } <line_num>: 48,50

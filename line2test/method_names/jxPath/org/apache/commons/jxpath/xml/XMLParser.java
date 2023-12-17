@@ -1,0 +1,1 @@
+ Object parseXML(InputStream stream)

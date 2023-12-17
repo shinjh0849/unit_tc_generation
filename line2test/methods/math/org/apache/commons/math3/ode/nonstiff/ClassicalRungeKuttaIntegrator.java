@@ -1,0 +1,1 @@
+public ClassicalRungeKuttaIntegrator(final double step) { [EOL]     super("classical Runge-Kutta", STATIC_C, STATIC_A, STATIC_B, new ClassicalRungeKuttaStepInterpolator(), step); [EOL] } <line_num>: 70,73

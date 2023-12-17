@@ -1,0 +1,18 @@
+public SerializerAndMapResult(JsonSerializer<Object> serializer, PropertySerializerMap map)
+public TypeAndSerializer(Class<?> type, JsonSerializer<Object> serializer)
+public Single(Class<?> type, JsonSerializer<Object> serializer)
+public Double(Class<?> type1, JsonSerializer<Object> serializer1, Class<?> type2, JsonSerializer<Object> serializer2)
+public Multi(TypeAndSerializer[] entries)
+public abstract JsonSerializer<Object> serializerFor(Class<?> type)
+public final SerializerAndMapResult findAndAddSerializer(Class<?> type, SerializerProvider provider, BeanProperty property) throws JsonMappingException
+public final SerializerAndMapResult findAndAddSerializer(JavaType type, SerializerProvider provider, BeanProperty property) throws JsonMappingException
+public abstract PropertySerializerMap newWith(Class<?> type, JsonSerializer<Object> serializer)
+public static PropertySerializerMap emptyMap()
+public JsonSerializer<Object> serializerFor(Class<?> type)
+public PropertySerializerMap newWith(Class<?> type, JsonSerializer<Object> serializer)
+public JsonSerializer<Object> serializerFor(Class<?> type)
+public PropertySerializerMap newWith(Class<?> type, JsonSerializer<Object> serializer)
+public JsonSerializer<Object> serializerFor(Class<?> type)
+public PropertySerializerMap newWith(Class<?> type, JsonSerializer<Object> serializer)
+public JsonSerializer<Object> serializerFor(Class<?> type)
+public PropertySerializerMap newWith(Class<?> type, JsonSerializer<Object> serializer)

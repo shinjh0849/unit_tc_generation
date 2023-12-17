@@ -1,0 +1,7 @@
+public void testLonglySimpleVar()
+public void testLonglySimpleCov()
+public void testLonglyByRow()
+public void testSwissFertilityByRow()
+public void testSymmetry()
+public void testEquivalence()
+protected RealMatrix createRealMatrix(double[] data, int nRows, int nCols)

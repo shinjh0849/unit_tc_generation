@@ -1,0 +1,12 @@
+public XYBarRendererTests(String name)
+public static Test suite()
+public void testEquals()
+public void testHashcode()
+public void testCloning()
+public void testPublicCloneable()
+public void testSerialization()
+public void testSerialization2()
+public void testFindDomainBounds()
+public void testFindRangeBounds()
+public void testGetLegendItemSeriesIndex()
+double EPSILON=Optional[0.0000000001]

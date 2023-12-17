@@ -1,0 +1,8 @@
+public TickUnit(double size) { [EOL]     this.size = size; [EOL] } <line_num>: 83,85
+public TickUnit(double size, int minorTickCount) { [EOL]     this.size = size; [EOL]     this.minorTickCount = minorTickCount; [EOL] } <line_num>: 95,98
+public double getSize() { [EOL]     return this.size; [EOL] } <line_num>: 105,107
+public int getMinorTickCount() { [EOL]     return this.minorTickCount; [EOL] } <line_num>: 116,118
+public String valueToString(double value) { [EOL]     return String.valueOf(value); [EOL] } <line_num>: 129,131
+public int compareTo(Object object) { [EOL]     if (object instanceof TickUnit) { [EOL]         TickUnit other = (TickUnit) object; [EOL]         if (this.size > other.getSize()) { [EOL]             return 1; [EOL]         } else if (this.size < other.getSize()) { [EOL]             return -1; [EOL]         } else { [EOL]             return 0; [EOL]         } [EOL]     } else { [EOL]         return -1; [EOL]     } [EOL] } <line_num>: 142,160
+public boolean equals(Object obj) { [EOL]     if (obj == this) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof TickUnit)) { [EOL]         return false; [EOL]     } [EOL]     TickUnit that = (TickUnit) obj; [EOL]     if (this.size != that.size) { [EOL]         return false; [EOL]     } [EOL]     if (this.minorTickCount != that.minorTickCount) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 169,184
+public int hashCode() { [EOL]     long temp = this.size != +0.0d ? Double.doubleToLongBits(this.size) : 0L; [EOL]     return (int) (temp ^ (temp >>> 32)); [EOL] } <line_num>: 191,195

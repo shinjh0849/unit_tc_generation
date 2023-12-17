@@ -1,0 +1,3 @@
+public DynamicDriveToolTipTagFragmentGeneratorTests(String name) { [EOL]     super(name); [EOL] } <line_num>: 68,70
+public static Test suite() { [EOL]     return new TestSuite(DynamicDriveToolTipTagFragmentGeneratorTests.class); [EOL] } <line_num>: 59,61
+public void testGenerateURLFragment() { [EOL]     OverLIBToolTipTagFragmentGenerator g = new OverLIBToolTipTagFragmentGenerator(); [EOL]     assertEquals(" onMouseOver=\"return overlib('abc');\"" + " onMouseOut=\"return nd();\"", g.generateToolTipFragment("abc")); [EOL]     assertEquals(" onMouseOver=\"return overlib(" + "'It\\'s \\\"A\\\", 100.0');\" onMouseOut=\"return nd();\"", g.generateToolTipFragment("It\'s \"A\", 100.0")); [EOL] } <line_num>: 75,84

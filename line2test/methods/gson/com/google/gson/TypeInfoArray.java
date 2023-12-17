@@ -1,0 +1,4 @@
+TypeInfoArray(Type type) { [EOL]     super(type); [EOL]     Class<?> rootComponentType = rawClass; [EOL]     while (rootComponentType.isArray()) { [EOL]         rootComponentType = rootComponentType.getComponentType(); [EOL]     } [EOL]     this.componentRawType = rootComponentType; [EOL]     this.secondLevel = extractSecondLevelType(actualType, rawClass); [EOL] } <line_num>: 32,40
+private static Type extractSecondLevelType(Type actualType, Class<?> rawClass) { [EOL]     return actualType instanceof GenericArrayType ? ((GenericArrayType) actualType).getGenericComponentType() : rawClass.getComponentType(); [EOL] } <line_num>: 42,45
+public Type getSecondLevelType() { [EOL]     return secondLevel; [EOL] } <line_num>: 55,57
+public Class<?> getComponentRawType() { [EOL]     return componentRawType; [EOL] } <line_num>: 66,68

@@ -1,0 +1,36 @@
+protected MapperConfigBase(BaseSettings base, SubtypeResolver str, Map<ClassKey, Class<?>> mixins)
+protected MapperConfigBase(MapperConfigBase<CFG, T> src)
+protected MapperConfigBase(MapperConfigBase<CFG, T> src, BaseSettings base)
+protected MapperConfigBase(MapperConfigBase<CFG, T> src, int mapperFeatures)
+protected MapperConfigBase(MapperConfigBase<CFG, T> src, SubtypeResolver str)
+protected MapperConfigBase(MapperConfigBase<CFG, T> src, String rootName)
+protected MapperConfigBase(MapperConfigBase<CFG, T> src, Class<?> view)
+protected MapperConfigBase(MapperConfigBase<CFG, T> src, Map<ClassKey, Class<?>> mixins)
+public abstract T with(AnnotationIntrospector ai)
+public abstract T withAppendedAnnotationIntrospector(AnnotationIntrospector introspector)
+public abstract T withInsertedAnnotationIntrospector(AnnotationIntrospector introspector)
+public abstract T with(ClassIntrospector ci)
+public abstract T with(DateFormat df)
+public abstract T with(HandlerInstantiator hi)
+public abstract T with(PropertyNamingStrategy strategy)
+public abstract T withRootName(String rootName)
+public abstract T with(SubtypeResolver str)
+public abstract T with(TypeFactory typeFactory)
+public abstract T with(TypeResolverBuilder<?> trb)
+public abstract T withView(Class<?> view)
+public abstract T with(VisibilityChecker<?> vc)
+public abstract T withVisibility(PropertyAccessor forMethod, JsonAutoDetect.Visibility visibility)
+public abstract T with(Locale l)
+public abstract T with(TimeZone tz)
+public abstract T with(Base64Variant base64)
+public final SubtypeResolver getSubtypeResolver()
+public final String getRootName()
+public final Class<?> getActiveView()
+public final Class<?> findMixInClassFor(Class<?> cls)
+public final int mixInCount()
+long serialVersionUID=Optional[-8378230381628000111L]
+int DEFAULT_MAPPER_FEATURES=Optional[collectFeatureDefaults(MapperFeature.class)]
+Map<ClassKey, Class<?>> _mixInAnnotations
+SubtypeResolver _subtypeResolver
+String _rootName
+Class<?> _view

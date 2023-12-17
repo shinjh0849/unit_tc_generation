@@ -1,0 +1,4 @@
+@Override [EOL] protected UnivariateSolver getSolver() { [EOL]     return new RegulaFalsiSolver(); [EOL] } <line_num>: 32,35
+@Override [EOL] protected int[] getQuinticEvalCounts() { [EOL]     return new int[] { 3, 7, 8, 19, 18, 11, 67, 55, 288, 151, -1 }; [EOL] } <line_num>: 38,44
+public double value(double x) { [EOL]     return Math.exp(x) - Math.pow(Math.PI, 3.0); [EOL] } <line_num>: 50,52
+@Test(expected = ConvergenceException.class) [EOL] public void testIssue631() { [EOL]     final UnivariateFunction f = new UnivariateFunction() { [EOL]  [EOL]         public double value(double x) { [EOL]             return Math.exp(x) - Math.pow(Math.PI, 3.0); [EOL]         } [EOL]     }; [EOL]     final UnivariateSolver solver = new RegulaFalsiSolver(); [EOL]     final double root = solver.solve(3624, f, 1, 10); [EOL]     Assert.assertEquals(3.4341896575482003, root, 1e-15); [EOL] } <line_num>: 46,58

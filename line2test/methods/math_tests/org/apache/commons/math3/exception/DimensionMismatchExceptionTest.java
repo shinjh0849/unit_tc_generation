@@ -1,0 +1,1 @@
+@Test [EOL] public void testAccessors() { [EOL]     final DimensionMismatchException e = new DimensionMismatchException(1, 2); [EOL]     Assert.assertEquals(1, e.getArgument()); [EOL]     Assert.assertEquals(2, e.getDimension()); [EOL] } <line_num>: 28,33

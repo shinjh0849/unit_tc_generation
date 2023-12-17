@@ -1,0 +1,43 @@
+protected StdKeyDeserializer(Class<?> cls) { [EOL]     _keyClass = cls; [EOL] } <line_num>: 28,28
+private StringKD(Class<?> nominalType) { [EOL]     super(nominalType); [EOL] } <line_num>: 90,90
+BoolKD() { [EOL]     super(Boolean.class); [EOL] } <line_num>: 120,120
+ByteKD() { [EOL]     super(Byte.class); [EOL] } <line_num>: 140,140
+ShortKD() { [EOL]     super(Integer.class); [EOL] } <line_num>: 159,159
+CharKD() { [EOL]     super(Character.class); [EOL] } <line_num>: 181,181
+IntKD() { [EOL]     super(Integer.class); [EOL] } <line_num>: 198,198
+LongKD() { [EOL]     super(Long.class); [EOL] } <line_num>: 212,212
+DoubleKD() { [EOL]     super(Double.class); [EOL] } <line_num>: 226,226
+FloatKD() { [EOL]     super(Float.class); [EOL] } <line_num>: 240,240
+LocaleKD() { [EOL]     super(Locale.class); [EOL]     _localeDeserializer = new JdkDeserializers.LocaleDeserializer(); [EOL] } <line_num>: 258,258
+protected DelegatingKD(Class<?> cls, JsonDeserializer<?> deser) { [EOL]     _keyClass = cls; [EOL]     _delegate = deser; [EOL] } <line_num>: 291,294
+protected EnumKD(EnumResolver<?> er, AnnotatedMethod factory) { [EOL]     super(er.getEnumClass()); [EOL]     _resolver = er; [EOL]     _factory = factory; [EOL] } <line_num>: 327,331
+public StringCtorKeyDeserializer(Constructor<?> ctor) { [EOL]     super(ctor.getDeclaringClass()); [EOL]     _ctor = ctor; [EOL] } <line_num>: 361,364
+public StringFactoryKeyDeserializer(Method fm) { [EOL]     super(fm.getDeclaringClass()); [EOL]     _factoryMethod = fm; [EOL] } <line_num>: 383,386
+protected DateKD() { [EOL]     super(java.util.Date.class); [EOL] } <line_num>: 401,403
+protected CalendarKD() { [EOL]     super(java.util.Calendar.class); [EOL] } <line_num>: 419,421
+protected UuidKD() { [EOL]     super(UUID.class); [EOL] } <line_num>: 438,440
+@Override [EOL] public final Object deserializeKey(String key, DeserializationContext ctxt) throws IOException, JsonProcessingException { [EOL]     if (key == null) { [EOL]         return null; [EOL]     } [EOL]     try { [EOL]         Object result = _parse(key, ctxt); [EOL]         if (result != null) { [EOL]             return result; [EOL]         } [EOL]     } catch (Exception re) { [EOL]         throw ctxt.weirdKeyException(_keyClass, key, "not a valid representation: " + re.getMessage()); [EOL]     } [EOL]     if (_keyClass.isEnum() && ctxt.getConfig().isEnabled(DeserializationFeature.READ_UNKNOWN_ENUM_VALUES_AS_NULL)) { [EOL]         return null; [EOL]     } [EOL]     throw ctxt.weirdKeyException(_keyClass, key, "not a valid representation"); [EOL] } <line_num>: 30,49
+public Class<?> getKeyClass() { [EOL]     return _keyClass; [EOL] } <line_num>: 51,51
+protected abstract Object _parse(String key, DeserializationContext ctxt) throws Exception; <line_num>: 53,53
+protected int _parseInt(String key) throws IllegalArgumentException { [EOL]     return Integer.parseInt(key); [EOL] } <line_num>: 61,64
+protected long _parseLong(String key) throws IllegalArgumentException { [EOL]     return Long.parseLong(key); [EOL] } <line_num>: 66,69
+protected double _parseDouble(String key) throws IllegalArgumentException { [EOL]     return NumberInput.parseDouble(key); [EOL] } <line_num>: 71,74
+public static StringKD forType(Class<?> nominalType) { [EOL]     if (nominalType == String.class) { [EOL]         return sString; [EOL]     } [EOL]     if (nominalType == Object.class) { [EOL]         return sObject; [EOL]     } [EOL]     return new StringKD(nominalType); [EOL] } <line_num>: 92,101
+@Override [EOL] public String _parse(String key, DeserializationContext ctxt) throws JsonMappingException { [EOL]     return key; [EOL] } <line_num>: 103,106
+@Override [EOL] public Boolean _parse(String key, DeserializationContext ctxt) throws JsonMappingException { [EOL]     if ("true".equals(key)) { [EOL]         return Boolean.TRUE; [EOL]     } [EOL]     if ("false".equals(key)) { [EOL]         return Boolean.FALSE; [EOL]     } [EOL]     throw ctxt.weirdKeyException(_keyClass, key, "value not 'true' or 'false'"); [EOL] } <line_num>: 122,132
+@Override [EOL] public Byte _parse(String key, DeserializationContext ctxt) throws JsonMappingException { [EOL]     int value = _parseInt(key); [EOL]     if (value < Byte.MIN_VALUE || value > 255) { [EOL]         throw ctxt.weirdKeyException(_keyClass, key, "overflow, value can not be represented as 8-bit value"); [EOL]     } [EOL]     return Byte.valueOf((byte) value); [EOL] } <line_num>: 142,151
+@Override [EOL] public Short _parse(String key, DeserializationContext ctxt) throws JsonMappingException { [EOL]     int value = _parseInt(key); [EOL]     if (value < Short.MIN_VALUE || value > Short.MAX_VALUE) { [EOL]         throw ctxt.weirdKeyException(_keyClass, key, "overflow, value can not be represented as 16-bit value"); [EOL]     } [EOL]     return Short.valueOf((short) value); [EOL] } <line_num>: 161,169
+@Override [EOL] public Character _parse(String key, DeserializationContext ctxt) throws JsonMappingException { [EOL]     if (key.length() == 1) { [EOL]         return Character.valueOf(key.charAt(0)); [EOL]     } [EOL]     throw ctxt.weirdKeyException(_keyClass, key, "can only convert 1-character Strings"); [EOL] } <line_num>: 183,190
+@Override [EOL] public Integer _parse(String key, DeserializationContext ctxt) throws JsonMappingException { [EOL]     return _parseInt(key); [EOL] } <line_num>: 200,204
+@Override [EOL] public Long _parse(String key, DeserializationContext ctxt) throws JsonMappingException { [EOL]     return _parseLong(key); [EOL] } <line_num>: 214,218
+@Override [EOL] public Double _parse(String key, DeserializationContext ctxt) throws JsonMappingException { [EOL]     return _parseDouble(key); [EOL] } <line_num>: 228,232
+@Override [EOL] public Float _parse(String key, DeserializationContext ctxt) throws JsonMappingException { [EOL]     return Float.valueOf((float) _parseDouble(key)); [EOL] } <line_num>: 242,249
+@Override [EOL] protected Locale _parse(String key, DeserializationContext ctxt) throws JsonMappingException { [EOL]     try { [EOL]         return _localeDeserializer._deserialize(key, ctxt); [EOL]     } catch (IOException e) { [EOL]         throw ctxt.weirdKeyException(_keyClass, key, "unable to parse key as locale"); [EOL]     } [EOL] } <line_num>: 260,267
+@Override [EOL] public final Object deserializeKey(String key, DeserializationContext ctxt) throws IOException, JsonProcessingException { [EOL]     if (key == null) { [EOL]         return null; [EOL]     } [EOL]     try { [EOL]         Object result = _delegate.deserialize(ctxt.getParser(), ctxt); [EOL]         if (result != null) { [EOL]             return result; [EOL]         } [EOL]     } catch (Exception re) { [EOL]         throw ctxt.weirdKeyException(_keyClass, key, "not a valid representation: " + re.getMessage()); [EOL]     } [EOL]     throw ctxt.weirdKeyException(_keyClass, key, "not a valid representation"); [EOL] } <line_num>: 296,313
+public Class<?> getKeyClass() { [EOL]     return _keyClass; [EOL] } <line_num>: 315,315
+@Override [EOL] public Object _parse(String key, DeserializationContext ctxt) throws JsonMappingException { [EOL]     if (_factory != null) { [EOL]         try { [EOL]             return _factory.call1(key); [EOL]         } catch (Exception e) { [EOL]             ClassUtil.unwrapAndThrowAsIAE(e); [EOL]         } [EOL]     } [EOL]     Enum<?> e = _resolver.findEnum(key); [EOL]     if (e == null && !ctxt.getConfig().isEnabled(DeserializationFeature.READ_UNKNOWN_ENUM_VALUES_AS_NULL)) { [EOL]         throw ctxt.weirdKeyException(_keyClass, key, "not one of values for Enum class"); [EOL]     } [EOL]     return e; [EOL] } <line_num>: 333,348
+@Override [EOL] public Object _parse(String key, DeserializationContext ctxt) throws Exception { [EOL]     return _ctor.newInstance(key); [EOL] } <line_num>: 366,370
+@Override [EOL] public Object _parse(String key, DeserializationContext ctxt) throws Exception { [EOL]     return _factoryMethod.invoke(null, key); [EOL] } <line_num>: 388,392
+@Override [EOL] public Object _parse(String key, DeserializationContext ctxt) throws IllegalArgumentException, JsonMappingException { [EOL]     return ctxt.parseDate(key); [EOL] } <line_num>: 405,410
+@Override [EOL] public Object _parse(String key, DeserializationContext ctxt) throws IllegalArgumentException, JsonMappingException { [EOL]     java.util.Date date = ctxt.parseDate(key); [EOL]     return (date == null) ? null : ctxt.constructCalendar(date); [EOL] } <line_num>: 423,429
+@Override [EOL] public Object _parse(String key, DeserializationContext ctxt) throws IllegalArgumentException, JsonMappingException { [EOL]     return UUID.fromString(key); [EOL] } <line_num>: 442,447

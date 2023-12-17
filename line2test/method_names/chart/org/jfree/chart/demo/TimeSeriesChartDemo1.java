@@ -1,0 +1,5 @@
+public TimeSeriesChartDemo1(String title)
+private static JFreeChart createChart(XYDataset dataset)
+private static XYDataset createDataset()
+public static JPanel createDemoPanel()
+public static void main(String[] args)

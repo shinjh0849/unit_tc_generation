@@ -1,0 +1,7 @@
+public String get(SourceExcerptProvider source, String sourceName, int lineNumber, ExcerptFormatter formatter)
+public String get(SourceExcerptProvider source, String sourceName, int lineNumber, ExcerptFormatter formatter)
+public abstract String get(SourceExcerptProvider source, String sourceName, int lineNumber, ExcerptFormatter formatter)
+ String getSourceLine(String sourceName, int lineNumber)
+ Region getSourceRegion(String sourceName, int lineNumber)
+ String formatLine(String line, int lineNumber)
+ String formatRegion(Region region)

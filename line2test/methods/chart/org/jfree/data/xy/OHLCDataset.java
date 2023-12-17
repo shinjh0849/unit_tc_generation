@@ -1,0 +1,10 @@
+public Number getHigh(int series, int item); <line_num>: 65,65
+public double getHighValue(int series, int item); <line_num>: 76,76
+public Number getLow(int series, int item); <line_num>: 86,86
+public double getLowValue(int series, int item); <line_num>: 97,97
+public Number getOpen(int series, int item); <line_num>: 107,107
+public double getOpenValue(int series, int item); <line_num>: 118,118
+public Number getClose(int series, int item); <line_num>: 128,128
+public double getCloseValue(int series, int item); <line_num>: 139,139
+public Number getVolume(int series, int item); <line_num>: 149,149
+public double getVolumeValue(int series, int item); <line_num>: 160,160

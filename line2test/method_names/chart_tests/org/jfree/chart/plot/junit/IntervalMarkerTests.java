@@ -1,0 +1,8 @@
+public IntervalMarkerTests(String name)
+public void markerChanged(MarkerChangeEvent event)
+public static Test suite()
+public void testEquals()
+public void testCloning()
+public void testSerialization()
+public void testGetSetStartValue()
+public void testGetSetEndValue()

@@ -1,0 +1,5 @@
+@JsonAnyGetter [EOL] public Map<String, String> any() { [EOL]     return other; [EOL] } <line_num>: 26,29
+@JsonAnySetter [EOL] public void set(String name, String value) { [EOL]     other.put(name, value); [EOL] } <line_num>: 31,34
+@JsonAnyGetter [EOL] public Map<?, ?> getProperties() { [EOL]     HashMap<String, String> map = new HashMap<String, String>(); [EOL]     map.put("a", "A"); [EOL]     return map; [EOL] } <line_num>: 39,45
+public void testDynaBean() throws Exception { [EOL]     DynaBean b = new DynaBean(); [EOL]     b.id = 123; [EOL]     b.set("name", "Billy"); [EOL]     assertEquals("{\"id\":123,\"name\":\"Billy\"}", MAPPER.writeValueAsString(b)); [EOL]     DynaBean result = MAPPER.readValue("{\"id\":2,\"name\":\"Joe\"}", DynaBean.class); [EOL]     assertEquals(2, result.id); [EOL]     assertEquals("Joe", result.other.get("name")); [EOL] } <line_num>: 56,66
+public void testPrivate() throws Exception { [EOL]     String json = MAPPER.writeValueAsString(new PrivateThing()); [EOL]     assertEquals("{\"a\":\"A\"}", json); [EOL] } <line_num>: 68,72

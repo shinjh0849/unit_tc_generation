@@ -1,0 +1,7 @@
+public void testMathIllegalState1()
+public void testMathIllegalState2()
+public void testMathIllegalState3()
+public void testZeroNumberOfRoots()
+public void testGetNumberOfRoots()
+public void testComputeRoots()
+private void doTestComputeRoots(final RootsOfUnity roots)

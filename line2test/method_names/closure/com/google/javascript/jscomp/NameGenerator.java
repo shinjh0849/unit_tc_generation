@@ -1,0 +1,5 @@
+ NameGenerator(Set<String> reservedNames, String prefix, @Nullable char[] reservedCharacters)
+ static char[] reserveCharacters(char[] chars, char[] reservedCharacters)
+private void checkPrefix(String prefix)
+private boolean contains(char[] arr, char c)
+ String generateNextName()

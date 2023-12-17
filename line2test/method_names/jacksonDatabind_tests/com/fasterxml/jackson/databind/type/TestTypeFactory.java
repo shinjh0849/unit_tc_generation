@@ -1,0 +1,23 @@
+public T getFoobar()
+public void testSimpleTypes()
+public void testArrays()
+public void testCollections()
+public void testMaps()
+public void testIterator()
+public void testParametricTypes()
+public void testCanonicalNames()
+public void testSuperTypeDetectionClass()
+public void testSuperTypeDetectionInterface()
+public void testAtomicArrayRefParameterDetection()
+private int _countSupers(HierarchicType t)
+public void testMapTypesSimple()
+public void testMapTypesRaw()
+public void testMapTypesAdvanced()
+public void testMapTypesSneaky()
+public void testSneakyFieldTypes() throws Exception
+public void testSneakyBeanProperties() throws Exception
+public void testAtomicArrayRefParameters()
+public void testSneakySelfRefs() throws Exception
+public void testRawCollections()
+public void testRawMaps()
+public void testMoreSpecificType()

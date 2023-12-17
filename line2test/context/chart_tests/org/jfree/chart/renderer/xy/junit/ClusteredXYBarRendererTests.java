@@ -1,0 +1,10 @@
+public ClusteredXYBarRendererTests(String name)
+public static Test suite()
+public void testEquals()
+public void testHashcode()
+public void testCloning()
+public void testPublicCloneable()
+public void testSerialization()
+public void testFindDomainBounds()
+public DefaultIntervalXYDataset createSampleDataset1()
+double EPSILON=Optional[0.0000000001]

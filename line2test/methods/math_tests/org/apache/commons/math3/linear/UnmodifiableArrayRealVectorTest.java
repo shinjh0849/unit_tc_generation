@@ -1,0 +1,1 @@
+@Override [EOL] public RealVector createVector() { [EOL]     ArrayRealVector v = new ArrayRealVector(DIM); [EOL]     for (int i = 0; i < DIM; i++) { [EOL]         v.setEntry(i, RANDOM.nextDouble()); [EOL]     } [EOL]     return v; [EOL] } <line_num>: 32,39

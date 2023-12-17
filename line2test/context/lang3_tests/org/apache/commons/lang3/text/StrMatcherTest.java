@@ -1,0 +1,16 @@
+public void testCommaMatcher()
+public void testTabMatcher()
+public void testSpaceMatcher()
+public void testSplitMatcher()
+public void testTrimMatcher()
+public void testSingleQuoteMatcher()
+public void testDoubleQuoteMatcher()
+public void testQuoteMatcher()
+public void testNoneMatcher()
+public void testCharMatcher_char()
+public void testCharSetMatcher_String()
+public void testCharSetMatcher_charArray()
+public void testStringMatcher_String()
+public void testMatcherIndices()
+char[] BUFFER1=Optional["0,1\t2 3\n\r\f\u0000'\"".toCharArray()]
+char[] BUFFER2=Optional["abcdef".toCharArray()]

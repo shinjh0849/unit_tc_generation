@@ -1,0 +1,1 @@
+public EncoderException(String pMessage)

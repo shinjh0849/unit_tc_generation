@@ -1,0 +1,6 @@
+ SanityCheck(AbstractCompiler compiler)
+public void process(Node externs, Node root)
+private void sanityCheckAst(Node externs, Node root)
+private void sanityCheckVars(Node externs, Node root)
+private Node sanityCheckCodeGeneration(Node root)
+private void sanityCheckNormalization(Node externs, Node root)

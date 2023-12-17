@@ -1,0 +1,5 @@
+public TestProblem6() { [EOL]     super(); [EOL]     double[] y0 = { -360.0 }; [EOL]     setInitialConditions(0.0, y0); [EOL]     setFinalConditions(1.0); [EOL]     double[] errorScale = { 1.0 }; [EOL]     setErrorScale(errorScale); [EOL]     y = new double[y0.length]; [EOL] } <line_num>: 44,52
+public TestProblem6(TestProblem6 problem) { [EOL]     super(problem); [EOL]     y = problem.y.clone(); [EOL] } <line_num>: 58,61
+@Override [EOL] public TestProblem6 copy() { [EOL]     return new TestProblem6(this); [EOL] } <line_num>: 64,67
+@Override [EOL] public void doComputeDerivatives(double t, double[] y, double[] yDot) { [EOL]     double t2 = t * t; [EOL]     double t4 = t2 * t2; [EOL]     double t5 = t4 * t; [EOL]     for (int i = 0; i < n; ++i) { [EOL]         yDot[i] = 3 * t5 - y[i]; [EOL]     } [EOL] } <line_num>: 69,80
+@Override [EOL] public double[] computeTheoreticalState(double t) { [EOL]     for (int i = 0; i < n; ++i) { [EOL]         y[i] = ((((3 * t - 15) * t + 60) * t - 180) * t + 360) * t - 360; [EOL]     } [EOL]     return y; [EOL] } <line_num>: 82,88

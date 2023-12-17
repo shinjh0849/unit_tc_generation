@@ -1,0 +1,1 @@
+public JXPathInvalidSyntaxException(String message)

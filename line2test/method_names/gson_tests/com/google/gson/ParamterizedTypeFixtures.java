@@ -1,0 +1,11 @@
+public MyParameterizedType(T value)
+public MyParameterizedTypeInstanceCreator(T instanceOfT)
+public T getValue()
+public String getExpectedJson()
+private String getExpectedJson(Object obj)
+public int hashCode()
+public boolean equals(Object obj)
+public MyParameterizedType<T> createInstance(Type type)
+public static String getExpectedJson(MyParameterizedType<T> obj)
+public JsonElement serialize(MyParameterizedType<T> src, Type classOfSrc, JsonSerializationContext context)
+public MyParameterizedType<T> deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException

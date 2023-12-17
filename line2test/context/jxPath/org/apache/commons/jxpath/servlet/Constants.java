@@ -1,0 +1,5 @@
+String APPLICATION_SCOPE=Optional["application"]
+String SESSION_SCOPE=Optional["session"]
+String REQUEST_SCOPE=Optional["request"]
+String PAGE_SCOPE=Optional["page"]
+String JXPATH_CONTEXT=Optional["org.apache.commons.jxpath.JXPATH_CONTEXT"]

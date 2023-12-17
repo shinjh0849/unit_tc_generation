@@ -1,0 +1,11 @@
+/pretrained_models
+/finetuned_models
+/ENV_T5
+/data
+/sh/saved_models
+__pycache__/*
+evaluator/__pycache__/*
+evaluator/CodeBLEU/__pycache__/*
+evaluator/CodeBLEU/parser/__pycache__/*
+slurm-*.out
+*.pyc

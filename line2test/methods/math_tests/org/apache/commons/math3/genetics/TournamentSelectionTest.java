@@ -1,0 +1,3 @@
+public DummyChromosome() { [EOL]     this.fitness = counter; [EOL]     counter++; [EOL] } <line_num>: 46,49
+@Test [EOL] public void testSelect() { [EOL]     TournamentSelection ts = new TournamentSelection(2); [EOL]     ElitisticListPopulation pop = new ElitisticListPopulation(100, 0.203); [EOL]     for (int i = 0; i < pop.getPopulationLimit(); i++) { [EOL]         pop.addChromosome(new DummyChromosome()); [EOL]     } [EOL]     for (int i = 0; i < 20; i++) { [EOL]         ChromosomePair pair = ts.select(pop); [EOL]         Assert.assertTrue(pair.getFirst().getFitness() > 0); [EOL]         Assert.assertTrue(pair.getSecond().getFitness() > 0); [EOL]     } [EOL] } <line_num>: 26,41
+public double fitness() { [EOL]     return this.fitness; [EOL] } <line_num>: 51,53

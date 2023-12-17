@@ -1,0 +1,4 @@
+public SqlDateSerializer() { [EOL]     super(java.sql.Date.class); [EOL] } <line_num>: 26,26
+@Override [EOL] public void serialize(java.sql.Date value, JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonGenerationException { [EOL]     jgen.writeString(value.toString()); [EOL] } <line_num>: 28,33
+@Override [EOL] public JsonNode getSchema(SerializerProvider provider, Type typeHint) { [EOL]     return createSchemaNode("string", true); [EOL] } <line_num>: 35,40
+@Override [EOL] public void acceptJsonFormatVisitor(JsonFormatVisitorWrapper visitor, JavaType typeHint) throws JsonMappingException { [EOL]     JsonStringFormatVisitor v2 = (visitor == null) ? null : visitor.expectStringFormat(typeHint); [EOL]     if (v2 != null) { [EOL]         v2.format(JsonValueFormat.DATE_TIME); [EOL]     } [EOL] } <line_num>: 42,50

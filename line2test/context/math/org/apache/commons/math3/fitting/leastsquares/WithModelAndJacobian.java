@@ -1,0 +1,1 @@
+ T withModelAndJacobian(MultivariateVectorFunction model, MultivariateMatrixFunction jacobian)

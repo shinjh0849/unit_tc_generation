@@ -1,0 +1,20 @@
+protected Series(Comparable key) { [EOL]     this(key, null); [EOL] } <line_num>: 103,105
+protected Series(Comparable key, String description) { [EOL]     if (key == null) { [EOL]         throw new IllegalArgumentException("Null 'key' argument."); [EOL]     } [EOL]     this.key = key; [EOL]     this.description = description; [EOL]     this.listeners = new EventListenerList(); [EOL]     this.propertyChangeSupport = new PropertyChangeSupport(this); [EOL]     this.notify = true; [EOL] } <line_num>: 113,122
+public Comparable getKey() { [EOL]     return this.key; [EOL] } <line_num>: 131,133
+public void setKey(Comparable key) { [EOL]     if (key == null) { [EOL]         throw new IllegalArgumentException("Null 'key' argument."); [EOL]     } [EOL]     Comparable old = this.key; [EOL]     this.key = key; [EOL]     this.propertyChangeSupport.firePropertyChange("Key", old, key); [EOL] } <line_num>: 143,150
+public String getDescription() { [EOL]     return this.description; [EOL] } <line_num>: 159,161
+public void setDescription(String description) { [EOL]     String old = this.description; [EOL]     this.description = description; [EOL]     this.propertyChangeSupport.firePropertyChange("Description", old, description); [EOL] } <line_num>: 171,176
+public boolean getNotify() { [EOL]     return this.notify; [EOL] } <line_num>: 186,188
+public void setNotify(boolean notify) { [EOL]     if (this.notify != notify) { [EOL]         this.notify = notify; [EOL]         fireSeriesChanged(); [EOL]     } [EOL] } <line_num>: 198,203
+public boolean isEmpty() { [EOL]     return (getItemCount() == 0); [EOL] } <line_num>: 213,215
+public abstract int getItemCount(); <line_num>: 222,222
+public Object clone() throws CloneNotSupportedException { [EOL]     Series clone = (Series) super.clone(); [EOL]     clone.listeners = new EventListenerList(); [EOL]     clone.propertyChangeSupport = new PropertyChangeSupport(clone); [EOL]     return clone; [EOL] } <line_num>: 241,248
+public boolean equals(Object obj) { [EOL]     if (obj == this) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof Series)) { [EOL]         return false; [EOL]     } [EOL]     Series that = (Series) obj; [EOL]     if (!getKey().equals(that.getKey())) { [EOL]         return false; [EOL]     } [EOL]     if (!ObjectUtilities.equal(getDescription(), that.getDescription())) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 257,272
+public int hashCode() { [EOL]     int result; [EOL]     result = this.key.hashCode(); [EOL]     result = 29 * result + (this.description != null ? this.description.hashCode() : 0); [EOL]     return result; [EOL] } <line_num>: 279,285
+public void addChangeListener(SeriesChangeListener listener) { [EOL]     this.listeners.add(SeriesChangeListener.class, listener); [EOL] } <line_num>: 296,298
+public void removeChangeListener(SeriesChangeListener listener) { [EOL]     this.listeners.remove(SeriesChangeListener.class, listener); [EOL] } <line_num>: 306,308
+public void fireSeriesChanged() { [EOL]     if (this.notify) { [EOL]         notifyListeners(new SeriesChangeEvent(this)); [EOL]     } [EOL] } <line_num>: 314,318
+protected void notifyListeners(SeriesChangeEvent event) { [EOL]     Object[] listenerList = this.listeners.getListenerList(); [EOL]     for (int i = listenerList.length - 2; i >= 0; i -= 2) { [EOL]         if (listenerList[i] == SeriesChangeListener.class) { [EOL]             ((SeriesChangeListener) listenerList[i + 1]).seriesChanged(event); [EOL]         } [EOL]     } [EOL] } <line_num>: 326,336
+public void addPropertyChangeListener(PropertyChangeListener listener) { [EOL]     this.propertyChangeSupport.addPropertyChangeListener(listener); [EOL] } <line_num>: 343,345
+public void removePropertyChangeListener(PropertyChangeListener listener) { [EOL]     this.propertyChangeSupport.removePropertyChangeListener(listener); [EOL] } <line_num>: 352,354
+protected void firePropertyChange(String property, Object oldValue, Object newValue) { [EOL]     this.propertyChangeSupport.firePropertyChange(property, oldValue, newValue); [EOL] } <line_num>: 363,367

@@ -1,0 +1,21 @@
+public AsiExtraField() { [EOL] } <line_num>: 82,83
+public ZipShort getHeaderId() { [EOL]     return HEADER_ID; [EOL] } <line_num>: 89,91
+public ZipShort getLocalFileDataLength() { [EOL]     return new ZipShort(WORD + 2 + WORD + 2 + 2 + getLinkedFile().getBytes().length); [EOL] } <line_num>: 98,105
+public ZipShort getCentralDirectoryLength() { [EOL]     return getLocalFileDataLength(); [EOL] } <line_num>: 111,113
+public byte[] getLocalFileDataData() { [EOL]     byte[] data = new byte[getLocalFileDataLength().getValue() - WORD]; [EOL]     System.arraycopy(ZipShort.getBytes(getMode()), 0, data, 0, 2); [EOL]     byte[] linkArray = getLinkedFile().getBytes(); [EOL]     System.arraycopy(ZipLong.getBytes(linkArray.length), 0, data, 2, WORD); [EOL]     System.arraycopy(ZipShort.getBytes(getUserId()), 0, data, 6, 2); [EOL]     System.arraycopy(ZipShort.getBytes(getGroupId()), 0, data, 8, 2); [EOL]     System.arraycopy(linkArray, 0, data, 10, linkArray.length); [EOL]     crc.reset(); [EOL]     crc.update(data); [EOL]     long checksum = crc.getValue(); [EOL]     byte[] result = new byte[data.length + WORD]; [EOL]     System.arraycopy(ZipLong.getBytes(checksum), 0, result, 0, WORD); [EOL]     System.arraycopy(data, 0, result, WORD, data.length); [EOL]     return result; [EOL] } <line_num>: 120,146
+public byte[] getCentralDirectoryData() { [EOL]     return getLocalFileDataData(); [EOL] } <line_num>: 152,154
+public void setUserId(int uid) { [EOL]     this.uid = uid; [EOL] } <line_num>: 160,162
+public int getUserId() { [EOL]     return uid; [EOL] } <line_num>: 168,170
+public void setGroupId(int gid) { [EOL]     this.gid = gid; [EOL] } <line_num>: 176,178
+public int getGroupId() { [EOL]     return gid; [EOL] } <line_num>: 184,186
+public void setLinkedFile(String name) { [EOL]     link = name; [EOL]     mode = getMode(mode); [EOL] } <line_num>: 194,197
+public String getLinkedFile() { [EOL]     return link; [EOL] } <line_num>: 205,207
+public boolean isLink() { [EOL]     return getLinkedFile().length() != 0; [EOL] } <line_num>: 213,215
+public void setMode(int mode) { [EOL]     this.mode = getMode(mode); [EOL] } <line_num>: 221,223
+public int getMode() { [EOL]     return mode; [EOL] } <line_num>: 229,231
+public void setDirectory(boolean dirFlag) { [EOL]     this.dirFlag = dirFlag; [EOL]     mode = getMode(mode); [EOL] } <line_num>: 237,240
+public boolean isDirectory() { [EOL]     return dirFlag && !isLink(); [EOL] } <line_num>: 246,248
+public void parseFromLocalFileData(byte[] data, int offset, int length) throws ZipException { [EOL]     long givenChecksum = ZipLong.getValue(data, offset); [EOL]     byte[] tmp = new byte[length - WORD]; [EOL]     System.arraycopy(data, offset + WORD, tmp, 0, length - WORD); [EOL]     crc.reset(); [EOL]     crc.update(tmp); [EOL]     long realChecksum = crc.getValue(); [EOL]     if (givenChecksum != realChecksum) { [EOL]         throw new ZipException("bad CRC checksum " + Long.toHexString(givenChecksum) + " instead of " + Long.toHexString(realChecksum)); [EOL]     } [EOL]     int newMode = ZipShort.getValue(tmp, 0); [EOL]     byte[] linkArray = new byte[(int) ZipLong.getValue(tmp, 2)]; [EOL]     uid = ZipShort.getValue(tmp, 6); [EOL]     gid = ZipShort.getValue(tmp, 8); [EOL]     if (linkArray.length == 0) { [EOL]         link = ""; [EOL]     } else { [EOL]         System.arraycopy(tmp, 10, linkArray, 0, linkArray.length); [EOL]         link = new String(linkArray); [EOL]     } [EOL]     setDirectory((newMode & DIR_FLAG) != 0); [EOL]     setMode(newMode); [EOL] } <line_num>: 257,288
+public void parseFromCentralDirectoryData(byte[] buffer, int offset, int length) throws ZipException { [EOL]     parseFromLocalFileData(buffer, offset, length); [EOL] } <line_num>: 294,298
+protected int getMode(int mode) { [EOL]     int type = FILE_FLAG; [EOL]     if (isLink()) { [EOL]         type = LINK_FLAG; [EOL]     } else if (isDirectory()) { [EOL]         type = DIR_FLAG; [EOL]     } [EOL]     return type | (mode & PERM_MASK); [EOL] } <line_num>: 305,313
+public Object clone() { [EOL]     try { [EOL]         AsiExtraField cloned = (AsiExtraField) super.clone(); [EOL]         cloned.crc = new CRC32(); [EOL]         return cloned; [EOL]     } catch (CloneNotSupportedException cnfe) { [EOL]         throw new RuntimeException(cnfe); [EOL]     } [EOL] } <line_num>: 315,324

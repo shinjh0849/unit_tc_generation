@@ -1,0 +1,2 @@
+ RealMatrix getMeasurementMatrix()
+ RealMatrix getMeasurementNoise()

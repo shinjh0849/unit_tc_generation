@@ -1,0 +1,7 @@
+public EnumSetSerializer(JavaType elemType, BeanProperty property) { [EOL]     super(EnumSet.class, elemType, true, null, property, null); [EOL] } <line_num>: 14,17
+public EnumSetSerializer(EnumSetSerializer src, BeanProperty property, TypeSerializer vts, JsonSerializer<?> valueSerializer) { [EOL]     super(src, property, vts, valueSerializer); [EOL] } <line_num>: 19,23
+@Override [EOL] public EnumSetSerializer _withValueTypeSerializer(TypeSerializer vts) { [EOL]     return this; [EOL] } <line_num>: 25,29
+@Override [EOL] public EnumSetSerializer withResolved(BeanProperty property, TypeSerializer vts, JsonSerializer<?> elementSerializer) { [EOL]     return new EnumSetSerializer(this, property, vts, elementSerializer); [EOL] } <line_num>: 31,35
+@Override [EOL] public boolean isEmpty(EnumSet<? extends Enum<?>> value) { [EOL]     return (value == null) || value.isEmpty(); [EOL] } <line_num>: 37,40
+@Override [EOL] public boolean hasSingleElement(EnumSet<? extends Enum<?>> value) { [EOL]     return value.size() == 1; [EOL] } <line_num>: 42,45
+@Override [EOL] public void serializeContents(EnumSet<? extends Enum<?>> value, JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonGenerationException { [EOL]     JsonSerializer<Object> enumSer = _elementSerializer; [EOL]     for (Enum<?> en : value) { [EOL]         if (enumSer == null) { [EOL]             enumSer = provider.findValueSerializer(en.getDeclaringClass(), _property); [EOL]         } [EOL]         enumSer.serialize(en, jgen, provider); [EOL]     } [EOL] } <line_num>: 47,65

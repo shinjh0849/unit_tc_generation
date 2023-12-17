@@ -1,0 +1,8 @@
+private void assertSupportedEncoding(final String name)
+public void testConstructor()
+public void testMustBeSupportedJava1_3_1()
+public void testSupported()
+public void testNotSupported()
+public void testWorksOnJava1_1_8()
+public void testWorksOnJava1_2_2()
+ void warn(final String msg)

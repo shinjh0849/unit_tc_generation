@@ -1,0 +1,8 @@
+public StrokeMapTests(String name)
+public static Test suite()
+public void testGetStroke()
+public void testPut()
+public void testEquals()
+public void testCloning()
+public void testSerialization1()
+public void testSerialization2()

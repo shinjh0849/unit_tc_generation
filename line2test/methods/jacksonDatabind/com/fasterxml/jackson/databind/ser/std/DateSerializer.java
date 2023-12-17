@@ -1,0 +1,5 @@
+public DateSerializer() { [EOL]     this(false, null); [EOL] } <line_num>: 26,28
+public DateSerializer(boolean useTimestamp, DateFormat customFormat) { [EOL]     super(Date.class, useTimestamp, customFormat); [EOL] } <line_num>: 30,32
+@Override [EOL] public DateSerializer withFormat(boolean timestamp, DateFormat customFormat) { [EOL]     if (timestamp) { [EOL]         return new DateSerializer(true, null); [EOL]     } [EOL]     return new DateSerializer(false, customFormat); [EOL] } <line_num>: 34,41
+@Override [EOL] protected long _timestamp(Date value) { [EOL]     return (value == null) ? 0L : value.getTime(); [EOL] } <line_num>: 43,46
+@Override [EOL] public void serialize(Date value, JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonGenerationException { [EOL]     if (_useTimestamp) { [EOL]         jgen.writeNumber(_timestamp(value)); [EOL]     } else if (_customFormat != null) { [EOL]         synchronized (_customFormat) { [EOL]             jgen.writeString(_customFormat.format(value)); [EOL]         } [EOL]     } else { [EOL]         provider.defaultSerializeDateValue(value, jgen); [EOL]     } [EOL] } <line_num>: 48,62

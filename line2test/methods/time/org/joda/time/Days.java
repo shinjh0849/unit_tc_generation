@@ -1,0 +1,26 @@
+private Days(int days) { [EOL]     super(days); [EOL] } <line_num>: 215,217
+public static Days days(int days) { [EOL]     switch(days) { [EOL]         case 0: [EOL]             return ZERO; [EOL]         case 1: [EOL]             return ONE; [EOL]         case 2: [EOL]             return TWO; [EOL]         case 3: [EOL]             return THREE; [EOL]         case 4: [EOL]             return FOUR; [EOL]         case 5: [EOL]             return FIVE; [EOL]         case 6: [EOL]             return SIX; [EOL]         case 7: [EOL]             return SEVEN; [EOL]         case Integer.MAX_VALUE: [EOL]             return MAX_VALUE; [EOL]         case Integer.MIN_VALUE: [EOL]             return MIN_VALUE; [EOL]         default: [EOL]             return new Days(days); [EOL]     } [EOL] } <line_num>: 79,104
+public static Days daysBetween(ReadableInstant start, ReadableInstant end) { [EOL]     int amount = BaseSingleFieldPeriod.between(start, end, DurationFieldType.days()); [EOL]     return Days.days(amount); [EOL] } <line_num>: 117,120
+public static Days daysBetween(ReadablePartial start, ReadablePartial end) { [EOL]     if (start instanceof LocalDate && end instanceof LocalDate) { [EOL]         Chronology chrono = DateTimeUtils.getChronology(start.getChronology()); [EOL]         int days = chrono.days().getDifference(((LocalDate) end).getLocalMillis(), ((LocalDate) start).getLocalMillis()); [EOL]         return Days.days(days); [EOL]     } [EOL]     int amount = BaseSingleFieldPeriod.between(start, end, ZERO); [EOL]     return Days.days(amount); [EOL] } <line_num>: 134,143
+public static Days daysIn(ReadableInterval interval) { [EOL]     if (interval == null) { [EOL]         return Days.ZERO; [EOL]     } [EOL]     int amount = BaseSingleFieldPeriod.between(interval.getStart(), interval.getEnd(), DurationFieldType.days()); [EOL]     return Days.days(amount); [EOL] } <line_num>: 154,160
+public static Days standardDaysIn(ReadablePeriod period) { [EOL]     int amount = BaseSingleFieldPeriod.standardPeriodIn(period, DateTimeConstants.MILLIS_PER_DAY); [EOL]     return Days.days(amount); [EOL] } <line_num>: 182,185
+@FromString [EOL] public static Days parseDays(String periodStr) { [EOL]     if (periodStr == null) { [EOL]         return Days.ZERO; [EOL]     } [EOL]     Period p = PARSER.parsePeriod(periodStr); [EOL]     return Days.days(p.getDays()); [EOL] } <line_num>: 198,205
+private Object readResolve() { [EOL]     return Days.days(getValue()); [EOL] } <line_num>: 224,226
+public DurationFieldType getFieldType() { [EOL]     return DurationFieldType.days(); [EOL] } <line_num>: 234,236
+public PeriodType getPeriodType() { [EOL]     return PeriodType.days(); [EOL] } <line_num>: 243,245
+public Weeks toStandardWeeks() { [EOL]     return Weeks.weeks(getValue() / DateTimeConstants.DAYS_PER_WEEK); [EOL] } <line_num>: 260,262
+public Hours toStandardHours() { [EOL]     return Hours.hours(FieldUtils.safeMultiply(getValue(), DateTimeConstants.HOURS_PER_DAY)); [EOL] } <line_num>: 277,279
+public Minutes toStandardMinutes() { [EOL]     return Minutes.minutes(FieldUtils.safeMultiply(getValue(), DateTimeConstants.MINUTES_PER_DAY)); [EOL] } <line_num>: 295,297
+public Seconds toStandardSeconds() { [EOL]     return Seconds.seconds(FieldUtils.safeMultiply(getValue(), DateTimeConstants.SECONDS_PER_DAY)); [EOL] } <line_num>: 313,315
+public Duration toStandardDuration() { [EOL]     long days = getValue(); [EOL]     return new Duration(days * DateTimeConstants.MILLIS_PER_DAY); [EOL] } <line_num>: 331,334
+public int getDays() { [EOL]     return getValue(); [EOL] } <line_num>: 342,344
+public Days plus(int days) { [EOL]     if (days == 0) { [EOL]         return this; [EOL]     } [EOL]     return Days.days(FieldUtils.safeAdd(getValue(), days)); [EOL] } <line_num>: 356,361
+public Days plus(Days days) { [EOL]     if (days == null) { [EOL]         return this; [EOL]     } [EOL]     return plus(days.getValue()); [EOL] } <line_num>: 372,377
+public Days minus(int days) { [EOL]     return plus(FieldUtils.safeNegate(days)); [EOL] } <line_num>: 389,391
+public Days minus(Days days) { [EOL]     if (days == null) { [EOL]         return this; [EOL]     } [EOL]     return minus(days.getValue()); [EOL] } <line_num>: 402,407
+public Days multipliedBy(int scalar) { [EOL]     return Days.days(FieldUtils.safeMultiply(getValue(), scalar)); [EOL] } <line_num>: 419,421
+public Days dividedBy(int divisor) { [EOL]     if (divisor == 1) { [EOL]         return this; [EOL]     } [EOL]     return Days.days(getValue() / divisor); [EOL] } <line_num>: 433,438
+public Days negated() { [EOL]     return Days.days(FieldUtils.safeNegate(getValue())); [EOL] } <line_num>: 447,449
+public boolean isGreaterThan(Days other) { [EOL]     if (other == null) { [EOL]         return getValue() > 0; [EOL]     } [EOL]     return getValue() > other.getValue(); [EOL] } <line_num>: 458,463
+public boolean isLessThan(Days other) { [EOL]     if (other == null) { [EOL]         return getValue() < 0; [EOL]     } [EOL]     return getValue() < other.getValue(); [EOL] } <line_num>: 471,476
+@ToString [EOL] public String toString() { [EOL]     return "P" + String.valueOf(getValue()) + "D"; [EOL] } <line_num>: 486,489

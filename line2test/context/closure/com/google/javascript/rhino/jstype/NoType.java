@@ -1,0 +1,13 @@
+ NoType(JSTypeRegistry registry)
+public boolean isNoObjectType()
+public boolean isNoType()
+public boolean isNullable()
+public boolean isSubtype(JSType that)
+public BooleanLiteralSet getPossibleToBooleanOutcomes()
+public boolean matchesNumberContext()
+public boolean matchesObjectContext()
+public boolean matchesStringContext()
+public T visit(Visitor<T> visitor)
+ T visit(RelationshipVisitor<T> visitor, JSType that)
+ String toStringHelper(boolean forAnnotations)
+long serialVersionUID=Optional[1L]

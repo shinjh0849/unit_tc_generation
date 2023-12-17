@@ -1,0 +1,2 @@
+@Override [EOL] protected Object initialize() throws ConcurrentException { [EOL]     return new Object(); [EOL] } <line_num>: 33,36
+@Override [EOL] protected ConcurrentInitializer<Object> createInitializer() { [EOL]     return new AtomicInitializer<Object>() { [EOL]  [EOL]         @Override [EOL]         protected Object initialize() throws ConcurrentException { [EOL]             return new Object(); [EOL]         } [EOL]     }; [EOL] } <line_num>: 30,38

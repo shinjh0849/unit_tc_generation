@@ -1,0 +1,5 @@
+private HistogramType(String name) { [EOL]     this.name = name; [EOL] } <line_num>: 75,77
+public String toString() { [EOL]     return this.name; [EOL] } <line_num>: 84,86
+public boolean equals(Object obj) { [EOL]     if (obj == null) { [EOL]         return false; [EOL]     } [EOL]     if (obj == this) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof HistogramType)) { [EOL]         return false; [EOL]     } [EOL]     HistogramType t = (HistogramType) obj; [EOL]     if (!this.name.equals(t.name)) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 95,116
+public int hashCode() { [EOL]     return this.name.hashCode(); [EOL] } <line_num>: 123,125
+private Object readResolve() throws ObjectStreamException { [EOL]     if (this.equals(HistogramType.FREQUENCY)) { [EOL]         return HistogramType.FREQUENCY; [EOL]     } else if (this.equals(HistogramType.RELATIVE_FREQUENCY)) { [EOL]         return HistogramType.RELATIVE_FREQUENCY; [EOL]     } else if (this.equals(HistogramType.SCALE_AREA_TO_1)) { [EOL]         return HistogramType.SCALE_AREA_TO_1; [EOL]     } [EOL]     return null; [EOL] } <line_num>: 134,145

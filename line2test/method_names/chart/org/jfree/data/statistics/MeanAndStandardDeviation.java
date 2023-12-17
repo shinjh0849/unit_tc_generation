@@ -1,0 +1,8 @@
+public MeanAndStandardDeviation(double mean, double standardDeviation)
+public MeanAndStandardDeviation(Number mean, Number standardDeviation)
+public Number getMean()
+public double getMeanValue()
+public Number getStandardDeviation()
+public double getStandardDeviationValue()
+public boolean equals(Object obj)
+public String toString()

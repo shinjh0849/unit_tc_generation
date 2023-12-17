@@ -1,0 +1,6 @@
+ TypedCodeGenerator(CodeConsumer consumer, CompilerOptions options)
+ void add(Node n, Context context)
+private String getTypeAnnotation(Node node)
+private String getFunctionAnnotation(Node fnNode)
+private void appendAnnotation(StringBuilder sb, String name, String type)
+private String getParameterNodeJSDocType(Node parameterNode)

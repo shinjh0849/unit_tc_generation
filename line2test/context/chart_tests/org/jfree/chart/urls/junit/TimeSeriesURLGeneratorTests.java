@@ -1,0 +1,6 @@
+public TimeSeriesURLGeneratorTests(String name)
+public static Test suite()
+public void testGenerateURL()
+public void testEquals()
+public void testSerialization()
+public void testPublicCloneable()

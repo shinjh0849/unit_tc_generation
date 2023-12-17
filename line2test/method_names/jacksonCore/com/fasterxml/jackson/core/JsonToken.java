@@ -1,0 +1,6 @@
+ JsonToken(String token)
+public String asString()
+public char[] asCharArray()
+public byte[] asByteArray()
+public boolean isNumeric()
+public boolean isScalarValue()

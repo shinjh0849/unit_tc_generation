@@ -1,0 +1,3 @@
+public ArchiveInputStream createArchiveInputStream(final String archiverName, final InputStream in) throws ArchiveException
+public ArchiveOutputStream createArchiveOutputStream(final String archiverName, final OutputStream out) throws ArchiveException
+public ArchiveInputStream createArchiveInputStream(final InputStream in) throws ArchiveException

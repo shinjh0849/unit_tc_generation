@@ -1,0 +1,2 @@
+public IgnoredType(IgnoredType src) { [EOL] } <line_num>: 20,20
+public void testIgnoredType() throws Exception { [EOL]     ObjectMapper mapper = new ObjectMapper(); [EOL]     NonIgnoredType bean = mapper.readValue("{\"value\":13}", NonIgnoredType.class); [EOL]     assertNotNull(bean); [EOL]     assertEquals(13, bean.value); [EOL]     bean = mapper.readValue("{ \"ignored\":[1,2,{}], \"value\":9 }", NonIgnoredType.class); [EOL]     assertNotNull(bean); [EOL]     assertEquals(9, bean.value); [EOL] } <line_num>: 36,48

@@ -1,0 +1,7 @@
+public DefaultValueDataset()
+public DefaultValueDataset(double value)
+public DefaultValueDataset(Number value)
+public Number getValue()
+public void setValue(Number value)
+public boolean equals(Object obj)
+public int hashCode()

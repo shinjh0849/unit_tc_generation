@@ -1,0 +1,7 @@
+public QuarterDateFormat()
+public QuarterDateFormat(TimeZone zone)
+public QuarterDateFormat(TimeZone zone, String[] quarterSymbols)
+public QuarterDateFormat(TimeZone zone, String[] quarterSymbols, boolean quarterFirst)
+public StringBuffer format(Date date, StringBuffer toAppendTo, FieldPosition fieldPosition)
+public Date parse(String source, ParsePosition pos)
+public boolean equals(Object obj)

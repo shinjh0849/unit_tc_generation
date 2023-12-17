@@ -1,0 +1,6 @@
+public AxisCollection() { [EOL]     this.axesAtTop = new java.util.ArrayList(); [EOL]     this.axesAtBottom = new java.util.ArrayList(); [EOL]     this.axesAtLeft = new java.util.ArrayList(); [EOL]     this.axesAtRight = new java.util.ArrayList(); [EOL] } <line_num>: 69,74
+public List getAxesAtTop() { [EOL]     return this.axesAtTop; [EOL] } <line_num>: 82,84
+public List getAxesAtBottom() { [EOL]     return this.axesAtBottom; [EOL] } <line_num>: 92,94
+public List getAxesAtLeft() { [EOL]     return this.axesAtLeft; [EOL] } <line_num>: 102,104
+public List getAxesAtRight() { [EOL]     return this.axesAtRight; [EOL] } <line_num>: 112,114
+public void add(Axis axis, RectangleEdge edge) { [EOL]     if (axis == null) { [EOL]         throw new IllegalArgumentException("Null 'axis' argument."); [EOL]     } [EOL]     if (edge == null) { [EOL]         throw new IllegalArgumentException("Null 'edge' argument."); [EOL]     } [EOL]     if (edge == RectangleEdge.TOP) { [EOL]         this.axesAtTop.add(axis); [EOL]     } else if (edge == RectangleEdge.BOTTOM) { [EOL]         this.axesAtBottom.add(axis); [EOL]     } else if (edge == RectangleEdge.LEFT) { [EOL]         this.axesAtLeft.add(axis); [EOL]     } else if (edge == RectangleEdge.RIGHT) { [EOL]         this.axesAtRight.add(axis); [EOL]     } [EOL] } <line_num>: 123,142

@@ -1,0 +1,10 @@
+public Std(InputStream in, byte[] buffer) { [EOL]     _in = in; [EOL]     _buffer = buffer; [EOL]     _bufferedStart = 0; [EOL]     _ptr = 0; [EOL]     _bufferedEnd = 0; [EOL] } <line_num>: 64,71
+public Std(byte[] inputDocument) { [EOL]     _in = null; [EOL]     _buffer = inputDocument; [EOL]     _bufferedStart = 0; [EOL]     _bufferedEnd = inputDocument.length; [EOL] } <line_num>: 77,84
+public Std(byte[] inputDocument, int start, int len) { [EOL]     _in = null; [EOL]     _buffer = inputDocument; [EOL]     _ptr = start; [EOL]     _bufferedStart = start; [EOL]     _bufferedEnd = start + len; [EOL] } <line_num>: 92,99
+boolean hasMoreBytes() throws IOException; <line_num>: 18,18
+byte nextByte() throws IOException; <line_num>: 24,24
+void reset(); <line_num>: 30,30
+@Override [EOL] public boolean hasMoreBytes() throws IOException { [EOL]     if (_ptr < _bufferedEnd) { [EOL]         return true; [EOL]     } [EOL]     if (_in == null) { [EOL]         return false; [EOL]     } [EOL]     int amount = _buffer.length - _ptr; [EOL]     if (amount < 1) { [EOL]         return false; [EOL]     } [EOL]     int count = _in.read(_buffer, _ptr, amount); [EOL]     if (count <= 0) { [EOL]         return false; [EOL]     } [EOL]     _bufferedEnd += count; [EOL]     return true; [EOL] } <line_num>: 101,120
+@Override [EOL] public byte nextByte() throws IOException { [EOL]     if (_ptr >= _bufferedEnd) { [EOL]         if (!hasMoreBytes()) { [EOL]             throw new EOFException("Failed auto-detect: could not read more than " + _ptr + " bytes (max buffer size: " + _buffer.length + ")"); [EOL]         } [EOL]     } [EOL]     return _buffer[_ptr++]; [EOL] } <line_num>: 122,132
+@Override [EOL] public void reset() { [EOL]     _ptr = _bufferedStart; [EOL] } <line_num>: 134,137
+public DataFormatMatcher createMatcher(JsonFactory match, MatchStrength matchStrength) { [EOL]     return new DataFormatMatcher(_in, _buffer, _bufferedStart, (_bufferedEnd - _bufferedStart), match, matchStrength); [EOL] } <line_num>: 145,149

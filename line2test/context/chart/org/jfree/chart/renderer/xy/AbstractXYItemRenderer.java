@@ -1,0 +1,77 @@
+protected AbstractXYItemRenderer()
+public int getPassCount()
+public XYPlot getPlot()
+public void setPlot(XYPlot plot)
+protected XYItemRendererState createState(PlotRenderingInfo info)
+public XYItemRendererState initialise(Graphics2D g2, Rectangle2D dataArea, XYPlot plot, XYDataset dataset, PlotRenderingInfo info)
+public XYItemLabelGenerator getItemLabelGenerator(int series, int item, boolean selected)
+public XYItemLabelGenerator getSeriesItemLabelGenerator(int series)
+public void setSeriesItemLabelGenerator(int series, XYItemLabelGenerator generator)
+public void setSeriesItemLabelGenerator(int series, XYItemLabelGenerator generator, boolean notify)
+public XYItemLabelGenerator getBaseItemLabelGenerator()
+public void setBaseItemLabelGenerator(XYItemLabelGenerator generator)
+public void setBaseItemLabelGenerator(XYItemLabelGenerator generator, boolean notify)
+public XYToolTipGenerator getToolTipGenerator(int series, int item, boolean selected)
+public XYToolTipGenerator getSeriesToolTipGenerator(int series)
+public void setSeriesToolTipGenerator(int series, XYToolTipGenerator generator)
+public void setSeriesToolTipGenerator(int series, XYToolTipGenerator generator, boolean notify)
+public XYToolTipGenerator getBaseToolTipGenerator()
+public void setBaseToolTipGenerator(XYToolTipGenerator generator)
+public void setBaseToolTipGenerator(XYToolTipGenerator generator, boolean notify)
+public XYURLGenerator getURLGenerator(int series, int item, boolean selected)
+public XYURLGenerator getSeriesURLGenerator(int series)
+public void setSeriesURLGenerator(int series, XYURLGenerator generator)
+public void setSeriesURLGenerator(int series, XYURLGenerator generator, boolean notify)
+public XYURLGenerator getBaseURLGenerator()
+public void setBaseURLGenerator(XYURLGenerator generator)
+public void setBaseURLGenerator(XYURLGenerator generator, boolean notify)
+public void addAnnotation(XYAnnotation annotation)
+public void addAnnotation(XYAnnotation annotation, Layer layer)
+public boolean removeAnnotation(XYAnnotation annotation)
+public void removeAnnotations()
+public void annotationChanged(AnnotationChangeEvent event)
+public Collection getAnnotations()
+public XYSeriesLabelGenerator getLegendItemLabelGenerator()
+public void setLegendItemLabelGenerator(XYSeriesLabelGenerator generator)
+public XYSeriesLabelGenerator getLegendItemToolTipGenerator()
+public void setLegendItemToolTipGenerator(XYSeriesLabelGenerator generator)
+public XYSeriesLabelGenerator getLegendItemURLGenerator()
+public void setLegendItemURLGenerator(XYSeriesLabelGenerator generator)
+public Range findDomainBounds(XYDataset dataset)
+protected Range findDomainBounds(XYDataset dataset, boolean includeInterval)
+public Range findRangeBounds(XYDataset dataset)
+protected Range findRangeBounds(XYDataset dataset, boolean includeInterval)
+public LegendItemCollection getLegendItems()
+public LegendItem getLegendItem(int datasetIndex, int series)
+public Rectangle2D createHotSpotBounds(Graphics2D g2, Rectangle2D dataArea, XYPlot plot, ValueAxis domainAxis, ValueAxis rangeAxis, XYDataset dataset, int series, int item, boolean selected, XYItemRendererState state, Rectangle2D result)
+public Shape createHotSpotShape(Graphics2D g2, Rectangle2D dataArea, XYPlot plot, ValueAxis domainAxis, ValueAxis rangeAxis, XYDataset dataset, int series, int item, XYItemRendererState state, boolean selected)
+public boolean hitTest(double xx, double yy, Graphics2D g2, Rectangle2D dataArea, XYPlot plot, ValueAxis domainAxis, ValueAxis rangeAxis, XYDataset dataset, int series, int item, XYItemRendererState state, boolean selected)
+public void fillDomainGridBand(Graphics2D g2, XYPlot plot, ValueAxis axis, Rectangle2D dataArea, double start, double end)
+public void fillRangeGridBand(Graphics2D g2, XYPlot plot, ValueAxis axis, Rectangle2D dataArea, double start, double end)
+public void drawDomainGridLine(Graphics2D g2, XYPlot plot, ValueAxis axis, Rectangle2D dataArea, double value)
+public void drawDomainLine(Graphics2D g2, XYPlot plot, ValueAxis axis, Rectangle2D dataArea, double value, Paint paint, Stroke stroke)
+public void drawRangeLine(Graphics2D g2, XYPlot plot, ValueAxis axis, Rectangle2D dataArea, double value, Paint paint, Stroke stroke)
+public void drawDomainMarker(Graphics2D g2, XYPlot plot, ValueAxis domainAxis, Marker marker, Rectangle2D dataArea)
+protected Point2D calculateDomainMarkerTextAnchorPoint(Graphics2D g2, PlotOrientation orientation, Rectangle2D dataArea, Rectangle2D markerArea, RectangleInsets markerOffset, LengthAdjustmentType labelOffsetType, RectangleAnchor anchor)
+public void drawRangeMarker(Graphics2D g2, XYPlot plot, ValueAxis rangeAxis, Marker marker, Rectangle2D dataArea)
+private Point2D calculateRangeMarkerTextAnchorPoint(Graphics2D g2, PlotOrientation orientation, Rectangle2D dataArea, Rectangle2D markerArea, RectangleInsets markerOffset, LengthAdjustmentType labelOffsetForRange, RectangleAnchor anchor)
+protected Object clone() throws CloneNotSupportedException
+public boolean equals(Object obj)
+public DrawingSupplier getDrawingSupplier()
+protected void updateCrosshairValues(CrosshairState crosshairState, double x, double y, int domainAxisIndex, int rangeAxisIndex, double transX, double transY, PlotOrientation orientation)
+protected void drawItemLabel(Graphics2D g2, PlotOrientation orientation, XYDataset dataset, int series, int item, boolean selected, double x, double y, boolean negative)
+public void drawAnnotations(Graphics2D g2, Rectangle2D dataArea, ValueAxis domainAxis, ValueAxis rangeAxis, Layer layer, PlotRenderingInfo info)
+protected void addEntity(EntityCollection entities, Shape area, XYDataset dataset, int series, int item, boolean selected, double entityX, double entityY)
+long serialVersionUID=Optional[8019124836026607990L]
+XYPlot plot
+ObjectList itemLabelGeneratorList
+XYItemLabelGenerator baseItemLabelGenerator
+ObjectList toolTipGeneratorList
+XYToolTipGenerator baseToolTipGenerator
+ObjectList urlGeneratorList
+XYURLGenerator baseURLGenerator
+List backgroundAnnotations
+List foregroundAnnotations
+XYSeriesLabelGenerator legendItemLabelGenerator
+XYSeriesLabelGenerator legendItemToolTipGenerator
+XYSeriesLabelGenerator legendItemURLGenerator

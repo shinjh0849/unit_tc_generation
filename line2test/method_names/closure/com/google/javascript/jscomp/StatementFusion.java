@@ -1,0 +1,6 @@
+ Node optimizeSubtree(Node n)
+private boolean canFuseIntoOneStatement(Node block)
+private void fuseIntoOneStatement(Node block)
+private static Node fuseExpressionIntoExpression(Node exp1, Node exp2)
+private static void fuseExpresssonIntoFirstChild(Node exp, Node stmt)
+private static void fuseExpresssonIntoSecondChild(Node exp, Node stmt)

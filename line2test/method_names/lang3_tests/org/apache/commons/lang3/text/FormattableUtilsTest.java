@@ -1,0 +1,5 @@
+public void testDefaultAppend()
+public void testAlternatePadCharacter()
+public void testEllipsis()
+public void testIllegalEllipsis()
+public void testAlternatePadCharAndEllipsis()

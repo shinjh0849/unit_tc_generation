@@ -1,0 +1,1 @@
+public AlreadySelectedException(String message)

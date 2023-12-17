@@ -1,0 +1,7 @@
+public QName(String qualifiedName) { [EOL]     int index = qualifiedName.indexOf(':'); [EOL]     if (index == -1) { [EOL]         prefix = null; [EOL]         name = qualifiedName; [EOL]     } else { [EOL]         prefix = qualifiedName.substring(0, index); [EOL]         name = qualifiedName.substring(index + 1); [EOL]     } [EOL] } <line_num>: 31,41
+public QName(String prefix, String localName) { [EOL]     this.prefix = prefix; [EOL]     this.name = localName; [EOL] } <line_num>: 43,46
+public String getPrefix() { [EOL]     return prefix; [EOL] } <line_num>: 48,50
+public String getName() { [EOL]     return name; [EOL] } <line_num>: 52,54
+public String toString() { [EOL]     if (prefix != null) { [EOL]         return prefix + ':' + name; [EOL]     } [EOL]     return name; [EOL] } <line_num>: 56,61
+public int hashCode() { [EOL]     return name.hashCode(); [EOL] } <line_num>: 63,65
+public boolean equals(Object object) { [EOL]     if (!(object instanceof QName)) { [EOL]         return false; [EOL]     } [EOL]     if (this == object) { [EOL]         return true; [EOL]     } [EOL]     QName that = (QName) object; [EOL]     if (!this.name.equals(that.name)) { [EOL]         return false; [EOL]     } [EOL]     if ((this.prefix == null && that.prefix != null) || (this.prefix != null && !this.prefix.equals(that.prefix))) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 67,85

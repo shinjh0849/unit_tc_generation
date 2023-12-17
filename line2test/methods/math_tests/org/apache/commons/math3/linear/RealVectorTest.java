@@ -1,0 +1,26 @@
+@Override [EOL] public RealVector create(final double[] data) { [EOL]     return new RealVectorTestImpl(data); [EOL] } <line_num>: 32,35
+@Test [EOL] @Ignore("Abstract class RealVector does not implement append(RealVector).") [EOL] @Override [EOL] public void testAppendVector() { [EOL] } <line_num>: 37,42
+@Test [EOL] @Ignore("Abstract class RealVector does not implement append(double)") [EOL] @Override [EOL] public void testAppendScalar() { [EOL] } <line_num>: 44,49
+@Test [EOL] @Ignore("Abstract class RealVector does not implement getSubvector(int, int)") [EOL] @Override [EOL] public void testGetSubVector() { [EOL] } <line_num>: 51,56
+@Test [EOL] @Ignore("Abstract class RealVector does not implement getSubvector(int, int)") [EOL] @Override [EOL] public void testGetSubVectorInvalidIndex1() { [EOL] } <line_num>: 58,63
+@Test [EOL] @Ignore("Abstract class RealVector does not implement getSubvector(int, int)") [EOL] @Override [EOL] public void testGetSubVectorInvalidIndex2() { [EOL] } <line_num>: 65,70
+@Test [EOL] @Ignore("Abstract class RealVector does not implement getSubvector(int, int)") [EOL] @Override [EOL] public void testGetSubVectorInvalidIndex3() { [EOL] } <line_num>: 72,77
+@Test [EOL] @Ignore("Abstract class RealVector does not implement getSubvector(int, int)") [EOL] @Override [EOL] public void testGetSubVectorInvalidIndex4() { [EOL] } <line_num>: 79,84
+@Test [EOL] @Ignore("Abstract class RealVector does not implement setSubvector(int, RealVector)") [EOL] @Override [EOL] public void testSetSubVectorSameType() { [EOL] } <line_num>: 86,91
+@Test [EOL] @Ignore("Abstract class RealVector does not implement setSubvector(int, RealVector)") [EOL] @Override [EOL] public void testSetSubVectorMixedType() { [EOL] } <line_num>: 93,98
+@Test [EOL] @Ignore("Abstract class RealVector does not implement setSubvector(int, RealVector)") [EOL] @Override [EOL] public void testSetSubVectorInvalidIndex1() { [EOL] } <line_num>: 100,105
+@Test [EOL] @Ignore("Abstract class RealVector does not implement setSubvector(int, RealVector)") [EOL] @Override [EOL] public void testSetSubVectorInvalidIndex2() { [EOL] } <line_num>: 107,112
+@Test [EOL] @Ignore("Abstract class RealVector does not implement setSubvector(int, RealVector)") [EOL] @Override [EOL] public void testSetSubVectorInvalidIndex3() { [EOL] } <line_num>: 114,119
+@Test [EOL] @Ignore("Abstract class RealVector does not implement isNaN()") [EOL] @Override [EOL] public void testIsNaN() { [EOL] } <line_num>: 121,126
+@Test [EOL] @Ignore("Abstract class RealVector does not implement isNaN()") [EOL] @Override [EOL] public void testIsInfinite() { [EOL] } <line_num>: 128,133
+@Test [EOL] @Ignore("Abstract class RealVector does not implement ebeMultiply(RealVector)") [EOL] @Override [EOL] public void testEbeMultiplySameType() { [EOL] } <line_num>: 135,140
+@Test [EOL] @Ignore("Abstract class RealVector does not implement ebeMultiply(RealVector)") [EOL] @Override [EOL] public void testEbeMultiplyMixedTypes() { [EOL] } <line_num>: 142,147
+@Test [EOL] @Ignore("Abstract class RealVector does not implement ebeMultiply(RealVector)") [EOL] @Override [EOL] public void testEbeMultiplyDimensionMismatch() { [EOL] } <line_num>: 149,154
+@Test [EOL] @Ignore("Abstract class RealVector does not implement ebeDivide(RealVector)") [EOL] @Override [EOL] public void testEbeDivideSameType() { [EOL] } <line_num>: 156,161
+@Test [EOL] @Ignore("Abstract class RealVector does not implement ebeDivide(RealVector)") [EOL] @Override [EOL] public void testEbeDivideMixedTypes() { [EOL] } <line_num>: 163,168
+@Test [EOL] @Ignore("Abstract class RealVector does not implement ebeDivide(RealVector)") [EOL] @Override [EOL] public void testEbeDivideDimensionMismatch() { [EOL] } <line_num>: 170,175
+@Test [EOL] @Ignore("Abstract class RealVector does not implement getL1Norm()") [EOL] @Override [EOL] public void testGetL1Norm() { [EOL] } <line_num>: 177,182
+@Test [EOL] @Ignore("Abstract class RealVector does not implement getLInfNorm()") [EOL] @Override [EOL] public void testGetLInfNorm() { [EOL] } <line_num>: 184,189
+@Test [EOL] public void testSparseIterator() { [EOL]     final double x = getPreferredEntryValue(); [EOL]     final double[] data = { x, x + 1d, x, x, x + 2d, x + 3d, x + 4d, x, x, x, x + 5d, x + 6d, x }; [EOL]     RealVector v = create(data); [EOL]     Entry e; [EOL]     int i = 0; [EOL]     final double[] nonDefault = { x + 1d, x + 2d, x + 3d, x + 4d, x + 5d, x + 6d }; [EOL]     for (Iterator<Entry> it = v.sparseIterator(); it.hasNext(); i++) { [EOL]         e = it.next(); [EOL]         Assert.assertEquals(nonDefault[i], e.getValue(), 0); [EOL]     } [EOL]     double[] onlyOne = { x, x + 1d, x }; [EOL]     v = create(onlyOne); [EOL]     for (Iterator<Entry> it = v.sparseIterator(); it.hasNext(); ) { [EOL]         e = it.next(); [EOL]         Assert.assertEquals(onlyOne[1], e.getValue(), 0); [EOL]     } [EOL] } <line_num>: 191,218
+@Test [EOL] @Ignore("Abstract class RealVector is not serializable.") [EOL] @Override [EOL] public void testSerial() { [EOL] } <line_num>: 220,225
+@Test [EOL] @Ignore("Abstract class RealVector does not override equals(Object).") [EOL] @Override [EOL] public void testEquals() { [EOL] } <line_num>: 227,232

@@ -1,0 +1,7 @@
+ NameAnonymousFunctions(AbstractCompiler compiler)
+ AnonymousFunctionNamer()
+public void process(Node externs, Node root)
+private String getLikelyNonConflictingName(String name)
+public final String getName(Node node)
+public final void setFunctionName(String name, Node fnNode)
+public final String getCombinedName(String lhs, String rhs)

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/defects4j" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/defects4j/Chart1f" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/defects4j/Cli1f" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/defects4j/Closure1f" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/defects4j/Codec1f" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/defects4j/Compress1f" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/defects4j/Csv1f" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/defects4j/Gson1f" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/defects4j/JacksonCore1f" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/defects4j/JacksonDatabind1f" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/defects4j/Jsoup1f" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/defects4j/JxPath1f" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/defects4j/Lang1f" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/defects4j/Time1f" vcs="Git" />
+  </component>
+</project>

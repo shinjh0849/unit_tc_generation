@@ -1,0 +1,2 @@
+ CircularReferenceException(Object offendingNode)
+public IllegalStateException createDetailedException(FieldAttributes offendingField)

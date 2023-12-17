@@ -1,0 +1,13 @@
+ NullType(JSTypeRegistry registry)
+public boolean isNullType()
+public boolean isNullable()
+public boolean matchesNumberContext()
+public boolean matchesObjectContext()
+public boolean matchesStringContext()
+public JSType restrictByNotNullOrUndefined()
+public TernaryValue testForEquality(JSType that)
+ String toStringHelper(boolean forAnnotations)
+public String getDisplayName()
+public BooleanLiteralSet getPossibleToBooleanOutcomes()
+public T visit(Visitor<T> visitor)
+long serialVersionUID=Optional[1L]

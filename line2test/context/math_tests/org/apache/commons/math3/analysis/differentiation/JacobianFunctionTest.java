@@ -1,0 +1,5 @@
+public SphereMapping(final double radius)
+public void testSphere()
+public double[] value(double[] point)
+public DerivativeStructure[] value(DerivativeStructure[] point)
+public double[][] jacobian(double[] point)

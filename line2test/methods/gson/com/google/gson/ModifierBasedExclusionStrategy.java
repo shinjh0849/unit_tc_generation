@@ -1,0 +1,3 @@
+public ModifierBasedExclusionStrategy(int... modifiers) { [EOL]     this.modifiers = new HashSet<Integer>(); [EOL]     if (modifiers != null) { [EOL]         for (int modifier : modifiers) { [EOL]             this.modifiers.add(modifier); [EOL]         } [EOL]     } [EOL] } <line_num>: 32,39
+public boolean shouldSkipField(FieldAttributes f) { [EOL]     for (int modifier : modifiers) { [EOL]         if (f.hasModifier(modifier)) { [EOL]             return true; [EOL]         } [EOL]     } [EOL]     return false; [EOL] } <line_num>: 41,48
+public boolean shouldSkipClass(Class<?> clazz) { [EOL]     return false; [EOL] } <line_num>: 50,52

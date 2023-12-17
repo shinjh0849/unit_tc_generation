@@ -1,0 +1,15 @@
+public XYLine3DRenderer()
+public double getXOffset()
+public double getYOffset()
+public void setXOffset(double xOffset)
+public void setYOffset(double yOffset)
+public Paint getWallPaint()
+public void setWallPaint(Paint paint)
+public int getPassCount()
+protected boolean isLinePass(int pass)
+protected boolean isItemPass(int pass)
+protected boolean isShadowPass(int pass)
+protected void drawShape1(Graphics2D g2, int pass, int series, int item, boolean selected, Shape shape)
+public boolean equals(Object obj)
+private void readObject(ObjectInputStream stream) throws IOException, ClassNotFoundException
+private void writeObject(ObjectOutputStream stream) throws IOException

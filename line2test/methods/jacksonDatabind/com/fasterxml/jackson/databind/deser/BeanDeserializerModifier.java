@@ -1,0 +1,10 @@
+public List<BeanPropertyDefinition> updateProperties(DeserializationConfig config, BeanDescription beanDesc, List<BeanPropertyDefinition> propDefs) { [EOL]     return propDefs; [EOL] } <line_num>: 59,62
+public BeanDeserializerBuilder updateBuilder(DeserializationConfig config, BeanDescription beanDesc, BeanDeserializerBuilder builder) { [EOL]     return builder; [EOL] } <line_num>: 72,75
+public JsonDeserializer<?> modifyDeserializer(DeserializationConfig config, BeanDescription beanDesc, JsonDeserializer<?> deserializer) { [EOL]     return deserializer; [EOL] } <line_num>: 85,88
+public JsonDeserializer<?> modifyArrayDeserializer(DeserializationConfig config, ArrayType valueType, BeanDescription beanDesc, JsonDeserializer<?> deserializer) { [EOL]     return deserializer; [EOL] } <line_num>: 113,116
+public JsonDeserializer<?> modifyCollectionDeserializer(DeserializationConfig config, CollectionType type, BeanDescription beanDesc, JsonDeserializer<?> deserializer) { [EOL]     return deserializer; [EOL] } <line_num>: 121,124
+public JsonDeserializer<?> modifyCollectionLikeDeserializer(DeserializationConfig config, CollectionLikeType type, BeanDescription beanDesc, JsonDeserializer<?> deserializer) { [EOL]     return deserializer; [EOL] } <line_num>: 129,132
+public JsonDeserializer<?> modifyMapDeserializer(DeserializationConfig config, MapType type, BeanDescription beanDesc, JsonDeserializer<?> deserializer) { [EOL]     return deserializer; [EOL] } <line_num>: 137,140
+public JsonDeserializer<?> modifyMapLikeDeserializer(DeserializationConfig config, MapLikeType type, BeanDescription beanDesc, JsonDeserializer<?> deserializer) { [EOL]     return deserializer; [EOL] } <line_num>: 145,148
+public JsonDeserializer<?> modifyEnumDeserializer(DeserializationConfig config, JavaType type, BeanDescription beanDesc, JsonDeserializer<?> deserializer) { [EOL]     return deserializer; [EOL] } <line_num>: 153,156
+public KeyDeserializer modifyKeyDeserializer(DeserializationConfig config, JavaType type, KeyDeserializer deserializer) { [EOL]     return deserializer; [EOL] } <line_num>: 167,170

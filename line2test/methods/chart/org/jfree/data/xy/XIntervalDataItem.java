@@ -1,0 +1,5 @@
+public XIntervalDataItem(double x, double xLow, double xHigh, double y) { [EOL]     super(new Double(x), new YWithXInterval(y, xLow, xHigh)); [EOL] } <line_num>: 60,62
+public Number getX() { [EOL]     return (Number) getComparable(); [EOL] } <line_num>: 69,71
+public double getYValue() { [EOL]     YWithXInterval interval = (YWithXInterval) getObject(); [EOL]     if (interval != null) { [EOL]         return interval.getY(); [EOL]     } else { [EOL]         return Double.NaN; [EOL]     } [EOL] } <line_num>: 78,86
+public double getXLowValue() { [EOL]     YWithXInterval interval = (YWithXInterval) getObject(); [EOL]     if (interval != null) { [EOL]         return interval.getXLow(); [EOL]     } else { [EOL]         return Double.NaN; [EOL]     } [EOL] } <line_num>: 93,101
+public double getXHighValue() { [EOL]     YWithXInterval interval = (YWithXInterval) getObject(); [EOL]     if (interval != null) { [EOL]         return interval.getXHigh(); [EOL]     } else { [EOL]         return Double.NaN; [EOL]     } [EOL] } <line_num>: 108,116

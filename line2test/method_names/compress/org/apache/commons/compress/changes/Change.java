@@ -1,0 +1,6 @@
+public Change(final String pFilename)
+public Change(final ArchiveEntry pEntry, final InputStream pInput)
+public ArchiveEntry getEntry()
+public InputStream getInput()
+public String targetFile()
+public int type()

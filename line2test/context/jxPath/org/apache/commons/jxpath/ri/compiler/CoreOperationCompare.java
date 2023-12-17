@@ -1,0 +1,5 @@
+public CoreOperationCompare(Expression arg1, Expression arg2)
+protected boolean equal(EvalContext context, Expression left, Expression right)
+protected boolean contains(Iterator it, Object value)
+protected boolean findMatch(Iterator lit, Iterator rit)
+protected boolean equal(Object l, Object r)

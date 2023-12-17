@@ -1,0 +1,6 @@
+ SimpleEncodingHolder(char[] highChars)
+public synchronized Simple8BitZipEncoding getEncoding()
+ static ByteBuffer growBuffer(ByteBuffer b, int newCapacity)
+ static void appendSurrogate(ByteBuffer bb, char c)
+ static ZipEncoding getZipEncoding(String name)
+ static boolean isUTF8(String encoding)

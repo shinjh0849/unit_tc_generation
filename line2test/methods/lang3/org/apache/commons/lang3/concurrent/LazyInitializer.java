@@ -1,0 +1,2 @@
+@Override [EOL] public T get() throws ConcurrentException { [EOL]     T result = object; [EOL]     if (result == null) { [EOL]         synchronized (this) { [EOL]             result = object; [EOL]             if (result == null) { [EOL]                 object = result = initialize(); [EOL]             } [EOL]         } [EOL]     } [EOL]     return result; [EOL] } <line_num>: 91,107
+protected abstract T initialize() throws ConcurrentException; <line_num>: 119,119

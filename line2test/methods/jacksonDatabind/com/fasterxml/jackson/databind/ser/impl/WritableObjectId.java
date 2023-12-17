@@ -1,0 +1,4 @@
+public WritableObjectId(ObjectIdGenerator<?> generator) { [EOL]     this.generator = generator; [EOL] } <line_num>: 24,26
+public boolean writeAsId(JsonGenerator jgen, SerializerProvider provider, ObjectIdWriter w) throws IOException, JsonGenerationException { [EOL]     if (id != null && (idWritten || w.alwaysAsId)) { [EOL]         w.serializer.serialize(id, jgen, provider); [EOL]         return true; [EOL]     } [EOL]     return false; [EOL] } <line_num>: 28,36
+public Object generateId(Object forPojo) { [EOL]     return (id = generator.generateId(forPojo)); [EOL] } <line_num>: 38,40
+public void writeAsField(JsonGenerator jgen, SerializerProvider provider, ObjectIdWriter w) throws IOException, JsonGenerationException { [EOL]     SerializedString name = w.propertyName; [EOL]     idWritten = true; [EOL]     if (name != null) { [EOL]         jgen.writeFieldName(name); [EOL]         w.serializer.serialize(id, jgen, provider); [EOL]     } [EOL] } <line_num>: 42,52

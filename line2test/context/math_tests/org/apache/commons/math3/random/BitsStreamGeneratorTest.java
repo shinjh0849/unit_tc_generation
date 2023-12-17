@@ -1,0 +1,8 @@
+public BitsStreamGeneratorTest()
+public BitRandom()
+protected RandomGenerator makeGenerator()
+public void setSeed(int seed)
+public void setSeed(int[] seed)
+public void setSeed(long seed)
+protected int next(int bits)
+public int nextBits(int bits)

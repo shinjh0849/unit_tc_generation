@@ -1,0 +1,6 @@
+public TestUTCProvider(String name) { [EOL]     super(name); [EOL] } <line_num>: 44,46
+public static void main(String[] args) { [EOL]     junit.textui.TestRunner.run(suite()); [EOL] } <line_num>: 36,38
+public static TestSuite suite() { [EOL]     return new TestSuite(TestUTCProvider.class); [EOL] } <line_num>: 40,42
+public void testClass() throws Exception { [EOL]     Class cls = UTCProvider.class; [EOL]     assertEquals(true, Modifier.isPublic(cls.getModifiers())); [EOL]     Constructor con = cls.getDeclaredConstructor((Class[]) null); [EOL]     assertEquals(1, cls.getDeclaredConstructors().length); [EOL]     assertEquals(true, Modifier.isPublic(con.getModifiers())); [EOL] } <line_num>: 49,56
+public void testGetAvailableIDs() throws Exception { [EOL]     Provider p = new UTCProvider(); [EOL]     Set set = p.getAvailableIDs(); [EOL]     assertEquals(1, set.size()); [EOL]     assertEquals("UTC", set.iterator().next()); [EOL] } <line_num>: 59,64
+public void testGetZone_String() throws Exception { [EOL]     Provider p = new UTCProvider(); [EOL]     assertSame(DateTimeZone.UTC, p.getZone("UTC")); [EOL]     assertEquals(null, p.getZone(null)); [EOL]     assertEquals(null, p.getZone("Europe/London")); [EOL]     assertEquals(null, p.getZone("Blah")); [EOL] } <line_num>: 67,73

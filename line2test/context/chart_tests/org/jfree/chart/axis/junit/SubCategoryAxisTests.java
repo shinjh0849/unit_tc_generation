@@ -1,0 +1,7 @@
+public SubCategoryAxisTests(String name)
+public static Test suite()
+public void testEquals()
+public void testHashCode()
+public void testCloning()
+public void testSerialization()
+public void test2275695()

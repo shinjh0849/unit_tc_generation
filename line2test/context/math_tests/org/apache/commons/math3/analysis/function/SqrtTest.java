@@ -1,0 +1,5 @@
+public double value(double x)
+public void testComparison()
+public double value(double x)
+public void testDerivativeComparison()
+public void testDerivativesHighOrder()

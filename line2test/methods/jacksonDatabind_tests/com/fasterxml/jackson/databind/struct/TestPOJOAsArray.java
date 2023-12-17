@@ -1,0 +1,14 @@
+public Pojo() { [EOL] } <line_num>: 20,20
+public Pojo(String name, int x, int y, boolean c) { [EOL]     value = new PojoValue(name, x, y, c); [EOL] } <line_num>: 21,23
+public PojoValue() { [EOL] } <line_num>: 34,34
+public PojoValue(String name, int x, int y, boolean c) { [EOL]     this.name = name; [EOL]     this.x = x; [EOL]     this.y = y; [EOL]     this.complete = c; [EOL] } <line_num>: 35,40
+public FlatPojo() { [EOL] } <line_num>: 51,51
+public FlatPojo(String name, int x, int y, boolean c) { [EOL]     this.name = name; [EOL]     this.x = x; [EOL]     this.y = y; [EOL]     this.complete = c; [EOL] } <line_num>: 52,57
+@Override [EOL] public JsonFormat.Value findFormat(Annotated a) { [EOL]     return new JsonFormat.Value().withShape(JsonFormat.Shape.ARRAY); [EOL] } <line_num>: 64,67
+public void testReadSimplePropertyValue() throws Exception { [EOL]     String json = "{\"value\":[true,\"Foobar\",42,13]}"; [EOL]     Pojo p = MAPPER.readValue(json, Pojo.class); [EOL]     assertNotNull(p.value); [EOL]     assertTrue(p.value.complete); [EOL]     assertEquals("Foobar", p.value.name); [EOL]     assertEquals(42, p.value.x); [EOL]     assertEquals(13, p.value.y); [EOL] } <line_num>: 104,113
+public void testReadSimpleRootValue() throws Exception { [EOL]     String json = "[false,\"Bubba\",1,2]"; [EOL]     FlatPojo p = MAPPER.readValue(json, FlatPojo.class); [EOL]     assertFalse(p.complete); [EOL]     assertEquals("Bubba", p.name); [EOL]     assertEquals(1, p.x); [EOL]     assertEquals(2, p.y); [EOL] } <line_num>: 118,126
+public void testWriteSimplePropertyValue() throws Exception { [EOL]     String json = MAPPER.writeValueAsString(new Pojo("Foobar", 42, 13, true)); [EOL]     assertEquals("{\"value\":[true,\"Foobar\",42,13]}", json); [EOL] } <line_num>: 131,136
+public void testWriteSimpleRootValue() throws Exception { [EOL]     String json = MAPPER.writeValueAsString(new FlatPojo("Bubba", 1, 2, false)); [EOL]     assertEquals("[false,\"Bubba\",1,2]", json); [EOL] } <line_num>: 141,146
+public void testNullColumn() throws Exception { [EOL]     assertEquals("[null,\"bar\"]", MAPPER.writeValueAsString(new TwoStringsBean())); [EOL] } <line_num>: 149,152
+public void testSerializeAsArrayWithSingleProperty() throws Exception { [EOL]     ObjectMapper mapper = new ObjectMapper(); [EOL]     mapper.enable(SerializationFeature.WRITE_SINGLE_ELEM_ARRAYS_UNWRAPPED); [EOL]     String json = mapper.writeValueAsString(new SingleBean()); [EOL]     assertEquals("\"foo\"", json); [EOL] } <line_num>: 161,166
+public void testAnnotationOverride() throws Exception { [EOL]     assertEquals("{\"value\":{\"x\":1,\"y\":2}}", MAPPER.writeValueAsString(new A())); [EOL]     ObjectMapper mapper2 = new ObjectMapper(); [EOL]     mapper2.setAnnotationIntrospector(new ForceArraysIntrospector()); [EOL]     assertEquals("[[1,2]]", mapper2.writeValueAsString(new A())); [EOL] } <line_num>: 174,183

@@ -1,0 +1,2 @@
+public SumSincFunction(double factor) { [EOL]     this.factor = factor; [EOL] } <line_num>: 37,39
+public double value(double[] point) { [EOL]     double sum = 0; [EOL]     for (int i = 0, max = point.length; i < max; i++) { [EOL]         final double x = point[i]; [EOL]         final double v = sinc.value(x); [EOL]         sum += v; [EOL]     } [EOL]     return factor * sum; [EOL] } <line_num>: 45,53

@@ -1,0 +1,3 @@
+public SimpleValueInstantiators() { [EOL]     _classMappings = new HashMap<ClassKey, ValueInstantiator>(); [EOL] } <line_num>: 29,32
+public SimpleValueInstantiators addValueInstantiator(Class<?> forType, ValueInstantiator inst) { [EOL]     _classMappings.put(new ClassKey(forType), inst); [EOL]     return this; [EOL] } <line_num>: 34,39
+@Override [EOL] public ValueInstantiator findValueInstantiator(DeserializationConfig config, BeanDescription beanDesc, ValueInstantiator defaultInstantiator) { [EOL]     ValueInstantiator inst = _classMappings.get(new ClassKey(beanDesc.getBeanClass())); [EOL]     return (inst == null) ? defaultInstantiator : inst; [EOL] } <line_num>: 41,47

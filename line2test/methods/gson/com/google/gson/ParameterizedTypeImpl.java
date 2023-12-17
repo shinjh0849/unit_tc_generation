@@ -1,0 +1,6 @@
+public ParameterizedTypeImpl(Type rawType, Type[] actualTypeArguments, Type owner) { [EOL]     this.rawType = rawType; [EOL]     this.actualTypeArguments = actualTypeArguments; [EOL]     this.owner = owner; [EOL] } <line_num>: 49,53
+public Type getRawType() { [EOL]     return rawType; [EOL] } <line_num>: 55,57
+public Type[] getActualTypeArguments() { [EOL]     return actualTypeArguments; [EOL] } <line_num>: 59,61
+public Type getOwnerType() { [EOL]     return owner; [EOL] } <line_num>: 63,65
+@Override [EOL] public boolean equals(Object o) { [EOL]     if (!(o instanceof ParameterizedType)) { [EOL]         return false; [EOL]     } [EOL]     ParameterizedType that = (ParameterizedType) o; [EOL]     if (this == that) { [EOL]         return true; [EOL]     } [EOL]     Type thatOwner = that.getOwnerType(); [EOL]     Type thatRawType = that.getRawType(); [EOL]     return (owner == null ? thatOwner == null : owner.equals(thatOwner)) && (rawType == null ? thatRawType == null : rawType.equals(thatRawType)) && Arrays.equals(actualTypeArguments, that.getActualTypeArguments()); [EOL] } <line_num>: 67,83
+@Override [EOL] public int hashCode() { [EOL]     return Arrays.hashCode(actualTypeArguments) ^ (owner == null ? 0 : owner.hashCode()) ^ (rawType == null ? 0 : rawType.hashCode()); [EOL] } <line_num>: 85,90

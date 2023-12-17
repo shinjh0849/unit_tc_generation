@@ -1,0 +1,18 @@
+public XIntervalSeriesTests(String name)
+public void seriesChanged(SeriesChangeEvent event)
+public static Test suite()
+public void testEquals()
+public void testCloning()
+public void testSerialization()
+public void testIndexOf()
+public void testIndexOf2()
+public void testRemove()
+public void testAdditionOfDuplicateXValues()
+public void testAdd()
+public void testSetMaximumItemCount()
+public void testSetMaximumItemCount2()
+public void testClear()
+public void testGetXLowValue()
+public void testGetXHighValue()
+SeriesChangeEvent lastEvent
+double EPSILON=Optional[0.0000000001]

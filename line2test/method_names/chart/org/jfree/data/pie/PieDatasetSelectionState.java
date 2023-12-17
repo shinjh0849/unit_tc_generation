@@ -1,0 +1,6 @@
+public int getItemCount()
+public boolean isSelected(Comparable key)
+public void setSelected(Comparable key, boolean selected)
+public void setSelected(Comparable key, boolean selected, boolean notify)
+public void clearSelection()
+public void fireSelectionEvent()

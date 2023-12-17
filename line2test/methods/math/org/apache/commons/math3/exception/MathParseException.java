@@ -1,0 +1,2 @@
+public MathParseException(String wrong, int position, Class<?> type) { [EOL]     getContext().addMessage(LocalizedFormats.CANNOT_PARSE_AS_TYPE, wrong, Integer.valueOf(position), type.getName()); [EOL] } <line_num>: 40,45
+public MathParseException(String wrong, int position) { [EOL]     getContext().addMessage(LocalizedFormats.CANNOT_PARSE, wrong, Integer.valueOf(position)); [EOL] } <line_num>: 52,56

@@ -1,0 +1,6 @@
+public FontChooserPanel(Font font)
+public Font getSelectedFont()
+public String getSelectedName()
+public int getSelectedStyle()
+public int getSelectedSize()
+public void setSelectedFont(Font font)

@@ -1,0 +1,32 @@
+protected Node(String baseUri, Attributes attributes) { [EOL]     Validate.notNull(baseUri); [EOL]     Validate.notNull(attributes); [EOL]     childNodes = new ArrayList<Node>(); [EOL]     this.baseUri = baseUri.trim(); [EOL]     this.attributes = attributes; [EOL] } <line_num>: 28,35
+protected Node(String baseUri) { [EOL]     this(baseUri, new Attributes()); [EOL] } <line_num>: 37,39
+public abstract String nodeName(); <line_num>: 45,45
+public String attr(String attributeKey) { [EOL]     Validate.notNull(attributeKey); [EOL]     if (hasAttr(attributeKey)) [EOL]         return attributes.get(attributeKey); [EOL]     else if (attributeKey.toLowerCase().startsWith("abs:")) [EOL]         return absUrl(attributeKey.substring("abs:".length())); [EOL]     else [EOL]         return ""; [EOL] } <line_num>: 59,67
+public Attributes attributes() { [EOL]     return attributes; [EOL] } <line_num>: 73,75
+public Node attr(String attributeKey, String attributeValue) { [EOL]     attributes.put(attributeKey, attributeValue); [EOL]     return this; [EOL] } <line_num>: 83,86
+public boolean hasAttr(String attributeKey) { [EOL]     Validate.notNull(attributeKey); [EOL]     return attributes.hasKey(attributeKey); [EOL] } <line_num>: 93,96
+public Node removeAttr(String attributeKey) { [EOL]     Validate.notNull(attributeKey); [EOL]     attributes.remove(attributeKey); [EOL]     return this; [EOL] } <line_num>: 103,107
+public String baseUri() { [EOL]     return baseUri; [EOL] } <line_num>: 113,115
+public void setBaseUri(String baseUri) { [EOL]     Validate.notNull(baseUri); [EOL]     this.baseUri = baseUri; [EOL] } <line_num>: 121,124
+public String absUrl(String attributeKey) { [EOL]     Validate.notEmpty(attributeKey); [EOL]     String relUrl = attr(attributeKey); [EOL]     if (!hasAttr(attributeKey)) { [EOL]         return ""; [EOL]     } else { [EOL]         URL base; [EOL]         try { [EOL]             try { [EOL]                 base = new URL(baseUri); [EOL]             } catch (MalformedURLException e) { [EOL]                 URL abs = new URL(relUrl); [EOL]                 return abs.toExternalForm(); [EOL]             } [EOL]             URL abs = new URL(base, relUrl); [EOL]             return abs.toExternalForm(); [EOL]         } catch (MalformedURLException e) { [EOL]             return ""; [EOL]         } [EOL]     } [EOL] } <line_num>: 143,165
+public Node childNode(int index) { [EOL]     return childNodes.get(index); [EOL] } <line_num>: 172,174
+public List<Node> childNodes() { [EOL]     return Collections.unmodifiableList(childNodes); [EOL] } <line_num>: 181,183
+public Node parent() { [EOL]     return parentNode; [EOL] } <line_num>: 189,191
+public void remove() { [EOL]     Validate.notNull(parentNode); [EOL]     parentNode.removeChild(this); [EOL] } <line_num>: 196,199
+public void replaceWith(Node in) { [EOL]     Validate.notNull(in); [EOL]     Validate.notNull(parentNode); [EOL]     parentNode.replaceChild(this, in); [EOL] } <line_num>: 205,209
+protected void setParentNode(Node parentNode) { [EOL]     if (this.parentNode != null) [EOL]         throw new NotImplementedException("Cannot (yet) move nodes in tree"); [EOL]     this.parentNode = parentNode; [EOL] } <line_num>: 211,215
+protected void replaceChild(Node out, Node in) { [EOL]     Validate.isTrue(out.parentNode == this); [EOL]     Validate.notNull(in); [EOL]     if (in.parentNode != null) [EOL]         in.parentNode.removeChild(in); [EOL]     Integer index = indexInList(out, childNodes); [EOL]     childNodes.set(index, in); [EOL]     in.parentNode = this; [EOL]     out.parentNode = null; [EOL] } <line_num>: 217,227
+protected void removeChild(Node out) { [EOL]     Validate.isTrue(out.parentNode == this); [EOL]     int index = indexInList(out, childNodes); [EOL]     childNodes.remove(index); [EOL]     out.parentNode = null; [EOL] } <line_num>: 229,234
+protected void addChild(Node in) { [EOL]     Validate.notNull(in); [EOL]     if (in.parentNode != null) [EOL]         in.parentNode.removeChild(in); [EOL]     childNodes.add(in); [EOL]     in.parentNode = this; [EOL] } <line_num>: 236,243
+protected int nodeDepth() { [EOL]     if (parentNode == null) [EOL]         return 0; [EOL]     else [EOL]         return parentNode.nodeDepth() + 1; [EOL] } <line_num>: 245,250
+public List<Node> siblingNodes() { [EOL]     return parent().childNodes(); [EOL] } <line_num>: 256,258
+public Node nextSibling() { [EOL]     List<Node> siblings = parentNode.childNodes; [EOL]     Integer index = indexInList(this, siblings); [EOL]     Validate.notNull(index); [EOL]     if (siblings.size() > index + 1) [EOL]         return siblings.get(index + 1); [EOL]     else [EOL]         return null; [EOL] } <line_num>: 264,272
+public Node previousSibling() { [EOL]     List<Node> siblings = parentNode.childNodes; [EOL]     Integer index = indexInList(this, siblings); [EOL]     Validate.notNull(index); [EOL]     if (index > 0) [EOL]         return siblings.get(index - 1); [EOL]     else [EOL]         return null; [EOL] } <line_num>: 278,286
+public Integer siblingIndex() { [EOL]     return indexInList(this, parent().childNodes); [EOL] } <line_num>: 294,296
+protected static <N extends Node> Integer indexInList(N search, List<N> nodes) { [EOL]     Validate.notNull(search); [EOL]     Validate.notNull(nodes); [EOL]     for (int i = 0; i < nodes.size(); i++) { [EOL]         N node = nodes.get(i); [EOL]         if (node.equals(search)) [EOL]             return i; [EOL]     } [EOL]     return null; [EOL] } <line_num>: 298,308
+public String outerHtml() { [EOL]     StringBuilder accum = new StringBuilder(); [EOL]     outerHtml(accum); [EOL]     return accum.toString(); [EOL] } <line_num>: 314,318
+abstract void outerHtml(StringBuilder accum); <line_num>: 324,324
+public String toString() { [EOL]     return outerHtml(); [EOL] } <line_num>: 326,328
+protected void indent(StringBuilder accum) { [EOL]     accum.append("\n").append(StringUtils.leftPad("", nodeDepth() - 1 * 2)); [EOL] } <line_num>: 330,332
+@Override [EOL] public boolean equals(Object o) { [EOL]     if (this == o) [EOL]         return true; [EOL]     return false; [EOL] } <line_num>: 334,339
+@Override [EOL] public int hashCode() { [EOL]     int result = parentNode != null ? parentNode.hashCode() : 0; [EOL]     result = 31 * result + (attributes != null ? attributes.hashCode() : 0); [EOL]     return result; [EOL] } <line_num>: 341,347

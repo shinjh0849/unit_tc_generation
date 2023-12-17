@@ -1,0 +1,4 @@
+public StdKeySerializer() { [EOL]     super(Object.class); [EOL] } <line_num>: 25,25
+@Override [EOL] public void serialize(Object value, JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonGenerationException { [EOL]     if (value instanceof Date) { [EOL]         provider.defaultSerializeDateKey((Date) value, jgen); [EOL]     } else { [EOL]         jgen.writeFieldName(value.toString()); [EOL]     } [EOL] } <line_num>: 27,36
+@Override [EOL] public JsonNode getSchema(SerializerProvider provider, Type typeHint) throws JsonMappingException { [EOL]     return createSchemaNode("string"); [EOL] } <line_num>: 38,43
+@Override [EOL] public void acceptJsonFormatVisitor(JsonFormatVisitorWrapper visitor, JavaType typeHint) throws JsonMappingException { [EOL]     visitor.expectStringFormat(typeHint); [EOL] } <line_num>: 45,50

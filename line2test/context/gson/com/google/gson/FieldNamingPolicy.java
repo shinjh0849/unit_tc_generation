@@ -1,0 +1,3 @@
+private FieldNamingPolicy(FieldNamingStrategy2 namingPolicy)
+ FieldNamingStrategy2 getFieldNamingPolicy()
+FieldNamingStrategy2 namingPolicy

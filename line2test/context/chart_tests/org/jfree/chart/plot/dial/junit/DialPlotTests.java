@@ -1,0 +1,13 @@
+public DialPlotTests(String name)
+public void plotChanged(PlotChangeEvent event)
+public static Test suite()
+public void testEquals()
+public void testHashCode()
+public void testCloning()
+public void testSerialization()
+public void testBackgroundListener()
+public void testCapListener()
+public void testFrameListener()
+public void testScaleListener()
+public void testLayerListener()
+PlotChangeEvent lastEvent

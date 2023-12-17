@@ -1,0 +1,2 @@
+public void testSimpleAdapter() throws Exception { [EOL]     Field field = String.class.getFields()[0]; [EOL]     String expectedFieldName = field.getName().toUpperCase(); [EOL]     FieldNamingStrategy2 adapter = new FieldNamingStrategy2Adapter(new UpperCaseNamingStrategy()); [EOL]     assertEquals(expectedFieldName, adapter.translateName(new FieldAttributes(String.class, field))); [EOL] } <line_num>: 31,38
+public String translateName(Field f) { [EOL]     return f.getName().toUpperCase(); [EOL] } <line_num>: 41,43

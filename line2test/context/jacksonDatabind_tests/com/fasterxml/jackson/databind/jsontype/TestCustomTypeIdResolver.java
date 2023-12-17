@@ -1,0 +1,10 @@
+public CustomBean()
+public CustomBean(int x)
+public CustomResolver()
+public Id getMechanism()
+public String idFromValue(Object value)
+public String idFromValueAndType(Object value, Class<?> type)
+public void init(JavaType baseType)
+public JavaType typeFromId(String id)
+public String idFromBaseType()
+public void testCustomTypeIdResolver() throws Exception

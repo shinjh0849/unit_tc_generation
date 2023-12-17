@@ -1,0 +1,16 @@
+public JsonObject()
+public void add(String property, JsonElement value)
+public JsonElement remove(String property)
+public void addProperty(String property, String value)
+public void addProperty(String property, Number value)
+public void addProperty(String property, Boolean value)
+public void addProperty(String property, Character value)
+private JsonElement createJsonElement(Object value)
+public Set<Map.Entry<String, JsonElement>> entrySet()
+public boolean has(String memberName)
+public JsonElement get(String memberName)
+public JsonPrimitive getAsJsonPrimitive(String memberName)
+public JsonArray getAsJsonArray(String memberName)
+public JsonObject getAsJsonObject(String memberName)
+protected void toString(Appendable sb, Escaper escaper) throws IOException
+Map<String, JsonElement> members

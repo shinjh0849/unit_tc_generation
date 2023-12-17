@@ -1,0 +1,2 @@
+public AggregateTranslator(final CharSequenceTranslator... translators) { [EOL]     this.translators = ArrayUtils.clone(translators); [EOL] } <line_num>: 40,42
+@Override [EOL] public int translate(final CharSequence input, final int index, final Writer out) throws IOException { [EOL]     for (final CharSequenceTranslator translator : translators) { [EOL]         final int consumed = translator.translate(input, index, out); [EOL]         if (consumed != 0) { [EOL]             return consumed; [EOL]         } [EOL]     } [EOL]     return 0; [EOL] } <line_num>: 49,58

@@ -1,0 +1,5 @@
+public void testSinZero()
+public double value(double x)
+public double value(double x)
+public UnivariateFunction derivative()
+public void testQuinticZero()

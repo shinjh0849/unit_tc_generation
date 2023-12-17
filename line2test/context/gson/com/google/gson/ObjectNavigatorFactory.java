@@ -1,0 +1,5 @@
+public ObjectNavigatorFactory(ExclusionStrategy strategy, FieldNamingStrategy2 fieldNamingPolicy)
+public ObjectNavigator create(ObjectTypePair objTypePair)
+ FieldNamingStrategy2 getFieldNamingPolicy()
+ExclusionStrategy strategy
+FieldNamingStrategy2 fieldNamingPolicy

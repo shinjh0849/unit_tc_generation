@@ -1,0 +1,1 @@
+public void testResolution743() throws Exception { [EOL]     String s3 = "{\"dataObj\" : [ \"one\", \"two\", \"three\" ] }"; [EOL]     ObjectMapper m = new ObjectMapper(); [EOL]     Child.ChildData d = m.readValue(s3, Child.ChildData.class); [EOL]     assertNotNull(d.dataObj); [EOL]     assertEquals(3, d.dataObj.size()); [EOL] } <line_num>: 33,41

@@ -1,0 +1,13 @@
+public GanttChartTests(String name)
+public static Test suite()
+protected void setUp()
+public void testDrawWithNullInfo()
+public void testDrawWithNullInfo2()
+public void testReplaceDataset()
+public void testSetSeriesToolTipGenerator()
+public void testSetSeriesURLGenerator()
+private static JFreeChart createGanttChart()
+public static IntervalCategoryDataset createDataset()
+private static Date date(int day, int month, int year)
+public void chartChanged(ChartChangeEvent event)
+JFreeChart chart

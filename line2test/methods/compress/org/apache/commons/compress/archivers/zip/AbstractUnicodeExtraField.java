@@ -1,0 +1,14 @@
+protected AbstractUnicodeExtraField() { [EOL] } <line_num>: 33,34
+protected AbstractUnicodeExtraField(String text, byte[] bytes, int off, int len) { [EOL]     CRC32 crc32 = new CRC32(); [EOL]     crc32.update(bytes, off, len); [EOL]     nameCRC32 = crc32.getValue(); [EOL]     try { [EOL]         unicodeName = text.getBytes("UTF-8"); [EOL]     } catch (UnsupportedEncodingException e) { [EOL]         throw new RuntimeException("FATAL: UTF-8 encoding not supported.", e); [EOL]     } [EOL] } <line_num>: 48,60
+protected AbstractUnicodeExtraField(String text, byte[] bytes) { [EOL]     this(text, bytes, 0, bytes.length); [EOL] } <line_num>: 70,73
+private void assembleData() { [EOL]     if (unicodeName == null) { [EOL]         return; [EOL]     } [EOL]     data = new byte[5 + unicodeName.length]; [EOL]     data[0] = 0x01; [EOL]     System.arraycopy(ZipLong.getBytes(nameCRC32), 0, data, 1, 4); [EOL]     System.arraycopy(unicodeName, 0, data, 5, unicodeName.length); [EOL] } <line_num>: 75,85
+public long getNameCRC32() { [EOL]     return nameCRC32; [EOL] } <line_num>: 91,93
+public void setNameCRC32(long nameCRC32) { [EOL]     this.nameCRC32 = nameCRC32; [EOL]     data = null; [EOL] } <line_num>: 99,102
+public byte[] getUnicodeName() { [EOL]     return unicodeName; [EOL] } <line_num>: 107,109
+public void setUnicodeName(byte[] unicodeName) { [EOL]     this.unicodeName = unicodeName; [EOL]     data = null; [EOL] } <line_num>: 114,117
+public byte[] getCentralDirectoryData() { [EOL]     if (data == null) { [EOL]         this.assembleData(); [EOL]     } [EOL]     return data; [EOL] } <line_num>: 119,124
+public ZipShort getCentralDirectoryLength() { [EOL]     if (data == null) { [EOL]         assembleData(); [EOL]     } [EOL]     return new ZipShort(data.length); [EOL] } <line_num>: 126,131
+public byte[] getLocalFileDataData() { [EOL]     return getCentralDirectoryData(); [EOL] } <line_num>: 133,135
+public ZipShort getLocalFileDataLength() { [EOL]     return getCentralDirectoryLength(); [EOL] } <line_num>: 137,139
+public void parseFromLocalFileData(byte[] buffer, int offset, int length) throws ZipException { [EOL]     if (length < 5) { [EOL]         throw new ZipException("UniCode path extra data must have at least" + " 5 bytes."); [EOL]     } [EOL]     int version = buffer[offset]; [EOL]     if (version != 0x01) { [EOL]         throw new ZipException("Unsupported version [" + version + "] for UniCode path extra data."); [EOL]     } [EOL]     nameCRC32 = ZipLong.getValue(buffer, offset + 1); [EOL]     unicodeName = new byte[length - 5]; [EOL]     System.arraycopy(buffer, offset + 5, unicodeName, 0, length - 5); [EOL]     data = null; [EOL] } <line_num>: 141,160
+public void parseFromCentralDirectoryData(byte[] buffer, int offset, int length) throws ZipException { [EOL]     parseFromLocalFileData(buffer, offset, length); [EOL] } <line_num>: 166,170

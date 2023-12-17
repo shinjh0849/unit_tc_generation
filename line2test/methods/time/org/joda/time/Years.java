@@ -1,0 +1,20 @@
+private Years(int years) { [EOL]     super(years); [EOL] } <line_num>: 174,176
+public static Years years(int years) { [EOL]     switch(years) { [EOL]         case 0: [EOL]             return ZERO; [EOL]         case 1: [EOL]             return ONE; [EOL]         case 2: [EOL]             return TWO; [EOL]         case 3: [EOL]             return THREE; [EOL]         case Integer.MAX_VALUE: [EOL]             return MAX_VALUE; [EOL]         case Integer.MIN_VALUE: [EOL]             return MIN_VALUE; [EOL]         default: [EOL]             return new Years(years); [EOL]     } [EOL] } <line_num>: 71,88
+public static Years yearsBetween(ReadableInstant start, ReadableInstant end) { [EOL]     int amount = BaseSingleFieldPeriod.between(start, end, DurationFieldType.years()); [EOL]     return Years.years(amount); [EOL] } <line_num>: 101,104
+public static Years yearsBetween(ReadablePartial start, ReadablePartial end) { [EOL]     if (start instanceof LocalDate && end instanceof LocalDate) { [EOL]         Chronology chrono = DateTimeUtils.getChronology(start.getChronology()); [EOL]         int years = chrono.years().getDifference(((LocalDate) end).getLocalMillis(), ((LocalDate) start).getLocalMillis()); [EOL]         return Years.years(years); [EOL]     } [EOL]     int amount = BaseSingleFieldPeriod.between(start, end, ZERO); [EOL]     return Years.years(amount); [EOL] } <line_num>: 118,127
+public static Years yearsIn(ReadableInterval interval) { [EOL]     if (interval == null) { [EOL]         return Years.ZERO; [EOL]     } [EOL]     int amount = BaseSingleFieldPeriod.between(interval.getStart(), interval.getEnd(), DurationFieldType.years()); [EOL]     return Years.years(amount); [EOL] } <line_num>: 138,144
+@FromString [EOL] public static Years parseYears(String periodStr) { [EOL]     if (periodStr == null) { [EOL]         return Years.ZERO; [EOL]     } [EOL]     Period p = PARSER.parsePeriod(periodStr); [EOL]     return Years.years(p.getYears()); [EOL] } <line_num>: 157,164
+private Object readResolve() { [EOL]     return Years.years(getValue()); [EOL] } <line_num>: 183,185
+public DurationFieldType getFieldType() { [EOL]     return DurationFieldType.years(); [EOL] } <line_num>: 193,195
+public PeriodType getPeriodType() { [EOL]     return PeriodType.years(); [EOL] } <line_num>: 202,204
+public int getYears() { [EOL]     return getValue(); [EOL] } <line_num>: 212,214
+public Years plus(int years) { [EOL]     if (years == 0) { [EOL]         return this; [EOL]     } [EOL]     return Years.years(FieldUtils.safeAdd(getValue(), years)); [EOL] } <line_num>: 226,231
+public Years plus(Years years) { [EOL]     if (years == null) { [EOL]         return this; [EOL]     } [EOL]     return plus(years.getValue()); [EOL] } <line_num>: 242,247
+public Years minus(int years) { [EOL]     return plus(FieldUtils.safeNegate(years)); [EOL] } <line_num>: 259,261
+public Years minus(Years years) { [EOL]     if (years == null) { [EOL]         return this; [EOL]     } [EOL]     return minus(years.getValue()); [EOL] } <line_num>: 272,277
+public Years multipliedBy(int scalar) { [EOL]     return Years.years(FieldUtils.safeMultiply(getValue(), scalar)); [EOL] } <line_num>: 289,291
+public Years dividedBy(int divisor) { [EOL]     if (divisor == 1) { [EOL]         return this; [EOL]     } [EOL]     return Years.years(getValue() / divisor); [EOL] } <line_num>: 303,308
+public Years negated() { [EOL]     return Years.years(FieldUtils.safeNegate(getValue())); [EOL] } <line_num>: 317,319
+public boolean isGreaterThan(Years other) { [EOL]     if (other == null) { [EOL]         return getValue() > 0; [EOL]     } [EOL]     return getValue() > other.getValue(); [EOL] } <line_num>: 328,333
+public boolean isLessThan(Years other) { [EOL]     if (other == null) { [EOL]         return getValue() < 0; [EOL]     } [EOL]     return getValue() < other.getValue(); [EOL] } <line_num>: 341,346
+@ToString [EOL] public String toString() { [EOL]     return "P" + String.valueOf(getValue()) + "Y"; [EOL] } <line_num>: 356,359

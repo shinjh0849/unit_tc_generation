@@ -1,0 +1,8 @@
+public WaterfallBarRendererTests(String name)
+public static Test suite()
+public void testFindRangeBounds()
+public void testEquals()
+public void testHashcode()
+public void testCloning()
+public void testPublicCloneable()
+public void testSerialization()

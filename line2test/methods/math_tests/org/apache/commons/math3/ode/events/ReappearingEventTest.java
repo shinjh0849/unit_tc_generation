@@ -1,0 +1,9 @@
+@Test [EOL] public void testDormandPrince() throws DimensionMismatchException, NumberIsTooSmallException, MaxCountExceededException, NoBracketingException { [EOL]     double tEnd = test(1); [EOL]     Assert.assertEquals(10.0, tEnd, 1e-7); [EOL] } <line_num>: 36,42
+@Test [EOL] public void testGragg() throws DimensionMismatchException, NumberIsTooSmallException, MaxCountExceededException, NoBracketingException { [EOL]     double tEnd = test(2); [EOL]     Assert.assertEquals(10.0, tEnd, 1e-7); [EOL] } <line_num>: 44,50
+public double test(int integratorType) throws DimensionMismatchException, NumberIsTooSmallException, MaxCountExceededException, NoBracketingException { [EOL]     double e = 1e-15; [EOL]     FirstOrderIntegrator integrator; [EOL]     integrator = (integratorType == 1) ? new DormandPrince853Integrator(e, 100.0, 1e-7, 1e-7) : new GraggBulirschStoerIntegrator(e, 100.0, 1e-7, 1e-7); [EOL]     PegasusSolver rootSolver = new PegasusSolver(e, e); [EOL]     integrator.addEventHandler(new Event(), 0.1, e, 1000, rootSolver); [EOL]     double t0 = 6.0; [EOL]     double tEnd = 10.0; [EOL]     double[] y = { 2.0, 2.0, 2.0, 4.0, 2.0, 7.0, 15.0 }; [EOL]     return integrator.integrate(new Ode(), t0, y, tEnd, y); [EOL] } <line_num>: 52,66
+public int getDimension() { [EOL]     return 7; [EOL] } <line_num>: 69,71
+public void computeDerivatives(double t, double[] y, double[] yDot) { [EOL]     Arrays.fill(yDot, 1.0); [EOL] } <line_num>: 73,75
+public void init(double t0, double[] y0, double t) { [EOL] } <line_num>: 81,82
+public double g(double t, double[] y) { [EOL]     return y[6] - 15.0; [EOL] } <line_num>: 84,86
+public Action eventOccurred(double t, double[] y, boolean increasing) { [EOL]     return Action.STOP; [EOL] } <line_num>: 88,90
+public void resetState(double t, double[] y) { [EOL] } <line_num>: 92,94

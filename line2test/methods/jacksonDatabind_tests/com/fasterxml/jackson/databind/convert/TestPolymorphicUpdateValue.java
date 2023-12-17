@@ -1,0 +1,1 @@
+public void testPolymorphicTest() throws Exception { [EOL]     Child c = new Child(); [EOL]     c.w = 10; [EOL]     c.h = 11; [EOL]     MAPPER.readerForUpdating(c).readValue("{\"x\":3,\"y\":4,\"w\":111}"); [EOL]     assertEquals(3, c.x); [EOL]     assertEquals(4, c.y); [EOL]     assertEquals(111, c.w); [EOL] } <line_num>: 35,44

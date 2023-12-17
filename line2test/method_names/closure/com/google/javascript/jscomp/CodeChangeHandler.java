@@ -1,0 +1,5 @@
+ void reportChange()
+public void reportChange()
+ boolean hasCodeChanged()
+ void reset()
+public void reportChange()

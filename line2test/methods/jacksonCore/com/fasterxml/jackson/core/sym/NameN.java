@@ -1,0 +1,4 @@
+NameN(String name, int hash, int[] quads, int quadLen) { [EOL]     super(name, hash); [EOL]     if (quadLen < 3) { [EOL]         throw new IllegalArgumentException("Qlen must >= 3"); [EOL]     } [EOL]     mQuads = quads; [EOL]     mQuadLen = quadLen; [EOL] } <line_num>: 13,24
+@Override [EOL] public boolean equals(int quad) { [EOL]     return false; [EOL] } <line_num>: 27,28
+@Override [EOL] public boolean equals(int quad1, int quad2) { [EOL]     return false; [EOL] } <line_num>: 31,32
+@Override [EOL] public boolean equals(int[] quads, int qlen) { [EOL]     if (qlen != mQuadLen) { [EOL]         return false; [EOL]     } [EOL]     for (int i = 0; i < qlen; ++i) { [EOL]         if (quads[i] != mQuads[i]) { [EOL]             return false; [EOL]         } [EOL]     } [EOL]     return true; [EOL] } <line_num>: 34,67

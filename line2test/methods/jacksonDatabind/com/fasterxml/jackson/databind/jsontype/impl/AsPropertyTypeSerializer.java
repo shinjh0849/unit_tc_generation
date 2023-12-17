@@ -1,0 +1,9 @@
+public AsPropertyTypeSerializer(TypeIdResolver idRes, BeanProperty property, String propName) { [EOL]     super(idRes, property); [EOL]     _typePropertyName = propName; [EOL] } <line_num>: 25,30
+@Override [EOL] public AsPropertyTypeSerializer forProperty(BeanProperty prop) { [EOL]     if (_property == prop) [EOL]         return this; [EOL]     return new AsPropertyTypeSerializer(this._idResolver, prop, this._typePropertyName); [EOL] } <line_num>: 32,36
+@Override [EOL] public String getPropertyName() { [EOL]     return _typePropertyName; [EOL] } <line_num>: 38,39
+@Override [EOL] public As getTypeInclusion() { [EOL]     return As.PROPERTY; [EOL] } <line_num>: 41,42
+@Override [EOL] public void writeTypePrefixForObject(Object value, JsonGenerator jgen) throws IOException, JsonProcessingException { [EOL]     jgen.writeStartObject(); [EOL]     jgen.writeStringField(_typePropertyName, idFromValue(value)); [EOL] } <line_num>: 44,50
+@Override [EOL] public void writeTypePrefixForObject(Object value, JsonGenerator jgen, Class<?> type) throws IOException, JsonProcessingException { [EOL]     jgen.writeStartObject(); [EOL]     jgen.writeStringField(_typePropertyName, idFromValueAndType(value, type)); [EOL] } <line_num>: 52,58
+@Override [EOL] public void writeTypeSuffixForObject(Object value, JsonGenerator jgen) throws IOException, JsonProcessingException { [EOL]     jgen.writeEndObject(); [EOL] } <line_num>: 65,70
+@Override [EOL] public void writeCustomTypePrefixForObject(Object value, JsonGenerator jgen, String typeId) throws IOException, JsonProcessingException { [EOL]     jgen.writeStartObject(); [EOL]     jgen.writeStringField(_typePropertyName, typeId); [EOL] } <line_num>: 84,89
+@Override [EOL] public void writeCustomTypeSuffixForObject(Object value, JsonGenerator jgen, String typeId) throws IOException, JsonProcessingException { [EOL]     jgen.writeEndObject(); [EOL] } <line_num>: 91,95

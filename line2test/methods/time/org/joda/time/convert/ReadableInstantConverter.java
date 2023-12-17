@@ -1,0 +1,5 @@
+protected ReadableInstantConverter() { [EOL]     super(); [EOL] } <line_num>: 41,43
+public Chronology getChronology(Object object, DateTimeZone zone) { [EOL]     Chronology chrono = ((ReadableInstant) object).getChronology(); [EOL]     if (chrono == null) { [EOL]         return ISOChronology.getInstance(zone); [EOL]     } [EOL]     DateTimeZone chronoZone = chrono.getZone(); [EOL]     if (chronoZone != zone) { [EOL]         chrono = chrono.withZone(zone); [EOL]         if (chrono == null) { [EOL]             return ISOChronology.getInstance(zone); [EOL]         } [EOL]     } [EOL]     return chrono; [EOL] } <line_num>: 57,70
+public Chronology getChronology(Object object, Chronology chrono) { [EOL]     if (chrono == null) { [EOL]         chrono = ((ReadableInstant) object).getChronology(); [EOL]         chrono = DateTimeUtils.getChronology(chrono); [EOL]     } [EOL]     return chrono; [EOL] } <line_num>: 82,88
+public long getInstantMillis(Object object, Chronology chrono) { [EOL]     return ((ReadableInstant) object).getMillis(); [EOL] } <line_num>: 99,101
+public Class<?> getSupportedType() { [EOL]     return ReadableInstant.class; [EOL] } <line_num>: 109,111

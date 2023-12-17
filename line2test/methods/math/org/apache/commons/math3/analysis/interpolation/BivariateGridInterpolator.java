@@ -1,0 +1,1 @@
+BivariateFunction interpolate(double[] xval, double[] yval, double[][] fval) throws NoDataException, DimensionMismatchException, NonMonotonicSequenceException, NumberIsTooSmallException; <line_num>: 48,51

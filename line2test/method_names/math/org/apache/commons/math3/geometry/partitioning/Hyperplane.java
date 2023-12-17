@@ -1,0 +1,5 @@
+ Hyperplane<S> copySelf()
+ double getOffset(Vector<S> point)
+ boolean sameOrientationAs(Hyperplane<S> other)
+ SubHyperplane<S> wholeHyperplane()
+ Region<S> wholeSpace()

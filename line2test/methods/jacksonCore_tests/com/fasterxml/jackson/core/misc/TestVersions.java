@@ -1,0 +1,3 @@
+public void testCoreVersions() throws Exception { [EOL]     assertVersion(new JsonFactory().version()); [EOL]     JsonParser jp = new ReaderBasedJsonParser(getIOContext(), 0, null, null, CharsToNameCanonicalizer.createRoot()); [EOL]     assertVersion(jp.version()); [EOL]     jp.close(); [EOL]     JsonGenerator jgen = new WriterBasedJsonGenerator(getIOContext(), 0, null, null); [EOL]     assertVersion(jgen.version()); [EOL]     jgen.close(); [EOL] } <line_num>: 14,24
+private void assertVersion(Version v) { [EOL]     assertEquals(PackageVersion.VERSION, v); [EOL] } <line_num>: 32,35
+private IOContext getIOContext() { [EOL]     return new IOContext(new BufferRecycler(), null, false); [EOL] } <line_num>: 37,39

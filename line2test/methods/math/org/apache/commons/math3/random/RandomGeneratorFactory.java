@@ -1,0 +1,14 @@
+private RandomGeneratorFactory() { [EOL] } <line_num>: 32,32
+public void setSeed(int seed) { [EOL]     rng.setSeed((long) seed); [EOL] } <line_num>: 45,47
+public void setSeed(int[] seed) { [EOL]     rng.setSeed(convertToLong(seed)); [EOL] } <line_num>: 50,52
+public void setSeed(long seed) { [EOL]     rng.setSeed(seed); [EOL] } <line_num>: 55,57
+public void nextBytes(byte[] bytes) { [EOL]     rng.nextBytes(bytes); [EOL] } <line_num>: 60,62
+public int nextInt() { [EOL]     return rng.nextInt(); [EOL] } <line_num>: 65,67
+public int nextInt(int n) { [EOL]     if (n <= 0) { [EOL]         throw new NotStrictlyPositiveException(n); [EOL]     } [EOL]     return rng.nextInt(n); [EOL] } <line_num>: 70,75
+public long nextLong() { [EOL]     return rng.nextLong(); [EOL] } <line_num>: 78,80
+public boolean nextBoolean() { [EOL]     return rng.nextBoolean(); [EOL] } <line_num>: 83,85
+public float nextFloat() { [EOL]     return rng.nextFloat(); [EOL] } <line_num>: 88,90
+public double nextDouble() { [EOL]     return rng.nextDouble(); [EOL] } <line_num>: 93,95
+public double nextGaussian() { [EOL]     return rng.nextGaussian(); [EOL] } <line_num>: 98,100
+public static RandomGenerator createRandomGenerator(final Random rng) { [EOL]     return new RandomGenerator() { [EOL]  [EOL]         public void setSeed(int seed) { [EOL]             rng.setSeed((long) seed); [EOL]         } [EOL]  [EOL]         public void setSeed(int[] seed) { [EOL]             rng.setSeed(convertToLong(seed)); [EOL]         } [EOL]  [EOL]         public void setSeed(long seed) { [EOL]             rng.setSeed(seed); [EOL]         } [EOL]  [EOL]         public void nextBytes(byte[] bytes) { [EOL]             rng.nextBytes(bytes); [EOL]         } [EOL]  [EOL]         public int nextInt() { [EOL]             return rng.nextInt(); [EOL]         } [EOL]  [EOL]         public int nextInt(int n) { [EOL]             if (n <= 0) { [EOL]                 throw new NotStrictlyPositiveException(n); [EOL]             } [EOL]             return rng.nextInt(n); [EOL]         } [EOL]  [EOL]         public long nextLong() { [EOL]             return rng.nextLong(); [EOL]         } [EOL]  [EOL]         public boolean nextBoolean() { [EOL]             return rng.nextBoolean(); [EOL]         } [EOL]  [EOL]         public float nextFloat() { [EOL]             return rng.nextFloat(); [EOL]         } [EOL]  [EOL]         public double nextDouble() { [EOL]             return rng.nextDouble(); [EOL]         } [EOL]  [EOL]         public double nextGaussian() { [EOL]             return rng.nextGaussian(); [EOL]         } [EOL]     }; [EOL] } <line_num>: 42,102
+public static long convertToLong(int[] seed) { [EOL]     final long prime = 4294967291l; [EOL]     long combined = 0l; [EOL]     for (int s : seed) { [EOL]         combined = combined * prime + s; [EOL]     } [EOL]     return combined; [EOL] } <line_num>: 110,121

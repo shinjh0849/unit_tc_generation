@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="input/chart"/>
+	<classpathentry kind="src" path="input/chart_tests"/>
+	<classpathentry kind="src" path="input/cli"/>
+	<classpathentry kind="src" path="input/cli_tests"/>
+	<classpathentry kind="src" path="input/closure"/>
+	<classpathentry kind="src" path="input/closure_tests"/>
+	<classpathentry kind="src" path="input/codec"/>
+	<classpathentry kind="src" path="input/codec_tests"/>
+	<classpathentry kind="src" path="input/compress"/>
+	<classpathentry kind="src" path="input/compress_tests"/>
+	<classpathentry kind="src" path="input/csv"/>
+	<classpathentry kind="src" path="input/csv_tests"/>
+	<classpathentry kind="src" path="input/gson"/>
+	<classpathentry kind="src" path="input/gson_tests"/>
+	<classpathentry kind="src" path="input/jacksonCore"/>
+	<classpathentry kind="src" path="input/jacksonCore_tests"/>
+	<classpathentry kind="src" path="input/jacksonDatabind"/>
+	<classpathentry kind="src" path="input/jacksonDatabind_tests"/>
+	<classpathentry kind="src" path="input/jsoup"/>
+	<classpathentry kind="src" path="input/jsoup_tests"/>
+	<classpathentry kind="src" path="input/jxPath"/>
+	<classpathentry kind="src" path="input/jxPath_tests"/>
+	<classpathentry kind="src" path="input/lang3"/>
+	<classpathentry kind="src" path="input/lang3_tests"/>
+	<classpathentry kind="src" path="input/math"/>
+	<classpathentry kind="src" path="input/math_tests"/>
+	<classpathentry kind="src" path="input/time"/>
+	<classpathentry kind="src" path="input/time_tests"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/annotations/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/axis/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/block/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/entity/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/imagemap/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/labels/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/needle/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/plot/dial/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/plot/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/renderer/category/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/renderer/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/renderer/xy/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/title/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/urls/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/chart/util/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/data/category/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/data/function/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/data/gantt/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/data/general/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/data/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/data/statistics/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/data/time/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/data/time/ohlc/junit"/>
+	<classpathentry kind="src" path="output/context/chart_tests/org/jfree/data/xy/junit"/>
+	<classpathentry excluding="renderer/category/|entity/|plot/dial/|labels/|plot/|encoders/|editor/|ui/|renderer/|renderer/xy/|block/|text/|demo/|needle/|annotations/|resources/|urls/|event/|servlet/|title/|imagemap/|panel/|util/|axis/" kind="src" path="output/context/chart/org/jfree/chart"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/annotations"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/axis"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/block"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/demo"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/editor"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/encoders"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/entity"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/event"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/imagemap"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/labels"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/needle"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/panel"/>
+	<classpathentry excluding="dial/" kind="src" path="output/context/chart/org/jfree/chart/plot"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/plot/dial"/>
+	<classpathentry excluding="category/|xy/" kind="src" path="output/context/chart/org/jfree/chart/renderer"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/renderer/category"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/renderer/xy"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/resources"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/servlet"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/text"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/title"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/ui"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/urls"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/chart/util"/>
+	<classpathentry excluding="xml/|time/ohlc/|xy/|statistics/|function/|gantt/|general/|io/|resources/|event/|time/|jdbc/|category/|pie/" kind="src" path="output/context/chart/org/jfree/data"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/data/category"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/data/event"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/data/function"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/data/gantt"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/data/general"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/data/io"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/data/jdbc"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/data/pie"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/data/resources"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/data/statistics"/>
+	<classpathentry excluding="ohlc/" kind="src" path="output/context/chart/org/jfree/data/time"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/data/time/ohlc"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/data/xml"/>
+	<classpathentry kind="src" path="output/context/chart/org/jfree/data/xy"/>
+	<classpathentry excluding="bug/" kind="src" path="output/context/cli_tests/org/apache/commons/cli"/>
+	<classpathentry kind="src" path="output/context/cli_tests/org/apache/commons/cli/bug"/>
+	<classpathentry kind="src" path="output/context/cli/org/apache/commons/cli"/>
+	<classpathentry kind="src" path="output/context/closure_tests/com/google/debugging/sourcemap"/>
+	<classpathentry excluding="regex/|graph/|deps/|parsing/|jsonml/|regtests/" kind="src" path="output/context/closure_tests/com/google/javascript/jscomp"/>
+	<classpathentry kind="src" path="output/context/closure_tests/com/google/javascript/jscomp/deps"/>
+	<classpathentry kind="src" path="output/context/closure_tests/com/google/javascript/jscomp/graph"/>
+	<classpathentry kind="src" path="output/context/closure_tests/com/google/javascript/jscomp/jsonml"/>
+	<classpathentry kind="src" path="output/context/closure_tests/com/google/javascript/jscomp/parsing"/>
+	<classpathentry kind="src" path="output/context/closure_tests/com/google/javascript/jscomp/regex"/>
+	<classpathentry kind="src" path="output/context/closure_tests/com/google/javascript/jscomp/regtests"/>
+	<classpathentry excluding="jstype/" kind="src" path="output/context/closure_tests/com/google/javascript/rhino"/>
+	<classpathentry kind="src" path="output/context/closure_tests/com/google/javascript/rhino/jstype"/>
+	<classpathentry kind="src" path="output/context/closure/com/google/debugging/sourcemap"/>
+	<classpathentry excluding="parsing/|jsonml/|webservice/common/|regex/|ant/|type/|graph/|testing/|deps/" kind="src" path="output/context/closure/com/google/javascript/jscomp"/>
+	<classpathentry kind="src" path="output/context/closure/com/google/javascript/jscomp/ant"/>
+	<classpathentry kind="src" path="output/context/closure/com/google/javascript/jscomp/deps"/>
+	<classpathentry kind="src" path="output/context/closure/com/google/javascript/jscomp/graph"/>
+	<classpathentry kind="src" path="output/context/closure/com/google/javascript/jscomp/jsonml"/>
+	<classpathentry kind="src" path="output/context/closure/com/google/javascript/jscomp/parsing"/>
+	<classpathentry kind="src" path="output/context/closure/com/google/javascript/jscomp/regex"/>
+	<classpathentry kind="src" path="output/context/closure/com/google/javascript/jscomp/testing"/>
+	<classpathentry kind="src" path="output/context/closure/com/google/javascript/jscomp/type"/>
+	<classpathentry kind="src" path="output/context/closure/com/google/javascript/jscomp/webservice/common"/>
+	<classpathentry excluding="jstype/|testing/" kind="src" path="output/context/closure/com/google/javascript/rhino"/>
+	<classpathentry kind="src" path="output/context/closure/com/google/javascript/rhino/jstype"/>
+	<classpathentry kind="src" path="output/context/closure/com/google/javascript/rhino/testing"/>
+	<classpathentry excluding="language/|net/|binary/|digest/" kind="src" path="output/context/codec_tests/org/apache/commons/codec"/>
+	<classpathentry kind="src" path="output/context/codec_tests/org/apache/commons/codec/binary"/>
+	<classpathentry kind="src" path="output/context/codec_tests/org/apache/commons/codec/digest"/>
+	<classpathentry kind="src" path="output/context/codec_tests/org/apache/commons/codec/language"/>
+	<classpathentry kind="src" path="output/context/codec_tests/org/apache/commons/codec/net"/>
+	<classpathentry excluding="digest/|net/|binary/|language/" kind="src" path="output/context/codec/org/apache/commons/codec"/>
+	<classpathentry kind="src" path="output/context/codec/org/apache/commons/codec/binary"/>
+	<classpathentry kind="src" path="output/context/codec/org/apache/commons/codec/digest"/>
+	<classpathentry kind="src" path="output/context/codec/org/apache/commons/codec/language"/>
+	<classpathentry kind="src" path="output/context/codec/org/apache/commons/codec/net"/>
+	<classpathentry excluding="archivers/jar/|archivers/cpio/|archivers/memory/|archivers/|archivers/zip/|archivers/tar/|changes/|compressors/" kind="src" path="output/context/compress_tests/org/apache/commons/compress"/>
+	<classpathentry excluding="jar/|cpio/|memory/|zip/|tar/" kind="src" path="output/context/compress_tests/org/apache/commons/compress/archivers"/>
+	<classpathentry kind="src" path="output/context/compress_tests/org/apache/commons/compress/archivers/cpio"/>
+	<classpathentry kind="src" path="output/context/compress_tests/org/apache/commons/compress/archivers/jar"/>
+	<classpathentry kind="src" path="output/context/compress_tests/org/apache/commons/compress/archivers/memory"/>
+	<classpathentry kind="src" path="output/context/compress_tests/org/apache/commons/compress/archivers/tar"/>
+	<classpathentry kind="src" path="output/context/compress_tests/org/apache/commons/compress/archivers/zip"/>
+	<classpathentry kind="src" path="output/context/compress_tests/org/apache/commons/compress/changes"/>
+	<classpathentry kind="src" path="output/context/compress_tests/org/apache/commons/compress/compressors"/>
+	<classpathentry excluding="jar/|tar/|zip/|ar/|cpio/" kind="src" path="output/context/compress/org/apache/commons/compress/archivers"/>
+	<classpathentry kind="src" path="output/context/compress/org/apache/commons/compress/archivers/ar"/>
+	<classpathentry kind="src" path="output/context/compress/org/apache/commons/compress/archivers/cpio"/>
+	<classpathentry kind="src" path="output/context/compress/org/apache/commons/compress/archivers/jar"/>
+	<classpathentry kind="src" path="output/context/compress/org/apache/commons/compress/archivers/tar"/>
+	<classpathentry kind="src" path="output/context/compress/org/apache/commons/compress/archivers/zip"/>
+	<classpathentry kind="src" path="output/context/compress/org/apache/commons/compress/changes"/>
+	<classpathentry excluding="gzip/|bzip2/" kind="src" path="output/context/compress/org/apache/commons/compress/compressors"/>
+	<classpathentry kind="src" path="output/context/compress/org/apache/commons/compress/compressors/bzip2"/>
+	<classpathentry kind="src" path="output/context/compress/org/apache/commons/compress/compressors/gzip"/>
+	<classpathentry kind="src" path="output/context/compress/org/apache/commons/compress/utils"/>
+	<classpathentry kind="src" path="output/context/csv_tests/org/apache/commons/csv"/>
+	<classpathentry kind="src" path="output/context/csv/org/apache/commons/csv"/>
+	<classpathentry excluding="common/|stream/|metrics/|functional/" kind="src" path="output/context/gson_tests/com/google/gson"/>
+	<classpathentry kind="src" path="output/context/gson_tests/com/google/gson/common"/>
+	<classpathentry kind="src" path="output/context/gson_tests/com/google/gson/functional"/>
+	<classpathentry kind="src" path="output/context/gson_tests/com/google/gson/metrics"/>
+	<classpathentry kind="src" path="output/context/gson_tests/com/google/gson/stream"/>
+	<classpathentry excluding="annotations/|stream/|reflect/" kind="src" path="output/context/gson/com/google/gson"/>
+	<classpathentry kind="src" path="output/context/gson/com/google/gson/annotations"/>
+	<classpathentry kind="src" path="output/context/gson/com/google/gson/reflect"/>
+	<classpathentry kind="src" path="output/context/gson/com/google/gson/stream"/>
+	<classpathentry kind="src" path="output/context/jacksonCore_tests/com/fasterxml/jackson/core/base64"/>
+	<classpathentry kind="src" path="output/context/jacksonCore_tests/com/fasterxml/jackson/core/format"/>
+	<classpathentry kind="src" path="output/context/jacksonCore_tests/com/fasterxml/jackson/core/io"/>
+	<classpathentry kind="src" path="output/context/jacksonCore_tests/com/fasterxml/jackson/core/json"/>
+	<classpathentry kind="src" path="output/context/jacksonCore_tests/com/fasterxml/jackson/core/main"/>
+	<classpathentry kind="src" path="output/context/jacksonCore_tests/com/fasterxml/jackson/core/misc"/>
+	<classpathentry kind="src" path="output/context/jacksonCore_tests/com/fasterxml/jackson/core/sym"/>
+	<classpathentry kind="src" path="output/context/jacksonCore_tests/com/fasterxml/jackson/core/util"/>
+	<classpathentry kind="src" path="output/context/jacksonCore_tests/com/fasterxml/jackson/test"/>
+	<classpathentry kind="src" path="output/context/jacksonCore_tests/perf"/>
+	<classpathentry excluding="io/|json/|type/|sym/|util/|base/|format/" kind="src" path="output/context/jacksonCore/com/fasterxml/jackson/core"/>
+	<classpathentry kind="src" path="output/context/jacksonCore/com/fasterxml/jackson/core/base"/>
+	<classpathentry kind="src" path="output/context/jacksonCore/com/fasterxml/jackson/core/format"/>
+	<classpathentry kind="src" path="output/context/jacksonCore/com/fasterxml/jackson/core/io"/>
+	<classpathentry kind="src" path="output/context/jacksonCore/com/fasterxml/jackson/core/json"/>
+	<classpathentry kind="src" path="output/context/jacksonCore/com/fasterxml/jackson/core/sym"/>
+	<classpathentry kind="src" path="output/context/jacksonCore/com/fasterxml/jackson/core/type"/>
+	<classpathentry kind="src" path="output/context/jacksonCore/com/fasterxml/jackson/core/util"/>
+	<classpathentry excluding="access/|ext/|creators/|contextual/|struct/|util/|interop/|introspect/|views/|jsontype/|module/|deser/|node/|convert/|type/|filter/|jsonschema/|mixins/|ser/" kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/access"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/contextual"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/convert"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/creators"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/deser"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/ext"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/filter"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/interop"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/introspect"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/jsonschema"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/jsontype"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/mixins"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/module"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/node"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/ser"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/struct"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/type"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/util"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/databind/views"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/failing"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/com/fasterxml/jackson/test"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind_tests/perf"/>
+	<classpathentry excluding="ext/|deser/impl/|exc/|cfg/|introspect/|util/|ser/std/|type/|module/|jsontype/impl/|node/|jsonFormatVisitors/|jsontype/|annotation/|deser/std/|deser/|ser/impl/|ser/|jsonschema/" kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/annotation"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/cfg"/>
+	<classpathentry excluding="impl/|std/" kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/deser"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/deser/impl"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/deser/std"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/exc"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/ext"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/introspect"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/jsonFormatVisitors"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/jsonschema"/>
+	<classpathentry excluding="impl/" kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/jsontype"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/jsontype/impl"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/module"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/node"/>
+	<classpathentry excluding="std/|impl/" kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/ser"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/ser/impl"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/ser/std"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/type"/>
+	<classpathentry kind="src" path="output/context/jacksonDatabind/com/fasterxml/jackson/databind/util"/>
+	<classpathentry excluding="parser/|integration/|nodes/|safety/|select/" kind="src" path="output/context/jsoup_tests/org/jsoup"/>
+	<classpathentry kind="src" path="output/context/jsoup_tests/org/jsoup/integration"/>
+	<classpathentry kind="src" path="output/context/jsoup_tests/org/jsoup/nodes"/>
+	<classpathentry kind="src" path="output/context/jsoup_tests/org/jsoup/parser"/>
+	<classpathentry kind="src" path="output/context/jsoup_tests/org/jsoup/safety"/>
+	<classpathentry kind="src" path="output/context/jsoup_tests/org/jsoup/select"/>
+	<classpathentry excluding="examples/|select/|parser/|nodes/|safety/" kind="src" path="output/context/jsoup/org/jsoup"/>
+	<classpathentry kind="src" path="output/context/jsoup/org/jsoup/examples"/>
+	<classpathentry kind="src" path="output/context/jsoup/org/jsoup/nodes"/>
+	<classpathentry kind="src" path="output/context/jsoup/org/jsoup/parser"/>
+	<classpathentry kind="src" path="output/context/jsoup/org/jsoup/safety"/>
+	<classpathentry kind="src" path="output/context/jsoup/org/jsoup/select"/>
+	<classpathentry excluding="ri/model/|ri/model/container/|ri/|ri/model/dom/|ri/model/beans/|ri/model/dynabeans/|ri/model/jdom/|ri/model/dynamic/|util/|ri/axes/|ri/compiler/" kind="src" path="output/context/jxPath_tests/org/apache/commons/jxpath"/>
+	<classpathentry excluding="model/|model/container/|model/dom/|model/beans/|model/dynabeans/|model/jdom/|model/dynamic/|axes/|compiler/" kind="src" path="output/context/jxPath_tests/org/apache/commons/jxpath/ri"/>
+	<classpathentry kind="src" path="output/context/jxPath_tests/org/apache/commons/jxpath/ri/axes"/>
+	<classpathentry kind="src" path="output/context/jxPath_tests/org/apache/commons/jxpath/ri/compiler"/>
+	<classpathentry excluding="container/|dom/|beans/|dynabeans/|jdom/|dynamic/" kind="src" path="output/context/jxPath_tests/org/apache/commons/jxpath/ri/model"/>
+	<classpathentry kind="src" path="output/context/jxPath_tests/org/apache/commons/jxpath/ri/model/beans"/>
+	<classpathentry kind="src" path="output/context/jxPath_tests/org/apache/commons/jxpath/ri/model/container"/>
+	<classpathentry kind="src" path="output/context/jxPath_tests/org/apache/commons/jxpath/ri/model/dom"/>
+	<classpathentry kind="src" path="output/context/jxPath_tests/org/apache/commons/jxpath/ri/model/dynabeans"/>
+	<classpathentry kind="src" path="output/context/jxPath_tests/org/apache/commons/jxpath/ri/model/dynamic"/>
+	<classpathentry kind="src" path="output/context/jxPath_tests/org/apache/commons/jxpath/ri/model/jdom"/>
+	<classpathentry kind="src" path="output/context/jxPath_tests/org/apache/commons/jxpath/util"/>
+	<classpathentry excluding="ri/axes/|ri/model/dom/|ri/parser/|servlet/|ri/model/|ri/model/jdom/|ri/compiler/|ri/model/container/|ri/|ri/model/dynamic/|util/|xml/|ri/model/dynabeans/|functions/|ri/model/beans/" kind="src" path="output/context/jxPath/org/apache/commons/jxpath"/>
+	<classpathentry kind="src" path="output/context/jxPath/org/apache/commons/jxpath/functions"/>
+	<classpathentry excluding="axes/|model/dom/|parser/|model/|model/jdom/|compiler/|model/container/|model/dynamic/|model/dynabeans/|model/beans/" kind="src" path="output/context/jxPath/org/apache/commons/jxpath/ri"/>
+	<classpathentry kind="src" path="output/context/jxPath/org/apache/commons/jxpath/ri/axes"/>
+	<classpathentry kind="src" path="output/context/jxPath/org/apache/commons/jxpath/ri/compiler"/>
+	<classpathentry excluding="dom/|jdom/|container/|dynamic/|dynabeans/|beans/" kind="src" path="output/context/jxPath/org/apache/commons/jxpath/ri/model"/>
+	<classpathentry kind="src" path="output/context/jxPath/org/apache/commons/jxpath/ri/model/beans"/>
+	<classpathentry kind="src" path="output/context/jxPath/org/apache/commons/jxpath/ri/model/container"/>
+	<classpathentry kind="src" path="output/context/jxPath/org/apache/commons/jxpath/ri/model/dom"/>
+	<classpathentry kind="src" path="output/context/jxPath/org/apache/commons/jxpath/ri/model/dynabeans"/>
+	<classpathentry kind="src" path="output/context/jxPath/org/apache/commons/jxpath/ri/model/dynamic"/>
+	<classpathentry kind="src" path="output/context/jxPath/org/apache/commons/jxpath/ri/model/jdom"/>
+	<classpathentry kind="src" path="output/context/jxPath/org/apache/commons/jxpath/ri/parser"/>
+	<classpathentry kind="src" path="output/context/jxPath/org/apache/commons/jxpath/servlet"/>
+	<classpathentry kind="src" path="output/context/jxPath/org/apache/commons/jxpath/util"/>
+	<classpathentry kind="src" path="output/context/jxPath/org/apache/commons/jxpath/xml"/>
+	<classpathentry excluding="math/|tuple/|concurrent/|text/|builder/|reflect/testbed/|mutable/|time/|reflect/|text/translate/|exception/|event/" kind="src" path="output/context/lang3_tests/org/apache/commons/lang3"/>
+	<classpathentry kind="src" path="output/context/lang3_tests/org/apache/commons/lang3/builder"/>
+	<classpathentry kind="src" path="output/context/lang3_tests/org/apache/commons/lang3/concurrent"/>
+	<classpathentry kind="src" path="output/context/lang3_tests/org/apache/commons/lang3/event"/>
+	<classpathentry kind="src" path="output/context/lang3_tests/org/apache/commons/lang3/exception"/>
+	<classpathentry kind="src" path="output/context/lang3_tests/org/apache/commons/lang3/math"/>
+	<classpathentry kind="src" path="output/context/lang3_tests/org/apache/commons/lang3/mutable"/>
+	<classpathentry excluding="testbed/" kind="src" path="output/context/lang3_tests/org/apache/commons/lang3/reflect"/>
+	<classpathentry kind="src" path="output/context/lang3_tests/org/apache/commons/lang3/reflect/testbed"/>
+	<classpathentry excluding="translate/" kind="src" path="output/context/lang3_tests/org/apache/commons/lang3/text"/>
+	<classpathentry kind="src" path="output/context/lang3_tests/org/apache/commons/lang3/text/translate"/>
+	<classpathentry kind="src" path="output/context/lang3_tests/org/apache/commons/lang3/time"/>
+	<classpathentry kind="src" path="output/context/lang3_tests/org/apache/commons/lang3/tuple"/>
+	<classpathentry excluding="reflect/|math/|exception/|text/translate/|event/|time/|mutable/|builder/|text/|concurrent/|tuple/" kind="src" path="output/context/lang3/org/apache/commons/lang3"/>
+	<classpathentry kind="src" path="output/context/lang3/org/apache/commons/lang3/builder"/>
+	<classpathentry kind="src" path="output/context/lang3/org/apache/commons/lang3/concurrent"/>
+	<classpathentry kind="src" path="output/context/lang3/org/apache/commons/lang3/event"/>
+	<classpathentry kind="src" path="output/context/lang3/org/apache/commons/lang3/exception"/>
+	<classpathentry kind="src" path="output/context/lang3/org/apache/commons/lang3/math"/>
+	<classpathentry kind="src" path="output/context/lang3/org/apache/commons/lang3/mutable"/>
+	<classpathentry kind="src" path="output/context/lang3/org/apache/commons/lang3/reflect"/>
+	<classpathentry excluding="translate/" kind="src" path="output/context/lang3/org/apache/commons/lang3/text"/>
+	<classpathentry kind="src" path="output/context/lang3/org/apache/commons/lang3/text/translate"/>
+	<classpathentry kind="src" path="output/context/lang3/org/apache/commons/lang3/time"/>
+	<classpathentry kind="src" path="output/context/lang3/org/apache/commons/lang3/tuple"/>
+	<classpathentry excluding="optim/nonlinear/scalar/|exception/util/|optimization/direct/|distribution/fitting/|optimization/univariate/|fraction/|optim/|complex/|analysis/integration/gauss/|optim/nonlinear/vector/jacobian/|transform/|ode/sampling/|optim/nonlinear/scalar/noderiv/|ode/events/|analysis/differentiation/|stat/correlation/|geometry/euclidean/threed/|stat/descriptive/moment/|geometry/partitioning/utilities/|optimization/|analysis/function/|ode/nonstiff/|stat/clustering/|distribution/|optim/nonlinear/vector/|stat/descriptive/rank/|util/|exception/|stat/ranking/|analysis/|filter/|special/|fitting/leastsquares/|primes/|linear/|ml/distance/|geometry/euclidean/oned/|userguide/|analysis/interpolation/|genetics/|geometry/euclidean/twod/|stat/|ml/clustering/|stat/regression/|optim/nonlinear/scalar/gradient/|stat/data/|analysis/integration/|optimization/linear/|stat/descriptive/summary/|optim/linear/|optim/univariate/|ode/|analysis/solvers/|fitting/|optimization/general/|analysis/polynomials/|random/|stat/inference/|optimization/fitting/|dfp/|stat/descriptive/" kind="src" path="output/context/math_tests/org/apache/commons/math3"/>
+	<classpathentry excluding="integration/gauss/|differentiation/|function/|interpolation/|integration/|solvers/|polynomials/" kind="src" path="output/context/math_tests/org/apache/commons/math3/analysis"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/analysis/differentiation"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/analysis/function"/>
+	<classpathentry excluding="gauss/" kind="src" path="output/context/math_tests/org/apache/commons/math3/analysis/integration"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/analysis/integration/gauss"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/analysis/interpolation"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/analysis/polynomials"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/analysis/solvers"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/complex"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/dfp"/>
+	<classpathentry excluding="fitting/" kind="src" path="output/context/math_tests/org/apache/commons/math3/distribution"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/distribution/fitting"/>
+	<classpathentry excluding="util/" kind="src" path="output/context/math_tests/org/apache/commons/math3/exception"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/exception/util"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/filter"/>
+	<classpathentry excluding="leastsquares/" kind="src" path="output/context/math_tests/org/apache/commons/math3/fitting"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/fitting/leastsquares"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/fraction"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/genetics"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/geometry/euclidean/oned"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/geometry/euclidean/threed"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/geometry/euclidean/twod"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/geometry/partitioning/utilities"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/linear"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/ml/clustering"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/ml/distance"/>
+	<classpathentry excluding="sampling/|events/|nonstiff/" kind="src" path="output/context/math_tests/org/apache/commons/math3/ode"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/ode/events"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/ode/nonstiff"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/ode/sampling"/>
+	<classpathentry excluding="nonlinear/scalar/|nonlinear/vector/jacobian/|nonlinear/scalar/noderiv/|nonlinear/vector/|nonlinear/scalar/gradient/|linear/|univariate/" kind="src" path="output/context/math_tests/org/apache/commons/math3/optim"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/optim/linear"/>
+	<classpathentry excluding="noderiv/|gradient/" kind="src" path="output/context/math_tests/org/apache/commons/math3/optim/nonlinear/scalar"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/optim/nonlinear/scalar/gradient"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/optim/nonlinear/scalar/noderiv"/>
+	<classpathentry excluding="jacobian/" kind="src" path="output/context/math_tests/org/apache/commons/math3/optim/nonlinear/vector"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/optim/nonlinear/vector/jacobian"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/optim/univariate"/>
+	<classpathentry excluding="direct/|univariate/|linear/|general/|fitting/" kind="src" path="output/context/math_tests/org/apache/commons/math3/optimization"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/optimization/direct"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/optimization/fitting"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/optimization/general"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/optimization/linear"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/optimization/univariate"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/primes"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/random"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/special"/>
+	<classpathentry excluding="correlation/|descriptive/moment/|clustering/|descriptive/rank/|ranking/|regression/|data/|descriptive/summary/|inference/|descriptive/" kind="src" path="output/context/math_tests/org/apache/commons/math3/stat"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/stat/clustering"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/stat/correlation"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/stat/data"/>
+	<classpathentry excluding="moment/|rank/|summary/" kind="src" path="output/context/math_tests/org/apache/commons/math3/stat/descriptive"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/stat/descriptive/moment"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/stat/descriptive/rank"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/stat/descriptive/summary"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/stat/inference"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/stat/ranking"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/stat/regression"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/transform"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/userguide"/>
+	<classpathentry kind="src" path="output/context/math_tests/org/apache/commons/math3/util"/>
+	<classpathentry excluding="ml/distance/|geometry/euclidean/threed/|analysis/integration/gauss/|fitting/|stat/correlation/|stat/descriptive/summary/|geometry/|ode/sampling/|optim/univariate/|primes/|filter/|fitting/leastsquares/|optimization/|ode/nonstiff/|exception/|util/|optim/nonlinear/vector/jacobian/|optim/nonlinear/scalar/noderiv/|special/|optim/nonlinear/scalar/|stat/clustering/|ode/events/|stat/descriptive/moment/|geometry/euclidean/twod/|analysis/differentiation/|optim/|analysis/function/|ode/|optimization/fitting/|geometry/partitioning/utilities/|optimization/linear/|transform/|analysis/integration/|stat/|geometry/euclidean/oned/|distribution/|optim/nonlinear/vector/|stat/descriptive/rank/|exception/util/|dfp/|stat/regression/|ml/clustering/|distribution/fitting/|optimization/univariate/|fraction/|optimization/direct/|analysis/polynomials/|analysis/solvers/|stat/inference/|analysis/interpolation/|optim/linear/|geometry/partitioning/|genetics/|stat/descriptive/|random/|optim/nonlinear/scalar/gradient/|analysis/|optimization/general/|ml/|stat/ranking/|complex/|linear/" kind="src" path="output/context/math/org/apache/commons/math3"/>
+	<classpathentry excluding="integration/gauss/|differentiation/|function/|integration/|polynomials/|solvers/|interpolation/" kind="src" path="output/context/math/org/apache/commons/math3/analysis"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/analysis/differentiation"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/analysis/function"/>
+	<classpathentry excluding="gauss/" kind="src" path="output/context/math/org/apache/commons/math3/analysis/integration"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/analysis/integration/gauss"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/analysis/interpolation"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/analysis/polynomials"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/analysis/solvers"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/complex"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/dfp"/>
+	<classpathentry excluding="fitting/" kind="src" path="output/context/math/org/apache/commons/math3/distribution"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/distribution/fitting"/>
+	<classpathentry excluding="util/" kind="src" path="output/context/math/org/apache/commons/math3/exception"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/exception/util"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/filter"/>
+	<classpathentry excluding="leastsquares/" kind="src" path="output/context/math/org/apache/commons/math3/fitting"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/fitting/leastsquares"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/fraction"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/genetics"/>
+	<classpathentry excluding="euclidean/threed/|euclidean/twod/|partitioning/utilities/|euclidean/oned/|partitioning/" kind="src" path="output/context/math/org/apache/commons/math3/geometry"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/geometry/euclidean/oned"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/geometry/euclidean/threed"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/geometry/euclidean/twod"/>
+	<classpathentry excluding="utilities/" kind="src" path="output/context/math/org/apache/commons/math3/geometry/partitioning"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/geometry/partitioning/utilities"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/linear"/>
+	<classpathentry excluding="distance/|clustering/" kind="src" path="output/context/math/org/apache/commons/math3/ml"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/ml/clustering"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/ml/distance"/>
+	<classpathentry excluding="sampling/|nonstiff/|events/" kind="src" path="output/context/math/org/apache/commons/math3/ode"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/ode/events"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/ode/nonstiff"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/ode/sampling"/>
+	<classpathentry excluding="univariate/|nonlinear/vector/jacobian/|nonlinear/scalar/noderiv/|nonlinear/scalar/|nonlinear/vector/|linear/|nonlinear/scalar/gradient/" kind="src" path="output/context/math/org/apache/commons/math3/optim"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/optim/linear"/>
+	<classpathentry excluding="noderiv/|gradient/" kind="src" path="output/context/math/org/apache/commons/math3/optim/nonlinear/scalar"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/optim/nonlinear/scalar/gradient"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/optim/nonlinear/scalar/noderiv"/>
+	<classpathentry excluding="jacobian/" kind="src" path="output/context/math/org/apache/commons/math3/optim/nonlinear/vector"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/optim/nonlinear/vector/jacobian"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/optim/univariate"/>
+	<classpathentry excluding="fitting/|linear/|univariate/|direct/|general/" kind="src" path="output/context/math/org/apache/commons/math3/optimization"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/optimization/direct"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/optimization/fitting"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/optimization/general"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/optimization/linear"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/optimization/univariate"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/primes"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/random"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/special"/>
+	<classpathentry excluding="correlation/|descriptive/summary/|clustering/|descriptive/moment/|descriptive/rank/|regression/|inference/|descriptive/|ranking/" kind="src" path="output/context/math/org/apache/commons/math3/stat"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/stat/clustering"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/stat/correlation"/>
+	<classpathentry excluding="summary/|moment/|rank/" kind="src" path="output/context/math/org/apache/commons/math3/stat/descriptive"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/stat/descriptive/moment"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/stat/descriptive/rank"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/stat/descriptive/summary"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/stat/inference"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/stat/ranking"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/stat/regression"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/transform"/>
+	<classpathentry kind="src" path="output/context/math/org/apache/commons/math3/util"/>
+	<classpathentry excluding="convert/|tz/|field/|chrono/gj/|format/|chrono/" kind="src" path="output/context/time_tests/org/joda/time"/>
+	<classpathentry excluding="gj/" kind="src" path="output/context/time_tests/org/joda/time/chrono"/>
+	<classpathentry kind="src" path="output/context/time_tests/org/joda/time/chrono/gj"/>
+	<classpathentry kind="src" path="output/context/time_tests/org/joda/time/convert"/>
+	<classpathentry kind="src" path="output/context/time_tests/org/joda/time/field"/>
+	<classpathentry kind="src" path="output/context/time_tests/org/joda/time/format"/>
+	<classpathentry kind="src" path="output/context/time_tests/org/joda/time/tz"/>
+	<classpathentry excluding="convert/|chrono/|format/|base/|tz/|field/" kind="src" path="output/context/time/org/joda/time"/>
+	<classpathentry kind="src" path="output/context/time/org/joda/time/base"/>
+	<classpathentry kind="src" path="output/context/time/org/joda/time/chrono"/>
+	<classpathentry kind="src" path="output/context/time/org/joda/time/convert"/>
+	<classpathentry kind="src" path="output/context/time/org/joda/time/field"/>
+	<classpathentry kind="src" path="output/context/time/org/joda/time/format"/>
+	<classpathentry kind="src" path="output/context/time/org/joda/time/tz"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/annotations/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/axis/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/block/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/entity/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/imagemap/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/labels/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/needle/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/plot/dial/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/plot/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/renderer/category/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/renderer/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/renderer/xy/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/title/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/urls/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/chart/util/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/data/category/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/data/function/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/data/gantt/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/data/general/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/data/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/data/statistics/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/data/time/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/data/time/ohlc/junit"/>
+	<classpathentry kind="src" path="output/method_names/chart_tests/org/jfree/data/xy/junit"/>
+	<classpathentry excluding="labels/|renderer/category/|entity/|servlet/|plot/dial/|panel/|axis/|annotations/|util/|resources/|needle/|event/|title/|urls/|renderer/xy/|demo/|block/|editor/|ui/|imagemap/|renderer/|text/|encoders/|plot/" kind="src" path="output/method_names/chart/org/jfree/chart"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/annotations"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/axis"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/block"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/demo"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/editor"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/encoders"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/entity"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/event"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/imagemap"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/labels"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/needle"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/panel"/>
+	<classpathentry excluding="dial/" kind="src" path="output/method_names/chart/org/jfree/chart/plot"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/plot/dial"/>
+	<classpathentry excluding="category/|xy/" kind="src" path="output/method_names/chart/org/jfree/chart/renderer"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/renderer/category"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/renderer/xy"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/resources"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/servlet"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/text"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/title"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/ui"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/urls"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/chart/util"/>
+	<classpathentry excluding="statistics/|xml/|general/|pie/|time/|jdbc/|resources/|event/|function/|category/|time/ohlc/|io/|gantt/|xy/" kind="src" path="output/method_names/chart/org/jfree/data"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/data/category"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/data/event"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/data/function"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/data/gantt"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/data/general"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/data/io"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/data/jdbc"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/data/pie"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/data/resources"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/data/statistics"/>
+	<classpathentry excluding="ohlc/" kind="src" path="output/method_names/chart/org/jfree/data/time"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/data/time/ohlc"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/data/xml"/>
+	<classpathentry kind="src" path="output/method_names/chart/org/jfree/data/xy"/>
+	<classpathentry excluding="bug/" kind="src" path="output/method_names/cli_tests/org/apache/commons/cli"/>
+	<classpathentry kind="src" path="output/method_names/cli_tests/org/apache/commons/cli/bug"/>
+	<classpathentry kind="src" path="output/method_names/cli/org/apache/commons/cli"/>
+	<classpathentry kind="src" path="output/method_names/closure_tests/com/google/debugging/sourcemap"/>
+	<classpathentry excluding="regtests/|regex/|graph/|parsing/|deps/|jsonml/" kind="src" path="output/method_names/closure_tests/com/google/javascript/jscomp"/>
+	<classpathentry kind="src" path="output/method_names/closure_tests/com/google/javascript/jscomp/deps"/>
+	<classpathentry kind="src" path="output/method_names/closure_tests/com/google/javascript/jscomp/graph"/>
+	<classpathentry kind="src" path="output/method_names/closure_tests/com/google/javascript/jscomp/jsonml"/>
+	<classpathentry kind="src" path="output/method_names/closure_tests/com/google/javascript/jscomp/parsing"/>
+	<classpathentry kind="src" path="output/method_names/closure_tests/com/google/javascript/jscomp/regex"/>
+	<classpathentry kind="src" path="output/method_names/closure_tests/com/google/javascript/jscomp/regtests"/>
+	<classpathentry excluding="jstype/" kind="src" path="output/method_names/closure_tests/com/google/javascript/rhino"/>
+	<classpathentry kind="src" path="output/method_names/closure_tests/com/google/javascript/rhino/jstype"/>
+	<classpathentry kind="src" path="output/method_names/closure/com/google/debugging/sourcemap"/>
+	<classpathentry excluding="testing/|deps/|jsonml/|regex/|ant/|webservice/common/|graph/|parsing/|type/" kind="src" path="output/method_names/closure/com/google/javascript/jscomp"/>
+	<classpathentry kind="src" path="output/method_names/closure/com/google/javascript/jscomp/ant"/>
+	<classpathentry kind="src" path="output/method_names/closure/com/google/javascript/jscomp/deps"/>
+	<classpathentry kind="src" path="output/method_names/closure/com/google/javascript/jscomp/graph"/>
+	<classpathentry kind="src" path="output/method_names/closure/com/google/javascript/jscomp/jsonml"/>
+	<classpathentry kind="src" path="output/method_names/closure/com/google/javascript/jscomp/parsing"/>
+	<classpathentry kind="src" path="output/method_names/closure/com/google/javascript/jscomp/regex"/>
+	<classpathentry kind="src" path="output/method_names/closure/com/google/javascript/jscomp/testing"/>
+	<classpathentry kind="src" path="output/method_names/closure/com/google/javascript/jscomp/type"/>
+	<classpathentry kind="src" path="output/method_names/closure/com/google/javascript/jscomp/webservice/common"/>
+	<classpathentry excluding="testing/|jstype/" kind="src" path="output/method_names/closure/com/google/javascript/rhino"/>
+	<classpathentry kind="src" path="output/method_names/closure/com/google/javascript/rhino/jstype"/>
+	<classpathentry kind="src" path="output/method_names/closure/com/google/javascript/rhino/testing"/>
+	<classpathentry excluding="digest/|language/|net/|binary/" kind="src" path="output/method_names/codec_tests/org/apache/commons/codec"/>
+	<classpathentry kind="src" path="output/method_names/codec_tests/org/apache/commons/codec/binary"/>
+	<classpathentry kind="src" path="output/method_names/codec_tests/org/apache/commons/codec/digest"/>
+	<classpathentry kind="src" path="output/method_names/codec_tests/org/apache/commons/codec/language"/>
+	<classpathentry kind="src" path="output/method_names/codec_tests/org/apache/commons/codec/net"/>
+	<classpathentry excluding="digest/|binary/|net/|language/" kind="src" path="output/method_names/codec/org/apache/commons/codec"/>
+	<classpathentry kind="src" path="output/method_names/codec/org/apache/commons/codec/binary"/>
+	<classpathentry kind="src" path="output/method_names/codec/org/apache/commons/codec/digest"/>
+	<classpathentry kind="src" path="output/method_names/codec/org/apache/commons/codec/language"/>
+	<classpathentry kind="src" path="output/method_names/codec/org/apache/commons/codec/net"/>
+	<classpathentry excluding="changes/|archivers/cpio/|archivers/jar/|archivers/|compressors/|archivers/zip/|archivers/tar/|archivers/memory/" kind="src" path="output/method_names/compress_tests/org/apache/commons/compress"/>
+	<classpathentry excluding="cpio/|jar/|zip/|tar/|memory/" kind="src" path="output/method_names/compress_tests/org/apache/commons/compress/archivers"/>
+	<classpathentry kind="src" path="output/method_names/compress_tests/org/apache/commons/compress/archivers/cpio"/>
+	<classpathentry kind="src" path="output/method_names/compress_tests/org/apache/commons/compress/archivers/jar"/>
+	<classpathentry kind="src" path="output/method_names/compress_tests/org/apache/commons/compress/archivers/memory"/>
+	<classpathentry kind="src" path="output/method_names/compress_tests/org/apache/commons/compress/archivers/tar"/>
+	<classpathentry kind="src" path="output/method_names/compress_tests/org/apache/commons/compress/archivers/zip"/>
+	<classpathentry kind="src" path="output/method_names/compress_tests/org/apache/commons/compress/changes"/>
+	<classpathentry kind="src" path="output/method_names/compress_tests/org/apache/commons/compress/compressors"/>
+	<classpathentry excluding="ar/|cpio/|jar/|zip/|tar/" kind="src" path="output/method_names/compress/org/apache/commons/compress/archivers"/>
+	<classpathentry kind="src" path="output/method_names/compress/org/apache/commons/compress/archivers/ar"/>
+	<classpathentry kind="src" path="output/method_names/compress/org/apache/commons/compress/archivers/cpio"/>
+	<classpathentry kind="src" path="output/method_names/compress/org/apache/commons/compress/archivers/jar"/>
+	<classpathentry kind="src" path="output/method_names/compress/org/apache/commons/compress/archivers/tar"/>
+	<classpathentry kind="src" path="output/method_names/compress/org/apache/commons/compress/archivers/zip"/>
+	<classpathentry kind="src" path="output/method_names/compress/org/apache/commons/compress/changes"/>
+	<classpathentry excluding="gzip/|bzip2/" kind="src" path="output/method_names/compress/org/apache/commons/compress/compressors"/>
+	<classpathentry kind="src" path="output/method_names/compress/org/apache/commons/compress/compressors/bzip2"/>
+	<classpathentry kind="src" path="output/method_names/compress/org/apache/commons/compress/compressors/gzip"/>
+	<classpathentry kind="src" path="output/method_names/compress/org/apache/commons/compress/utils"/>
+	<classpathentry kind="src" path="output/method_names/csv_tests/org/apache/commons/csv"/>
+	<classpathentry kind="src" path="output/method_names/csv/org/apache/commons/csv"/>
+	<classpathentry excluding="metrics/|common/|functional/|stream/" kind="src" path="output/method_names/gson_tests/com/google/gson"/>
+	<classpathentry kind="src" path="output/method_names/gson_tests/com/google/gson/common"/>
+	<classpathentry kind="src" path="output/method_names/gson_tests/com/google/gson/functional"/>
+	<classpathentry kind="src" path="output/method_names/gson_tests/com/google/gson/metrics"/>
+	<classpathentry kind="src" path="output/method_names/gson_tests/com/google/gson/stream"/>
+	<classpathentry excluding="annotations/|stream/|reflect/" kind="src" path="output/method_names/gson/com/google/gson"/>
+	<classpathentry kind="src" path="output/method_names/gson/com/google/gson/annotations"/>
+	<classpathentry kind="src" path="output/method_names/gson/com/google/gson/reflect"/>
+	<classpathentry kind="src" path="output/method_names/gson/com/google/gson/stream"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore_tests/com/fasterxml/jackson/core/base64"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore_tests/com/fasterxml/jackson/core/format"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore_tests/com/fasterxml/jackson/core/io"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore_tests/com/fasterxml/jackson/core/json"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore_tests/com/fasterxml/jackson/core/main"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore_tests/com/fasterxml/jackson/core/misc"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore_tests/com/fasterxml/jackson/core/sym"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore_tests/com/fasterxml/jackson/core/util"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore_tests/com/fasterxml/jackson/test"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore_tests/perf"/>
+	<classpathentry excluding="type/|base/|sym/|util/|format/|json/|io/" kind="src" path="output/method_names/jacksonCore/com/fasterxml/jackson/core"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore/com/fasterxml/jackson/core/base"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore/com/fasterxml/jackson/core/format"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore/com/fasterxml/jackson/core/io"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore/com/fasterxml/jackson/core/json"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore/com/fasterxml/jackson/core/sym"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore/com/fasterxml/jackson/core/type"/>
+	<classpathentry kind="src" path="output/method_names/jacksonCore/com/fasterxml/jackson/core/util"/>
+	<classpathentry excluding="contextual/|mixins/|views/|jsonschema/|ser/|access/|introspect/|jsontype/|ext/|creators/|interop/|type/|filter/|deser/|util/|convert/|node/|struct/|module/" kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/access"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/contextual"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/convert"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/creators"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/deser"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/ext"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/filter"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/interop"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/introspect"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/jsonschema"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/jsontype"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/mixins"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/module"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/node"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/ser"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/struct"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/type"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/util"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/databind/views"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/failing"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/com/fasterxml/jackson/test"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind_tests/perf"/>
+	<classpathentry excluding="jsonschema/|ser/|ser/std/|deser/std/|ext/|exc/|jsontype/|jsontype/impl/|deser/|introspect/|util/|ser/impl/|cfg/|annotation/|type/|jsonFormatVisitors/|node/|module/|deser/impl/" kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/annotation"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/cfg"/>
+	<classpathentry excluding="std/|impl/" kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/deser"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/deser/impl"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/deser/std"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/exc"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/ext"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/introspect"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/jsonFormatVisitors"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/jsonschema"/>
+	<classpathentry excluding="impl/" kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/jsontype"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/jsontype/impl"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/module"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/node"/>
+	<classpathentry excluding="std/|impl/" kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/ser"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/ser/impl"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/ser/std"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/type"/>
+	<classpathentry kind="src" path="output/method_names/jacksonDatabind/com/fasterxml/jackson/databind/util"/>
+	<classpathentry excluding="parser/|integration/|safety/|nodes/|select/" kind="src" path="output/method_names/jsoup_tests/org/jsoup"/>
+	<classpathentry kind="src" path="output/method_names/jsoup_tests/org/jsoup/integration"/>
+	<classpathentry kind="src" path="output/method_names/jsoup_tests/org/jsoup/nodes"/>
+	<classpathentry kind="src" path="output/method_names/jsoup_tests/org/jsoup/parser"/>
+	<classpathentry kind="src" path="output/method_names/jsoup_tests/org/jsoup/safety"/>
+	<classpathentry kind="src" path="output/method_names/jsoup_tests/org/jsoup/select"/>
+	<classpathentry excluding="examples/|select/|parser/|safety/|nodes/" kind="src" path="output/method_names/jsoup/org/jsoup"/>
+	<classpathentry kind="src" path="output/method_names/jsoup/org/jsoup/examples"/>
+	<classpathentry kind="src" path="output/method_names/jsoup/org/jsoup/nodes"/>
+	<classpathentry kind="src" path="output/method_names/jsoup/org/jsoup/parser"/>
+	<classpathentry kind="src" path="output/method_names/jsoup/org/jsoup/safety"/>
+	<classpathentry kind="src" path="output/method_names/jsoup/org/jsoup/select"/>
+	<classpathentry excluding="ri/|ri/axes/|ri/model/dynamic/|ri/compiler/|ri/model/|ri/model/jdom/|ri/model/dom/|ri/model/beans/|ri/model/container/|util/|ri/model/dynabeans/" kind="src" path="output/method_names/jxPath_tests/org/apache/commons/jxpath"/>
+	<classpathentry excluding="axes/|model/dynamic/|compiler/|model/|model/jdom/|model/dom/|model/beans/|model/container/|model/dynabeans/" kind="src" path="output/method_names/jxPath_tests/org/apache/commons/jxpath/ri"/>
+	<classpathentry kind="src" path="output/method_names/jxPath_tests/org/apache/commons/jxpath/ri/axes"/>
+	<classpathentry kind="src" path="output/method_names/jxPath_tests/org/apache/commons/jxpath/ri/compiler"/>
+	<classpathentry excluding="dynamic/|jdom/|dom/|beans/|container/|dynabeans/" kind="src" path="output/method_names/jxPath_tests/org/apache/commons/jxpath/ri/model"/>
+	<classpathentry kind="src" path="output/method_names/jxPath_tests/org/apache/commons/jxpath/ri/model/beans"/>
+	<classpathentry kind="src" path="output/method_names/jxPath_tests/org/apache/commons/jxpath/ri/model/container"/>
+	<classpathentry kind="src" path="output/method_names/jxPath_tests/org/apache/commons/jxpath/ri/model/dom"/>
+	<classpathentry kind="src" path="output/method_names/jxPath_tests/org/apache/commons/jxpath/ri/model/dynabeans"/>
+	<classpathentry kind="src" path="output/method_names/jxPath_tests/org/apache/commons/jxpath/ri/model/dynamic"/>
+	<classpathentry kind="src" path="output/method_names/jxPath_tests/org/apache/commons/jxpath/ri/model/jdom"/>
+	<classpathentry kind="src" path="output/method_names/jxPath_tests/org/apache/commons/jxpath/util"/>
+	<classpathentry excluding="ri/compiler/|ri/parser/|ri/model/beans/|ri/axes/|ri/model/dynabeans/|ri/model/|ri/|ri/model/container/|ri/model/dom/|ri/model/jdom/|ri/model/dynamic/|xml/|servlet/|functions/|util/" kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath"/>
+	<classpathentry kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/functions"/>
+	<classpathentry excluding="compiler/|parser/|model/beans/|axes/|model/dynabeans/|model/|model/container/|model/dom/|model/jdom/|model/dynamic/" kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/ri"/>
+	<classpathentry kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/ri/axes"/>
+	<classpathentry kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/ri/compiler"/>
+	<classpathentry excluding="beans/|dynabeans/|container/|dom/|jdom/|dynamic/" kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/ri/model"/>
+	<classpathentry kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/ri/model/beans"/>
+	<classpathentry kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/ri/model/container"/>
+	<classpathentry kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/ri/model/dom"/>
+	<classpathentry kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/ri/model/dynabeans"/>
+	<classpathentry kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/ri/model/dynamic"/>
+	<classpathentry kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/ri/model/jdom"/>
+	<classpathentry kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/ri/parser"/>
+	<classpathentry kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/servlet"/>
+	<classpathentry kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/util"/>
+	<classpathentry kind="src" path="output/method_names/jxPath/org/apache/commons/jxpath/xml"/>
+	<classpathentry excluding="exception/|math/|reflect/|builder/|text/|tuple/|concurrent/|mutable/|event/|text/translate/|time/|reflect/testbed/" kind="src" path="output/method_names/lang3_tests/org/apache/commons/lang3"/>
+	<classpathentry kind="src" path="output/method_names/lang3_tests/org/apache/commons/lang3/builder"/>
+	<classpathentry kind="src" path="output/method_names/lang3_tests/org/apache/commons/lang3/concurrent"/>
+	<classpathentry kind="src" path="output/method_names/lang3_tests/org/apache/commons/lang3/event"/>
+	<classpathentry kind="src" path="output/method_names/lang3_tests/org/apache/commons/lang3/exception"/>
+	<classpathentry kind="src" path="output/method_names/lang3_tests/org/apache/commons/lang3/math"/>
+	<classpathentry kind="src" path="output/method_names/lang3_tests/org/apache/commons/lang3/mutable"/>
+	<classpathentry excluding="testbed/" kind="src" path="output/method_names/lang3_tests/org/apache/commons/lang3/reflect"/>
+	<classpathentry kind="src" path="output/method_names/lang3_tests/org/apache/commons/lang3/reflect/testbed"/>
+	<classpathentry excluding="translate/" kind="src" path="output/method_names/lang3_tests/org/apache/commons/lang3/text"/>
+	<classpathentry kind="src" path="output/method_names/lang3_tests/org/apache/commons/lang3/text/translate"/>
+	<classpathentry kind="src" path="output/method_names/lang3_tests/org/apache/commons/lang3/time"/>
+	<classpathentry kind="src" path="output/method_names/lang3_tests/org/apache/commons/lang3/tuple"/>
+	<classpathentry excluding="exception/|concurrent/|text/translate/|time/|mutable/|builder/|text/|event/|tuple/|math/|reflect/" kind="src" path="output/method_names/lang3/org/apache/commons/lang3"/>
+	<classpathentry kind="src" path="output/method_names/lang3/org/apache/commons/lang3/builder"/>
+	<classpathentry kind="src" path="output/method_names/lang3/org/apache/commons/lang3/concurrent"/>
+	<classpathentry kind="src" path="output/method_names/lang3/org/apache/commons/lang3/event"/>
+	<classpathentry kind="src" path="output/method_names/lang3/org/apache/commons/lang3/exception"/>
+	<classpathentry kind="src" path="output/method_names/lang3/org/apache/commons/lang3/math"/>
+	<classpathentry kind="src" path="output/method_names/lang3/org/apache/commons/lang3/mutable"/>
+	<classpathentry kind="src" path="output/method_names/lang3/org/apache/commons/lang3/reflect"/>
+	<classpathentry excluding="translate/" kind="src" path="output/method_names/lang3/org/apache/commons/lang3/text"/>
+	<classpathentry kind="src" path="output/method_names/lang3/org/apache/commons/lang3/text/translate"/>
+	<classpathentry kind="src" path="output/method_names/lang3/org/apache/commons/lang3/time"/>
+	<classpathentry kind="src" path="output/method_names/lang3/org/apache/commons/lang3/tuple"/>
+	<classpathentry excluding="optim/|optim/nonlinear/scalar/noderiv/|stat/data/|ode/sampling/|fraction/|optim/linear/|transform/|ode/|distribution/|random/|optim/univariate/|dfp/|ode/nonstiff/|optim/nonlinear/vector/|optimization/|distribution/fitting/|exception/util/|analysis/integration/gauss/|geometry/euclidean/oned/|stat/ranking/|geometry/partitioning/utilities/|optimization/general/|optimization/direct/|analysis/solvers/|optim/nonlinear/scalar/|stat/descriptive/summary/|geometry/euclidean/twod/|analysis/integration/|linear/|stat/regression/|fitting/|ode/events/|analysis/interpolation/|optimization/linear/|stat/descriptive/moment/|ml/clustering/|optimization/fitting/|special/|stat/descriptive/|exception/|optim/nonlinear/scalar/gradient/|userguide/|util/|analysis/polynomials/|optim/nonlinear/vector/jacobian/|stat/inference/|primes/|optimization/univariate/|filter/|stat/clustering/|geometry/euclidean/threed/|stat/|stat/descriptive/rank/|ml/distance/|complex/|analysis/function/|analysis/differentiation/|genetics/|fitting/leastsquares/|analysis/|stat/correlation/" kind="src" path="output/method_names/math_tests/org/apache/commons/math3"/>
+	<classpathentry excluding="integration/gauss/|solvers/|integration/|interpolation/|polynomials/|function/|differentiation/" kind="src" path="output/method_names/math_tests/org/apache/commons/math3/analysis"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/analysis/differentiation"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/analysis/function"/>
+	<classpathentry excluding="gauss/" kind="src" path="output/method_names/math_tests/org/apache/commons/math3/analysis/integration"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/analysis/integration/gauss"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/analysis/interpolation"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/analysis/polynomials"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/analysis/solvers"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/complex"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/dfp"/>
+	<classpathentry excluding="fitting/" kind="src" path="output/method_names/math_tests/org/apache/commons/math3/distribution"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/distribution/fitting"/>
+	<classpathentry excluding="util/" kind="src" path="output/method_names/math_tests/org/apache/commons/math3/exception"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/exception/util"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/filter"/>
+	<classpathentry excluding="leastsquares/" kind="src" path="output/method_names/math_tests/org/apache/commons/math3/fitting"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/fitting/leastsquares"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/fraction"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/genetics"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/geometry/euclidean/oned"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/geometry/euclidean/threed"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/geometry/euclidean/twod"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/geometry/partitioning/utilities"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/linear"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/ml/clustering"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/ml/distance"/>
+	<classpathentry excluding="sampling/|nonstiff/|events/" kind="src" path="output/method_names/math_tests/org/apache/commons/math3/ode"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/ode/events"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/ode/nonstiff"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/ode/sampling"/>
+	<classpathentry excluding="nonlinear/scalar/noderiv/|linear/|univariate/|nonlinear/vector/|nonlinear/scalar/|nonlinear/scalar/gradient/|nonlinear/vector/jacobian/" kind="src" path="output/method_names/math_tests/org/apache/commons/math3/optim"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/optim/linear"/>
+	<classpathentry excluding="noderiv/|gradient/" kind="src" path="output/method_names/math_tests/org/apache/commons/math3/optim/nonlinear/scalar"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/optim/nonlinear/scalar/gradient"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/optim/nonlinear/scalar/noderiv"/>
+	<classpathentry excluding="jacobian/" kind="src" path="output/method_names/math_tests/org/apache/commons/math3/optim/nonlinear/vector"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/optim/nonlinear/vector/jacobian"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/optim/univariate"/>
+	<classpathentry excluding="general/|direct/|linear/|fitting/|univariate/" kind="src" path="output/method_names/math_tests/org/apache/commons/math3/optimization"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/optimization/direct"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/optimization/fitting"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/optimization/general"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/optimization/linear"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/optimization/univariate"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/primes"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/random"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/special"/>
+	<classpathentry excluding="data/|ranking/|descriptive/summary/|regression/|descriptive/moment/|descriptive/|inference/|clustering/|descriptive/rank/|correlation/" kind="src" path="output/method_names/math_tests/org/apache/commons/math3/stat"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/stat/clustering"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/stat/correlation"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/stat/data"/>
+	<classpathentry excluding="summary/|moment/|rank/" kind="src" path="output/method_names/math_tests/org/apache/commons/math3/stat/descriptive"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/stat/descriptive/moment"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/stat/descriptive/rank"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/stat/descriptive/summary"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/stat/inference"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/stat/ranking"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/stat/regression"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/transform"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/userguide"/>
+	<classpathentry kind="src" path="output/method_names/math_tests/org/apache/commons/math3/util"/>
+	<classpathentry excluding="analysis/polynomials/|optim/nonlinear/vector/|stat/descriptive/rank/|geometry/|fitting/leastsquares/|stat/ranking/|optimization/|ode/events/|optim/nonlinear/scalar/noderiv/|geometry/partitioning/utilities/|linear/|geometry/euclidean/twod/|stat/inference/|stat/descriptive/|primes/|dfp/|special/|optimization/fitting/|optim/|geometry/euclidean/oned/|optimization/general/|transform/|stat/descriptive/summary/|fitting/|analysis/interpolation/|analysis/integration/gauss/|ml/clustering/|optim/linear/|analysis/integration/|geometry/partitioning/|optimization/linear/|stat/|genetics/|analysis/solvers/|optim/nonlinear/vector/jacobian/|distribution/fitting/|ml/|optim/nonlinear/scalar/|optimization/direct/|ode/|stat/clustering/|ode/nonstiff/|exception/util/|stat/descriptive/moment/|exception/|random/|complex/|ml/distance/|fraction/|stat/correlation/|distribution/|util/|optimization/univariate/|stat/regression/|analysis/differentiation/|analysis/|optim/univariate/|analysis/function/|filter/|geometry/euclidean/threed/|ode/sampling/|optim/nonlinear/scalar/gradient/" kind="src" path="output/method_names/math/org/apache/commons/math3"/>
+	<classpathentry excluding="polynomials/|interpolation/|integration/gauss/|integration/|solvers/|differentiation/|function/" kind="src" path="output/method_names/math/org/apache/commons/math3/analysis"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/analysis/differentiation"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/analysis/function"/>
+	<classpathentry excluding="gauss/" kind="src" path="output/method_names/math/org/apache/commons/math3/analysis/integration"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/analysis/integration/gauss"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/analysis/interpolation"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/analysis/polynomials"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/analysis/solvers"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/complex"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/dfp"/>
+	<classpathentry excluding="fitting/" kind="src" path="output/method_names/math/org/apache/commons/math3/distribution"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/distribution/fitting"/>
+	<classpathentry excluding="util/" kind="src" path="output/method_names/math/org/apache/commons/math3/exception"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/exception/util"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/filter"/>
+	<classpathentry excluding="leastsquares/" kind="src" path="output/method_names/math/org/apache/commons/math3/fitting"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/fitting/leastsquares"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/fraction"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/genetics"/>
+	<classpathentry excluding="partitioning/utilities/|euclidean/twod/|euclidean/oned/|partitioning/|euclidean/threed/" kind="src" path="output/method_names/math/org/apache/commons/math3/geometry"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/geometry/euclidean/oned"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/geometry/euclidean/threed"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/geometry/euclidean/twod"/>
+	<classpathentry excluding="utilities/" kind="src" path="output/method_names/math/org/apache/commons/math3/geometry/partitioning"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/geometry/partitioning/utilities"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/linear"/>
+	<classpathentry excluding="clustering/|distance/" kind="src" path="output/method_names/math/org/apache/commons/math3/ml"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/ml/clustering"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/ml/distance"/>
+	<classpathentry excluding="events/|nonstiff/|sampling/" kind="src" path="output/method_names/math/org/apache/commons/math3/ode"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/ode/events"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/ode/nonstiff"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/ode/sampling"/>
+	<classpathentry excluding="nonlinear/vector/|nonlinear/scalar/noderiv/|linear/|nonlinear/vector/jacobian/|nonlinear/scalar/|univariate/|nonlinear/scalar/gradient/" kind="src" path="output/method_names/math/org/apache/commons/math3/optim"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/optim/linear"/>
+	<classpathentry excluding="noderiv/|gradient/" kind="src" path="output/method_names/math/org/apache/commons/math3/optim/nonlinear/scalar"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/optim/nonlinear/scalar/gradient"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/optim/nonlinear/scalar/noderiv"/>
+	<classpathentry excluding="jacobian/" kind="src" path="output/method_names/math/org/apache/commons/math3/optim/nonlinear/vector"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/optim/nonlinear/vector/jacobian"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/optim/univariate"/>
+	<classpathentry excluding="fitting/|general/|linear/|direct/|univariate/" kind="src" path="output/method_names/math/org/apache/commons/math3/optimization"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/optimization/direct"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/optimization/fitting"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/optimization/general"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/optimization/linear"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/optimization/univariate"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/primes"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/random"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/special"/>
+	<classpathentry excluding="descriptive/rank/|ranking/|inference/|descriptive/|descriptive/summary/|clustering/|descriptive/moment/|correlation/|regression/" kind="src" path="output/method_names/math/org/apache/commons/math3/stat"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/stat/clustering"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/stat/correlation"/>
+	<classpathentry excluding="rank/|summary/|moment/" kind="src" path="output/method_names/math/org/apache/commons/math3/stat/descriptive"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/stat/descriptive/moment"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/stat/descriptive/rank"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/stat/descriptive/summary"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/stat/inference"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/stat/ranking"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/stat/regression"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/transform"/>
+	<classpathentry kind="src" path="output/method_names/math/org/apache/commons/math3/util"/>
+	<classpathentry excluding="tz/|format/|chrono/|convert/|field/|chrono/gj/" kind="src" path="output/method_names/time_tests/org/joda/time"/>
+	<classpathentry excluding="gj/" kind="src" path="output/method_names/time_tests/org/joda/time/chrono"/>
+	<classpathentry kind="src" path="output/method_names/time_tests/org/joda/time/chrono/gj"/>
+	<classpathentry kind="src" path="output/method_names/time_tests/org/joda/time/convert"/>
+	<classpathentry kind="src" path="output/method_names/time_tests/org/joda/time/field"/>
+	<classpathentry kind="src" path="output/method_names/time_tests/org/joda/time/format"/>
+	<classpathentry kind="src" path="output/method_names/time_tests/org/joda/time/tz"/>
+	<classpathentry excluding="chrono/|convert/|format/|tz/|field/|base/" kind="src" path="output/method_names/time/org/joda/time"/>
+	<classpathentry kind="src" path="output/method_names/time/org/joda/time/base"/>
+	<classpathentry kind="src" path="output/method_names/time/org/joda/time/chrono"/>
+	<classpathentry kind="src" path="output/method_names/time/org/joda/time/convert"/>
+	<classpathentry kind="src" path="output/method_names/time/org/joda/time/field"/>
+	<classpathentry kind="src" path="output/method_names/time/org/joda/time/format"/>
+	<classpathentry kind="src" path="output/method_names/time/org/joda/time/tz"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/annotations/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/axis/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/block/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/entity/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/imagemap/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/labels/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/needle/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/plot/dial/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/plot/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/renderer/category/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/renderer/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/renderer/xy/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/title/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/urls/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/chart/util/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/data/category/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/data/function/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/data/gantt/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/data/general/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/data/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/data/statistics/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/data/time/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/data/time/ohlc/junit"/>
+	<classpathentry kind="src" path="output/methods/chart_tests/org/jfree/data/xy/junit"/>
+	<classpathentry excluding="panel/|servlet/|title/|resources/|renderer/xy/|event/|imagemap/|entity/|text/|plot/|encoders/|ui/|demo/|labels/|editor/|renderer/category/|renderer/|plot/dial/|util/|axis/|urls/|block/|needle/|annotations/" kind="src" path="output/methods/chart/org/jfree/chart"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/annotations"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/axis"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/block"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/demo"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/editor"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/encoders"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/entity"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/event"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/imagemap"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/labels"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/needle"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/panel"/>
+	<classpathentry excluding="dial/" kind="src" path="output/methods/chart/org/jfree/chart/plot"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/plot/dial"/>
+	<classpathentry excluding="xy/|category/" kind="src" path="output/methods/chart/org/jfree/chart/renderer"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/renderer/category"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/renderer/xy"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/resources"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/servlet"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/text"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/title"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/ui"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/urls"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/chart/util"/>
+	<classpathentry excluding="function/|pie/|xy/|gantt/|category/|xml/|resources/|time/ohlc/|general/|event/|io/|time/|statistics/|jdbc/" kind="src" path="output/methods/chart/org/jfree/data"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/data/category"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/data/event"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/data/function"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/data/gantt"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/data/general"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/data/io"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/data/jdbc"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/data/pie"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/data/resources"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/data/statistics"/>
+	<classpathentry excluding="ohlc/" kind="src" path="output/methods/chart/org/jfree/data/time"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/data/time/ohlc"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/data/xml"/>
+	<classpathentry kind="src" path="output/methods/chart/org/jfree/data/xy"/>
+	<classpathentry excluding="bug/" kind="src" path="output/methods/cli_tests/org/apache/commons/cli"/>
+	<classpathentry kind="src" path="output/methods/cli_tests/org/apache/commons/cli/bug"/>
+	<classpathentry kind="src" path="output/methods/cli/org/apache/commons/cli"/>
+	<classpathentry kind="src" path="output/methods/closure_tests/com/google/debugging/sourcemap"/>
+	<classpathentry excluding="parsing/|jsonml/|regtests/|regex/|graph/|deps/" kind="src" path="output/methods/closure_tests/com/google/javascript/jscomp"/>
+	<classpathentry kind="src" path="output/methods/closure_tests/com/google/javascript/jscomp/deps"/>
+	<classpathentry kind="src" path="output/methods/closure_tests/com/google/javascript/jscomp/graph"/>
+	<classpathentry kind="src" path="output/methods/closure_tests/com/google/javascript/jscomp/jsonml"/>
+	<classpathentry kind="src" path="output/methods/closure_tests/com/google/javascript/jscomp/parsing"/>
+	<classpathentry kind="src" path="output/methods/closure_tests/com/google/javascript/jscomp/regex"/>
+	<classpathentry kind="src" path="output/methods/closure_tests/com/google/javascript/jscomp/regtests"/>
+	<classpathentry excluding="jstype/" kind="src" path="output/methods/closure_tests/com/google/javascript/rhino"/>
+	<classpathentry kind="src" path="output/methods/closure_tests/com/google/javascript/rhino/jstype"/>
+	<classpathentry kind="src" path="output/methods/closure/com/google/debugging/sourcemap"/>
+	<classpathentry excluding="regex/|webservice/common/|graph/|type/|testing/|deps/|parsing/|jsonml/|ant/" kind="src" path="output/methods/closure/com/google/javascript/jscomp"/>
+	<classpathentry kind="src" path="output/methods/closure/com/google/javascript/jscomp/ant"/>
+	<classpathentry kind="src" path="output/methods/closure/com/google/javascript/jscomp/deps"/>
+	<classpathentry kind="src" path="output/methods/closure/com/google/javascript/jscomp/graph"/>
+	<classpathentry kind="src" path="output/methods/closure/com/google/javascript/jscomp/jsonml"/>
+	<classpathentry kind="src" path="output/methods/closure/com/google/javascript/jscomp/parsing"/>
+	<classpathentry kind="src" path="output/methods/closure/com/google/javascript/jscomp/regex"/>
+	<classpathentry kind="src" path="output/methods/closure/com/google/javascript/jscomp/testing"/>
+	<classpathentry kind="src" path="output/methods/closure/com/google/javascript/jscomp/type"/>
+	<classpathentry kind="src" path="output/methods/closure/com/google/javascript/jscomp/webservice/common"/>
+	<classpathentry excluding="jstype/|testing/" kind="src" path="output/methods/closure/com/google/javascript/rhino"/>
+	<classpathentry kind="src" path="output/methods/closure/com/google/javascript/rhino/jstype"/>
+	<classpathentry kind="src" path="output/methods/closure/com/google/javascript/rhino/testing"/>
+	<classpathentry excluding="digest/|language/|net/|binary/" kind="src" path="output/methods/codec_tests/org/apache/commons/codec"/>
+	<classpathentry kind="src" path="output/methods/codec_tests/org/apache/commons/codec/binary"/>
+	<classpathentry kind="src" path="output/methods/codec_tests/org/apache/commons/codec/digest"/>
+	<classpathentry kind="src" path="output/methods/codec_tests/org/apache/commons/codec/language"/>
+	<classpathentry kind="src" path="output/methods/codec_tests/org/apache/commons/codec/net"/>
+	<classpathentry excluding="binary/|net/|language/|digest/" kind="src" path="output/methods/codec/org/apache/commons/codec"/>
+	<classpathentry kind="src" path="output/methods/codec/org/apache/commons/codec/binary"/>
+	<classpathentry kind="src" path="output/methods/codec/org/apache/commons/codec/digest"/>
+	<classpathentry kind="src" path="output/methods/codec/org/apache/commons/codec/language"/>
+	<classpathentry kind="src" path="output/methods/codec/org/apache/commons/codec/net"/>
+	<classpathentry excluding="archivers/tar/|archivers/|archivers/jar/|changes/|archivers/memory/|archivers/cpio/|compressors/|archivers/zip/" kind="src" path="output/methods/compress_tests/org/apache/commons/compress"/>
+	<classpathentry excluding="tar/|jar/|memory/|cpio/|zip/" kind="src" path="output/methods/compress_tests/org/apache/commons/compress/archivers"/>
+	<classpathentry kind="src" path="output/methods/compress_tests/org/apache/commons/compress/archivers/cpio"/>
+	<classpathentry kind="src" path="output/methods/compress_tests/org/apache/commons/compress/archivers/jar"/>
+	<classpathentry kind="src" path="output/methods/compress_tests/org/apache/commons/compress/archivers/memory"/>
+	<classpathentry kind="src" path="output/methods/compress_tests/org/apache/commons/compress/archivers/tar"/>
+	<classpathentry kind="src" path="output/methods/compress_tests/org/apache/commons/compress/archivers/zip"/>
+	<classpathentry kind="src" path="output/methods/compress_tests/org/apache/commons/compress/changes"/>
+	<classpathentry kind="src" path="output/methods/compress_tests/org/apache/commons/compress/compressors"/>
+	<classpathentry excluding="cpio/|tar/|zip/|ar/|jar/" kind="src" path="output/methods/compress/org/apache/commons/compress/archivers"/>
+	<classpathentry kind="src" path="output/methods/compress/org/apache/commons/compress/archivers/ar"/>
+	<classpathentry kind="src" path="output/methods/compress/org/apache/commons/compress/archivers/cpio"/>
+	<classpathentry kind="src" path="output/methods/compress/org/apache/commons/compress/archivers/jar"/>
+	<classpathentry kind="src" path="output/methods/compress/org/apache/commons/compress/archivers/tar"/>
+	<classpathentry kind="src" path="output/methods/compress/org/apache/commons/compress/archivers/zip"/>
+	<classpathentry kind="src" path="output/methods/compress/org/apache/commons/compress/changes"/>
+	<classpathentry excluding="bzip2/|gzip/" kind="src" path="output/methods/compress/org/apache/commons/compress/compressors"/>
+	<classpathentry kind="src" path="output/methods/compress/org/apache/commons/compress/compressors/bzip2"/>
+	<classpathentry kind="src" path="output/methods/compress/org/apache/commons/compress/compressors/gzip"/>
+	<classpathentry kind="src" path="output/methods/compress/org/apache/commons/compress/utils"/>
+	<classpathentry kind="src" path="output/methods/csv_tests/org/apache/commons/csv"/>
+	<classpathentry kind="src" path="output/methods/csv/org/apache/commons/csv"/>
+	<classpathentry excluding="common/|functional/|stream/|metrics/" kind="src" path="output/methods/gson_tests/com/google/gson"/>
+	<classpathentry kind="src" path="output/methods/gson_tests/com/google/gson/common"/>
+	<classpathentry kind="src" path="output/methods/gson_tests/com/google/gson/functional"/>
+	<classpathentry kind="src" path="output/methods/gson_tests/com/google/gson/metrics"/>
+	<classpathentry kind="src" path="output/methods/gson_tests/com/google/gson/stream"/>
+	<classpathentry excluding="stream/|reflect/|annotations/" kind="src" path="output/methods/gson/com/google/gson"/>
+	<classpathentry kind="src" path="output/methods/gson/com/google/gson/annotations"/>
+	<classpathentry kind="src" path="output/methods/gson/com/google/gson/reflect"/>
+	<classpathentry kind="src" path="output/methods/gson/com/google/gson/stream"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore_tests/com/fasterxml/jackson/core/base64"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore_tests/com/fasterxml/jackson/core/format"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore_tests/com/fasterxml/jackson/core/io"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore_tests/com/fasterxml/jackson/core/json"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore_tests/com/fasterxml/jackson/core/main"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore_tests/com/fasterxml/jackson/core/misc"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore_tests/com/fasterxml/jackson/core/sym"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore_tests/com/fasterxml/jackson/core/util"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore_tests/com/fasterxml/jackson/test"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore_tests/perf"/>
+	<classpathentry excluding="util/|json/|format/|io/|sym/|type/|base/" kind="src" path="output/methods/jacksonCore/com/fasterxml/jackson/core"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore/com/fasterxml/jackson/core/base"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore/com/fasterxml/jackson/core/format"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore/com/fasterxml/jackson/core/io"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore/com/fasterxml/jackson/core/json"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore/com/fasterxml/jackson/core/sym"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore/com/fasterxml/jackson/core/type"/>
+	<classpathentry kind="src" path="output/methods/jacksonCore/com/fasterxml/jackson/core/util"/>
+	<classpathentry excluding="jsontype/|node/|deser/|convert/|module/|mixins/|contextual/|ser/|jsonschema/|creators/|ext/|struct/|views/|util/|filter/|type/|access/|interop/|introspect/" kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/access"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/contextual"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/convert"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/creators"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/deser"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/ext"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/filter"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/interop"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/introspect"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/jsonschema"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/jsontype"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/mixins"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/module"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/node"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/ser"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/struct"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/type"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/util"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/databind/views"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/failing"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/com/fasterxml/jackson/test"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind_tests/perf"/>
+	<classpathentry excluding="deser/|jsontype/|module/|deser/impl/|jsonFormatVisitors/|ser/impl/|node/|ser/|jsonschema/|jsontype/impl/|ext/|exc/|deser/std/|ser/std/|introspect/|cfg/|annotation/|util/|type/" kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/annotation"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/cfg"/>
+	<classpathentry excluding="impl/|std/" kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/deser"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/deser/impl"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/deser/std"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/exc"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/ext"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/introspect"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/jsonFormatVisitors"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/jsonschema"/>
+	<classpathentry excluding="impl/" kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/jsontype"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/jsontype/impl"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/module"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/node"/>
+	<classpathentry excluding="impl/|std/" kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/ser"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/ser/impl"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/ser/std"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/type"/>
+	<classpathentry kind="src" path="output/methods/jacksonDatabind/com/fasterxml/jackson/databind/util"/>
+	<classpathentry excluding="parser/|integration/|nodes/|safety/|select/" kind="src" path="output/methods/jsoup_tests/org/jsoup"/>
+	<classpathentry kind="src" path="output/methods/jsoup_tests/org/jsoup/integration"/>
+	<classpathentry kind="src" path="output/methods/jsoup_tests/org/jsoup/nodes"/>
+	<classpathentry kind="src" path="output/methods/jsoup_tests/org/jsoup/parser"/>
+	<classpathentry kind="src" path="output/methods/jsoup_tests/org/jsoup/safety"/>
+	<classpathentry kind="src" path="output/methods/jsoup_tests/org/jsoup/select"/>
+	<classpathentry excluding="parser/|examples/|select/|safety/|nodes/" kind="src" path="output/methods/jsoup/org/jsoup"/>
+	<classpathentry kind="src" path="output/methods/jsoup/org/jsoup/examples"/>
+	<classpathentry kind="src" path="output/methods/jsoup/org/jsoup/nodes"/>
+	<classpathentry kind="src" path="output/methods/jsoup/org/jsoup/parser"/>
+	<classpathentry kind="src" path="output/methods/jsoup/org/jsoup/safety"/>
+	<classpathentry kind="src" path="output/methods/jsoup/org/jsoup/select"/>
+	<classpathentry excluding="util/|ri/model/dynamic/|ri/model/|ri/|ri/model/jdom/|ri/compiler/|ri/model/container/|ri/model/dom/|ri/model/dynabeans/|ri/model/beans/|ri/axes/" kind="src" path="output/methods/jxPath_tests/org/apache/commons/jxpath"/>
+	<classpathentry excluding="model/dynamic/|model/|model/jdom/|compiler/|model/container/|model/dom/|model/dynabeans/|model/beans/|axes/" kind="src" path="output/methods/jxPath_tests/org/apache/commons/jxpath/ri"/>
+	<classpathentry kind="src" path="output/methods/jxPath_tests/org/apache/commons/jxpath/ri/axes"/>
+	<classpathentry kind="src" path="output/methods/jxPath_tests/org/apache/commons/jxpath/ri/compiler"/>
+	<classpathentry excluding="dynamic/|jdom/|container/|dom/|dynabeans/|beans/" kind="src" path="output/methods/jxPath_tests/org/apache/commons/jxpath/ri/model"/>
+	<classpathentry kind="src" path="output/methods/jxPath_tests/org/apache/commons/jxpath/ri/model/beans"/>
+	<classpathentry kind="src" path="output/methods/jxPath_tests/org/apache/commons/jxpath/ri/model/container"/>
+	<classpathentry kind="src" path="output/methods/jxPath_tests/org/apache/commons/jxpath/ri/model/dom"/>
+	<classpathentry kind="src" path="output/methods/jxPath_tests/org/apache/commons/jxpath/ri/model/dynabeans"/>
+	<classpathentry kind="src" path="output/methods/jxPath_tests/org/apache/commons/jxpath/ri/model/dynamic"/>
+	<classpathentry kind="src" path="output/methods/jxPath_tests/org/apache/commons/jxpath/ri/model/jdom"/>
+	<classpathentry kind="src" path="output/methods/jxPath_tests/org/apache/commons/jxpath/util"/>
+	<classpathentry excluding="ri/model/dynamic/|ri/axes/|ri/model/dynabeans/|functions/|ri/compiler/|ri/model/beans/|ri/model/|ri/parser/|ri/|ri/model/container/|xml/|util/|servlet/|ri/model/jdom/|ri/model/dom/" kind="src" path="output/methods/jxPath/org/apache/commons/jxpath"/>
+	<classpathentry kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/functions"/>
+	<classpathentry excluding="model/dynamic/|axes/|model/dynabeans/|compiler/|model/beans/|model/|parser/|model/container/|model/jdom/|model/dom/" kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/ri"/>
+	<classpathentry kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/ri/axes"/>
+	<classpathentry kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/ri/compiler"/>
+	<classpathentry excluding="dynamic/|dynabeans/|beans/|container/|jdom/|dom/" kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/ri/model"/>
+	<classpathentry kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/ri/model/beans"/>
+	<classpathentry kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/ri/model/container"/>
+	<classpathentry kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/ri/model/dom"/>
+	<classpathentry kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/ri/model/dynabeans"/>
+	<classpathentry kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/ri/model/dynamic"/>
+	<classpathentry kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/ri/model/jdom"/>
+	<classpathentry kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/ri/parser"/>
+	<classpathentry kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/servlet"/>
+	<classpathentry kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/util"/>
+	<classpathentry kind="src" path="output/methods/jxPath/org/apache/commons/jxpath/xml"/>
+	<classpathentry excluding="mutable/|reflect/testbed/|time/|builder/|tuple/|event/|reflect/|exception/|math/|concurrent/|text/|text/translate/" kind="src" path="output/methods/lang3_tests/org/apache/commons/lang3"/>
+	<classpathentry kind="src" path="output/methods/lang3_tests/org/apache/commons/lang3/builder"/>
+	<classpathentry kind="src" path="output/methods/lang3_tests/org/apache/commons/lang3/concurrent"/>
+	<classpathentry kind="src" path="output/methods/lang3_tests/org/apache/commons/lang3/event"/>
+	<classpathentry kind="src" path="output/methods/lang3_tests/org/apache/commons/lang3/exception"/>
+	<classpathentry kind="src" path="output/methods/lang3_tests/org/apache/commons/lang3/math"/>
+	<classpathentry kind="src" path="output/methods/lang3_tests/org/apache/commons/lang3/mutable"/>
+	<classpathentry excluding="testbed/" kind="src" path="output/methods/lang3_tests/org/apache/commons/lang3/reflect"/>
+	<classpathentry kind="src" path="output/methods/lang3_tests/org/apache/commons/lang3/reflect/testbed"/>
+	<classpathentry excluding="translate/" kind="src" path="output/methods/lang3_tests/org/apache/commons/lang3/text"/>
+	<classpathentry kind="src" path="output/methods/lang3_tests/org/apache/commons/lang3/text/translate"/>
+	<classpathentry kind="src" path="output/methods/lang3_tests/org/apache/commons/lang3/time"/>
+	<classpathentry kind="src" path="output/methods/lang3_tests/org/apache/commons/lang3/tuple"/>
+	<classpathentry excluding="builder/|time/|text/translate/|mutable/|tuple/|text/|concurrent/|reflect/|math/|event/|exception/" kind="src" path="output/methods/lang3/org/apache/commons/lang3"/>
+	<classpathentry kind="src" path="output/methods/lang3/org/apache/commons/lang3/builder"/>
+	<classpathentry kind="src" path="output/methods/lang3/org/apache/commons/lang3/concurrent"/>
+	<classpathentry kind="src" path="output/methods/lang3/org/apache/commons/lang3/event"/>
+	<classpathentry kind="src" path="output/methods/lang3/org/apache/commons/lang3/exception"/>
+	<classpathentry kind="src" path="output/methods/lang3/org/apache/commons/lang3/math"/>
+	<classpathentry kind="src" path="output/methods/lang3/org/apache/commons/lang3/mutable"/>
+	<classpathentry kind="src" path="output/methods/lang3/org/apache/commons/lang3/reflect"/>
+	<classpathentry excluding="translate/" kind="src" path="output/methods/lang3/org/apache/commons/lang3/text"/>
+	<classpathentry kind="src" path="output/methods/lang3/org/apache/commons/lang3/text/translate"/>
+	<classpathentry kind="src" path="output/methods/lang3/org/apache/commons/lang3/time"/>
+	<classpathentry kind="src" path="output/methods/lang3/org/apache/commons/lang3/tuple"/>
+	<classpathentry excluding="analysis/function/|optimization/fitting/|filter/|optimization/linear/|exception/|stat/descriptive/|stat/descriptive/rank/|special/|stat/clustering/|optim/nonlinear/vector/|stat/|linear/|ode/events/|analysis/integration/|analysis/|genetics/|optimization/direct/|geometry/partitioning/utilities/|userguide/|geometry/euclidean/oned/|ode/nonstiff/|analysis/integration/gauss/|ml/clustering/|analysis/interpolation/|ode/|random/|optim/nonlinear/scalar/noderiv/|optim/nonlinear/scalar/|geometry/euclidean/twod/|primes/|stat/descriptive/summary/|dfp/|fitting/|ml/distance/|optimization/general/|complex/|optim/nonlinear/vector/jacobian/|stat/descriptive/moment/|ode/sampling/|stat/data/|transform/|optim/|optim/linear/|stat/ranking/|stat/correlation/|analysis/differentiation/|optim/nonlinear/scalar/gradient/|fitting/leastsquares/|analysis/polynomials/|stat/inference/|analysis/solvers/|geometry/euclidean/threed/|exception/util/|distribution/|fraction/|optimization/univariate/|distribution/fitting/|util/|optim/univariate/|stat/regression/|optimization/" kind="src" path="output/methods/math_tests/org/apache/commons/math3"/>
+	<classpathentry excluding="function/|integration/|integration/gauss/|interpolation/|differentiation/|polynomials/|solvers/" kind="src" path="output/methods/math_tests/org/apache/commons/math3/analysis"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/analysis/differentiation"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/analysis/function"/>
+	<classpathentry excluding="gauss/" kind="src" path="output/methods/math_tests/org/apache/commons/math3/analysis/integration"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/analysis/integration/gauss"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/analysis/interpolation"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/analysis/polynomials"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/analysis/solvers"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/complex"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/dfp"/>
+	<classpathentry excluding="fitting/" kind="src" path="output/methods/math_tests/org/apache/commons/math3/distribution"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/distribution/fitting"/>
+	<classpathentry excluding="util/" kind="src" path="output/methods/math_tests/org/apache/commons/math3/exception"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/exception/util"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/filter"/>
+	<classpathentry excluding="leastsquares/" kind="src" path="output/methods/math_tests/org/apache/commons/math3/fitting"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/fitting/leastsquares"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/fraction"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/genetics"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/geometry/euclidean/oned"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/geometry/euclidean/threed"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/geometry/euclidean/twod"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/geometry/partitioning/utilities"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/linear"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/ml/clustering"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/ml/distance"/>
+	<classpathentry excluding="events/|nonstiff/|sampling/" kind="src" path="output/methods/math_tests/org/apache/commons/math3/ode"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/ode/events"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/ode/nonstiff"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/ode/sampling"/>
+	<classpathentry excluding="nonlinear/vector/|nonlinear/scalar/noderiv/|nonlinear/scalar/|nonlinear/vector/jacobian/|linear/|nonlinear/scalar/gradient/|univariate/" kind="src" path="output/methods/math_tests/org/apache/commons/math3/optim"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/optim/linear"/>
+	<classpathentry excluding="noderiv/|gradient/" kind="src" path="output/methods/math_tests/org/apache/commons/math3/optim/nonlinear/scalar"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/optim/nonlinear/scalar/gradient"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/optim/nonlinear/scalar/noderiv"/>
+	<classpathentry excluding="jacobian/" kind="src" path="output/methods/math_tests/org/apache/commons/math3/optim/nonlinear/vector"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/optim/nonlinear/vector/jacobian"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/optim/univariate"/>
+	<classpathentry excluding="fitting/|linear/|direct/|general/|univariate/" kind="src" path="output/methods/math_tests/org/apache/commons/math3/optimization"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/optimization/direct"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/optimization/fitting"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/optimization/general"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/optimization/linear"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/optimization/univariate"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/primes"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/random"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/special"/>
+	<classpathentry excluding="descriptive/|descriptive/rank/|clustering/|descriptive/summary/|descriptive/moment/|data/|ranking/|correlation/|inference/|regression/" kind="src" path="output/methods/math_tests/org/apache/commons/math3/stat"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/stat/clustering"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/stat/correlation"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/stat/data"/>
+	<classpathentry excluding="rank/|summary/|moment/" kind="src" path="output/methods/math_tests/org/apache/commons/math3/stat/descriptive"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/stat/descriptive/moment"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/stat/descriptive/rank"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/stat/descriptive/summary"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/stat/inference"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/stat/ranking"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/stat/regression"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/transform"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/userguide"/>
+	<classpathentry kind="src" path="output/methods/math_tests/org/apache/commons/math3/util"/>
+	<classpathentry excluding="optim/|stat/descriptive/rank/|ode/sampling/|distribution/|transform/|analysis/differentiation/|analysis/solvers/|dfp/|optim/nonlinear/scalar/gradient/|geometry/partitioning/utilities/|optimization/direct/|ml/distance/|stat/|fraction/|geometry/partitioning/|stat/correlation/|geometry/euclidean/twod/|optim/linear/|stat/clustering/|stat/descriptive/summary/|genetics/|geometry/euclidean/oned/|complex/|optim/nonlinear/scalar/noderiv/|analysis/|ml/|optim/nonlinear/vector/jacobian/|ode/nonstiff/|random/|optim/nonlinear/vector/|ode/|fitting/|linear/|optim/nonlinear/scalar/|ml/clustering/|stat/descriptive/|stat/regression/|ode/events/|analysis/integration/gauss/|analysis/function/|fitting/leastsquares/|primes/|geometry/|analysis/integration/|optimization/linear/|analysis/interpolation/|optimization/|exception/util/|optimization/univariate/|filter/|stat/descriptive/moment/|optimization/general/|util/|stat/ranking/|analysis/polynomials/|optim/univariate/|exception/|optimization/fitting/|distribution/fitting/|geometry/euclidean/threed/|special/|stat/inference/" kind="src" path="output/methods/math/org/apache/commons/math3"/>
+	<classpathentry excluding="differentiation/|solvers/|integration/gauss/|function/|integration/|interpolation/|polynomials/" kind="src" path="output/methods/math/org/apache/commons/math3/analysis"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/analysis/differentiation"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/analysis/function"/>
+	<classpathentry excluding="gauss/" kind="src" path="output/methods/math/org/apache/commons/math3/analysis/integration"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/analysis/integration/gauss"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/analysis/interpolation"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/analysis/polynomials"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/analysis/solvers"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/complex"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/dfp"/>
+	<classpathentry excluding="fitting/" kind="src" path="output/methods/math/org/apache/commons/math3/distribution"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/distribution/fitting"/>
+	<classpathentry excluding="util/" kind="src" path="output/methods/math/org/apache/commons/math3/exception"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/exception/util"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/filter"/>
+	<classpathentry excluding="leastsquares/" kind="src" path="output/methods/math/org/apache/commons/math3/fitting"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/fitting/leastsquares"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/fraction"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/genetics"/>
+	<classpathentry excluding="partitioning/utilities/|partitioning/|euclidean/twod/|euclidean/oned/|euclidean/threed/" kind="src" path="output/methods/math/org/apache/commons/math3/geometry"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/geometry/euclidean/oned"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/geometry/euclidean/threed"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/geometry/euclidean/twod"/>
+	<classpathentry excluding="utilities/" kind="src" path="output/methods/math/org/apache/commons/math3/geometry/partitioning"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/geometry/partitioning/utilities"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/linear"/>
+	<classpathentry excluding="distance/|clustering/" kind="src" path="output/methods/math/org/apache/commons/math3/ml"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/ml/clustering"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/ml/distance"/>
+	<classpathentry excluding="sampling/|nonstiff/|events/" kind="src" path="output/methods/math/org/apache/commons/math3/ode"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/ode/events"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/ode/nonstiff"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/ode/sampling"/>
+	<classpathentry excluding="nonlinear/scalar/gradient/|linear/|nonlinear/scalar/noderiv/|nonlinear/vector/jacobian/|nonlinear/vector/|nonlinear/scalar/|univariate/" kind="src" path="output/methods/math/org/apache/commons/math3/optim"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/optim/linear"/>
+	<classpathentry excluding="gradient/|noderiv/" kind="src" path="output/methods/math/org/apache/commons/math3/optim/nonlinear/scalar"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/optim/nonlinear/scalar/gradient"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/optim/nonlinear/scalar/noderiv"/>
+	<classpathentry excluding="jacobian/" kind="src" path="output/methods/math/org/apache/commons/math3/optim/nonlinear/vector"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/optim/nonlinear/vector/jacobian"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/optim/univariate"/>
+	<classpathentry excluding="direct/|linear/|univariate/|general/|fitting/" kind="src" path="output/methods/math/org/apache/commons/math3/optimization"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/optimization/direct"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/optimization/fitting"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/optimization/general"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/optimization/linear"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/optimization/univariate"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/primes"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/random"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/special"/>
+	<classpathentry excluding="descriptive/rank/|correlation/|clustering/|descriptive/summary/|descriptive/|regression/|descriptive/moment/|ranking/|inference/" kind="src" path="output/methods/math/org/apache/commons/math3/stat"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/stat/clustering"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/stat/correlation"/>
+	<classpathentry excluding="rank/|summary/|moment/" kind="src" path="output/methods/math/org/apache/commons/math3/stat/descriptive"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/stat/descriptive/moment"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/stat/descriptive/rank"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/stat/descriptive/summary"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/stat/inference"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/stat/ranking"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/stat/regression"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/transform"/>
+	<classpathentry kind="src" path="output/methods/math/org/apache/commons/math3/util"/>
+	<classpathentry excluding="tz/|chrono/gj/|chrono/|convert/|field/|format/" kind="src" path="output/methods/time_tests/org/joda/time"/>
+	<classpathentry excluding="gj/" kind="src" path="output/methods/time_tests/org/joda/time/chrono"/>
+	<classpathentry kind="src" path="output/methods/time_tests/org/joda/time/chrono/gj"/>
+	<classpathentry kind="src" path="output/methods/time_tests/org/joda/time/convert"/>
+	<classpathentry kind="src" path="output/methods/time_tests/org/joda/time/field"/>
+	<classpathentry kind="src" path="output/methods/time_tests/org/joda/time/format"/>
+	<classpathentry kind="src" path="output/methods/time_tests/org/joda/time/tz"/>
+	<classpathentry excluding="base/|tz/|convert/|chrono/|field/|format/" kind="src" path="output/methods/time/org/joda/time"/>
+	<classpathentry kind="src" path="output/methods/time/org/joda/time/base"/>
+	<classpathentry kind="src" path="output/methods/time/org/joda/time/chrono"/>
+	<classpathentry kind="src" path="output/methods/time/org/joda/time/convert"/>
+	<classpathentry kind="src" path="output/methods/time/org/joda/time/field"/>
+	<classpathentry kind="src" path="output/methods/time/org/joda/time/format"/>
+	<classpathentry kind="src" path="output/methods/time/org/joda/time/tz"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="lib" path="gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="output" path="bin/main"/>
+</classpath>

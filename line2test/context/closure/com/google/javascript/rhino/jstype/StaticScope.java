@@ -1,0 +1,5 @@
+ Node getRootNode()
+ StaticScope<T> getParentScope()
+ StaticSlot<T> getSlot(String name)
+ StaticSlot<T> getOwnSlot(String name)
+ T getTypeOfThis()

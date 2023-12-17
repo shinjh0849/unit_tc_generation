@@ -1,0 +1,6 @@
+protected BaseReader(IOContext context, InputStream in, byte[] buf, int ptr, int len) { [EOL]     _context = context; [EOL]     _in = in; [EOL]     _buffer = buf; [EOL]     _ptr = ptr; [EOL]     _length = len; [EOL] } <line_num>: 38,46
+@Override [EOL] public void close() throws IOException { [EOL]     InputStream in = _in; [EOL]     if (in != null) { [EOL]         _in = null; [EOL]         freeBuffers(); [EOL]         in.close(); [EOL]     } [EOL] } <line_num>: 54,64
+@Override [EOL] public int read() throws IOException { [EOL]     if (_tmpBuf == null) { [EOL]         _tmpBuf = new char[1]; [EOL]     } [EOL]     if (read(_tmpBuf, 0, 1) < 1) { [EOL]         return -1; [EOL]     } [EOL]     return _tmpBuf[0]; [EOL] } <line_num>: 73,83
+public final void freeBuffers() { [EOL]     byte[] buf = _buffer; [EOL]     if (buf != null) { [EOL]         _buffer = null; [EOL]         _context.releaseReadIOBuffer(buf); [EOL]     } [EOL] } <line_num>: 96,103
+protected void reportBounds(char[] cbuf, int start, int len) throws IOException { [EOL]     throw new ArrayIndexOutOfBoundsException("read(buf," + start + "," + len + "), cbuf[" + cbuf.length + "]"); [EOL] } <line_num>: 105,109
+protected void reportStrangeStream() throws IOException { [EOL]     throw new IOException("Strange I/O stream, returned 0 bytes on read"); [EOL] } <line_num>: 111,115

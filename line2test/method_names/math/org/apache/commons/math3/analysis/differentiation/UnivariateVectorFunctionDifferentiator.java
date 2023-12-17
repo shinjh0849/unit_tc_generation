@@ -1,0 +1,1 @@
+ UnivariateDifferentiableVectorFunction differentiate(UnivariateVectorFunction function)

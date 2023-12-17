@@ -1,0 +1,4 @@
+public Dog() { [EOL] } <line_num>: 13,13
+public Dog(String n, boolean thinking) { [EOL]     name = n; [EOL]     brain = new Brain(); [EOL]     brain.isThinking = thinking; [EOL] } <line_num>: 14,18
+public String parentName() { [EOL]     return name; [EOL] } <line_num>: 24,24
+public void testSimpleNonStaticInner() throws Exception { [EOL]     ObjectMapper mapper = new ObjectMapper(); [EOL]     Dog input = new Dog("Smurf", true); [EOL]     String json = mapper.writeValueAsString(input); [EOL]     Dog output = mapper.readValue(json, Dog.class); [EOL]     assertEquals("Smurf", output.name); [EOL]     assertNotNull(output.brain); [EOL]     assertTrue(output.brain.isThinking); [EOL]     assertEquals("Smurf", output.brain.parentName()); [EOL]     output.name = "Foo"; [EOL]     assertEquals("Foo", output.brain.parentName()); [EOL] } <line_num>: 34,48

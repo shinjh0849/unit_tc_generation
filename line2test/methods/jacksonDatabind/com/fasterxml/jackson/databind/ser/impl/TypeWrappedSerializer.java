@@ -1,0 +1,4 @@
+@SuppressWarnings("unchecked") [EOL] public TypeWrappedSerializer(TypeSerializer typeSer, JsonSerializer<?> ser) { [EOL]     super(); [EOL]     _typeSerializer = typeSer; [EOL]     _serializer = (JsonSerializer<Object>) ser; [EOL] } <line_num>: 23,29
+@Override [EOL] public void serialize(Object value, JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonProcessingException { [EOL]     _serializer.serializeWithType(value, jgen, provider, _typeSerializer); [EOL] } <line_num>: 31,36
+@Override [EOL] public void serializeWithType(Object value, JsonGenerator jgen, SerializerProvider provider, TypeSerializer typeSer) throws IOException, JsonProcessingException { [EOL]     _serializer.serializeWithType(value, jgen, provider, typeSer); [EOL] } <line_num>: 38,47
+@Override [EOL] public Class<Object> handledType() { [EOL]     return Object.class; [EOL] } <line_num>: 49,50

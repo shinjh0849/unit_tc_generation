@@ -1,0 +1,18 @@
+private ISOYearOfEraDateTimeField()
+public DurationField getRangeDurationField()
+public int get(long instant)
+public long add(long instant, int years)
+public long add(long instant, long years)
+public long addWrapField(long instant, int years)
+public int[] addWrapField(ReadablePartial instant, int fieldIndex, int[] values, int years)
+public int getDifference(long minuendInstant, long subtrahendInstant)
+public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant)
+public long set(long instant, int year)
+public int getMinimumValue()
+public int getMaximumValue()
+public long roundFloor(long instant)
+public long roundCeiling(long instant)
+public long remainder(long instant)
+private Object readResolve()
+long serialVersionUID=Optional[7037524068969447317L]
+DateTimeField INSTANCE=Optional[new ISOYearOfEraDateTimeField()]

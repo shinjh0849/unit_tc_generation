@@ -1,0 +1,12 @@
+public DefaultBoxAndWhiskerCategoryDatasetTests(String name)
+public static Test suite()
+public void testEquals()
+public void testSerialization()
+public void testCloning()
+public void test1701822()
+public void testAdd()
+public void testAddUpdatesCachedRange()
+public void testConstructor()
+public void testGetRangeBounds()
+public void testRemove()
+double EPSILON=Optional[0.0000000001]

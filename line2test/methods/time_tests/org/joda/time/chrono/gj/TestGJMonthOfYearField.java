@@ -1,0 +1,11 @@
+public TestGJMonthOfYearField(TestGJChronology chrono) { [EOL]     super(DateTimeFieldType.monthOfYear(), chrono.millisPerMonth(), chrono); [EOL] } <line_num>: 26,28
+public int get(long millis) { [EOL]     return iChronology.gjFromMillis(millis)[1]; [EOL] } <line_num>: 30,32
+public long set(long millis, int value) { [EOL]     long timeOnlyMillis = iChronology.getTimeOnlyMillis(millis); [EOL]     int[] ymd = iChronology.gjFromMillis(millis); [EOL]     millis = iChronology.millisFromGJ(ymd[0], value, 1); [EOL]     int maxDay = iChronology.dayOfMonth().getMaximumValue(millis); [EOL]     if (ymd[2] > maxDay) { [EOL]         ymd[2] = maxDay; [EOL]     } [EOL]     return timeOnlyMillis + iChronology.millisFromGJ(ymd[0], value, ymd[2]); [EOL] } <line_num>: 34,45
+public long add(long millis, long value) { [EOL]     int newYear = iChronology.year().get(millis) + (int) TestGJChronology.div(value, 12); [EOL]     int newMonth = get(millis) + (int) TestGJChronology.mod(value, 12); [EOL]     if (newMonth > 12) { [EOL]         newYear++; [EOL]         newMonth -= 12; [EOL]     } [EOL]     int newDay = iChronology.dayOfMonth().get(millis); [EOL]     millis = iChronology.getTimeOnlyMillis(millis) + iChronology.millisFromGJ(newYear, newMonth, newDay); [EOL]     while (get(millis) != newMonth) { [EOL]         millis = iChronology.dayOfYear().add(millis, -1); [EOL]     } [EOL]     return millis; [EOL] } <line_num>: 47,62
+public boolean isLeap(long millis) { [EOL]     int[] ymd = iChronology.gjFromMillis(millis); [EOL]     return ymd[1] == 2 && iChronology.isLeapYear(ymd[0]); [EOL] } <line_num>: 64,67
+public int getLeapAmount(long millis) { [EOL]     return isLeap(millis) ? 1 : 0; [EOL] } <line_num>: 69,71
+public DurationField getLeapDurationField() { [EOL]     return iChronology.days(); [EOL] } <line_num>: 73,75
+public DurationField getRangeDurationField() { [EOL]     return iChronology.years(); [EOL] } <line_num>: 77,79
+public int getMinimumValue() { [EOL]     return 1; [EOL] } <line_num>: 81,83
+public int getMaximumValue() { [EOL]     return 12; [EOL] } <line_num>: 85,87
+public long roundFloor(long millis) { [EOL]     int[] ymd = iChronology.gjFromMillis(millis); [EOL]     return iChronology.millisFromGJ(ymd[0], ymd[1], 1); [EOL] } <line_num>: 89,92

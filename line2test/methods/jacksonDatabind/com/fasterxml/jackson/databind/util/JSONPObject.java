@@ -1,0 +1,7 @@
+public JSONPObject(String function, Object value) { [EOL]     this(function, value, (JavaType) null); [EOL] } <line_num>: 40,42
+public JSONPObject(String function, Object value, JavaType asType) { [EOL]     _function = function; [EOL]     _value = value; [EOL]     _serializationType = asType; [EOL] } <line_num>: 44,49
+@Override [EOL] public void serializeWithType(JsonGenerator jgen, SerializerProvider provider, TypeSerializer typeSer) throws IOException, JsonProcessingException { [EOL]     serialize(jgen, provider); [EOL] } <line_num>: 57,63
+@Override [EOL] public void serialize(JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonProcessingException { [EOL]     jgen.writeRaw(_function); [EOL]     jgen.writeRaw('('); [EOL]     if (_value == null) { [EOL]         provider.defaultSerializeNull(jgen); [EOL]     } else if (_serializationType != null) { [EOL]         provider.findTypedValueSerializer(_serializationType, true, null).serialize(_value, jgen, provider); [EOL]     } else { [EOL]         Class<?> cls = _value.getClass(); [EOL]         provider.findTypedValueSerializer(cls, true, null).serialize(_value, jgen, provider); [EOL]     } [EOL]     jgen.writeRaw(')'); [EOL] } <line_num>: 65,81
+public String getFunction() { [EOL]     return _function; [EOL] } <line_num>: 89,89
+public Object getValue() { [EOL]     return _value; [EOL] } <line_num>: 90,90
+public JavaType getSerializationType() { [EOL]     return _serializationType; [EOL] } <line_num>: 91,91

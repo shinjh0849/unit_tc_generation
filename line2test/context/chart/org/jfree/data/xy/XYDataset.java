@@ -1,0 +1,6 @@
+public DomainOrder getDomainOrder()
+public int getItemCount(int series)
+public Number getX(int series, int item)
+public double getXValue(int series, int item)
+public Number getY(int series, int item)
+public double getYValue(int series, int item)

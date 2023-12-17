@@ -1,0 +1,11 @@
+public StandardPieSectionLabelGenerator() { [EOL]     this(DEFAULT_SECTION_LABEL_FORMAT, NumberFormat.getNumberInstance(), NumberFormat.getPercentInstance()); [EOL] } <line_num>: 92,95
+public StandardPieSectionLabelGenerator(Locale locale) { [EOL]     this(DEFAULT_SECTION_LABEL_FORMAT, locale); [EOL] } <line_num>: 104,106
+public StandardPieSectionLabelGenerator(String labelFormat) { [EOL]     this(labelFormat, NumberFormat.getNumberInstance(), NumberFormat.getPercentInstance()); [EOL] } <line_num>: 114,117
+public StandardPieSectionLabelGenerator(String labelFormat, Locale locale) { [EOL]     this(labelFormat, NumberFormat.getNumberInstance(locale), NumberFormat.getPercentInstance(locale)); [EOL] } <line_num>: 127,130
+public StandardPieSectionLabelGenerator(String labelFormat, NumberFormat numberFormat, NumberFormat percentFormat) { [EOL]     super(labelFormat, numberFormat, percentFormat); [EOL]     this.attributedLabels = new ObjectList(); [EOL] } <line_num>: 142,146
+public AttributedString getAttributedLabel(int section) { [EOL]     return (AttributedString) this.attributedLabels.get(section); [EOL] } <line_num>: 156,158
+public void setAttributedLabel(int section, AttributedString label) { [EOL]     this.attributedLabels.set(section, label); [EOL] } <line_num>: 166,168
+public String generateSectionLabel(PieDataset dataset, Comparable key) { [EOL]     return super.generateSectionLabel(dataset, key); [EOL] } <line_num>: 178,180
+public AttributedString generateAttributedSectionLabel(PieDataset dataset, Comparable key) { [EOL]     return getAttributedLabel(dataset.getIndex(key)); [EOL] } <line_num>: 209,212
+public boolean equals(Object obj) { [EOL]     if (obj == this) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof StandardPieSectionLabelGenerator)) { [EOL]         return false; [EOL]     } [EOL]     StandardPieSectionLabelGenerator that = (StandardPieSectionLabelGenerator) obj; [EOL]     if (!this.attributedLabels.equals(that.attributedLabels)) { [EOL]         return false; [EOL]     } [EOL]     if (!super.equals(obj)) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 221,237
+public Object clone() throws CloneNotSupportedException { [EOL]     return super.clone(); [EOL] } <line_num>: 246,248

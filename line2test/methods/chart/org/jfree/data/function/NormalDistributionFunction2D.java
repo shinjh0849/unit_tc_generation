@@ -1,0 +1,6 @@
+public NormalDistributionFunction2D(double mean, double std) { [EOL]     if (std <= 0) { [EOL]         throw new IllegalArgumentException("Requires 'std' > 0."); [EOL]     } [EOL]     this.mean = mean; [EOL]     this.std = std; [EOL]     this.factor = 1 / (std * Math.sqrt(2.0 * Math.PI)); [EOL]     this.denominator = 2 * std * std; [EOL] } <line_num>: 75,84
+public double getMean() { [EOL]     return this.mean; [EOL] } <line_num>: 91,93
+public double getStandardDeviation() { [EOL]     return this.std; [EOL] } <line_num>: 100,102
+public double getValue(double x) { [EOL]     double z = x - this.mean; [EOL]     return this.factor * Math.exp(-z * z / this.denominator); [EOL] } <line_num>: 111,114
+public boolean equals(Object obj) { [EOL]     if (!(obj instanceof NormalDistributionFunction2D)) { [EOL]         return false; [EOL]     } [EOL]     NormalDistributionFunction2D that = (NormalDistributionFunction2D) obj; [EOL]     if (this.mean != that.mean) { [EOL]         return false; [EOL]     } [EOL]     if (this.std != that.std) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 123,135
+public int hashCode() { [EOL]     int result = 29; [EOL]     result = HashUtilities.hashCode(result, this.mean); [EOL]     result = HashUtilities.hashCode(result, this.std); [EOL]     return result; [EOL] } <line_num>: 142,147

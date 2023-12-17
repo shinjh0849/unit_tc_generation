@@ -1,0 +1,5 @@
+public CompassFormat()
+public String getDirectionCode(double direction)
+public StringBuffer format(double number, StringBuffer toAppendTo, FieldPosition pos)
+public StringBuffer format(long number, StringBuffer toAppendTo, FieldPosition pos)
+public Number parse(String source, ParsePosition parsePosition)

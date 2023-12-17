@@ -1,0 +1,11 @@
+public StandardEntityCollection() { [EOL]     this.entities = new java.util.ArrayList(); [EOL] } <line_num>: 77,79
+public int getEntityCount() { [EOL]     return this.entities.size(); [EOL] } <line_num>: 86,88
+public ChartEntity getEntity(int index) { [EOL]     return (ChartEntity) this.entities.get(index); [EOL] } <line_num>: 99,101
+public void clear() { [EOL]     this.entities.clear(); [EOL] } <line_num>: 106,108
+public void add(ChartEntity entity) { [EOL]     if (entity == null) { [EOL]         throw new IllegalArgumentException("Null 'entity' argument."); [EOL]     } [EOL]     this.entities.add(entity); [EOL] } <line_num>: 115,120
+public void addAll(EntityCollection collection) { [EOL]     this.entities.addAll(collection.getEntities()); [EOL] } <line_num>: 128,130
+public ChartEntity getEntity(double x, double y) { [EOL]     int entityCount = this.entities.size(); [EOL]     for (int i = entityCount - 1; i >= 0; i--) { [EOL]         ChartEntity entity = (ChartEntity) this.entities.get(i); [EOL]         if (entity.getArea().contains(x, y)) { [EOL]             return entity; [EOL]         } [EOL]     } [EOL]     return null; [EOL] } <line_num>: 141,150
+public Collection getEntities() { [EOL]     return Collections.unmodifiableCollection(this.entities); [EOL] } <line_num>: 157,159
+public Iterator iterator() { [EOL]     return this.entities.iterator(); [EOL] } <line_num>: 166,168
+public boolean equals(Object obj) { [EOL]     if (obj == this) { [EOL]         return true; [EOL]     } [EOL]     if (obj instanceof StandardEntityCollection) { [EOL]         StandardEntityCollection that = (StandardEntityCollection) obj; [EOL]         return ObjectUtilities.equal(this.entities, that.entities); [EOL]     } [EOL]     return false; [EOL] } <line_num>: 177,186
+public Object clone() throws CloneNotSupportedException { [EOL]     StandardEntityCollection clone = (StandardEntityCollection) super.clone(); [EOL]     clone.entities = new java.util.ArrayList(this.entities.size()); [EOL]     for (int i = 0; i < this.entities.size(); i++) { [EOL]         ChartEntity entity = (ChartEntity) this.entities.get(i); [EOL]         clone.entities.add(entity.clone()); [EOL]     } [EOL]     return clone; [EOL] } <line_num>: 195,204

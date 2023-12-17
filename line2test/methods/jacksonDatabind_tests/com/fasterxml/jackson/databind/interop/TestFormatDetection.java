@@ -1,0 +1,4 @@
+public POJO() { [EOL] } <line_num>: 14,14
+public POJO(int x, int y) { [EOL]     this.x = x; [EOL]     this.y = y; [EOL] } <line_num>: 15,18
+public void testSimpleWithJSON() throws Exception { [EOL]     ObjectReader detecting = READER.withType(POJO.class); [EOL]     detecting = detecting.withFormatDetection(detecting); [EOL]     POJO pojo = detecting.readValue(utf8Bytes("{\"x\":1}")); [EOL]     assertNotNull(pojo); [EOL]     assertEquals(1, pojo.x); [EOL] } <line_num>: 27,34
+public void testInvalid() throws Exception { [EOL]     ObjectReader detecting = READER.withType(POJO.class); [EOL]     detecting = detecting.withFormatDetection(detecting); [EOL]     try { [EOL]         detecting.readValue(utf8Bytes("<POJO><x>1</x></POJO>")); [EOL]         fail("Should have failed"); [EOL]     } catch (JsonProcessingException e) { [EOL]         verifyException(e, "Can not detect format from input"); [EOL]     } [EOL] } <line_num>: 36,46

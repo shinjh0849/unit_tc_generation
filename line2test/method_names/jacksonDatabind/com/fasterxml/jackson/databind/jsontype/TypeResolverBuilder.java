@@ -1,0 +1,8 @@
+public Class<?> getDefaultImpl()
+public TypeSerializer buildTypeSerializer(SerializationConfig config, JavaType baseType, Collection<NamedType> subtypes)
+public TypeDeserializer buildTypeDeserializer(DeserializationConfig config, JavaType baseType, Collection<NamedType> subtypes)
+public T init(JsonTypeInfo.Id idType, TypeIdResolver res)
+public T inclusion(As includeAs)
+public T typeProperty(String propName)
+public T defaultImpl(Class<?> defaultImpl)
+public T typeIdVisibility(boolean isVisible)

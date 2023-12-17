@@ -1,0 +1,3 @@
+public DisjunctionExclusionStrategy(Collection<ExclusionStrategy> strategies) { [EOL]     Preconditions.checkNotNull(strategies); [EOL]     this.strategies = strategies; [EOL] } <line_num>: 30,33
+public boolean shouldSkipField(FieldAttributes f) { [EOL]     for (ExclusionStrategy strategy : strategies) { [EOL]         if (strategy.shouldSkipField(f)) { [EOL]             return true; [EOL]         } [EOL]     } [EOL]     return false; [EOL] } <line_num>: 35,42
+public boolean shouldSkipClass(Class<?> clazz) { [EOL]     for (ExclusionStrategy strategy : strategies) { [EOL]         if (strategy.shouldSkipClass(clazz)) { [EOL]             return true; [EOL]         } [EOL]     } [EOL]     return false; [EOL] } <line_num>: 44,51

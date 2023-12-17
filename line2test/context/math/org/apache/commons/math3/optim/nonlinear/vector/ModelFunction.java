@@ -1,0 +1,3 @@
+public ModelFunction(MultivariateVectorFunction m)
+public MultivariateVectorFunction getModelFunction()
+MultivariateVectorFunction model

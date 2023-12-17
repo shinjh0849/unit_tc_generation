@@ -1,0 +1,5 @@
+private PlotOrientation(String name) { [EOL]     this.name = name; [EOL] } <line_num>: 72,74
+public String toString() { [EOL]     return this.name; [EOL] } <line_num>: 81,83
+public boolean equals(Object obj) { [EOL]     if (this == obj) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof PlotOrientation)) { [EOL]         return false; [EOL]     } [EOL]     PlotOrientation orientation = (PlotOrientation) obj; [EOL]     if (!this.name.equals(orientation.toString())) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 93,105
+public int hashCode() { [EOL]     return this.name.hashCode(); [EOL] } <line_num>: 112,114
+private Object readResolve() throws ObjectStreamException { [EOL]     Object result = null; [EOL]     if (this.equals(PlotOrientation.HORIZONTAL)) { [EOL]         result = PlotOrientation.HORIZONTAL; [EOL]     } else if (this.equals(PlotOrientation.VERTICAL)) { [EOL]         result = PlotOrientation.VERTICAL; [EOL]     } [EOL]     return result; [EOL] } <line_num>: 123,132

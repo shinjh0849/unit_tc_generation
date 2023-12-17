@@ -1,0 +1,3 @@
+public SimpleKeyDeserializers() { [EOL] } <line_num>: 35,35
+public SimpleKeyDeserializers addDeserializer(Class<?> forClass, KeyDeserializer deser) { [EOL]     if (_classMappings == null) { [EOL]         _classMappings = new HashMap<ClassKey, KeyDeserializer>(); [EOL]     } [EOL]     _classMappings.put(new ClassKey(forClass), deser); [EOL]     return this; [EOL] } <line_num>: 37,44
+@Override [EOL] public KeyDeserializer findKeyDeserializer(JavaType type, DeserializationConfig config, BeanDescription beanDesc) { [EOL]     if (_classMappings == null) { [EOL]         return null; [EOL]     } [EOL]     return _classMappings.get(new ClassKey(type.getRawClass())); [EOL] } <line_num>: 52,60

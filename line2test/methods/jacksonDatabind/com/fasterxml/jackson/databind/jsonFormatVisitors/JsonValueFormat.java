@@ -1,0 +1,13 @@
+@Override [EOL] public String toString() { [EOL]     return "date-time"; [EOL] } <line_num>: 15,16
+@Override [EOL] public String toString() { [EOL]     return "date"; [EOL] } <line_num>: 25,26
+@Override [EOL] public String toString() { [EOL]     return "time"; [EOL] } <line_num>: 35,36
+@Override [EOL] public String toString() { [EOL]     return "utc-millisec"; [EOL] } <line_num>: 46,47
+@Override [EOL] public String toString() { [EOL]     return "regex"; [EOL] } <line_num>: 55,56
+@Override [EOL] public String toString() { [EOL]     return "color"; [EOL] } <line_num>: 64,65
+@Override [EOL] public String toString() { [EOL]     return "style"; [EOL] } <line_num>: 73,74
+@Override [EOL] public String toString() { [EOL]     return "phone"; [EOL] } <line_num>: 81,82
+@Override [EOL] public String toString() { [EOL]     return "uri"; [EOL] } <line_num>: 89,90
+@Override [EOL] public String toString() { [EOL]     return "email"; [EOL] } <line_num>: 97,98
+@Override [EOL] public String toString() { [EOL]     return "ip-address"; [EOL] } <line_num>: 104,105
+@Override [EOL] public String toString() { [EOL]     return "ipv6"; [EOL] } <line_num>: 112,113
+@Override [EOL] public String toString() { [EOL]     return "host-name"; [EOL] } <line_num>: 120,121

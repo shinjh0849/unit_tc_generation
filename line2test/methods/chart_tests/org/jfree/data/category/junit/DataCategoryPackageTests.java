@@ -1,0 +1,3 @@
+public DataCategoryPackageTests(String name) { [EOL]     super(name); [EOL] } <line_num>: 78,80
+public static Test suite() { [EOL]     TestSuite suite = new TestSuite("org.jfree.data.category"); [EOL]     suite.addTestSuite(CategoryToPieDatasetTests.class); [EOL]     suite.addTestSuite(DefaultCategoryDatasetTests.class); [EOL]     suite.addTestSuite(DefaultIntervalCategoryDatasetTests.class); [EOL]     suite.addTestSuite(SlidingCategoryDatasetTests.class); [EOL]     return suite; [EOL] } <line_num>: 64,71
+public static void main(String[] args) { [EOL]     junit.textui.TestRunner.run(suite()); [EOL] } <line_num>: 87,89

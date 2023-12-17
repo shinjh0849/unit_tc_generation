@@ -1,0 +1,17 @@
+public BaseDateTime() { [EOL]     this(DateTimeUtils.currentTimeMillis(), ISOChronology.getInstance()); [EOL] } <line_num>: 60,62
+public BaseDateTime(DateTimeZone zone) { [EOL]     this(DateTimeUtils.currentTimeMillis(), ISOChronology.getInstance(zone)); [EOL] } <line_num>: 72,74
+public BaseDateTime(Chronology chronology) { [EOL]     this(DateTimeUtils.currentTimeMillis(), chronology); [EOL] } <line_num>: 85,87
+public BaseDateTime(long instant) { [EOL]     this(instant, ISOChronology.getInstance()); [EOL] } <line_num>: 96,98
+public BaseDateTime(long instant, DateTimeZone zone) { [EOL]     this(instant, ISOChronology.getInstance(zone)); [EOL] } <line_num>: 109,111
+public BaseDateTime(long instant, Chronology chronology) { [EOL]     super(); [EOL]     iChronology = checkChronology(chronology); [EOL]     iMillis = checkInstant(instant, iChronology); [EOL] } <line_num>: 123,127
+public BaseDateTime(Object instant, DateTimeZone zone) { [EOL]     super(); [EOL]     InstantConverter converter = ConverterManager.getInstance().getInstantConverter(instant); [EOL]     Chronology chrono = checkChronology(converter.getChronology(instant, zone)); [EOL]     iChronology = chrono; [EOL]     iMillis = checkInstant(converter.getInstantMillis(instant, chrono), chrono); [EOL] } <line_num>: 145,151
+public BaseDateTime(Object instant, Chronology chronology) { [EOL]     super(); [EOL]     InstantConverter converter = ConverterManager.getInstance().getInstantConverter(instant); [EOL]     iChronology = checkChronology(converter.getChronology(instant, chronology)); [EOL]     iMillis = checkInstant(converter.getInstantMillis(instant, chronology), iChronology); [EOL] } <line_num>: 167,172
+public BaseDateTime(int year, int monthOfYear, int dayOfMonth, int hourOfDay, int minuteOfHour, int secondOfMinute, int millisOfSecond) { [EOL]     this(year, monthOfYear, dayOfMonth, hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond, ISOChronology.getInstance()); [EOL] } <line_num>: 187,197
+public BaseDateTime(int year, int monthOfYear, int dayOfMonth, int hourOfDay, int minuteOfHour, int secondOfMinute, int millisOfSecond, DateTimeZone zone) { [EOL]     this(year, monthOfYear, dayOfMonth, hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond, ISOChronology.getInstance(zone)); [EOL] } <line_num>: 214,225
+public BaseDateTime(int year, int monthOfYear, int dayOfMonth, int hourOfDay, int minuteOfHour, int secondOfMinute, int millisOfSecond, Chronology chronology) { [EOL]     super(); [EOL]     iChronology = checkChronology(chronology); [EOL]     long instant = iChronology.getDateTimeMillis(year, monthOfYear, dayOfMonth, hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond); [EOL]     iMillis = checkInstant(instant, iChronology); [EOL] } <line_num>: 243,257
+protected Chronology checkChronology(Chronology chronology) { [EOL]     return DateTimeUtils.getChronology(chronology); [EOL] } <line_num>: 269,271
+protected long checkInstant(long instant, Chronology chronology) { [EOL]     return instant; [EOL] } <line_num>: 283,285
+public long getMillis() { [EOL]     return iMillis; [EOL] } <line_num>: 294,296
+public Chronology getChronology() { [EOL]     return iChronology; [EOL] } <line_num>: 303,305
+protected void setMillis(long instant) { [EOL]     iMillis = checkInstant(instant, iChronology); [EOL] } <line_num>: 316,318
+protected void setChronology(Chronology chronology) { [EOL]     iChronology = checkChronology(chronology); [EOL] } <line_num>: 328,330

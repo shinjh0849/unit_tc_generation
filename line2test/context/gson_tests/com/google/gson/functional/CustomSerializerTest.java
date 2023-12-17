@@ -1,0 +1,6 @@
+public void testBaseClassSerializerInvokedForBaseClassFields()
+public void testSubClassSerializerInvokedForBaseClassFieldsHoldingSubClassInstances()
+public void testSubClassSerializerInvokedForBaseClassFieldsHoldingArrayOfSubClassInstances()
+public void testBaseClassSerializerInvokedForBaseClassFieldsHoldingSubClassInstances()
+public JsonElement serialize(Base src, Type typeOfSrc, JsonSerializationContext context)
+public void testSerializerReturnsNull()

@@ -1,0 +1,8 @@
+public void testCrossoverDimensionMismatchException()
+public void testNumberIsTooLargeException()
+public double fitness()
+public void testCrossoverInvalidFixedLengthChromosomeFirst()
+public double fitness()
+public void testCrossoverInvalidFixedLengthChromosomeSecond()
+public void testCrossover()
+private int detectCrossoverPoints(BinaryChromosome p1, BinaryChromosome p2, BinaryChromosome c)

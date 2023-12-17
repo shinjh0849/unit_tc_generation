@@ -1,0 +1,5 @@
+private TypeUtils()
+ static Type getActualTypeForFirstTypeVariable(Type type)
+ static boolean isArray(Type type)
+ static Class<?> toRawClass(Type type)
+ static Class<?> wrapWithArray(Class<?> rawClass)

@@ -1,0 +1,10 @@
+public AnnotatedMethodMap()
+public void add(AnnotatedMethod am)
+public AnnotatedMethod remove(AnnotatedMethod am)
+public AnnotatedMethod remove(Method m)
+public boolean isEmpty()
+public int size()
+public AnnotatedMethod find(String name, Class<?>[] paramTypes)
+public AnnotatedMethod find(Method m)
+public Iterator<AnnotatedMethod> iterator()
+LinkedHashMap<MemberKey, AnnotatedMethod> _methods

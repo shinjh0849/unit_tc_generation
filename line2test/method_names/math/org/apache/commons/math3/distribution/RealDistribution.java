@@ -1,0 +1,15 @@
+ double probability(double x)
+ double density(double x)
+ double cumulativeProbability(double x)
+ double cumulativeProbability(double x0, double x1) throws NumberIsTooLargeException
+ double inverseCumulativeProbability(double p) throws OutOfRangeException
+ double getNumericalMean()
+ double getNumericalVariance()
+ double getSupportLowerBound()
+ double getSupportUpperBound()
+ boolean isSupportLowerBoundInclusive()
+ boolean isSupportUpperBoundInclusive()
+ boolean isSupportConnected()
+ void reseedRandomGenerator(long seed)
+ double sample()
+ double[] sample(int sampleSize)

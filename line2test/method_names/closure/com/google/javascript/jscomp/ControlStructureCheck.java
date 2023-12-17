@@ -1,0 +1,5 @@
+ ControlStructureCheck(AbstractCompiler compiler)
+public void process(Node externs, Node root)
+public void hotSwapScript(Node scriptRoot, Node originalRoot)
+private void check(Node node)
+private void report(Node n, DiagnosticType error)

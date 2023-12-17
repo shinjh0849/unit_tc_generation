@@ -1,0 +1,9 @@
+public void testPrimitive() throws Exception
+public void testPrimitiveWrapper() throws Exception
+public void testString() throws Exception
+public void testObject() throws Exception
+public void testPrimitiveType() throws Exception
+public void testObjectType() throws Exception
+public void testParameterizedTypes() throws Exception
+public void testGenericizedGenericType() throws Exception
+public void testStrangeTypeParameters() throws Exception

@@ -1,0 +1,4 @@
+ CircularReferenceException(Object offendingNode)
+public IllegalStateException createDetailedException(FieldAttributes offendingField)
+long serialVersionUID=Optional[7444343294106513081L]
+Object offendingNode

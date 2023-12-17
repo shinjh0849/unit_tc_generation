@@ -1,0 +1,14 @@
+FieldAttributes(final Class<?> declaringClazz, final Field f) { [EOL]     Preconditions.checkNotNull(declaringClazz); [EOL]     this.declaringClazz = declaringClazz; [EOL]     name = f.getName(); [EOL]     declaredType = f.getType(); [EOL]     isSynthetic = f.isSynthetic(); [EOL]     modifiers = f.getModifiers(); [EOL]     field = f; [EOL] } <line_num>: 59,67
+private static int getMaxCacheSize() { [EOL]     final int defaultMaxCacheSize = 2000; [EOL]     try { [EOL]         String propertyValue = System.getProperty(MAX_CACHE_PROPERTY_NAME, String.valueOf(defaultMaxCacheSize)); [EOL]         return Integer.parseInt(propertyValue); [EOL]     } catch (NumberFormatException e) { [EOL]         return defaultMaxCacheSize; [EOL]     } [EOL] } <line_num>: 69,78
+public Class<?> getDeclaringClass() { [EOL]     return declaringClazz; [EOL] } <line_num>: 83,85
+public String getName() { [EOL]     return name; [EOL] } <line_num>: 90,92
+public Type getDeclaredType() { [EOL]     if (genericType == null) { [EOL]         genericType = field.getGenericType(); [EOL]     } [EOL]     return genericType; [EOL] } <line_num>: 110,115
+public Class<?> getDeclaredClass() { [EOL]     return declaredType; [EOL] } <line_num>: 133,135
+public <T extends Annotation> T getAnnotation(Class<T> annotation) { [EOL]     return getAnnotationFromArray(getAnnotations(), annotation); [EOL] } <line_num>: 144,146
+public Collection<Annotation> getAnnotations() { [EOL]     if (annotations == null) { [EOL]         Pair<Class<?>, String> key = new Pair<Class<?>, String>(declaringClazz, name); [EOL]         annotations = ANNOTATION_CACHE.getElement(key); [EOL]         if (annotations == null) { [EOL]             annotations = Collections.unmodifiableCollection(Arrays.asList(field.getAnnotations())); [EOL]             ANNOTATION_CACHE.addElement(key, annotations); [EOL]         } [EOL]     } [EOL]     return annotations; [EOL] } <line_num>: 154,165
+public boolean hasModifier(int modifier) { [EOL]     return (modifiers & modifier) != 0; [EOL] } <line_num>: 177,179
+void set(Object instance, Object value) throws IllegalAccessException { [EOL]     field.set(instance, value); [EOL] } <line_num>: 188,190
+Object get(Object instance) throws IllegalAccessException { [EOL]     return field.get(instance); [EOL] } <line_num>: 199,201
+boolean isSynthetic() { [EOL]     return isSynthetic; [EOL] } <line_num>: 208,210
+@Deprecated [EOL] Field getFieldObject() { [EOL]     return field; [EOL] } <line_num>: 215,218
+@SuppressWarnings("unchecked") [EOL] private static <T extends Annotation> T getAnnotationFromArray(Collection<Annotation> annotations, Class<T> annotation) { [EOL]     for (Annotation a : annotations) { [EOL]         if (a.annotationType() == annotation) { [EOL]             return (T) a; [EOL]         } [EOL]     } [EOL]     return null; [EOL] } <line_num>: 220,229

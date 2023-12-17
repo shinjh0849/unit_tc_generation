@@ -1,0 +1,2 @@
+@JsonAnyGetter [EOL] public Map<String, String> anyProperties() { [EOL]     return properties; [EOL] } <line_num>: 30,34
+public void testAnyGetterFiltering() throws Exception { [EOL]     ObjectMapper mapper = new ObjectMapper(); [EOL]     FilterProvider prov = new SimpleFilterProvider().addFilter("anyFilter", SimpleBeanPropertyFilter.filterOutAllExcept("b")); [EOL]     assertEquals("{\"a\":\"1\"}", mapper.writer(prov).writeValueAsString(new AnyBean())); [EOL] } <line_num>: 44,50

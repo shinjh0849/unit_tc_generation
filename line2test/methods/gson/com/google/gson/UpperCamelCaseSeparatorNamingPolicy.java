@@ -1,0 +1,1 @@
+public UpperCamelCaseSeparatorNamingPolicy(String separatorString) { [EOL]     super(new CamelCaseSeparatorNamingPolicy(separatorString), new ModifyFirstLetterNamingPolicy(ModifyFirstLetterNamingPolicy.LetterModifier.UPPER)); [EOL] } <line_num>: 41,44

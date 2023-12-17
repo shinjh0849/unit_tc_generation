@@ -1,0 +1,6 @@
+public StandardXYBarPainter()
+public void paintBar(Graphics2D g2, XYBarRenderer renderer, int row, int column, boolean selected, RectangularShape bar, RectangleEdge base)
+public void paintBarShadow(Graphics2D g2, XYBarRenderer renderer, int row, int column, boolean selected, RectangularShape bar, RectangleEdge base, boolean pegShadow)
+private Rectangle2D createShadow(RectangularShape bar, double xOffset, double yOffset, RectangleEdge base, boolean pegShadow)
+public boolean equals(Object obj)
+public int hashCode()

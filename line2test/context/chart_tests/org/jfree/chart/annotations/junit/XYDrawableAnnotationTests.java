@@ -1,0 +1,11 @@
+public TestDrawable()
+public XYDrawableAnnotationTests(String name)
+public void draw(Graphics2D g2, Rectangle2D area)
+public boolean equals(Object obj)
+public Object clone() throws CloneNotSupportedException
+public static Test suite()
+public void testEquals()
+public void testHashCode()
+public void testCloning()
+public void testPublicCloneable()
+public void testSerialization()

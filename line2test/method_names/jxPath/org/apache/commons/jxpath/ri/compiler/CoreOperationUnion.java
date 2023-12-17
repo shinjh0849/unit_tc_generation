@@ -1,0 +1,5 @@
+public CoreOperationUnion(Expression[] args)
+public Object computeValue(EvalContext context)
+protected int getPrecedence()
+protected boolean isSymmetric()
+public String getSymbol()

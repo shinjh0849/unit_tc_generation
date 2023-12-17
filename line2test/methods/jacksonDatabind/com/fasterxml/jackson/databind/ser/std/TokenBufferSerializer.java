@@ -1,0 +1,5 @@
+public TokenBufferSerializer() { [EOL]     super(TokenBuffer.class); [EOL] } <line_num>: 27,27
+@Override [EOL] public void serialize(TokenBuffer value, JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonGenerationException { [EOL]     value.serialize(jgen); [EOL] } <line_num>: 29,34
+@Override [EOL] public final void serializeWithType(TokenBuffer value, JsonGenerator jgen, SerializerProvider provider, TypeSerializer typeSer) throws IOException, JsonGenerationException { [EOL]     typeSer.writeTypePrefixForScalar(value, jgen); [EOL]     serialize(value, jgen, provider); [EOL]     typeSer.writeTypeSuffixForScalar(value, jgen); [EOL] } <line_num>: 48,56
+@Override [EOL] public JsonNode getSchema(SerializerProvider provider, Type typeHint) { [EOL]     return createSchemaNode("any", true); [EOL] } <line_num>: 58,66
+@Override [EOL] public void acceptJsonFormatVisitor(JsonFormatVisitorWrapper visitor, JavaType typeHint) throws JsonMappingException { [EOL]     visitor.expectAnyFormat(typeHint); [EOL] } <line_num>: 68,77

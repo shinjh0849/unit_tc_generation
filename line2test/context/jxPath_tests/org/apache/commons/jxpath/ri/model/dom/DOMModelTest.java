@@ -1,0 +1,8 @@
+public DOMModelTest(String name)
+public static Test suite()
+protected String getModel()
+protected AbstractFactory getAbstractFactory()
+public void testGetNode()
+protected String getXMLSignature(Object node, boolean elements, boolean attributes, boolean text, boolean pi)
+private void appendXMLSignature(StringBuffer buffer, Object object, boolean elements, boolean attributes, boolean text, boolean pi)
+private void appendXMLSignature(StringBuffer buffer, NodeList children, boolean elements, boolean attributes, boolean text, boolean pi)

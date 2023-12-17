@@ -1,0 +1,5 @@
+public Well19937a()
+public Well19937a(int seed)
+public Well19937a(int[] seed)
+public Well19937a(long seed)
+protected int next(final int bits)

@@ -1,0 +1,1 @@
+ErrorFunctionType(JSTypeRegistry registry, String name) { [EOL]     super(registry, name, null, registry.createArrowType(registry.createOptionalParameters(registry.getNativeType(ALL_TYPE), registry.getNativeType(ALL_TYPE), registry.getNativeType(ALL_TYPE)), null), null, null, true, true); [EOL]     getInternalArrowType().returnType = getInstanceType(); [EOL] } <line_num>: 50,74

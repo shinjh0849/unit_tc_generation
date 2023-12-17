@@ -1,0 +1,6 @@
+public ModuloAxisTests(String name)
+public static Test suite()
+public void testCloning()
+public void testEquals()
+public void testHashCode()
+public void testSerialization()

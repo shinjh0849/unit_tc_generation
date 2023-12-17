@@ -1,0 +1,1 @@
+public void testRecursiveType() { [EOL]     TypeFactory tf = TypeFactory.defaultInstance(); [EOL]     JavaType type = tf.constructType(HashTree.class); [EOL]     assertNotNull(type); [EOL] } <line_num>: 17,22

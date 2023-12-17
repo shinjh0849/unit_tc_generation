@@ -1,0 +1,5 @@
+public MessageFormatter toFormatter(SourceExcerptProvider source, boolean colorize)
+public MessageFormatter toFormatter(SourceExcerptProvider source, boolean colorize)
+public MessageFormatter toFormatter(SourceExcerptProvider source, boolean colorize)
+public MessageFormatter toFormatter(SourceExcerptProvider source, boolean colorize)
+public abstract MessageFormatter toFormatter(SourceExcerptProvider source, boolean colorize)

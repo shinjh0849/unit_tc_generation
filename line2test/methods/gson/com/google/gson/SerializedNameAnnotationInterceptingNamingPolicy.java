@@ -1,0 +1,2 @@
+public SerializedNameAnnotationInterceptingNamingPolicy(FieldNamingStrategy2 delegate) { [EOL]     this.delegate = delegate; [EOL] } <line_num>: 38,40
+public String translateName(FieldAttributes f) { [EOL]     Preconditions.checkNotNull(f); [EOL]     SerializedName serializedName = f.getAnnotation(SerializedName.class); [EOL]     return serializedName == null ? delegate.translateName(f) : fieldNameValidator.validate(serializedName.value()); [EOL] } <line_num>: 42,47

@@ -1,0 +1,3 @@
+public StandardToolTipTagFragmentGeneratorTests(String name) { [EOL]     super(name); [EOL] } <line_num>: 68,70
+public static Test suite() { [EOL]     return new TestSuite(StandardToolTipTagFragmentGeneratorTests.class); [EOL] } <line_num>: 59,61
+public void testGenerateURLFragment() { [EOL]     StandardToolTipTagFragmentGenerator g = new StandardToolTipTagFragmentGenerator(); [EOL]     assertEquals(" title=\"abc\" alt=\"\"", g.generateToolTipFragment("abc")); [EOL]     assertEquals(" title=\"Series &quot;A&quot;, 100.0\" alt=\"\"", g.generateToolTipFragment("Series \"A\", 100.0")); [EOL] } <line_num>: 75,82

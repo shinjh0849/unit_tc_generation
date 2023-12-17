@@ -1,0 +1,7 @@
+private TypeInfoFactory()
+public static TypeInfoArray getTypeInfoForArray(Type type)
+public static TypeInfo getTypeInfoForField(Field f, Type typeDefiningF)
+private static Type getActualType(Type typeToEvaluate, Type parentType, Class<?> rawParentClass)
+private static Type extractTypeForHierarchy(Type parentType, TypeVariable<?> typeToEvaluate)
+private static Type[] extractRealTypes(Type[] actualTypeArguments, Type parentType, Class<?> rawParentClass)
+private static int getIndex(TypeVariable<?>[] types, TypeVariable<?> type)

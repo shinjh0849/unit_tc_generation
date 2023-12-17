@@ -1,0 +1,6 @@
+protected void setUp() throws Exception
+public void testStringsWithRawChineseCharactersDeserialization() throws Exception
+public void testStringsWithUnicodeChineseCharactersSerialization() throws Exception
+public void testStringsWithUnicodeChineseCharactersDeserialization() throws Exception
+public void testStringsWithUnicodeChineseCharactersEscapedDeserialization() throws Exception
+Gson gson

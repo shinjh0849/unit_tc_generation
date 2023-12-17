@@ -1,0 +1,4 @@
+public AbstractCategoryDataset()
+public CategoryDatasetSelectionState getSelectionState()
+public void setSelectionState(CategoryDatasetSelectionState state)
+CategoryDatasetSelectionState selectionState

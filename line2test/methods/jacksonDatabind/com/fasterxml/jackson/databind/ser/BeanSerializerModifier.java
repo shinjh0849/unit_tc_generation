@@ -1,0 +1,11 @@
+public List<BeanPropertyWriter> changeProperties(SerializationConfig config, BeanDescription beanDesc, List<BeanPropertyWriter> beanProperties) { [EOL]     return beanProperties; [EOL] } <line_num>: 47,50
+public List<BeanPropertyWriter> orderProperties(SerializationConfig config, BeanDescription beanDesc, List<BeanPropertyWriter> beanProperties) { [EOL]     return beanProperties; [EOL] } <line_num>: 62,65
+public BeanSerializerBuilder updateBuilder(SerializationConfig config, BeanDescription beanDesc, BeanSerializerBuilder builder) { [EOL]     return builder; [EOL] } <line_num>: 76,79
+public JsonSerializer<?> modifySerializer(SerializationConfig config, BeanDescription beanDesc, JsonSerializer<?> serializer) { [EOL]     return serializer; [EOL] } <line_num>: 93,96
+public JsonSerializer<?> modifyArraySerializer(SerializationConfig config, ArrayType valueType, BeanDescription beanDesc, JsonSerializer<?> serializer) { [EOL]     return serializer; [EOL] } <line_num>: 121,124
+public JsonSerializer<?> modifyCollectionSerializer(SerializationConfig config, CollectionType valueType, BeanDescription beanDesc, JsonSerializer<?> serializer) { [EOL]     return serializer; [EOL] } <line_num>: 129,132
+public JsonSerializer<?> modifyCollectionLikeSerializer(SerializationConfig config, CollectionLikeType valueType, BeanDescription beanDesc, JsonSerializer<?> serializer) { [EOL]     return serializer; [EOL] } <line_num>: 137,140
+public JsonSerializer<?> modifyMapSerializer(SerializationConfig config, MapType valueType, BeanDescription beanDesc, JsonSerializer<?> serializer) { [EOL]     return serializer; [EOL] } <line_num>: 145,148
+public JsonSerializer<?> modifyMapLikeSerializer(SerializationConfig config, MapLikeType valueType, BeanDescription beanDesc, JsonSerializer<?> serializer) { [EOL]     return serializer; [EOL] } <line_num>: 153,156
+public JsonSerializer<?> modifyEnumSerializer(SerializationConfig config, JavaType valueType, BeanDescription beanDesc, JsonSerializer<?> serializer) { [EOL]     return serializer; [EOL] } <line_num>: 161,164
+public JsonSerializer<?> modifyKeySerializer(SerializationConfig config, JavaType valueType, BeanDescription beanDesc, JsonSerializer<?> serializer) { [EOL]     return serializer; [EOL] } <line_num>: 183,186

@@ -1,0 +1,8 @@
+public ComparableObjectItem(Comparable x, Object y) { [EOL]     if (x == null) { [EOL]         throw new IllegalArgumentException("Null 'x' argument."); [EOL]     } [EOL]     this.x = x; [EOL]     this.obj = y; [EOL] } <line_num>: 72,78
+protected Comparable getComparable() { [EOL]     return this.x; [EOL] } <line_num>: 85,87
+protected Object getObject() { [EOL]     return this.obj; [EOL] } <line_num>: 94,96
+protected void setObject(Object y) { [EOL]     this.obj = y; [EOL] } <line_num>: 104,106
+public int compareTo(Object o1) { [EOL]     int result; [EOL]     if (o1 instanceof ComparableObjectItem) { [EOL]         ComparableObjectItem that = (ComparableObjectItem) o1; [EOL]         return this.x.compareTo(that.x); [EOL]     } else { [EOL]         result = 1; [EOL]     } [EOL]     return result; [EOL] } <line_num>: 120,140
+public Object clone() throws CloneNotSupportedException { [EOL]     return super.clone(); [EOL] } <line_num>: 150,152
+public boolean equals(Object obj) { [EOL]     if (obj == this) { [EOL]         return true; [EOL]     } [EOL]     if (!(obj instanceof ComparableObjectItem)) { [EOL]         return false; [EOL]     } [EOL]     ComparableObjectItem that = (ComparableObjectItem) obj; [EOL]     if (!this.x.equals(that.x)) { [EOL]         return false; [EOL]     } [EOL]     if (!ObjectUtilities.equal(this.obj, that.obj)) { [EOL]         return false; [EOL]     } [EOL]     return true; [EOL] } <line_num>: 162,177
+public int hashCode() { [EOL]     int result; [EOL]     result = this.x.hashCode(); [EOL]     result = 29 * result + (this.obj != null ? this.obj.hashCode() : 0); [EOL]     return result; [EOL] } <line_num>: 184,189

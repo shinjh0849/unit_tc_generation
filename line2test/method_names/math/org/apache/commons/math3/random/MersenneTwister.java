@@ -1,0 +1,8 @@
+public MersenneTwister()
+public MersenneTwister(int seed)
+public MersenneTwister(int[] seed)
+public MersenneTwister(long seed)
+public void setSeed(int seed)
+public void setSeed(int[] seed)
+public void setSeed(long seed)
+protected int next(int bits)

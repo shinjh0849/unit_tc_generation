@@ -1,0 +1,7 @@
+public void addChromosome(Chromosome chromosome) { [EOL] } <line_num>: 33,35
+public Chromosome getFittestChromosome() { [EOL]     return null; [EOL] } <line_num>: 36,39
+public int getPopulationLimit() { [EOL]     return 0; [EOL] } <line_num>: 40,43
+public int getPopulationSize() { [EOL]     return 0; [EOL] } <line_num>: 44,47
+public Population nextGeneration() { [EOL]     return null; [EOL] } <line_num>: 48,51
+public Iterator<Chromosome> iterator() { [EOL]     return null; [EOL] } <line_num>: 52,55
+@Test [EOL] public void testIsSatisfied() { [EOL]     FixedGenerationCount fgc = new FixedGenerationCount(20); [EOL]     int cnt = 0; [EOL]     Population pop = new Population() { [EOL]  [EOL]         public void addChromosome(Chromosome chromosome) { [EOL]         } [EOL]  [EOL]         public Chromosome getFittestChromosome() { [EOL]             return null; [EOL]         } [EOL]  [EOL]         public int getPopulationLimit() { [EOL]             return 0; [EOL]         } [EOL]  [EOL]         public int getPopulationSize() { [EOL]             return 0; [EOL]         } [EOL]  [EOL]         public Population nextGeneration() { [EOL]             return null; [EOL]         } [EOL]  [EOL]         public Iterator<Chromosome> iterator() { [EOL]             return null; [EOL]         } [EOL]     }; [EOL]     while (!fgc.isSatisfied(pop)) { [EOL]         cnt++; [EOL]     } [EOL]     Assert.assertEquals(20, cnt); [EOL] } <line_num>: 27,62

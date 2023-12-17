@@ -1,0 +1,28 @@
+public CreatorCollector(BeanDescription beanDesc, boolean canFixAccess)
+public ValueInstantiator constructValueInstantiator(DeserializationConfig config)
+public void setDefaultConstructor(AnnotatedConstructor ctor)
+public void setDefaultCreator(AnnotatedWithParams creator)
+public void addStringCreator(AnnotatedWithParams creator)
+public void addIntCreator(AnnotatedWithParams creator)
+public void addLongCreator(AnnotatedWithParams creator)
+public void addDoubleCreator(AnnotatedWithParams creator)
+public void addBooleanCreator(AnnotatedWithParams creator)
+public void addDelegatingCreator(AnnotatedWithParams creator, CreatorProperty[] injectables)
+public void addPropertyCreator(AnnotatedWithParams creator, CreatorProperty[] properties)
+public void addIncompeteParameter(AnnotatedParameter parameter)
+public boolean hasDefaultCreator()
+private T _fixAccess(T member)
+protected AnnotatedWithParams verifyNonDup(AnnotatedWithParams newOne, AnnotatedWithParams oldOne, String type)
+BeanDescription _beanDesc
+boolean _canFixAccess
+AnnotatedWithParams _defaultConstructor
+AnnotatedWithParams _stringCreator
+AnnotatedWithParams _intCreator
+AnnotatedWithParams _longCreator
+AnnotatedWithParams _doubleCreator
+AnnotatedWithParams _booleanCreator
+AnnotatedWithParams _delegateCreator
+CreatorProperty[] _delegateArgs
+AnnotatedWithParams _propertyBasedCreator
+CreatorProperty[] _propertyBasedArgs=Optional[null]
+AnnotatedParameter _incompleteParameter

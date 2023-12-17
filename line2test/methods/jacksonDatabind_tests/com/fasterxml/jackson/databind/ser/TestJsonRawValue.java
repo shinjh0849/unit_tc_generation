@@ -1,0 +1,7 @@
+private ClassGetter(T value) { [EOL]     _value = value; [EOL] } <line_num>: 26,26
+public T getNonRaw() { [EOL]     return _value; [EOL] } <line_num>: 28,28
+@JsonProperty("raw") [EOL] @JsonRawValue [EOL] public T foobar() { [EOL]     return _value; [EOL] } <line_num>: 30,30
+@JsonProperty [EOL] @JsonRawValue [EOL] protected T value() { [EOL]     return _value; [EOL] } <line_num>: 32,32
+public void testSimpleStringGetter() throws Exception { [EOL]     ObjectMapper m = new ObjectMapper(); [EOL]     String value = "abc"; [EOL]     String result = m.writeValueAsString(new ClassGetter<String>(value)); [EOL]     String expected = String.format("{\"nonRaw\":\"%s\",\"raw\":%s,\"value\":%s}", value, value, value); [EOL]     assertEquals(expected, result); [EOL] } <line_num>: 41,48
+public void testSimpleNonStringGetter() throws Exception { [EOL]     ObjectMapper m = new ObjectMapper(); [EOL]     int value = 123; [EOL]     String result = m.writeValueAsString(new ClassGetter<Integer>(value)); [EOL]     String expected = String.format("{\"nonRaw\":%d,\"raw\":%d,\"value\":%d}", value, value, value); [EOL]     assertEquals(expected, result); [EOL] } <line_num>: 50,57
+public void testNullStringGetter() throws Exception { [EOL]     ObjectMapper m = new ObjectMapper(); [EOL]     String result = m.writeValueAsString(new ClassGetter<String>(null)); [EOL]     String expected = "{\"nonRaw\":null,\"raw\":null,\"value\":null}"; [EOL]     assertEquals(expected, result); [EOL] } <line_num>: 59,65

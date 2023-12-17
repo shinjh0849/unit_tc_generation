@@ -1,0 +1,1 @@
+public JXPathFunctionNotFoundException(String message)

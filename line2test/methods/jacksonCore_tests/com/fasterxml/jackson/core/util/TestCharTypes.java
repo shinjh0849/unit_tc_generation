@@ -1,0 +1,1 @@
+public void testQuoting() { [EOL]     StringBuilder sb = new StringBuilder(); [EOL]     CharTypes.appendQuoted(sb, "\n"); [EOL]     assertEquals("\\n", sb.toString()); [EOL]     sb = new StringBuilder(); [EOL]     CharTypes.appendQuoted(sb, "\u0000"); [EOL]     assertEquals("\\u0000", sb.toString()); [EOL] } <line_num>: 8,16

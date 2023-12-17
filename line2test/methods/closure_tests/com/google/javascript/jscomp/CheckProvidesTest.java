@@ -1,0 +1,11 @@
+@Override [EOL] protected CompilerPass getProcessor(Compiler compiler) { [EOL]     return new CheckProvides(compiler, CheckLevel.WARNING); [EOL] } <line_num>: 27,30
+public void testIrrelevant() { [EOL]     testSame("var str = 'g4';"); [EOL] } <line_num>: 32,34
+public void testHarmlessProcedural() { [EOL]     testSame("goog.provide('X'); /** @constructor */ function X(){};"); [EOL] } <line_num>: 36,38
+public void testHarmless() { [EOL]     String js = "goog.provide('X'); /** @constructor */ X = function(){};"; [EOL]     testSame(js); [EOL] } <line_num>: 40,43
+public void testNoProvideInnerClass() { [EOL]     testSame("goog.provide('X');\n" + "/** @constructor */ function X(){};" + "/** @constructor */ X.Y = function(){};"); [EOL] } <line_num>: 45,50
+public void testMissingGoogProvide() { [EOL]     String[] js = new String[] { "/** @constructor */ X = function(){};" }; [EOL]     String warning = "missing goog.provide('X')"; [EOL]     test(js, js, null, MISSING_PROVIDE_WARNING, warning); [EOL] } <line_num>: 52,56
+public void testMissingGoogProvideWithNamespace() { [EOL]     String[] js = new String[] { "goog = {}; " + "/** @constructor */ goog.X = function(){};" }; [EOL]     String warning = "missing goog.provide('goog.X')"; [EOL]     test(js, js, null, MISSING_PROVIDE_WARNING, warning); [EOL] } <line_num>: 58,63
+public void testGoogProvideInWrongFileShouldCreateWarning() { [EOL]     String bad = "/** @constructor */ X = function(){};"; [EOL]     String good = "goog.provide('X'); goog.provide('Y');" + "/** @constructor */ X = function(){};" + "/** @constructor */ Y = function(){};"; [EOL]     String[] js = new String[] { good, bad }; [EOL]     String warning = "missing goog.provide('X')"; [EOL]     test(js, js, null, MISSING_PROVIDE_WARNING, warning); [EOL] } <line_num>: 65,73
+public void testGoogProvideMissingConstructorIsOkForNow() { [EOL]     testSame(new String[] { "goog.provide('Y'); X = function(){};" }); [EOL] } <line_num>: 75,79
+public void testIgnorePrivateConstructor() { [EOL]     String js = "/** @constructor*/ X_ = function(){};"; [EOL]     testSame(js); [EOL] } <line_num>: 81,84
+public void testIgnorePrivatelyAnnotatedConstructor() { [EOL]     testSame("/** @private\n@constructor */ X = function(){};"); [EOL]     testSame("/** @constructor\n@private */ X = function(){};"); [EOL] } <line_num>: 86,89

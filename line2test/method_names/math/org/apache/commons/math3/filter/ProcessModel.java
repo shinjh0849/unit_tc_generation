@@ -1,0 +1,5 @@
+ RealMatrix getStateTransitionMatrix()
+ RealMatrix getControlMatrix()
+ RealMatrix getProcessNoise()
+ RealVector getInitialStateEstimate()
+ RealMatrix getInitialErrorCovariance()

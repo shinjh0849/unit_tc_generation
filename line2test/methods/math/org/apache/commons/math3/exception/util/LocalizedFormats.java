@@ -1,0 +1,3 @@
+private LocalizedFormats(final String sourceFormat) { [EOL]     this.sourceFormat = sourceFormat; [EOL] } <line_num>: 370,372
+public String getSourceString() { [EOL]     return sourceFormat; [EOL] } <line_num>: 375,377
+public String getLocalizedString(final Locale locale) { [EOL]     try { [EOL]         final String path = LocalizedFormats.class.getName().replaceAll("\\.", "/"); [EOL]         ResourceBundle bundle = ResourceBundle.getBundle("assets/" + path, locale); [EOL]         if (bundle.getLocale().getLanguage().equals(locale.getLanguage())) { [EOL]             return bundle.getString(toString()); [EOL]         } [EOL]     } catch (MissingResourceException mre) { [EOL]     } [EOL]     return sourceFormat; [EOL] } <line_num>: 380,398

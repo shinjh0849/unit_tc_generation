@@ -1,0 +1,5 @@
+ static Node parse(String js)
+ static String minimize(String js)
+ static long cost(String js)
+public void testCost()
+private void checkCost(String source, String example)

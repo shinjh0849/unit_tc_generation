@@ -1,0 +1,81 @@
+public FlowSensitiveInlineVariablesTest() { [EOL]     enableNormalize(true); [EOL] } <line_num>: 32,34
+@Override [EOL] public int getNumRepetitions() { [EOL]     return 3; [EOL] } <line_num>: 36,40
+@Override [EOL] public void process(Node externs, Node root) { [EOL]     (new MarkNoSideEffectCalls(compiler)).process(externs, root); [EOL]     (new FlowSensitiveInlineVariables(compiler)).process(externs, root); [EOL] } <line_num>: 46,50
+@Override [EOL] protected CompilerPass getProcessor(final Compiler compiler) { [EOL]     return new CompilerPass() { [EOL]  [EOL]         @Override [EOL]         public void process(Node externs, Node root) { [EOL]             (new MarkNoSideEffectCalls(compiler)).process(externs, root); [EOL]             (new FlowSensitiveInlineVariables(compiler)).process(externs, root); [EOL]         } [EOL]     }; [EOL] } <line_num>: 42,52
+public void testSimpleAssign() { [EOL]     inline("var x; x = 1; print(x)", "var x; print(1)"); [EOL]     inline("var x; x = 1; x", "var x; 1"); [EOL]     inline("var x; x = 1; var a = x", "var x; var a = 1"); [EOL]     inline("var x; x = 1; x = x + 1", "var x; x = 1 + 1"); [EOL] } <line_num>: 54,59
+public void testSimpleVar() { [EOL]     inline("var x = 1; print(x)", "var x; print(1)"); [EOL]     inline("var x = 1; x", "var x; 1"); [EOL]     inline("var x = 1; var a = x", "var x; var a = 1"); [EOL]     inline("var x = 1; x = x + 1", "var x; x = 1 + 1"); [EOL] } <line_num>: 61,66
+public void testSimpleForIn() { [EOL]     inline("var a,b,x = a in b; x", "var a,b,x; a in b"); [EOL]     noInline("var a, b; var x = a in b; print(1); x"); [EOL]     noInline("var a,b,x = a in b; delete a[b]; x"); [EOL] } <line_num>: 68,73
+public void testExported() { [EOL]     noInline("var _x = 1; print(_x)"); [EOL] } <line_num>: 75,77
+public void testDoNotInlineIncrement() { [EOL]     noInline("var x = 1; x++;"); [EOL]     noInline("var x = 1; x--;"); [EOL] } <line_num>: 79,82
+public void testDoNotInlineAssignmentOp() { [EOL]     noInline("var x = 1; x += 1;"); [EOL]     noInline("var x = 1; x -= 1;"); [EOL] } <line_num>: 84,87
+public void testDoNotInlineIntoLhsOfAssign() { [EOL]     noInline("var x = 1; x += 3;"); [EOL] } <line_num>: 89,91
+public void testMultiUse() { [EOL]     noInline("var x; x = 1; print(x); print (x);"); [EOL] } <line_num>: 93,95
+public void testMultiUseInSameCfgNode() { [EOL]     noInline("var x; x = 1; print(x) || print (x);"); [EOL] } <line_num>: 97,99
+public void testMultiUseInTwoDifferentPath() { [EOL]     noInline("var x = 1; if (print) { print(x) } else { alert(x) }"); [EOL] } <line_num>: 101,103
+public void testAssignmentBeforeDefinition() { [EOL]     inline("x = 1; var x = 0; print(x)", "x = 1; var x; print(0)"); [EOL] } <line_num>: 105,107
+public void testVarInConditionPath() { [EOL]     noInline("if (foo) { var x = 0 } print(x)"); [EOL] } <line_num>: 109,111
+public void testMultiDefinitionsBeforeUse() { [EOL]     inline("var x = 0; x = 1; print(x)", "var x = 0; print(1)"); [EOL] } <line_num>: 113,115
+public void testMultiDefinitionsInSameCfgNode() { [EOL]     noInline("var x; (x = 1) || (x = 2); print(x)"); [EOL]     noInline("var x; x = (1 || (x = 2)); print(x)"); [EOL]     noInline("var x;(x = 1) && (x = 2); print(x)"); [EOL]     noInline("var x;x = (1 && (x = 2)); print(x)"); [EOL]     noInline("var x; x = 1 , x = 2; print(x)"); [EOL] } <line_num>: 117,123
+public void testNotReachingDefinitions() { [EOL]     noInline("var x; if (foo) { x = 0 } print (x)"); [EOL] } <line_num>: 125,127
+public void testNoInlineLoopCarriedDefinition() { [EOL]     noInline("var x; while(true) { print(x); x = 1; }"); [EOL]     noInline("var x = 0; while(true) { print(x); x = 1; }"); [EOL] } <line_num>: 129,135
+public void testDoNotExitLoop() { [EOL]     noInline("while (z) { var x = 3; } var y = x;"); [EOL] } <line_num>: 137,139
+public void testDoNotInlineWithinLoop() { [EOL]     noInline("var y = noSFX(); do { var z = y.foo(); } while (true);"); [EOL] } <line_num>: 141,143
+public void testDoNotInlineCatchExpression1() { [EOL]     noInline("var a;\n" + "try {\n" + "  throw Error(\"\");\n" + "}catch(err) {" + "   a = err;\n" + "}\n" + "return a.stack\n"); [EOL] } <line_num>: 145,154
+public void testDoNotInlineCatchExpression1a() { [EOL]     noInline("var a;\n" + "try {\n" + "  throw Error(\"\");\n" + "}catch(err) {" + "   a = err + 1;\n" + "}\n" + "return a.stack\n"); [EOL] } <line_num>: 156,165
+public void testDoNotInlineCatchExpression2() { [EOL]     noInline("var a;\n" + "try {\n" + "  if (x) {throw Error(\"\");}\n" + "}catch(err) {" + "   a = err;\n" + "}\n" + "return a.stack\n"); [EOL] } <line_num>: 167,176
+public void testDoNotInlineCatchExpression3() { [EOL]     noInline("var a;\n" + "try {\n" + "  throw Error(\"\");\n" + "} catch(err) {" + "  err = x;\n" + "  a = err;\n" + "}\n" + "return a.stack\n"); [EOL] } <line_num>: 178,188
+public void testDoNotInlineCatchExpression4() { [EOL]     noInline("try {\n" + " stuff();\n" + "} catch (e) {\n" + " x = e;\n" + " print(x);\n" + "}"); [EOL] } <line_num>: 190,199
+public void testDefinitionAfterUse() { [EOL]     inline("var x = 0; print(x); x = 1", "var x; print(0); x = 1"); [EOL] } <line_num>: 201,203
+public void testInlineSameVariableInStraightLine() { [EOL]     inline("var x; x = 1; print(x); x = 2; print(x)", "var x; print(1); print(2)"); [EOL] } <line_num>: 205,208
+public void testInlineInDifferentPaths() { [EOL]     inline("var x; if (print) {x = 1; print(x)} else {x = 2; print(x)}", "var x; if (print) {print(1)} else {print(2)}"); [EOL] } <line_num>: 210,213
+public void testNoInlineInMergedPath() { [EOL]     noInline("var x,y;x = 1;while(y) { if(y){ print(x) } else { x = 1 } } print(x)"); [EOL] } <line_num>: 215,218
+public void testInlineIntoExpressions() { [EOL]     inline("var x = 1; print(x + 1);", "var x; print(1 + 1)"); [EOL] } <line_num>: 220,222
+public void testInlineExpressions1() { [EOL]     inline("var a, b; var x = a+b; print(x)", "var a, b; var x; print(a+b)"); [EOL] } <line_num>: 224,226
+public void testInlineExpressions2() { [EOL]     noInline("var a, b; var x = a + b; a = 1; print(x)"); [EOL] } <line_num>: 228,231
+public void testInlineExpressions3() { [EOL]     inline("var a,b,x; x=a+b; x=a-b ; print(x)", "var a,b,x; x=a+b; print(a-b)"); [EOL] } <line_num>: 233,236
+public void testInlineExpressions4() { [EOL]     noInline("var a,b,x; x=a+b, x=a-b; print(x)"); [EOL] } <line_num>: 238,241
+public void testInlineExpressions5() { [EOL]     noInline("var a; var x = a = 1; print(x)"); [EOL] } <line_num>: 243,245
+public void testInlineExpressions6() { [EOL]     noInline("var a, x; a = 1 + (x = 1); print(x)"); [EOL] } <line_num>: 247,249
+public void testInlineExpression7() { [EOL]     noInline("var x = foo() + 1; bar(); print(x)"); [EOL]     noInline("var x = foo() + 1; print(x)"); [EOL] } <line_num>: 251,259
+public void testInlineExpression8() { [EOL]     inline("var a,b;" + "var x = a + b; print(x);      x = a - b; print(x)", "var a,b;" + "var x;         print(a + b);             print(a - b)"); [EOL] } <line_num>: 261,268
+public void testInlineExpression9() { [EOL]     inline("var a,b;" + "var x; if (g) { x= a + b; print(x)    }  x = a - b; print(x)", "var a,b;" + "var x; if (g) {           print(a + b)}             print(a - b)"); [EOL] } <line_num>: 270,277
+public void testInlineExpression10() { [EOL]     noInline("var x, y; x = ((y = 1), print(y))"); [EOL] } <line_num>: 279,282
+public void testInlineExpressions11() { [EOL]     inline("var x; x = x + 1; print(x)", "var x; print(x + 1)"); [EOL]     noInline("var x; x = x + 1; print(x); print(x)"); [EOL] } <line_num>: 284,287
+public void testInlineExpressions12() { [EOL]     noInline("var x = 10; x = c++; print(x)"); [EOL] } <line_num>: 289,293
+public void testInlineExpressions13() { [EOL]     inline("var a = 1, b = 2;" + "var x = a;" + "var y = b;" + "var z = x + y;" + "var i = z;" + "var j = z + y;" + "var k = i;", "var a, b;" + "var x;" + "var y = 2;" + "var z = 1 + y;" + "var i;" + "var j = z + y;" + "var k = z;"); [EOL] } <line_num>: 295,311
+public void testNoInlineIfDefinitionMayNotReach() { [EOL]     noInline("var x; if (x=1) {} x;"); [EOL] } <line_num>: 313,315
+public void testNoInlineEscapedToInnerFunction() { [EOL]     noInline("var x = 1; function foo() { x = 2 }; print(x)"); [EOL] } <line_num>: 317,319
+public void testNoInlineLValue() { [EOL]     noInline("var x; if (x = 1) { print(x) }"); [EOL] } <line_num>: 321,323
+public void testSwitchCase() { [EOL]     inline("var x = 1; switch(x) { }", "var x; switch(1) { }"); [EOL] } <line_num>: 325,327
+public void testShadowedVariableInnerFunction() { [EOL]     inline("var x = 1; print(x) || (function() {  var x; x = 1; print(x)})()", "var x; print(1) || (function() {  var x; print(1)})()"); [EOL] } <line_num>: 329,332
+public void testCatch() { [EOL]     noInline("var x = 0; try { } catch (x) { }"); [EOL]     noInline("try { } catch (x) { print(x) }"); [EOL] } <line_num>: 334,337
+public void testNoInlineGetProp() { [EOL]     noInline("var x = a.b.c; j.c = 1; print(x);"); [EOL] } <line_num>: 339,342
+public void testNoInlineGetProp2() { [EOL]     noInline("var x = 1 * a.b.c; j.c = 1; print(x);"); [EOL] } <line_num>: 344,346
+public void testNoInlineGetProp3() { [EOL]     inline("var x = function(){1 * a.b.c}; print(x);", "var x; print(function(){1 * a.b.c});"); [EOL] } <line_num>: 348,352
+public void testNoInlineGetEle() { [EOL]     noInline("var x = a[i]; a[j] = 2; print(x); "); [EOL] } <line_num>: 354,357
+public void testNoInlineConstructors() { [EOL]     noInline("var x = new Iterator(); x.next();"); [EOL] } <line_num>: 360,362
+public void testNoInlineArrayLits() { [EOL]     noInline("var x = []; print(x)"); [EOL] } <line_num>: 365,367
+public void testNoInlineObjectLits() { [EOL]     noInline("var x = {}; print(x)"); [EOL] } <line_num>: 370,372
+public void testNoInlineRegExpLits() { [EOL]     noInline("var x = /y/; print(x)"); [EOL] } <line_num>: 375,377
+public void testInlineConstructorCallsIntoLoop() { [EOL]     noInline("var x = new Iterator();" + "for(i = 0; i < 10; i++) {j = x.next()}"); [EOL] } <line_num>: 379,383
+public void testRemoveWithLabels() { [EOL]     inline("var x = 1; L: x = 2; print(x)", "var x = 1; L:{} print(2)"); [EOL]     inline("var x = 1; L: M: x = 2; print(x)", "var x = 1; L:M:{} print(2)"); [EOL]     inline("var x = 1; L: M: N: x = 2; print(x)", "var x = 1; L:M:N:{} print(2)"); [EOL] } <line_num>: 385,390
+public void testInlineAcrossSideEffect1() { [EOL]     noInline("var y; var x = noSFX(y); print(x)"); [EOL] } <line_num>: 392,399
+public void testInlineAcrossSideEffect2() { [EOL]     noInline("var y; var x = noSFX(y), z = hasSFX(y); print(x)"); [EOL]     noInline("var y; var x = noSFX(y), z = new hasSFX(y); print(x)"); [EOL]     noInline("var y; var x = new noSFX(y), z = new hasSFX(y); print(x)"); [EOL] } <line_num>: 401,410
+public void testInlineAcrossSideEffect3() { [EOL]     noInline("var y; var x = noSFX(y); hasSFX(y), print(x)"); [EOL]     noInline("var y; var x = noSFX(y); new hasSFX(y), print(x)"); [EOL]     noInline("var y; var x = new noSFX(y); new hasSFX(y), print(x)"); [EOL] } <line_num>: 412,417
+public void testInlineAcrossSideEffect4() { [EOL]     noInline("var y; var x = noSFX(y); hasSFX(y); print(x)"); [EOL]     noInline("var y; var x = noSFX(y); new hasSFX(y); print(x)"); [EOL]     noInline("var y; var x = new noSFX(y); new hasSFX(y); print(x)"); [EOL] } <line_num>: 419,425
+public void testCanInlineAcrossNoSideEffect() { [EOL]     noInline("var y; var x = noSFX(y), z = noSFX(); noSFX(); noSFX(), print(x)"); [EOL] } <line_num>: 427,436
+public void testDependOnOuterScopeVariables() { [EOL]     noInline("var x; function foo() { var y = x; x = 0; print(y) }"); [EOL]     noInline("var x; function foo() { var y = x; x++; print(y) }"); [EOL]     noInline("var x; function foo() { var y = x; print(y) }"); [EOL] } <line_num>: 438,446
+public void testInlineIfNameIsLeftSideOfAssign() { [EOL]     inline("var x = 1; x = print(x) + 1", "var x; x = print(1) + 1"); [EOL]     inline("var x = 1; L: x = x + 2", "var x; L: x = 1 + 2"); [EOL]     inline("var x = 1; x = (x = x + 1)", "var x; x = (x = 1 + 1)"); [EOL]     noInline("var x = 1; x = (x = (x = 10) + x)"); [EOL]     noInline("var x = 1; x = (f(x) + (x = 10) + x);"); [EOL]     noInline("var x = 1; x=-1,foo(x)"); [EOL]     noInline("var x = 1; x-=1,foo(x)"); [EOL] } <line_num>: 448,457
+public void testInlineArguments() { [EOL]     testSame("function _func(x) { print(x) }"); [EOL]     testSame("function _func(x,y) { if(y) { x = 1 }; print(x) }"); [EOL]     test("function f(x, y) { x = 1; print(x) }", "function f(x, y) { print(1) }"); [EOL]     test("function f(x, y) { if (y) { x = 1; print(x) }}", "function f(x, y) { if (y) { print(1) }}"); [EOL] } <line_num>: 459,468
+public void testInvalidInlineArguments1() { [EOL]     testSame("function f(x, y) { x = 1; arguments[0] = 2; print(x) }"); [EOL]     testSame("function f(x, y) { x = 1; var z = arguments;" + "z[0] = 2; z[1] = 3; print(x)}"); [EOL]     testSame("function g(a){a[0]=2} function f(x){x=1;g(arguments);print(x)}"); [EOL] } <line_num>: 470,475
+public void testInvalidInlineArguments2() { [EOL]     testSame("function f(c) {var f = c; arguments[0] = this;" + "f.apply(this, arguments); return this;}"); [EOL] } <line_num>: 477,480
+public void testForIn() { [EOL]     noInline("var x; var y = {}; for(x in y){}"); [EOL]     noInline("var x; var y = {}; var z; for(x in z = y){print(z)}"); [EOL]     noInline("var x; var y = {}; var z; for(x in y){print(z)}"); [EOL] } <line_num>: 482,487
+public void testNotOkToSkipCheckPathBetweenNodes() { [EOL]     noInline("var x; for(x = 1; foo(x);) {}"); [EOL]     noInline("var x; for(; x = 1;foo(x)) {}"); [EOL] } <line_num>: 489,492
+public void testIssue698() { [EOL]     inline("var x = ''; " + "unknown.length < 2 && (unknown='0' + unknown);" + "x = x + unknown; " + "unknown.length < 3 && (unknown='0' + unknown);" + "x = x + unknown; " + "return x;", "var x; " + "unknown.length < 2 && (unknown='0' + unknown);" + "x = '' + unknown; " + "unknown.length < 3 && (unknown='0' + unknown);" + "x = x + unknown; " + "return x;"); [EOL] } <line_num>: 494,511
+public void testIssue777() { [EOL]     test("function f(cmd, ta) {" + "  var temp = cmd;" + "  var temp2 = temp >> 2;" + "  cmd = STACKTOP;" + "  for (var src = temp2, dest = cmd >> 2, stop = src + 37;" + "       src < stop;" + "       src++, dest++) {" + "    HEAP32[dest] = HEAP32[src];" + "  }" + "  temp = ta;" + "  temp2 = temp >> 2;" + "  ta = STACKTOP;" + "  STACKTOP += 8;" + "  HEAP32[ta >> 2] = HEAP32[temp2];" + "  HEAP32[ta + 4 >> 2] = HEAP32[temp2 + 1];" + "}", "function f(cmd, ta){" + "  var temp;" + "  var temp2 = cmd >> 2;" + "  cmd = STACKTOP;" + "  var src = temp2;" + "  var dest = cmd >> 2;" + "  var stop = src + 37;" + "  for(;src<stop;src++,dest++)HEAP32[dest]=HEAP32[src];" + "  temp2 = ta >> 2;" + "  ta = STACKTOP;" + "  STACKTOP += 8;" + "  HEAP32[ta>>2] = HEAP32[temp2];" + "  HEAP32[ta+4>>2] = HEAP32[temp2+1];" + "}"); [EOL] } <line_num>: 513,545
+public void testTransitiveDependencies1() { [EOL]     test("function f(x) { var a = x; var b = a; x = 3; return b; }", "function f(x) { var a;     var b = x; x = 3; return b; }"); [EOL] } <line_num>: 547,551
+public void testTransitiveDependencies2() { [EOL]     test("function f(x) { var a = x; var b = a; var c = b; x = 3; return c; }", "function f(x) { var a    ; var b = x; var c    ; x = 3; return b; }"); [EOL] } <line_num>: 553,557
+public void testIssue794a() { [EOL]     noInline("var x = 1; " + "try { x += someFunction(); } catch (e) {}" + "x += 1;" + "try { x += someFunction(); } catch (e) {}" + "return x;"); [EOL] } <line_num>: 559,566
+public void testIssue794b() { [EOL]     noInline("var x = 1; " + "try { x = x + someFunction(); } catch (e) {}" + "x = x + 1;" + "try { x = x + someFunction(); } catch (e) {}" + "return x;"); [EOL] } <line_num>: 568,575
+private void noInline(String input) { [EOL]     inline(input, input); [EOL] } <line_num>: 577,579
+private void inline(String input, String expected) { [EOL]     test(EXTERN_FUNCTIONS, "function _func() {" + input + "}", "function _func() {" + expected + "}", null, null); [EOL] } <line_num>: 581,584

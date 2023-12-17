@@ -1,0 +1,5 @@
+public SymbolAxisTests(String name)
+public static Test suite()
+public void testSerialization()
+public void testCloning()
+public void testEquals()

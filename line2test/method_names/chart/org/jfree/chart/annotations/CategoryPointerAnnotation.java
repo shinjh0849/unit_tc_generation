@@ -1,0 +1,23 @@
+public CategoryPointerAnnotation(String label, Comparable key, double value, double angle)
+public double getAngle()
+public void setAngle(double angle)
+public double getTipRadius()
+public void setTipRadius(double radius)
+public double getBaseRadius()
+public void setBaseRadius(double radius)
+public double getLabelOffset()
+public void setLabelOffset(double offset)
+public double getArrowLength()
+public void setArrowLength(double length)
+public double getArrowWidth()
+public void setArrowWidth(double width)
+public Stroke getArrowStroke()
+public void setArrowStroke(Stroke stroke)
+public Paint getArrowPaint()
+public void setArrowPaint(Paint paint)
+public void draw(Graphics2D g2, CategoryPlot plot, Rectangle2D dataArea, CategoryAxis domainAxis, ValueAxis rangeAxis)
+public boolean equals(Object obj)
+public int hashCode()
+public Object clone() throws CloneNotSupportedException
+private void writeObject(ObjectOutputStream stream) throws IOException
+private void readObject(ObjectInputStream stream) throws IOException, ClassNotFoundException

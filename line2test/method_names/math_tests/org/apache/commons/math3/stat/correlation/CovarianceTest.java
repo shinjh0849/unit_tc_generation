@@ -1,0 +1,7 @@
+public void testLongly()
+public void testSwissFertility()
+public void testConstant()
+public void testOneColumn()
+public void testInsufficientData()
+public void testConsistency()
+protected RealMatrix createRealMatrix(double[] data, int nRows, int nCols)

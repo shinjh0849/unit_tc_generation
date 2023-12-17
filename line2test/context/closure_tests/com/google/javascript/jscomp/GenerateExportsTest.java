@@ -1,0 +1,16 @@
+public GenerateExportsTest()
+protected CompilerPass getProcessor(Compiler compiler)
+protected int getNumRepetitions()
+public void setUp() throws Exception
+public void testExportSymbol()
+public void testExportSymbolAndProperties()
+public void testExportSymbolAndConstantProperties()
+public void testExportVars()
+public void testNoExport()
+public void testNestedVarAssign()
+public void testNestedAssign()
+public void testNonGlobalScopeExport()
+public void testExportClass()
+public void testExportSubclass()
+public void testExportEnum()
+String EXTERNS=Optional["function google_exportSymbol(a, b) {}; " + "goog.exportProperty = function(a, b, c) {}; "]

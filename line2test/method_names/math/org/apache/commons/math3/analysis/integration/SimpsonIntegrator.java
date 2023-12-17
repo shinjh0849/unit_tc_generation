@@ -1,0 +1,4 @@
+public SimpsonIntegrator(final double relativeAccuracy, final double absoluteAccuracy, final int minimalIterationCount, final int maximalIterationCount) throws NotStrictlyPositiveException, NumberIsTooSmallException, NumberIsTooLargeException
+public SimpsonIntegrator(final int minimalIterationCount, final int maximalIterationCount) throws NotStrictlyPositiveException, NumberIsTooSmallException, NumberIsTooLargeException
+public SimpsonIntegrator()
+protected double doIntegrate() throws TooManyEvaluationsException, MaxCountExceededException

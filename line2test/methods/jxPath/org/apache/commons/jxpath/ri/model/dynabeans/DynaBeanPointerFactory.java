@@ -1,0 +1,3 @@
+public int getOrder() { [EOL]     return DYNA_BEAN_POINTER_FACTORY_ORDER; [EOL] } <line_num>: 39,41
+public NodePointer createNodePointer(QName name, Object bean, Locale locale) { [EOL]     if (bean instanceof DynaBean) { [EOL]         return new DynaBeanPointer(name, (DynaBean) bean, locale); [EOL]     } [EOL]     return null; [EOL] } <line_num>: 43,50
+public NodePointer createNodePointer(NodePointer parent, QName name, Object bean) { [EOL]     if (bean instanceof DynaBean) { [EOL]         return new DynaBeanPointer(parent, name, (DynaBean) bean); [EOL]     } [EOL]     return null; [EOL] } <line_num>: 52,59

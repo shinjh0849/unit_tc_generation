@@ -1,0 +1,1 @@
+ boolean isSatisfied(Population population)

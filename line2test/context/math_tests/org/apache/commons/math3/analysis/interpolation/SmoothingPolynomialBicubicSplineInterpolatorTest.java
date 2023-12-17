@@ -1,0 +1,5 @@
+public void testPreconditions()
+public double value(double x, double y)
+public void testPlane()
+public double value(double x, double y)
+public void testParaboloid()

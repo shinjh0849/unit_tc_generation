@@ -1,0 +1,1 @@
+public void testBeanAsArrayUnwrapped() throws Exception { [EOL]     ObjectMapper mapper = new ObjectMapper(); [EOL]     mapper.enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY); [EOL]     SingleBean result = mapper.readValue(quote("foobar"), SingleBean.class); [EOL]     assertNotNull(result); [EOL]     assertEquals("foobar", result.name); [EOL] } <line_num>: 20,27

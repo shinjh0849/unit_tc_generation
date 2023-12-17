@@ -1,0 +1,11 @@
+public BeanSerializer(JavaType type, BeanSerializerBuilder builder, BeanPropertyWriter[] properties, BeanPropertyWriter[] filteredProperties)
+protected BeanSerializer(BeanSerializerBase src)
+protected BeanSerializer(BeanSerializerBase src, ObjectIdWriter objectIdWriter)
+protected BeanSerializer(BeanSerializerBase src, String[] toIgnore)
+public static BeanSerializer createDummy(JavaType forType)
+public JsonSerializer<Object> unwrappingSerializer(NameTransformer unwrapper)
+public BeanSerializer withObjectIdWriter(ObjectIdWriter objectIdWriter)
+protected BeanSerializer withIgnorals(String[] toIgnore)
+protected BeanSerializerBase asArraySerializer()
+public final void serialize(Object bean, JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonGenerationException
+public String toString()

@@ -1,0 +1,1 @@
+public NotOutlierException(String message)

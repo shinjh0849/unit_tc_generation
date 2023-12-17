@@ -1,0 +1,6 @@
+public UnrecognizedPropertyException(String msg, JsonLocation loc, Class<?> referringClass, String propName, Collection<Object> propertyIds)
+public static UnrecognizedPropertyException from(JsonParser jp, Object fromObjectOrClass, String propertyName, Collection<Object> propertyIds)
+public String getMessageSuffix()
+public Class<?> getReferringClass()
+public String getUnrecognizedPropertyName()
+public Collection<Object> getKnownPropertyIds()

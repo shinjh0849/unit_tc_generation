@@ -1,0 +1,8 @@
+protected CompilerPass getProcessor(final Compiler compiler)
+protected int getNumRepetitions()
+public void testUnchainedCalls()
+public void testSecondCallReturnNotThis()
+public void testDifferentInstance()
+public void testSubclass()
+public void testSimpleDefinitionFinder()
+public void testSimpleDefinitionFinder2()

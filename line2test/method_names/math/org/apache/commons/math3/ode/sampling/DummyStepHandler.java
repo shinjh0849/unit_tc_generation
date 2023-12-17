@@ -1,0 +1,5 @@
+private DummyStepHandler()
+public static DummyStepHandler getInstance()
+public void init(double t0, double[] y0, double t)
+public void handleStep(final StepInterpolator interpolator, final boolean isLast)
+private Object readResolve()
