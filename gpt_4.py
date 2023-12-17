@@ -62,7 +62,7 @@ def gen_comments(num):
                 generated_comments_f.write(response + '\n')
             generated_comments_f.close()
         
-openai.organization = 'org-eXNli8tO0Nhm5V6pcAugmgsY'
-openai.api_key = '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'
+openai.organization = 'YOUR_ORG_KEY'
+openai.api_key = 'YOUR_API_KEY'
 # num = sys.argv[1]
 gen_comments(0)
