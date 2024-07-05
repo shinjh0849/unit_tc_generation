@@ -165,7 +165,6 @@ def get_tc_lists(gen_test_path):
             else:
                 test_code_lists[i] = '@Test\n' + test_code_lists[i]
 
-
     return test_code_lists
 
 
@@ -203,29 +202,29 @@ def get_correct_tcs(gen_tests, after_rm, inject_point, curdir, file, method, da)
                 parsable_tcs.append(test_code)
                 
         # make new tmp dir for compilation check
-        if os.path.exists('tmp/'):
-            shutil.rmtree('tmp/', ignore_errors=True)
-        os.makedirs(f'tmp/defects4j_projects/{project_name}/', exist_ok=True)
-        os.system(f'defects4j checkout -p {project_name} -v 1f -w tmp/defects4j_projects/{project_name}/')
+        if os.path.exists(f'tmp/{method}/'):
+            shutil.rmtree(f'tmp/{method}/', ignore_errors=True)
+        os.makedirs(f'tmp/{method}/defects4j_projects/{project_name}/', exist_ok=True)
+        os.system(f'defects4j checkout -p {project_name} -v 1f -w tmp/{method}/defects4j_projects/{project_name}/')
         # check parsable TCs if they are compilable
         compilable_tcs = []
         for i, test_code in enumerate(parsable_tcs):
             temp = copy.deepcopy(after_rm)
             temp.insert(inject_point, test_code)
             full_code = '\n'.join(temp)
-            with open(f'tmp/{curdir}/{file}', 'w') as f:
+            with open(f'tmp/{method}/{curdir}/{file}', 'w') as f:
                 f.write(full_code)
-            out = os.system(f'cd tmp/defects4j_projects/{project_name} && rm -rf build && rm -rf build-tests && rm -rf target && JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre defects4j compile')
+            out = os.system(f'cd tmp/{method}/defects4j_projects/{project_name} && rm -rf build && rm -rf build-tests && rm -rf target && JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre defects4j compile')
             if out == 0:
                 compilable_tcs.append(test_code)
             else:
                 os.makedirs(f'out/{method}/{da}/compilation_errors/{curdir}/', exist_ok=True)
                 with open(f'out/{method}/{da}/compilation_errors/{curdir}/{file}_{i}.java', 'w') as error_f:
                     error_f.write(test_code)
-                with open(f'./tmp/{curdir}/{file}', 'w') as f:
+                with open(f'./tmp/{method}/{curdir}/{file}', 'w') as f:
                     f.write('\n'.join(after_rm))
                 not_compilable_tcs += 1
-        shutil.rmtree("tmp/", ignore_errors=True)
+        shutil.rmtree(f'tmp/{method}/', ignore_errors=True)
 
         return compilable_tcs, total_gen_tcs, not_parsable_tcs, not_compilable_tcs
 
@@ -296,25 +295,11 @@ if __name__ == "__main__":
     # if os.path.exists("out/combined/"):
     #     shutil.rmtree("out/combined/")
 
-    project_names = {'Chart': ('tests/org/jfree/', 3), 'Cli': ('src/test/org/apache/commons/cli', 7),
-                     'Closure': ('test/com/google', 3), 
-                     'Codec': ('src/test/org/apache/commons/codec', 4),
-                     'Compress': ('src/test/java/org/apache/commons/compress', 5), 'Csv': ('src/test/java/org/apache/commons/csv', 5),
-                     'Gson': ('gson/src/test/java/com/google/gson', 6), 'JacksonCore': ('src/test/java/com/fasterxml/jackson', 5), 
-                     'JacksonDatabind': ('src/test/java/com/fasterxml/jackson/databind', 5), 
-                     'Jsoup': ('src/test/java/org/jsoup', 5),
-                     'JxPath': ('src/test/org/apache/commons/jxpath', 4), 'Lang': ('src/test/java/org/apache/commons/lang3', 5),
-                     'Time': ('src/test/java/org/joda/time', 5)}
 
     project_names = {'Compress': ('src/test/java/org/apache/commons/compress', 5), 'Gson': ('gson/src/test/java/com/google/gson', 6),
                      'JacksonCore': ('src/test/java/com/fasterxml/jackson', 5),'JacksonDatabind': ('src/test/java/com/fasterxml/jackson/databind', 5),
-                     'Jsoup': ('src/test/java/org/jsoup', 5), 'JxPath': ('src/test/org/apache/commons/jxpath', 4)}
-    project_names = {
-        # 'JacksonCore': ('src/test/java/com/fasterxml/jackson', 5),'JacksonDatabind': ('src/test/java/com/fasterxml/jackson/databind', 5),
-                    #  'Jsoup': ('src/test/java/org/jsoup', 5), 
-                     'JxPath': ('src/test/org/apache/commons/jxpath', 4)
-                     }
-    
+                     'Jsoup': ('src/test/java/org/jsoup', 5)}
+
     # pass project name in the argument e.g. Lang
     if method == 'gpt4' or method == 'a3test':
         for project_name, (test_path, split_length) in project_names.items():
@@ -330,7 +315,7 @@ if __name__ == "__main__":
             print()
     elif method == 'codet5':
         for project_name, (test_path, split_length) in project_names.items():
-            for da in ['', '_noda']:
+            for da in ['da', 'noda']:
                 if os.path.exists(f'defects4j_projects/{project_name}'):
                     shutil.rmtree(f'defects4j_projects/{project_name}') 
                 os.system(f'defects4j checkout -p {project_name} -v 1f -w defects4j_projects/{project_name}')

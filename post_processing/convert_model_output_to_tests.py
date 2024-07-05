@@ -49,23 +49,22 @@ def prepare(out, info, method, da):
 
 if __name__ == "__main__":
     method = sys.argv[1]
-    # for prj in ['chart', 'cli', 'closure', 'codec', 'compress', 'csv', 'gson',
-    #             'jacksonCore', 'jacksonDatabind', 'jsoup', 'jxPath', 'lang3', 'time']:
+    
     if method == 'codet5':
-        for prj in ['compress', 'gson', 'jacksonCore', 'jacksonDatabind', 'jsoup', 'jxPath']:
-            for da in ['', '_noda']:
-                out = f"../dataset/codet5/{prj}{da}.output"
-                info = f"../dataset/generated_datasets/{prj}_test_info_0.txt"
+        for prj in ['compress', 'gson', 'jacksonCore', 'jacksonDatabind', 'jsoup']:
+            for da in ['da', 'noda']:
+                out = f"../dataset/codet5/{da}/{prj}.tests"
+                info = f"../dataset/defects4j/{prj}_test_info_0.txt"
                 prepare(out, info, method, da)
     elif method == 'gpt4':
-        for prj in ['compress', 'gson', 'jacksonCore', 'jacksonDatabind', 'jsoup', 'jxPath']:
+        for prj in ['compress', 'gson', 'jacksonCore', 'jacksonDatabind', 'jsoup']:
             out = f"../dataset/gpt4/{prj}_generated_0.tests"
             info = f'../dataset/gpt4/{prj}_test_info_0.txt'
             prepare(out, info, method, '')
     elif method == 'a3test':
-        for prj in ['jxPath']:
+        for prj in ['compress', 'gson', 'jacksonCore', 'jacksonDatabind', 'jsoup']:
             out = f"../dataset/a3test/{prj}.tests"
-            info = f"../dataset/generated_datasets/{prj}_test_info_0.txt"
+            info = f"../dataset/defects4j/{prj}_test_info_0.txt"
             prepare(out, info, method, '')
     else:
         print('Incorrect argv!')

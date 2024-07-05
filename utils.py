@@ -172,6 +172,28 @@ def make_d4j_repos(folder_name):
 
 
 
+def test_dup():
+    with open('dataset/codet5/da/jacksonDatabind.tests') as f:
+        with_da = f.readlines()
+    with open('dataset/codet5/noda/jacksonDatabind.tests') as f:
+        no_da = f.readlines()
+        
+    with_da_nodup = []
+    no_da_nodup = []
+    
+    for ln in with_da:
+        if ln not in with_da_nodup:
+            with_da_nodup.append(ln)
+            
+    for ln in no_da:
+        if ln not in no_da_nodup:
+            no_da_nodup.append(ln)
+            
+    print(f'with da: {len(with_da_nodup)}')
+    print(f'no da: {len(no_da_nodup)}')
+
+test_dup()
+
 # get_data_per_method()
 # cnt_input_toks()
 # cnt_num_of_inst('gpt_combined')

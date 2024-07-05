@@ -4,5 +4,6 @@ tmp/*
 out/*
 generated_datasets/*
 model_predictions/*
-
+out_sav/*
 vendor/*
+*.log
